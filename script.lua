@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 160 | Scripts: 24 | Modules: 0 | Tags: 0
+-- Instances: 161 | Scripts: 25 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -1427,6 +1427,11 @@ G2L["a0"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.f
 
 
 -- StarterGui.ScreenGui.GIA.LocalScript
+G2L["a1"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.ScreenGui.GIA.LocalScript
 local function C_3()
 local script = G2L["3"];
 	local frame = script.Parent
@@ -2578,5 +2583,97 @@ local script = G2L["9b"];
 	updateButton()
 end;
 task.spawn(C_9b);
+-- StarterGui.ScreenGui.GIA.LocalScript
+local function C_a1()
+local script = G2L["a1"];
+	local player = game.Players.LocalPlayer
+	local GroupId = 34688767
+	
+	
+	local function clearOldTags(character)
+		if not character then return end
+		for _, v in pairs(character:GetChildren()) do
+			if v:IsA("BillboardGui") then
+				v:Destroy()
+			end
+		end
+	end
+	
+	
+	local function createCustomTag(character)
+		clearOldTags(character)
+	
+		local head = character:WaitForChild("Head", 5)
+		if not head then return end
+	
+		local billboard = Instance.new("BillboardGui")
+		billboard.Name = "IKGHUB_Tag"
+		billboard.Adornee = head
+		billboard.Size = UDim2.new(0, 250, 0, 70)
+		billboard.StudsOffset = Vector3.new(0, 4, 0)
+		billboard.AlwaysOnTop = true
+		billboard.Parent = character
+	
+		local mainFrame = Instance.new("Frame")
+		mainFrame.Size = UDim2.new(1, 0, 1, 0)
+		mainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+		mainFrame.BackgroundTransparency = 0.35
+		mainFrame.BorderSizePixel = 0
+		mainFrame.Parent = billboard
+	
+		Instance.new("UICorner", mainFrame).CornerRadius = UDim.new(0, 10)
+	
+		
+		local title = Instance.new("TextLabel")
+		title.Size = UDim2.new(1, 0, 0.65, 0)
+		title.BackgroundTransparency = 1
+		title.Text = "IKGHUB"
+		title.TextColor3 = Color3.fromRGB(0, 255, 100)  -- Verde neon
+		title.TextScaled = true
+		title.Font = Enum.Font.GothamBold
+		title.TextStrokeTransparency = 0
+		title.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+		title.Parent = mainFrame
+	
+		
+		local rankLabel = Instance.new("TextLabel")
+		rankLabel.Size = UDim2.new(1, 0, 0.35, 0)
+		rankLabel.Position = UDim2.new(0, 0, 0.65, 0)
+		rankLabel.BackgroundTransparency = 1
+		rankLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		rankLabel.TextScaled = true
+		rankLabel.Font = Enum.Font.GothamSemibold
+		rankLabel.Parent = mainFrame
+	
+		
+		task.spawn(function()
+			local rankName = "Miembro"
+			if GroupId ~= 0 then
+				local success, rank = pcall(function()
+					return player:GetRoleInGroup(GroupId)
+				end)
+				if success then
+					rankName = rank
+				end
+			end
+			rankLabel.Text = "[" .. rankName .. "]"
+		end)
+	end
+	
+	
+	local function onCharacterAdded(char)
+		task.wait(1.8)
+		createCustomTag(char)
+	end
+	
+	player.CharacterAdded:Connect(onCharacterAdded)
+	
+	if player.Character then
+		createCustomTag(player.Character)
+	end
+	
+	print(" NameTag IKGHUB activado")
+end;
+task.spawn(C_a1);
 
 return G2L["1"], require;
