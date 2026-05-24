@@ -923,7 +923,7 @@ G2L["68"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["68"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Fun
+-- StarterGui.ScreenGui.GIA.Status
 G2L["69"] = Instance.new("Frame", G2L["2"]);
 G2L["69"]["Visible"] = false;
 G2L["69"]["BorderSizePixel"] = 0;
@@ -931,460 +931,471 @@ G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["69"]["Size"] = UDim2.new(0, 345, 0, 399);
 G2L["69"]["Position"] = UDim2.new(0.34489, 0, 0.14945, 0);
 G2L["69"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["69"]["Name"] = [[Fun]];
+G2L["69"]["Name"] = [[Status]];
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextButton
-G2L["6a"] = Instance.new("TextButton", G2L["69"]);
+-- StarterGui.ScreenGui.GIA.Status.ImageLabel
+G2L["6a"] = Instance.new("ImageLabel", G2L["69"]);
 G2L["6a"]["BorderSizePixel"] = 0;
-G2L["6a"]["TextSize"] = 25;
-G2L["6a"]["TextColor3"] = Color3.fromRGB(59, 131, 11);
-G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(40, 46, 38);
-G2L["6a"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["6a"]["Size"] = UDim2.new(0, 88, 0, 50);
+G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6a"]["Image"] = [[rbxassetid://95695891007719]];
+G2L["6a"]["Size"] = UDim2.new(0, 36, 0, 35);
 G2L["6a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6a"]["Text"] = [[Activate]];
-G2L["6a"]["Position"] = UDim2.new(0.61243, 0, 0.22009, 0);
+G2L["6a"]["Position"] = UDim2.new(0.78551, 0, 0.06221, 0);
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
-G2L["6b"] = Instance.new("LocalScript", G2L["6a"]);
+-- StarterGui.ScreenGui.GIA.Status.ImageLabel.UICorner
+G2L["6b"] = Instance.new("UICorner", G2L["6a"]);
+G2L["6b"]["CornerRadius"] = UDim.new(0, 999);
 
 
-
--- StarterGui.ScreenGui.GIA.Fun.TextButton.UIStroke
-G2L["6c"] = Instance.new("UIStroke", G2L["6a"]);
-G2L["6c"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
-
-
--- StarterGui.ScreenGui.GIA.Fun.TextButton
-G2L["6d"] = Instance.new("TextButton", G2L["69"]);
-G2L["6d"]["BorderSizePixel"] = 0;
-G2L["6d"]["TextSize"] = 25;
-G2L["6d"]["TextColor3"] = Color3.fromRGB(59, 131, 11);
-G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(40, 46, 38);
-G2L["6d"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["6d"]["Size"] = UDim2.new(0, 88, 0, 50);
-G2L["6d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6d"]["Text"] = [[Activate]];
-G2L["6d"]["Position"] = UDim2.new(0.61243, 0, 0.41057, 0);
+-- StarterGui.ScreenGui.GIA.Status.UICorner
+G2L["6c"] = Instance.new("UICorner", G2L["69"]);
+G2L["6c"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
-G2L["6e"] = Instance.new("LocalScript", G2L["6d"]);
+-- StarterGui.ScreenGui.GIA.Status.UIGradient
+G2L["6d"] = Instance.new("UIGradient", G2L["69"]);
+G2L["6d"]["Rotation"] = 90;
+G2L["6d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(46, 46, 46)),ColorSequenceKeypoint.new(0.510, Color3.fromRGB(34, 34, 34)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
+-- StarterGui.ScreenGui.GIA.Status.TextLabel
+G2L["6e"] = Instance.new("TextLabel", G2L["69"]);
+G2L["6e"]["BorderSizePixel"] = 0;
+G2L["6e"]["TextSize"] = 14;
+G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6e"]["BackgroundTransparency"] = 123;
+G2L["6e"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6e"]["Text"] = [[                           STATUS:]];
+G2L["6e"]["Position"] = UDim2.new(0.0223, 0, 0.04579, 0);
 
--- StarterGui.ScreenGui.GIA.Fun.TextButton.UIStroke
-G2L["6f"] = Instance.new("UIStroke", G2L["6d"]);
+
+-- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
+G2L["6f"] = Instance.new("UIStroke", G2L["6e"]);
+G2L["6f"]["Thickness"] = 0.5;
+G2L["6f"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["6f"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextButton
-G2L["70"] = Instance.new("TextButton", G2L["69"]);
+-- StarterGui.ScreenGui.GIA.Status.TextLabel
+G2L["70"] = Instance.new("TextLabel", G2L["69"]);
 G2L["70"]["BorderSizePixel"] = 0;
-G2L["70"]["TextSize"] = 25;
-G2L["70"]["TextColor3"] = Color3.fromRGB(59, 131, 11);
-G2L["70"]["BackgroundColor3"] = Color3.fromRGB(40, 46, 38);
+G2L["70"]["TextSize"] = 14;
+G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["70"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["70"]["Size"] = UDim2.new(0, 88, 0, 50);
+G2L["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["70"]["BackgroundTransparency"] = 123;
+G2L["70"]["Size"] = UDim2.new(0, 128, 0, 50);
 G2L["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["70"]["Text"] = [[Activate]];
-G2L["70"]["Position"] = UDim2.new(0.61243, 0, 0.04716, 0);
+G2L["70"]["Text"] = [[In one day, we'll switch
+to the new system with
+a new GUI, ready for the
+GIA Fuzelier mega update!
+]];
+G2L["70"]["Position"] = UDim2.new(0.33534, 0, 0.41171, 0);
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
-G2L["71"] = Instance.new("LocalScript", G2L["70"]);
+-- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
+G2L["71"] = Instance.new("UIStroke", G2L["70"]);
+G2L["71"]["Thickness"] = 0.5;
+G2L["71"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["71"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
-
--- StarterGui.ScreenGui.GIA.Fun.TextButton.UIStroke
-G2L["72"] = Instance.new("UIStroke", G2L["70"]);
-G2L["72"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
-
-
--- StarterGui.ScreenGui.GIA.Fun.TextLabel
-G2L["73"] = Instance.new("TextLabel", G2L["69"]);
-G2L["73"]["BorderSizePixel"] = 0;
-G2L["73"]["TextSize"] = 14;
-G2L["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["73"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["73"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["73"]["BackgroundTransparency"] = 123;
-G2L["73"]["Size"] = UDim2.new(0, 128, 0, 50);
-G2L["73"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["73"]["Text"] = [[Launch]];
-G2L["73"]["Position"] = UDim2.new(0.12819, 0, 0.04704, 0);
+-- StarterGui.ScreenGui.GIA.Status.TextLabel
+G2L["72"] = Instance.new("TextLabel", G2L["69"]);
+G2L["72"]["BorderSizePixel"] = 0;
+G2L["72"]["TextSize"] = 14;
+G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["72"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["72"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["72"]["BackgroundTransparency"] = 123;
+G2L["72"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["72"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["72"]["Text"] = [[                           SISTEM:]];
+G2L["72"]["Position"] = UDim2.new(0.0223, 0, 0.22123, 0);
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextLabel.UIStroke
-G2L["74"] = Instance.new("UIStroke", G2L["73"]);
-G2L["74"]["Thickness"] = 0.5;
-G2L["74"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["74"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+-- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
+G2L["73"] = Instance.new("UIStroke", G2L["72"]);
+G2L["73"]["Thickness"] = 0.5;
+G2L["73"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["73"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextLabel
-G2L["75"] = Instance.new("TextLabel", G2L["69"]);
-G2L["75"]["BorderSizePixel"] = 0;
-G2L["75"]["TextSize"] = 14;
-G2L["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["75"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["75"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["75"]["BackgroundTransparency"] = 123;
-G2L["75"]["Size"] = UDim2.new(0, 128, 0, 50);
-G2L["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["75"]["Text"] = [[Troll All (experimental)]];
-G2L["75"]["Position"] = UDim2.new(0.12819, 0, 0.21997, 0);
+-- StarterGui.ScreenGui.GIA.Status.TextLabel
+G2L["74"] = Instance.new("TextLabel", G2L["69"]);
+G2L["74"]["BorderSizePixel"] = 0;
+G2L["74"]["TextSize"] = 14;
+G2L["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["74"]["BackgroundTransparency"] = 123;
+G2L["74"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["74"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["74"]["Text"] = [[                           PATCHED:]];
+G2L["74"]["Position"] = UDim2.new(0.06867, 0, 0.89792, 0);
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextLabel.UIStroke
-G2L["76"] = Instance.new("UIStroke", G2L["75"]);
-G2L["76"]["Thickness"] = 0.5;
-G2L["76"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["76"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+-- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
+G2L["75"] = Instance.new("UIStroke", G2L["74"]);
+G2L["75"]["Thickness"] = 0.5;
+G2L["75"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["75"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextLabel
-G2L["77"] = Instance.new("TextLabel", G2L["69"]);
-G2L["77"]["BorderSizePixel"] = 0;
-G2L["77"]["TextSize"] = 14;
-G2L["77"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["77"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["77"]["BackgroundTransparency"] = 123;
-G2L["77"]["Size"] = UDim2.new(0, 128, 0, 50);
-G2L["77"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["77"]["Text"] = [[Chat spam]];
-G2L["77"]["Position"] = UDim2.new(0.12819, 0, 0.41045, 0);
+-- StarterGui.ScreenGui.GIA.Status.TextLabel
+G2L["76"] = Instance.new("TextLabel", G2L["69"]);
+G2L["76"]["BorderSizePixel"] = 0;
+G2L["76"]["TextSize"] = 14;
+G2L["76"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["76"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["76"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["76"]["BackgroundTransparency"] = 123;
+G2L["76"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["76"]["Text"] = [[Hitbox]];
+G2L["76"]["Position"] = UDim2.new(0.54114, 0, 0.89792, 0);
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextLabel.UIStroke
-G2L["78"] = Instance.new("UIStroke", G2L["77"]);
-G2L["78"]["Thickness"] = 0.5;
-G2L["78"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["78"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+-- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
+G2L["77"] = Instance.new("UIStroke", G2L["76"]);
+G2L["77"]["Thickness"] = 0.5;
+G2L["77"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["77"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextButton
-G2L["79"] = Instance.new("TextButton", G2L["69"]);
-G2L["79"]["BorderSizePixel"] = 0;
-G2L["79"]["TextSize"] = 25;
-G2L["79"]["TextColor3"] = Color3.fromRGB(59, 131, 11);
-G2L["79"]["BackgroundColor3"] = Color3.fromRGB(40, 46, 38);
-G2L["79"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["79"]["Size"] = UDim2.new(0, 88, 0, 50);
-G2L["79"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["79"]["Text"] = [[Activate]];
-G2L["79"]["Position"] = UDim2.new(0.61243, 0, 0.58851, 0);
+-- StarterGui.ScreenGui.GIA.Status.ImageLabel
+G2L["78"] = Instance.new("ImageLabel", G2L["69"]);
+G2L["78"]["BorderSizePixel"] = 0;
+G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["78"]["Image"] = [[rbxassetid://107734366045867]];
+G2L["78"]["Size"] = UDim2.new(0, 36, 0, 35);
+G2L["78"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["78"]["Position"] = UDim2.new(0.78261, 0, 0.23764, 0);
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
-G2L["7a"] = Instance.new("LocalScript", G2L["79"]);
+-- StarterGui.ScreenGui.GIA.Status.ImageLabel.UICorner
+G2L["79"] = Instance.new("UICorner", G2L["78"]);
+G2L["79"]["CornerRadius"] = UDim.new(0, 999);
 
 
+-- StarterGui.ScreenGui.GIA.Status.ImageLabel
+G2L["7a"] = Instance.new("ImageLabel", G2L["69"]);
+G2L["7a"]["BorderSizePixel"] = 0;
+G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7a"]["Image"] = [[rbxassetid://107734366045867]];
+G2L["7a"]["Size"] = UDim2.new(0, 36, 0, 35);
+G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7a"]["Position"] = UDim2.new(0.33623, 0, 0.79153, 0);
 
--- StarterGui.ScreenGui.GIA.Fun.TextButton.UIStroke
-G2L["7b"] = Instance.new("UIStroke", G2L["79"]);
-G2L["7b"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+
+-- StarterGui.ScreenGui.GIA.Status.ImageLabel.UICorner
+G2L["7b"] = Instance.new("UICorner", G2L["7a"]);
+G2L["7b"]["CornerRadius"] = UDim.new(0, 999);
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextLabel
-G2L["7c"] = Instance.new("TextLabel", G2L["69"]);
+-- StarterGui.ScreenGui.GIA.Status.ImageLabel
+G2L["7c"] = Instance.new("ImageLabel", G2L["69"]);
 G2L["7c"]["BorderSizePixel"] = 0;
-G2L["7c"]["TextSize"] = 14;
 G2L["7c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7c"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["7c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7c"]["BackgroundTransparency"] = 123;
-G2L["7c"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["7c"]["Image"] = [[rbxassetid://95695891007719]];
+G2L["7c"]["Size"] = UDim2.new(0, 36, 0, 35);
 G2L["7c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7c"]["Text"] = [[Rainbow Character]];
-G2L["7c"]["Position"] = UDim2.new(0.12819, 0, 0.58839, 0);
+G2L["7c"]["Position"] = UDim2.new(0.33623, 0, 0.68376, 0);
 
 
--- StarterGui.ScreenGui.GIA.Fun.TextLabel.UIStroke
-G2L["7d"] = Instance.new("UIStroke", G2L["7c"]);
-G2L["7d"]["Thickness"] = 0.5;
-G2L["7d"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["7d"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+-- StarterGui.ScreenGui.GIA.Status.ImageLabel.UICorner
+G2L["7d"] = Instance.new("UICorner", G2L["7c"]);
+G2L["7d"]["CornerRadius"] = UDim.new(0, 999);
 
 
--- StarterGui.ScreenGui.GIA.Fun.UICorner
-G2L["7e"] = Instance.new("UICorner", G2L["69"]);
-G2L["7e"]["CornerRadius"] = UDim.new(0.2, 0);
+-- StarterGui.ScreenGui.GIA.Status.ImageLabel
+G2L["7e"] = Instance.new("ImageLabel", G2L["69"]);
+G2L["7e"]["BorderSizePixel"] = 0;
+G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7e"]["Image"] = [[rbxassetid://13863894048]];
+G2L["7e"]["Size"] = UDim2.new(0, 36, 0, 35);
+G2L["7e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7e"]["Position"] = UDim2.new(0.33623, 0, 0.57098, 0);
 
 
--- StarterGui.ScreenGui.GIA.Fun.UIGradient
-G2L["7f"] = Instance.new("UIGradient", G2L["69"]);
-G2L["7f"]["Rotation"] = 90;
-G2L["7f"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(46, 46, 46)),ColorSequenceKeypoint.new(0.510, Color3.fromRGB(34, 34, 34)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+-- StarterGui.ScreenGui.GIA.Status.ImageLabel.UICorner
+G2L["7f"] = Instance.new("UICorner", G2L["7e"]);
+G2L["7f"]["CornerRadius"] = UDim.new(0, 999);
+
+
+-- StarterGui.ScreenGui.GIA.Status.TextLabel
+G2L["80"] = Instance.new("TextLabel", G2L["69"]);
+G2L["80"]["BorderSizePixel"] = 0;
+G2L["80"]["TextSize"] = 14;
+G2L["80"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["80"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["80"]["BackgroundTransparency"] = 123;
+G2L["80"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["80"]["Text"] = [[Correct system]];
+G2L["80"]["Position"] = UDim2.new(0.45128, 0, 0.55707, 0);
+
+
+-- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
+G2L["81"] = Instance.new("UIStroke", G2L["80"]);
+G2L["81"]["Thickness"] = 0.5;
+G2L["81"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["81"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+
+
+-- StarterGui.ScreenGui.GIA.Status.TextLabel
+G2L["82"] = Instance.new("TextLabel", G2L["69"]);
+G2L["82"]["BorderSizePixel"] = 0;
+G2L["82"]["TextSize"] = 14;
+G2L["82"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["82"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["82"]["BackgroundTransparency"] = 123;
+G2L["82"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["82"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["82"]["Text"] = [[Critical error system does not work]];
+G2L["82"]["Position"] = UDim2.new(0.51795, 0, 0.66484, 0);
+
+
+-- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
+G2L["83"] = Instance.new("UIStroke", G2L["82"]);
+G2L["83"]["Thickness"] = 0.5;
+G2L["83"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["83"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+
+
+-- StarterGui.ScreenGui.GIA.Status.TextLabel
+G2L["84"] = Instance.new("TextLabel", G2L["69"]);
+G2L["84"]["BorderSizePixel"] = 0;
+G2L["84"]["TextSize"] = 14;
+G2L["84"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["84"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["84"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["84"]["BackgroundTransparency"] = 123;
+G2L["84"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["84"]["Text"] = [[Update - or it may not work properly]];
+G2L["84"]["Position"] = UDim2.new(0.54114, 0, 0.7701, 0);
+
+
+-- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
+G2L["85"] = Instance.new("UIStroke", G2L["84"]);
+G2L["85"]["Thickness"] = 0.5;
+G2L["85"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["85"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
 -- StarterGui.ScreenGui.GIA.UIGradient
-G2L["80"] = Instance.new("UIGradient", G2L["2"]);
-G2L["80"]["Rotation"] = 90;
-G2L["80"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(46, 46, 46)),ColorSequenceKeypoint.new(0.510, Color3.fromRGB(34, 34, 34)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
+G2L["86"] = Instance.new("UIGradient", G2L["2"]);
+G2L["86"]["Rotation"] = 90;
+G2L["86"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(46, 46, 46)),ColorSequenceKeypoint.new(0.510, Color3.fromRGB(34, 34, 34)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
 -- StarterGui.ScreenGui.GIA.TextButton
-G2L["81"] = Instance.new("TextButton", G2L["2"]);
-G2L["81"]["BorderSizePixel"] = 0;
-G2L["81"]["TextSize"] = 25;
-G2L["81"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["81"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["81"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["81"]["BackgroundTransparency"] = 123;
-G2L["81"]["Size"] = UDim2.new(0, 82, 0, 50);
-G2L["81"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["81"]["Text"] = [[Status]];
-G2L["81"]["Position"] = UDim2.new(0.10399, 0, 0.71885, 0);
+G2L["87"] = Instance.new("TextButton", G2L["2"]);
+G2L["87"]["BorderSizePixel"] = 0;
+G2L["87"]["TextSize"] = 25;
+G2L["87"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["87"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["87"]["BackgroundTransparency"] = 123;
+G2L["87"]["Size"] = UDim2.new(0, 82, 0, 50);
+G2L["87"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["87"]["Text"] = [[Status]];
+G2L["87"]["Position"] = UDim2.new(0.10399, 0, 0.71885, 0);
 
 
 -- StarterGui.ScreenGui.GIA.TextButton.LocalScript
-G2L["82"] = Instance.new("LocalScript", G2L["81"]);
+G2L["88"] = Instance.new("LocalScript", G2L["87"]);
 
 
 
 -- StarterGui.ScreenGui.GIA.ImageLabel
-G2L["83"] = Instance.new("ImageLabel", G2L["2"]);
-G2L["83"]["BorderSizePixel"] = 0;
-G2L["83"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["83"]["Image"] = [[rbxassetid://49185345]];
-G2L["83"]["Size"] = UDim2.new(0, 54, 0, 49);
-G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["83"]["BackgroundTransparency"] = 123;
-G2L["83"]["Position"] = UDim2.new(0, 0, 0.71956, 0);
-
-
--- StarterGui.ScreenGui.GIA.Status
-G2L["84"] = Instance.new("Frame", G2L["2"]);
-G2L["84"]["Visible"] = false;
-G2L["84"]["BorderSizePixel"] = 0;
-G2L["84"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["Size"] = UDim2.new(0, 345, 0, 399);
-G2L["84"]["Position"] = UDim2.new(0.34489, 0, 0.14945, 0);
-G2L["84"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["84"]["Name"] = [[Status]];
-
-
--- StarterGui.ScreenGui.GIA.Status.ImageLabel
-G2L["85"] = Instance.new("ImageLabel", G2L["84"]);
-G2L["85"]["BorderSizePixel"] = 0;
-G2L["85"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["85"]["Image"] = [[rbxassetid://107734366045867]];
-G2L["85"]["Size"] = UDim2.new(0, 36, 0, 35);
-G2L["85"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["85"]["Position"] = UDim2.new(0.78551, 0, 0.06221, 0);
-
-
--- StarterGui.ScreenGui.GIA.Status.ImageLabel.UICorner
-G2L["86"] = Instance.new("UICorner", G2L["85"]);
-G2L["86"]["CornerRadius"] = UDim.new(0, 999);
-
-
--- StarterGui.ScreenGui.GIA.Status.UICorner
-G2L["87"] = Instance.new("UICorner", G2L["84"]);
-G2L["87"]["CornerRadius"] = UDim.new(0.2, 0);
-
-
--- StarterGui.ScreenGui.GIA.Status.UIGradient
-G2L["88"] = Instance.new("UIGradient", G2L["84"]);
-G2L["88"]["Rotation"] = 90;
-G2L["88"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(46, 46, 46)),ColorSequenceKeypoint.new(0.510, Color3.fromRGB(34, 34, 34)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
-
-
--- StarterGui.ScreenGui.GIA.Status.TextLabel
-G2L["89"] = Instance.new("TextLabel", G2L["84"]);
+G2L["89"] = Instance.new("ImageLabel", G2L["2"]);
 G2L["89"]["BorderSizePixel"] = 0;
-G2L["89"]["TextSize"] = 14;
 G2L["89"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["89"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["89"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["89"]["BackgroundTransparency"] = 123;
-G2L["89"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["89"]["Image"] = [[rbxassetid://49185345]];
+G2L["89"]["Size"] = UDim2.new(0, 54, 0, 49);
 G2L["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["89"]["Text"] = [[                           STATUS:]];
-G2L["89"]["Position"] = UDim2.new(0.0223, 0, 0.04579, 0);
+G2L["89"]["BackgroundTransparency"] = 123;
+G2L["89"]["Position"] = UDim2.new(0, 0, 0.71956, 0);
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
-G2L["8a"] = Instance.new("UIStroke", G2L["89"]);
-G2L["8a"]["Thickness"] = 0.5;
-G2L["8a"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["8a"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+-- StarterGui.ScreenGui.GIA.Fun
+G2L["8a"] = Instance.new("Frame", G2L["2"]);
+G2L["8a"]["Visible"] = false;
+G2L["8a"]["BorderSizePixel"] = 0;
+G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8a"]["Size"] = UDim2.new(0, 345, 0, 399);
+G2L["8a"]["Position"] = UDim2.new(0.34489, 0, 0.14945, 0);
+G2L["8a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8a"]["Name"] = [[Fun]];
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel
-G2L["8b"] = Instance.new("TextLabel", G2L["84"]);
+-- StarterGui.ScreenGui.GIA.Fun.TextButton
+G2L["8b"] = Instance.new("TextButton", G2L["8a"]);
 G2L["8b"]["BorderSizePixel"] = 0;
-G2L["8b"]["TextSize"] = 14;
-G2L["8b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8b"]["TextSize"] = 25;
+G2L["8b"]["TextColor3"] = Color3.fromRGB(59, 131, 11);
+G2L["8b"]["BackgroundColor3"] = Color3.fromRGB(40, 46, 38);
 G2L["8b"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8b"]["BackgroundTransparency"] = 123;
-G2L["8b"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["8b"]["Size"] = UDim2.new(0, 88, 0, 50);
 G2L["8b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8b"]["Text"] = [[We are working on a quick
- and easy update for the GIA mega update. 
-It is possible that not every
-thing will work due to the update.]];
-G2L["8b"]["Position"] = UDim2.new(0.31215, 0, 0.41171, 0);
+G2L["8b"]["Text"] = [[Activate]];
+G2L["8b"]["Position"] = UDim2.new(0.61243, 0, 0.22009, 0);
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
-G2L["8c"] = Instance.new("UIStroke", G2L["8b"]);
-G2L["8c"]["Thickness"] = 0.5;
-G2L["8c"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+-- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
+G2L["8c"] = Instance.new("LocalScript", G2L["8b"]);
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel
-G2L["8d"] = Instance.new("TextLabel", G2L["84"]);
-G2L["8d"]["BorderSizePixel"] = 0;
-G2L["8d"]["TextSize"] = 14;
-G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["BackgroundTransparency"] = 123;
-G2L["8d"]["Size"] = UDim2.new(0, 128, 0, 50);
-G2L["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8d"]["Text"] = [[                           SISTEM:]];
-G2L["8d"]["Position"] = UDim2.new(0.0223, 0, 0.22123, 0);
+
+-- StarterGui.ScreenGui.GIA.Fun.TextButton.UIStroke
+G2L["8d"] = Instance.new("UIStroke", G2L["8b"]);
+G2L["8d"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
-G2L["8e"] = Instance.new("UIStroke", G2L["8d"]);
-G2L["8e"]["Thickness"] = 0.5;
-G2L["8e"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["8e"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+-- StarterGui.ScreenGui.GIA.Fun.TextButton
+G2L["8e"] = Instance.new("TextButton", G2L["8a"]);
+G2L["8e"]["BorderSizePixel"] = 0;
+G2L["8e"]["TextSize"] = 25;
+G2L["8e"]["TextColor3"] = Color3.fromRGB(59, 131, 11);
+G2L["8e"]["BackgroundColor3"] = Color3.fromRGB(40, 46, 38);
+G2L["8e"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["8e"]["Size"] = UDim2.new(0, 88, 0, 50);
+G2L["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8e"]["Text"] = [[Activate]];
+G2L["8e"]["Position"] = UDim2.new(0.61243, 0, 0.41057, 0);
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel
-G2L["8f"] = Instance.new("TextLabel", G2L["84"]);
-G2L["8f"]["BorderSizePixel"] = 0;
-G2L["8f"]["TextSize"] = 14;
-G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["BackgroundTransparency"] = 123;
-G2L["8f"]["Size"] = UDim2.new(0, 128, 0, 50);
-G2L["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8f"]["Text"] = [[                           PATCHED:]];
-G2L["8f"]["Position"] = UDim2.new(0.06867, 0, 0.89792, 0);
+-- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
+G2L["8f"] = Instance.new("LocalScript", G2L["8e"]);
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
-G2L["90"] = Instance.new("UIStroke", G2L["8f"]);
-G2L["90"]["Thickness"] = 0.5;
-G2L["90"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+-- StarterGui.ScreenGui.GIA.Fun.TextButton.UIStroke
+G2L["90"] = Instance.new("UIStroke", G2L["8e"]);
 G2L["90"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel
-G2L["91"] = Instance.new("TextLabel", G2L["84"]);
+-- StarterGui.ScreenGui.GIA.Fun.TextButton
+G2L["91"] = Instance.new("TextButton", G2L["8a"]);
 G2L["91"]["BorderSizePixel"] = 0;
-G2L["91"]["TextSize"] = 14;
-G2L["91"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["91"]["TextSize"] = 25;
+G2L["91"]["TextColor3"] = Color3.fromRGB(59, 131, 11);
+G2L["91"]["BackgroundColor3"] = Color3.fromRGB(40, 46, 38);
 G2L["91"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["91"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["91"]["BackgroundTransparency"] = 123;
-G2L["91"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["91"]["Size"] = UDim2.new(0, 88, 0, 50);
 G2L["91"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["91"]["Text"] = [[N/A]];
-G2L["91"]["Position"] = UDim2.new(0.54114, 0, 0.89792, 0);
+G2L["91"]["Text"] = [[Activate]];
+G2L["91"]["Position"] = UDim2.new(0.61243, 0, 0.04716, 0);
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
-G2L["92"] = Instance.new("UIStroke", G2L["91"]);
-G2L["92"]["Thickness"] = 0.5;
-G2L["92"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["92"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+-- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
+G2L["92"] = Instance.new("LocalScript", G2L["91"]);
 
 
--- StarterGui.ScreenGui.GIA.Status.ImageLabel
-G2L["93"] = Instance.new("ImageLabel", G2L["84"]);
-G2L["93"]["BorderSizePixel"] = 0;
-G2L["93"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["93"]["Image"] = [[rbxassetid://107734366045867]];
-G2L["93"]["Size"] = UDim2.new(0, 36, 0, 35);
-G2L["93"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["93"]["Position"] = UDim2.new(0.78261, 0, 0.24266, 0);
+
+-- StarterGui.ScreenGui.GIA.Fun.TextButton.UIStroke
+G2L["93"] = Instance.new("UIStroke", G2L["91"]);
+G2L["93"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Status.ImageLabel.UICorner
-G2L["94"] = Instance.new("UICorner", G2L["93"]);
-G2L["94"]["CornerRadius"] = UDim.new(0, 999);
+-- StarterGui.ScreenGui.GIA.Fun.TextLabel
+G2L["94"] = Instance.new("TextLabel", G2L["8a"]);
+G2L["94"]["BorderSizePixel"] = 0;
+G2L["94"]["TextSize"] = 14;
+G2L["94"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["94"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["94"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["94"]["BackgroundTransparency"] = 123;
+G2L["94"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["94"]["Text"] = [[Launch]];
+G2L["94"]["Position"] = UDim2.new(0.12819, 0, 0.04704, 0);
 
 
--- StarterGui.ScreenGui.GIA.Status.ImageLabel
-G2L["95"] = Instance.new("ImageLabel", G2L["84"]);
-G2L["95"]["BorderSizePixel"] = 0;
-G2L["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["95"]["Image"] = [[rbxassetid://107734366045867]];
-G2L["95"]["Size"] = UDim2.new(0, 36, 0, 35);
-G2L["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["95"]["Position"] = UDim2.new(0.33623, 0, 0.79153, 0);
+-- StarterGui.ScreenGui.GIA.Fun.TextLabel.UIStroke
+G2L["95"] = Instance.new("UIStroke", G2L["94"]);
+G2L["95"]["Thickness"] = 0.5;
+G2L["95"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["95"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Status.ImageLabel.UICorner
-G2L["96"] = Instance.new("UICorner", G2L["95"]);
-G2L["96"]["CornerRadius"] = UDim.new(0, 999);
+-- StarterGui.ScreenGui.GIA.Fun.TextLabel
+G2L["96"] = Instance.new("TextLabel", G2L["8a"]);
+G2L["96"]["BorderSizePixel"] = 0;
+G2L["96"]["TextSize"] = 14;
+G2L["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["96"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["96"]["BackgroundTransparency"] = 123;
+G2L["96"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["96"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["96"]["Text"] = [[Troll All (experimental)]];
+G2L["96"]["Position"] = UDim2.new(0.12819, 0, 0.21997, 0);
 
 
--- StarterGui.ScreenGui.GIA.Status.ImageLabel
-G2L["97"] = Instance.new("ImageLabel", G2L["84"]);
-G2L["97"]["BorderSizePixel"] = 0;
-G2L["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["97"]["Image"] = [[rbxassetid://95695891007719]];
-G2L["97"]["Size"] = UDim2.new(0, 36, 0, 35);
-G2L["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["97"]["Position"] = UDim2.new(0.33623, 0, 0.68376, 0);
+-- StarterGui.ScreenGui.GIA.Fun.TextLabel.UIStroke
+G2L["97"] = Instance.new("UIStroke", G2L["96"]);
+G2L["97"]["Thickness"] = 0.5;
+G2L["97"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["97"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Status.ImageLabel.UICorner
-G2L["98"] = Instance.new("UICorner", G2L["97"]);
-G2L["98"]["CornerRadius"] = UDim.new(0, 999);
+-- StarterGui.ScreenGui.GIA.Fun.TextLabel
+G2L["98"] = Instance.new("TextLabel", G2L["8a"]);
+G2L["98"]["BorderSizePixel"] = 0;
+G2L["98"]["TextSize"] = 14;
+G2L["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["98"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["98"]["BackgroundTransparency"] = 123;
+G2L["98"]["Size"] = UDim2.new(0, 128, 0, 50);
+G2L["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["98"]["Text"] = [[Chat spam]];
+G2L["98"]["Position"] = UDim2.new(0.12819, 0, 0.41045, 0);
 
 
--- StarterGui.ScreenGui.GIA.Status.ImageLabel
-G2L["99"] = Instance.new("ImageLabel", G2L["84"]);
-G2L["99"]["BorderSizePixel"] = 0;
-G2L["99"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["99"]["Image"] = [[rbxassetid://13863894048]];
-G2L["99"]["Size"] = UDim2.new(0, 36, 0, 35);
-G2L["99"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["99"]["Position"] = UDim2.new(0.33623, 0, 0.57098, 0);
+-- StarterGui.ScreenGui.GIA.Fun.TextLabel.UIStroke
+G2L["99"] = Instance.new("UIStroke", G2L["98"]);
+G2L["99"]["Thickness"] = 0.5;
+G2L["99"]["Color"] = Color3.fromRGB(255, 255, 255);
+G2L["99"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Status.ImageLabel.UICorner
-G2L["9a"] = Instance.new("UICorner", G2L["99"]);
-G2L["9a"]["CornerRadius"] = UDim.new(0, 999);
+-- StarterGui.ScreenGui.GIA.Fun.TextButton
+G2L["9a"] = Instance.new("TextButton", G2L["8a"]);
+G2L["9a"]["BorderSizePixel"] = 0;
+G2L["9a"]["TextSize"] = 25;
+G2L["9a"]["TextColor3"] = Color3.fromRGB(59, 131, 11);
+G2L["9a"]["BackgroundColor3"] = Color3.fromRGB(40, 46, 38);
+G2L["9a"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9a"]["Size"] = UDim2.new(0, 88, 0, 50);
+G2L["9a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9a"]["Text"] = [[Activate]];
+G2L["9a"]["Position"] = UDim2.new(0.61243, 0, 0.58851, 0);
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel
-G2L["9b"] = Instance.new("TextLabel", G2L["84"]);
-G2L["9b"]["BorderSizePixel"] = 0;
-G2L["9b"]["TextSize"] = 14;
-G2L["9b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9b"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9b"]["BackgroundTransparency"] = 123;
-G2L["9b"]["Size"] = UDim2.new(0, 128, 0, 50);
-G2L["9b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9b"]["Text"] = [[Correct system]];
-G2L["9b"]["Position"] = UDim2.new(0.45128, 0, 0.55707, 0);
+-- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
+G2L["9b"] = Instance.new("LocalScript", G2L["9a"]);
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
-G2L["9c"] = Instance.new("UIStroke", G2L["9b"]);
-G2L["9c"]["Thickness"] = 0.5;
-G2L["9c"]["Color"] = Color3.fromRGB(255, 255, 255);
+
+-- StarterGui.ScreenGui.GIA.Fun.TextButton.UIStroke
+G2L["9c"] = Instance.new("UIStroke", G2L["9a"]);
 G2L["9c"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel
-G2L["9d"] = Instance.new("TextLabel", G2L["84"]);
+-- StarterGui.ScreenGui.GIA.Fun.TextLabel
+G2L["9d"] = Instance.new("TextLabel", G2L["8a"]);
 G2L["9d"]["BorderSizePixel"] = 0;
 G2L["9d"]["TextSize"] = 14;
 G2L["9d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -1393,36 +1404,26 @@ G2L["9d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9d"]["BackgroundTransparency"] = 123;
 G2L["9d"]["Size"] = UDim2.new(0, 128, 0, 50);
 G2L["9d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9d"]["Text"] = [[Critical error system does not work]];
-G2L["9d"]["Position"] = UDim2.new(0.51795, 0, 0.66484, 0);
+G2L["9d"]["Text"] = [[Rainbow Character]];
+G2L["9d"]["Position"] = UDim2.new(0.12819, 0, 0.58839, 0);
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
+-- StarterGui.ScreenGui.GIA.Fun.TextLabel.UIStroke
 G2L["9e"] = Instance.new("UIStroke", G2L["9d"]);
 G2L["9e"]["Thickness"] = 0.5;
 G2L["9e"]["Color"] = Color3.fromRGB(255, 255, 255);
 G2L["9e"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel
-G2L["9f"] = Instance.new("TextLabel", G2L["84"]);
-G2L["9f"]["BorderSizePixel"] = 0;
-G2L["9f"]["TextSize"] = 14;
-G2L["9f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9f"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9f"]["BackgroundTransparency"] = 123;
-G2L["9f"]["Size"] = UDim2.new(0, 128, 0, 50);
-G2L["9f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9f"]["Text"] = [[Update - or it may not work properly]];
-G2L["9f"]["Position"] = UDim2.new(0.54114, 0, 0.7701, 0);
+-- StarterGui.ScreenGui.GIA.Fun.UICorner
+G2L["9f"] = Instance.new("UICorner", G2L["8a"]);
+G2L["9f"]["CornerRadius"] = UDim.new(0.2, 0);
 
 
--- StarterGui.ScreenGui.GIA.Status.TextLabel.UIStroke
-G2L["a0"] = Instance.new("UIStroke", G2L["9f"]);
-G2L["a0"]["Thickness"] = 0.5;
-G2L["a0"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["a0"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+-- StarterGui.ScreenGui.GIA.Fun.UIGradient
+G2L["a0"] = Instance.new("UIGradient", G2L["8a"]);
+G2L["a0"]["Rotation"] = 90;
+G2L["a0"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(46, 46, 46)),ColorSequenceKeypoint.new(0.510, Color3.fromRGB(34, 34, 34)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(0, 0, 0))};
 
 
 -- StarterGui.ScreenGui.GIA.LocalScript
@@ -2359,9 +2360,55 @@ local script = G2L["67"];
 	print("TextLabel de Nombre + Rango cargado")
 end;
 task.spawn(C_67);
+-- StarterGui.ScreenGui.GIA.TextButton.LocalScript
+local function C_88()
+local script = G2L["88"];
+	local TweenService = game:GetService("TweenService")
+	
+	local boton = script.Parent
+	local frame = script.Parent.Parent.Status
+	
+	frame.Visible = false
+	
+	boton.MouseButton1Click:Connect(function()
+	
+		if frame.Visible == false then
+	
+			frame.Visible = true
+			frame.Size = UDim2.new(0,0,0,0)
+	
+			TweenService:Create(
+				frame,
+				TweenInfo.new(0.3),
+				{
+					Size = UDim2.new(0,400,0,300)
+				}
+			):Play()
+	
+		else
+	
+			local tween = TweenService:Create(
+				frame,
+				TweenInfo.new(0.3),
+				{
+					Size = UDim2.new(0,0,0,0)
+				}
+			)
+	
+			tween:Play()
+	
+			tween.Completed:Wait()
+	
+			frame.Visible = false
+	
+		end
+	
+	end)
+end;
+task.spawn(C_88);
 -- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
-local function C_6b()
-local script = G2L["6b"];
+local function C_8c()
+local script = G2L["8c"];
 	local button = script.Parent
 	local player = game.Players.LocalPlayer
 	local spinning = false
@@ -2421,10 +2468,10 @@ local script = G2L["6b"];
 	
 	updateButton()
 end;
-task.spawn(C_6b);
+task.spawn(C_8c);
 -- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
-local function C_6e()
-local script = G2L["6e"];
+local function C_8f()
+local script = G2L["8f"];
 	local button = script.Parent
 	local player = game.Players.LocalPlayer
 	local enabled = false
@@ -2465,10 +2512,10 @@ local script = G2L["6e"];
 	
 	updateButton()
 end;
-task.spawn(C_6e);
+task.spawn(C_8f);
 -- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
-local function C_71()
-local script = G2L["71"];
+local function C_92()
+local script = G2L["92"];
 	local button = script.Parent
 	local player = game.Players.LocalPlayer
 	
@@ -2484,10 +2531,10 @@ local script = G2L["71"];
 		launch()
 	end)
 end;
-task.spawn(C_71);
+task.spawn(C_92);
 -- StarterGui.ScreenGui.GIA.Fun.TextButton.LocalScript
-local function C_7a()
-local script = G2L["7a"];
+local function C_9b()
+local script = G2L["9b"];
 	local button = script.Parent
 	local player = game.Players.LocalPlayer
 	local enabled = false
@@ -2530,52 +2577,6 @@ local script = G2L["7a"];
 	
 	updateButton()
 end;
-task.spawn(C_7a);
--- StarterGui.ScreenGui.GIA.TextButton.LocalScript
-local function C_82()
-local script = G2L["82"];
-	local TweenService = game:GetService("TweenService")
-	
-	local boton = script.Parent
-	local frame = script.Parent.Parent.Status
-	
-	frame.Visible = false
-	
-	boton.MouseButton1Click:Connect(function()
-	
-		if frame.Visible == false then
-	
-			frame.Visible = true
-			frame.Size = UDim2.new(0,0,0,0)
-	
-			TweenService:Create(
-				frame,
-				TweenInfo.new(0.3),
-				{
-					Size = UDim2.new(0,400,0,300)
-				}
-			):Play()
-	
-		else
-	
-			local tween = TweenService:Create(
-				frame,
-				TweenInfo.new(0.3),
-				{
-					Size = UDim2.new(0,0,0,0)
-				}
-			)
-	
-			tween:Play()
-	
-			tween.Completed:Wait()
-	
-			frame.Visible = false
-	
-		end
-	
-	end)
-end;
-task.spawn(C_82);
+task.spawn(C_9b);
 
 return G2L["1"], require;
