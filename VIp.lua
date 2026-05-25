@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 55 | Scripts: 10 | Modules: 0 | Tags: 0
+-- Instances: 57 | Scripts: 12 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.VIP GUI
@@ -55,7 +55,7 @@ G2L["7"] = Instance.new("TextLabel", G2L["6"]);
 G2L["7"]["BorderSizePixel"] = 0;
 G2L["7"]["TextSize"] = 14;
 G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["7"]["BackgroundTransparency"] = 123;
 G2L["7"]["Size"] = UDim2.new(0, 165, 0, 50);
@@ -76,7 +76,7 @@ G2L["9"] = Instance.new("TextLabel", G2L["6"]);
 G2L["9"]["BorderSizePixel"] = 0;
 G2L["9"]["TextSize"] = 14;
 G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["9"]["BackgroundTransparency"] = 123;
 G2L["9"]["Size"] = UDim2.new(0, 119, 0, 50);
@@ -97,7 +97,7 @@ G2L["b"] = Instance.new("TextLabel", G2L["6"]);
 G2L["b"]["BorderSizePixel"] = 0;
 G2L["b"]["TextSize"] = 20;
 G2L["b"]["BackgroundColor3"] = Color3.fromRGB(69, 224, 108);
-G2L["b"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["b"]["BackgroundTransparency"] = 0.1;
 G2L["b"]["Size"] = UDim2.new(0, 88, 0, 26);
@@ -138,7 +138,7 @@ G2L["10"] = Instance.new("TextLabel", G2L["6"]);
 G2L["10"]["BorderSizePixel"] = 0;
 G2L["10"]["TextSize"] = 14;
 G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["10"]["BackgroundTransparency"] = 123;
 G2L["10"]["Size"] = UDim2.new(0, 128, 0, 50);
@@ -159,13 +159,13 @@ G2L["12"] = Instance.new("TextLabel", G2L["6"]);
 G2L["12"]["BorderSizePixel"] = 0;
 G2L["12"]["TextSize"] = 14;
 G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["12"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["12"]["BackgroundTransparency"] = 123;
 G2L["12"]["Size"] = UDim2.new(0, 128, 0, 52);
 G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["12"]["Text"] = [[                           STATUS:]];
-G2L["12"]["Position"] = UDim2.new(0.48474, 0, 0.0579, 0);
+G2L["12"]["Position"] = UDim2.new(0.50376, 0, 0.07377, 0);
 
 
 -- StarterGui.VIP GUI.GIA-VIP.Frame.TextLabel.UIStroke
@@ -195,7 +195,7 @@ G2L["16"] = Instance.new("TextLabel", G2L["6"]);
 G2L["16"]["BorderSizePixel"] = 0;
 G2L["16"]["TextSize"] = 20;
 G2L["16"]["BackgroundColor3"] = Color3.fromRGB(69, 224, 108);
-G2L["16"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["16"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["16"]["BackgroundTransparency"] = 213;
 G2L["16"]["Size"] = UDim2.new(0, 142, 0, 26);
@@ -232,7 +232,7 @@ G2L["1a"] = Instance.new("TextLabel", G2L["6"]);
 G2L["1a"]["BorderSizePixel"] = 0;
 G2L["1a"]["TextSize"] = 14;
 G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1a"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1a"]["BackgroundTransparency"] = 123;
 G2L["1a"]["Size"] = UDim2.new(0, 128, 0, 52);
@@ -323,7 +323,7 @@ G2L["24"] = Instance.new("TextLabel", G2L["2"]);
 G2L["24"]["BorderSizePixel"] = 0;
 G2L["24"]["TextSize"] = 14;
 G2L["24"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["24"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["24"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["24"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["24"]["BackgroundTransparency"] = 123;
 G2L["24"]["Size"] = UDim2.new(0, 128, 0, 50);
@@ -484,46 +484,59 @@ G2L["33"]["Size"] = UDim2.new(0, 681, 0, 352);
 G2L["33"]["Position"] = UDim2.new(0.23974, 0, 0.15595, 0);
 G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["33"]["Name"] = [[KEY]];
+G2L["33"]["BackgroundTransparency"] = 123;
 
 
--- StarterGui.VIP GUI.KEY.TextLabel
-G2L["34"] = Instance.new("TextLabel", G2L["33"]);
+-- StarterGui.VIP GUI.KEY.ImageLabel
+G2L["34"] = Instance.new("ImageLabel", G2L["33"]);
 G2L["34"]["BorderSizePixel"] = 0;
-G2L["34"]["TextSize"] = 14;
 G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["34"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["34"]["BackgroundTransparency"] = 123;
-G2L["34"]["Size"] = UDim2.new(0, 119, 0, 50);
+G2L["34"]["Image"] = [[rbxassetid://138450420438719]];
+G2L["34"]["Size"] = UDim2.new(0, 681, 0, 352);
 G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["34"]["Text"] = [[VIP - KEY SISTEM]];
-G2L["34"]["Position"] = UDim2.new(0.41137, 0, 0.03278, 0);
 
 
--- StarterGui.VIP GUI.KEY.TextLabel.UIStroke
-G2L["35"] = Instance.new("UIStroke", G2L["34"]);
-G2L["35"]["Thickness"] = 0.1;
-G2L["35"]["Color"] = Color3.fromRGB(255, 255, 255);
-G2L["35"]["LineJoinMode"] = Enum.LineJoinMode.Miter;
+-- StarterGui.VIP GUI.KEY.ImageLabel.TextBox
+G2L["35"] = Instance.new("TextBox", G2L["34"]);
+G2L["35"]["CursorPosition"] = -1;
+G2L["35"]["BorderSizePixel"] = 0;
+G2L["35"]["TextSize"] = 50;
+G2L["35"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["35"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["35"]["Size"] = UDim2.new(0, 341, 0, 26);
+G2L["35"]["Position"] = UDim2.new(0.05727, 0, 0.64489, 0);
+G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["35"]["Text"] = [[]];
+G2L["35"]["BackgroundTransparency"] = 123;
 
 
--- StarterGui.VIP GUI.KEY.TextBox
-G2L["36"] = Instance.new("TextBox", G2L["33"]);
-G2L["36"]["CursorPosition"] = -1;
-G2L["36"]["BorderSizePixel"] = 0;
-G2L["36"]["TextSize"] = 50;
-G2L["36"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["36"]["FontFace"] = Font.new([[rbxassetid://12187373592]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["36"]["Size"] = UDim2.new(0, 600, 0, 92);
-G2L["36"]["Position"] = UDim2.new(0.06314, 0, 0.35227, 0);
-G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["36"]["Text"] = [[]];
-G2L["36"]["BackgroundTransparency"] = 123;
+-- StarterGui.VIP GUI.KEY.ImageLabel.TextBox.LocalScript
+G2L["36"] = Instance.new("LocalScript", G2L["35"]);
 
 
--- StarterGui.VIP GUI.KEY.TextBox.LocalScript
-G2L["37"] = Instance.new("LocalScript", G2L["36"]);
+
+-- StarterGui.VIP GUI.KEY.LocalScript
+G2L["37"] = Instance.new("LocalScript", G2L["33"]);
+
+
+
+-- StarterGui.VIP GUI.KEY.TextButton
+G2L["38"] = Instance.new("TextButton", G2L["33"]);
+G2L["38"]["BorderSizePixel"] = 0;
+G2L["38"]["TextSize"] = 14;
+G2L["38"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["38"]["BackgroundTransparency"] = 123;
+G2L["38"]["Size"] = UDim2.new(0, 43, 0, 39);
+G2L["38"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["38"]["Text"] = [[]];
+G2L["38"]["Position"] = UDim2.new(0.93686, 0, 0, 0);
+
+
+-- StarterGui.VIP GUI.KEY.TextButton.LocalScript
+G2L["39"] = Instance.new("LocalScript", G2L["38"]);
 
 
 
@@ -875,9 +888,9 @@ local script = G2L["32"];
 	end)
 end;
 task.spawn(C_32);
--- StarterGui.VIP GUI.KEY.TextBox.LocalScript
-local function C_37()
-local script = G2L["37"];
+-- StarterGui.VIP GUI.KEY.ImageLabel.TextBox.LocalScript
+local function C_36()
+local script = G2L["36"];
 	local textBox = script.Parent
 	
 	local screenGui = textBox:FindFirstAncestorOfClass("ScreenGui")
@@ -914,6 +927,71 @@ local script = G2L["37"];
 		end
 	end)
 end;
+task.spawn(C_36);
+-- StarterGui.VIP GUI.KEY.LocalScript
+local function C_37()
+local script = G2L["37"];
+	local frame = script.Parent
+	local UIS = game:GetService("UserInputService")
+	
+	local dragging = false
+	local dragInput
+	local dragStart
+	local startPos
+	
+	-- Iniciar arrastre
+	local function update(input)
+		local delta = input.Position - dragStart
+		frame.Position = UDim2.new(
+			startPos.X.Scale,
+			startPos.X.Offset + delta.X,
+			startPos.Y.Scale,
+			startPos.Y.Offset + delta.Y
+		)
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 
+			or input.UserInputType == Enum.UserInputType.Touch then
+	
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement 
+			or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if dragging and input == dragInput then
+			update(input)
+		end
+	end)
+end;
 task.spawn(C_37);
+-- StarterGui.VIP GUI.KEY.TextButton.LocalScript
+local function C_39()
+local script = G2L["39"];
+	local button = script.Parent
+	local frame = script.Parent.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	
+		frame.Visible = false
+	
+	end)
+end;
+task.spawn(C_39);
 
 return G2L["1"], require;
