@@ -23,16 +23,10 @@ IKGHUB.SizeConstraint = Enum.SizeConstraint.RelativeXY
 IKGHUB.ZIndex = 1
 IKGHUB.BorderSizePixel = 0
 IKGHUB.Visible = true
-IKGHUB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IKGHUB.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 IKGHUB.BorderColor3 = Color3.fromRGB(0, 0, 0)
 IKGHUB.Position = UDim2.new(0.10630498826503754, 0, 0.07456140220165253, 0)
 IKGHUB.Size = UDim2.new(0, 1074, 0, 581)
-
-local UIGradient = Instance.new("UIGradient")
-UIGradient.Parent = IKGHUB
-UIGradient.Rotation = 0
-UIGradient.Name = "UIGradient"
-UIGradient.Rotation = 0
 
 local UICorner = Instance.new("UICorner")
 UICorner.Parent = IKGHUB
@@ -1730,6 +1724,12 @@ TextButton17.Text = "x"
 TextButton17.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton17.TextSize = 14
 TextButton17.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local UIGradient = Instance.new("UIGradient")
+UIGradient.Parent = IKGHUB
+UIGradient.Rotation = 0
+UIGradient.Name = "UIGradient"
+UIGradient.Rotation = 0
 
 local _fakemodules = {}
 
