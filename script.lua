@@ -666,6 +666,7 @@ ScrollingFrame2.BorderMode = Enum.BorderMode.Outline
 ScrollingFrame2.BorderSizePixel = 0
 ScrollingFrame2.Position = UDim2.new(0.03562653437256813, 0, 0.5860000252723694, 0)
 ScrollingFrame2.Size = UDim2.new(0, 748, 0, 195)
+ScrollingFrame2.CanvasPosition = Vector2.new(0, 200)
 ScrollingFrame2.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
 
 local TextLabel11 = Instance.new("TextLabel")
@@ -741,7 +742,7 @@ TextLabel13.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel13.TextSize = 14
 
 local ImageLabel6 = Instance.new("ImageLabel")
-ImageLabel6.Parent = IKGHUB
+ImageLabel6.Parent = ScrollingFrame2
 ImageLabel6.LayoutOrder = 0
 ImageLabel6.Active = false
 ImageLabel6.Interactable = true
@@ -755,10 +756,79 @@ ImageLabel6.ZIndex = 1
 ImageLabel6.BorderSizePixel = 0
 ImageLabel6.Visible = true
 ImageLabel6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel6.BackgroundTransparency = 12
 ImageLabel6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageLabel6.Position = UDim2.new(0, 0, 0.08605851978063583, 0)
-ImageLabel6.Size = UDim2.new(0, 73, 0, 70)
-ImageLabel6.Image = "rbxassetid://81587838979557"
+ImageLabel6.Position = UDim2.new(0.2820855677127838, 0, 0.2070000022649765, 0)
+ImageLabel6.Size = UDim2.new(0, 332, 0, 100)
+ImageLabel6.Image = "rbxassetid://135791267582791"
+
+local TextLabel14 = Instance.new("TextLabel")
+TextLabel14.Parent = ScrollingFrame2
+TextLabel14.LayoutOrder = 0
+TextLabel14.Active = false
+TextLabel14.Interactable = true
+TextLabel14.AnchorPoint = Vector2.new(0, 0)
+TextLabel14.Rotation = 0
+TextLabel14.AutomaticSize = Enum.AutomaticSize.None
+TextLabel14.Name = "TextLabel"
+TextLabel14.BorderMode = Enum.BorderMode.Outline
+TextLabel14.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel14.ZIndex = 1
+TextLabel14.BorderSizePixel = 0
+TextLabel14.Visible = true
+TextLabel14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel14.BackgroundTransparency = 123
+TextLabel14.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel14.Position = UDim2.new(0.3946792781352997, 0, 0.33127033710479736, 0)
+TextLabel14.Size = UDim2.new(0, 118, 0, 40)
+TextLabel14.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel14.Text = "Created by "
+TextLabel14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel14.TextSize = 14
+
+local TextLabel15 = Instance.new("TextLabel")
+TextLabel15.Parent = ScrollingFrame2
+TextLabel15.LayoutOrder = 0
+TextLabel15.Active = false
+TextLabel15.Interactable = true
+TextLabel15.AnchorPoint = Vector2.new(0, 0)
+TextLabel15.Rotation = 0
+TextLabel15.AutomaticSize = Enum.AutomaticSize.None
+TextLabel15.Name = "TextLabel"
+TextLabel15.BorderMode = Enum.BorderMode.Outline
+TextLabel15.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel15.ZIndex = 1
+TextLabel15.BorderSizePixel = 0
+TextLabel15.Visible = true
+TextLabel15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel15.BackgroundTransparency = 123
+TextLabel15.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel15.Position = UDim2.new(0.5083156228065491, 0, 0.3322703242301941, 0)
+TextLabel15.Size = UDim2.new(0, 118, 0, 40)
+TextLabel15.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel15.Text = "ikgmonher"
+TextLabel15.TextColor3 = Color3.fromRGB(179, 101, 234)
+TextLabel15.TextSize = 14
+
+local ImageLabel7 = Instance.new("ImageLabel")
+ImageLabel7.Parent = IKGHUB
+ImageLabel7.LayoutOrder = 0
+ImageLabel7.Active = false
+ImageLabel7.Interactable = true
+ImageLabel7.AnchorPoint = Vector2.new(0, 0)
+ImageLabel7.Rotation = 0
+ImageLabel7.AutomaticSize = Enum.AutomaticSize.None
+ImageLabel7.Name = "ImageLabel"
+ImageLabel7.BorderMode = Enum.BorderMode.Outline
+ImageLabel7.SizeConstraint = Enum.SizeConstraint.RelativeXY
+ImageLabel7.ZIndex = 1
+ImageLabel7.BorderSizePixel = 0
+ImageLabel7.Visible = true
+ImageLabel7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel7.Position = UDim2.new(0, 0, 0.08605851978063583, 0)
+ImageLabel7.Size = UDim2.new(0, 73, 0, 70)
+ImageLabel7.Image = "rbxassetid://81587838979557"
 
 local Combat2 = Instance.new("Frame")
 Combat2.Parent = IKGHUB
@@ -783,54 +853,6 @@ local UICorner4 = Instance.new("UICorner")
 UICorner4.Parent = Combat2
 UICorner4.Name = "UICorner"
 
-local TextLabel14 = Instance.new("TextLabel")
-TextLabel14.Parent = Combat2
-TextLabel14.LayoutOrder = 0
-TextLabel14.Active = false
-TextLabel14.Interactable = true
-TextLabel14.AnchorPoint = Vector2.new(0, 0)
-TextLabel14.Rotation = 0
-TextLabel14.AutomaticSize = Enum.AutomaticSize.None
-TextLabel14.Name = "TextLabel"
-TextLabel14.BorderMode = Enum.BorderMode.Outline
-TextLabel14.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel14.ZIndex = 1
-TextLabel14.BorderSizePixel = 0
-TextLabel14.Visible = true
-TextLabel14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel14.BackgroundTransparency = 123
-TextLabel14.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel14.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
-TextLabel14.Size = UDim2.new(0, 71, 0, 50)
-TextLabel14.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel14.Text = "Aimbot"
-TextLabel14.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel14.TextSize = 14
-
-local TextLabel15 = Instance.new("TextLabel")
-TextLabel15.Parent = Combat2
-TextLabel15.LayoutOrder = 0
-TextLabel15.Active = false
-TextLabel15.Interactable = true
-TextLabel15.AnchorPoint = Vector2.new(0, 0)
-TextLabel15.Rotation = 0
-TextLabel15.AutomaticSize = Enum.AutomaticSize.None
-TextLabel15.Name = "TextLabel"
-TextLabel15.BorderMode = Enum.BorderMode.Outline
-TextLabel15.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel15.ZIndex = 1
-TextLabel15.BorderSizePixel = 0
-TextLabel15.Visible = true
-TextLabel15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel15.BackgroundTransparency = 123
-TextLabel15.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel15.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
-TextLabel15.Size = UDim2.new(0, 71, 0, 50)
-TextLabel15.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel15.Text = "Hitbox"
-TextLabel15.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel15.TextSize = 14
-
 local TextLabel16 = Instance.new("TextLabel")
 TextLabel16.Parent = Combat2
 TextLabel16.LayoutOrder = 0
@@ -848,10 +870,10 @@ TextLabel16.Visible = true
 TextLabel16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel16.BackgroundTransparency = 123
 TextLabel16.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel16.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel16.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
 TextLabel16.Size = UDim2.new(0, 71, 0, 50)
 TextLabel16.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel16.Text = "Fov"
+TextLabel16.Text = "Aimbot"
 TextLabel16.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel16.TextSize = 14
 
@@ -872,12 +894,60 @@ TextLabel17.Visible = true
 TextLabel17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel17.BackgroundTransparency = 123
 TextLabel17.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel17.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel17.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
 TextLabel17.Size = UDim2.new(0, 71, 0, 50)
 TextLabel17.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel17.Text = "Team check"
+TextLabel17.Text = "Hitbox"
 TextLabel17.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel17.TextSize = 14
+
+local TextLabel18 = Instance.new("TextLabel")
+TextLabel18.Parent = Combat2
+TextLabel18.LayoutOrder = 0
+TextLabel18.Active = false
+TextLabel18.Interactable = true
+TextLabel18.AnchorPoint = Vector2.new(0, 0)
+TextLabel18.Rotation = 0
+TextLabel18.AutomaticSize = Enum.AutomaticSize.None
+TextLabel18.Name = "TextLabel"
+TextLabel18.BorderMode = Enum.BorderMode.Outline
+TextLabel18.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel18.ZIndex = 1
+TextLabel18.BorderSizePixel = 0
+TextLabel18.Visible = true
+TextLabel18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel18.BackgroundTransparency = 123
+TextLabel18.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel18.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel18.Size = UDim2.new(0, 71, 0, 50)
+TextLabel18.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel18.Text = "Fov"
+TextLabel18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel18.TextSize = 14
+
+local TextLabel19 = Instance.new("TextLabel")
+TextLabel19.Parent = Combat2
+TextLabel19.LayoutOrder = 0
+TextLabel19.Active = false
+TextLabel19.Interactable = true
+TextLabel19.AnchorPoint = Vector2.new(0, 0)
+TextLabel19.Rotation = 0
+TextLabel19.AutomaticSize = Enum.AutomaticSize.None
+TextLabel19.Name = "TextLabel"
+TextLabel19.BorderMode = Enum.BorderMode.Outline
+TextLabel19.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel19.ZIndex = 1
+TextLabel19.BorderSizePixel = 0
+TextLabel19.Visible = true
+TextLabel19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel19.BackgroundTransparency = 123
+TextLabel19.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel19.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel19.Size = UDim2.new(0, 71, 0, 50)
+TextLabel19.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel19.Text = "Team check"
+TextLabel19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel19.TextSize = 14
 
 local TextButton = Instance.new("TextButton")
 TextButton.Parent = Combat2
@@ -1002,54 +1072,6 @@ local UICorner5 = Instance.new("UICorner")
 UICorner5.Parent = Visual2
 UICorner5.Name = "UICorner"
 
-local TextLabel18 = Instance.new("TextLabel")
-TextLabel18.Parent = Visual2
-TextLabel18.LayoutOrder = 0
-TextLabel18.Active = false
-TextLabel18.Interactable = true
-TextLabel18.AnchorPoint = Vector2.new(0, 0)
-TextLabel18.Rotation = 0
-TextLabel18.AutomaticSize = Enum.AutomaticSize.None
-TextLabel18.Name = "TextLabel"
-TextLabel18.BorderMode = Enum.BorderMode.Outline
-TextLabel18.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel18.ZIndex = 1
-TextLabel18.BorderSizePixel = 0
-TextLabel18.Visible = true
-TextLabel18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel18.BackgroundTransparency = 123
-TextLabel18.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel18.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
-TextLabel18.Size = UDim2.new(0, 71, 0, 50)
-TextLabel18.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel18.Text = "ESP"
-TextLabel18.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel18.TextSize = 14
-
-local TextLabel19 = Instance.new("TextLabel")
-TextLabel19.Parent = Visual2
-TextLabel19.LayoutOrder = 0
-TextLabel19.Active = false
-TextLabel19.Interactable = true
-TextLabel19.AnchorPoint = Vector2.new(0, 0)
-TextLabel19.Rotation = 0
-TextLabel19.AutomaticSize = Enum.AutomaticSize.None
-TextLabel19.Name = "TextLabel"
-TextLabel19.BorderMode = Enum.BorderMode.Outline
-TextLabel19.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel19.ZIndex = 1
-TextLabel19.BorderSizePixel = 0
-TextLabel19.Visible = true
-TextLabel19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel19.BackgroundTransparency = 123
-TextLabel19.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel19.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
-TextLabel19.Size = UDim2.new(0, 71, 0, 50)
-TextLabel19.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel19.Text = "Fullbright"
-TextLabel19.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel19.TextSize = 14
-
 local TextLabel20 = Instance.new("TextLabel")
 TextLabel20.Parent = Visual2
 TextLabel20.LayoutOrder = 0
@@ -1067,10 +1089,10 @@ TextLabel20.Visible = true
 TextLabel20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel20.BackgroundTransparency = 123
 TextLabel20.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel20.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel20.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
 TextLabel20.Size = UDim2.new(0, 71, 0, 50)
 TextLabel20.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel20.Text = "Tracers"
+TextLabel20.Text = "ESP"
 TextLabel20.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel20.TextSize = 14
 
@@ -1091,12 +1113,60 @@ TextLabel21.Visible = true
 TextLabel21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel21.BackgroundTransparency = 123
 TextLabel21.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel21.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel21.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
 TextLabel21.Size = UDim2.new(0, 71, 0, 50)
 TextLabel21.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel21.Text = "Chams"
+TextLabel21.Text = "Fullbright"
 TextLabel21.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel21.TextSize = 14
+
+local TextLabel22 = Instance.new("TextLabel")
+TextLabel22.Parent = Visual2
+TextLabel22.LayoutOrder = 0
+TextLabel22.Active = false
+TextLabel22.Interactable = true
+TextLabel22.AnchorPoint = Vector2.new(0, 0)
+TextLabel22.Rotation = 0
+TextLabel22.AutomaticSize = Enum.AutomaticSize.None
+TextLabel22.Name = "TextLabel"
+TextLabel22.BorderMode = Enum.BorderMode.Outline
+TextLabel22.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel22.ZIndex = 1
+TextLabel22.BorderSizePixel = 0
+TextLabel22.Visible = true
+TextLabel22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel22.BackgroundTransparency = 123
+TextLabel22.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel22.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel22.Size = UDim2.new(0, 71, 0, 50)
+TextLabel22.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel22.Text = "Tracers"
+TextLabel22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel22.TextSize = 14
+
+local TextLabel23 = Instance.new("TextLabel")
+TextLabel23.Parent = Visual2
+TextLabel23.LayoutOrder = 0
+TextLabel23.Active = false
+TextLabel23.Interactable = true
+TextLabel23.AnchorPoint = Vector2.new(0, 0)
+TextLabel23.Rotation = 0
+TextLabel23.AutomaticSize = Enum.AutomaticSize.None
+TextLabel23.Name = "TextLabel"
+TextLabel23.BorderMode = Enum.BorderMode.Outline
+TextLabel23.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel23.ZIndex = 1
+TextLabel23.BorderSizePixel = 0
+TextLabel23.Visible = true
+TextLabel23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel23.BackgroundTransparency = 123
+TextLabel23.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel23.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel23.Size = UDim2.new(0, 71, 0, 50)
+TextLabel23.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel23.Text = "Chams"
+TextLabel23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel23.TextSize = 14
 
 local TextButton5 = Instance.new("TextButton")
 TextButton5.Parent = Visual2
@@ -1221,54 +1291,6 @@ local UICorner6 = Instance.new("UICorner")
 UICorner6.Parent = Movement2
 UICorner6.Name = "UICorner"
 
-local TextLabel22 = Instance.new("TextLabel")
-TextLabel22.Parent = Movement2
-TextLabel22.LayoutOrder = 0
-TextLabel22.Active = false
-TextLabel22.Interactable = true
-TextLabel22.AnchorPoint = Vector2.new(0, 0)
-TextLabel22.Rotation = 0
-TextLabel22.AutomaticSize = Enum.AutomaticSize.None
-TextLabel22.Name = "TextLabel"
-TextLabel22.BorderMode = Enum.BorderMode.Outline
-TextLabel22.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel22.ZIndex = 1
-TextLabel22.BorderSizePixel = 0
-TextLabel22.Visible = true
-TextLabel22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel22.BackgroundTransparency = 123
-TextLabel22.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel22.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
-TextLabel22.Size = UDim2.new(0, 71, 0, 50)
-TextLabel22.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel22.Text = "Fly"
-TextLabel22.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel22.TextSize = 14
-
-local TextLabel23 = Instance.new("TextLabel")
-TextLabel23.Parent = Movement2
-TextLabel23.LayoutOrder = 0
-TextLabel23.Active = false
-TextLabel23.Interactable = true
-TextLabel23.AnchorPoint = Vector2.new(0, 0)
-TextLabel23.Rotation = 0
-TextLabel23.AutomaticSize = Enum.AutomaticSize.None
-TextLabel23.Name = "TextLabel"
-TextLabel23.BorderMode = Enum.BorderMode.Outline
-TextLabel23.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel23.ZIndex = 1
-TextLabel23.BorderSizePixel = 0
-TextLabel23.Visible = true
-TextLabel23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel23.BackgroundTransparency = 123
-TextLabel23.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel23.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
-TextLabel23.Size = UDim2.new(0, 71, 0, 50)
-TextLabel23.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel23.Text = "High Jump"
-TextLabel23.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel23.TextSize = 14
-
 local TextLabel24 = Instance.new("TextLabel")
 TextLabel24.Parent = Movement2
 TextLabel24.LayoutOrder = 0
@@ -1286,10 +1308,10 @@ TextLabel24.Visible = true
 TextLabel24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel24.BackgroundTransparency = 123
 TextLabel24.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel24.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel24.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
 TextLabel24.Size = UDim2.new(0, 71, 0, 50)
 TextLabel24.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel24.Text = "Noclip"
+TextLabel24.Text = "Fly"
 TextLabel24.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel24.TextSize = 14
 
@@ -1310,12 +1332,60 @@ TextLabel25.Visible = true
 TextLabel25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel25.BackgroundTransparency = 123
 TextLabel25.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel25.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel25.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
 TextLabel25.Size = UDim2.new(0, 71, 0, 50)
 TextLabel25.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel25.Text = "Speed"
+TextLabel25.Text = "High Jump"
 TextLabel25.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel25.TextSize = 14
+
+local TextLabel26 = Instance.new("TextLabel")
+TextLabel26.Parent = Movement2
+TextLabel26.LayoutOrder = 0
+TextLabel26.Active = false
+TextLabel26.Interactable = true
+TextLabel26.AnchorPoint = Vector2.new(0, 0)
+TextLabel26.Rotation = 0
+TextLabel26.AutomaticSize = Enum.AutomaticSize.None
+TextLabel26.Name = "TextLabel"
+TextLabel26.BorderMode = Enum.BorderMode.Outline
+TextLabel26.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel26.ZIndex = 1
+TextLabel26.BorderSizePixel = 0
+TextLabel26.Visible = true
+TextLabel26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel26.BackgroundTransparency = 123
+TextLabel26.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel26.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel26.Size = UDim2.new(0, 71, 0, 50)
+TextLabel26.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel26.Text = "Noclip"
+TextLabel26.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel26.TextSize = 14
+
+local TextLabel27 = Instance.new("TextLabel")
+TextLabel27.Parent = Movement2
+TextLabel27.LayoutOrder = 0
+TextLabel27.Active = false
+TextLabel27.Interactable = true
+TextLabel27.AnchorPoint = Vector2.new(0, 0)
+TextLabel27.Rotation = 0
+TextLabel27.AutomaticSize = Enum.AutomaticSize.None
+TextLabel27.Name = "TextLabel"
+TextLabel27.BorderMode = Enum.BorderMode.Outline
+TextLabel27.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel27.ZIndex = 1
+TextLabel27.BorderSizePixel = 0
+TextLabel27.Visible = true
+TextLabel27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel27.BackgroundTransparency = 123
+TextLabel27.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel27.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel27.Size = UDim2.new(0, 71, 0, 50)
+TextLabel27.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel27.Text = "Speed"
+TextLabel27.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel27.TextSize = 14
 
 local TextButton9 = Instance.new("TextButton")
 TextButton9.Parent = Movement2
@@ -1440,54 +1510,6 @@ local UICorner7 = Instance.new("UICorner")
 UICorner7.Parent = Fun2
 UICorner7.Name = "UICorner"
 
-local TextLabel26 = Instance.new("TextLabel")
-TextLabel26.Parent = Fun2
-TextLabel26.LayoutOrder = 0
-TextLabel26.Active = false
-TextLabel26.Interactable = true
-TextLabel26.AnchorPoint = Vector2.new(0, 0)
-TextLabel26.Rotation = 0
-TextLabel26.AutomaticSize = Enum.AutomaticSize.None
-TextLabel26.Name = "TextLabel"
-TextLabel26.BorderMode = Enum.BorderMode.Outline
-TextLabel26.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel26.ZIndex = 1
-TextLabel26.BorderSizePixel = 0
-TextLabel26.Visible = true
-TextLabel26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel26.BackgroundTransparency = 123
-TextLabel26.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel26.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
-TextLabel26.Size = UDim2.new(0, 71, 0, 50)
-TextLabel26.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel26.Text = "Chat Spam"
-TextLabel26.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel26.TextSize = 14
-
-local TextLabel27 = Instance.new("TextLabel")
-TextLabel27.Parent = Fun2
-TextLabel27.LayoutOrder = 0
-TextLabel27.Active = false
-TextLabel27.Interactable = true
-TextLabel27.AnchorPoint = Vector2.new(0, 0)
-TextLabel27.Rotation = 0
-TextLabel27.AutomaticSize = Enum.AutomaticSize.None
-TextLabel27.Name = "TextLabel"
-TextLabel27.BorderMode = Enum.BorderMode.Outline
-TextLabel27.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel27.ZIndex = 1
-TextLabel27.BorderSizePixel = 0
-TextLabel27.Visible = true
-TextLabel27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel27.BackgroundTransparency = 123
-TextLabel27.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel27.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
-TextLabel27.Size = UDim2.new(0, 71, 0, 50)
-TextLabel27.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel27.Text = "Spinbot"
-TextLabel27.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel27.TextSize = 14
-
 local TextLabel28 = Instance.new("TextLabel")
 TextLabel28.Parent = Fun2
 TextLabel28.LayoutOrder = 0
@@ -1505,10 +1527,10 @@ TextLabel28.Visible = true
 TextLabel28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel28.BackgroundTransparency = 123
 TextLabel28.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel28.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel28.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
 TextLabel28.Size = UDim2.new(0, 71, 0, 50)
 TextLabel28.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel28.Text = "Sound Spam"
+TextLabel28.Text = "Chat Spam"
 TextLabel28.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel28.TextSize = 14
 
@@ -1529,12 +1551,60 @@ TextLabel29.Visible = true
 TextLabel29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel29.BackgroundTransparency = 123
 TextLabel29.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel29.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel29.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
 TextLabel29.Size = UDim2.new(0, 71, 0, 50)
 TextLabel29.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel29.Text = "Troll All"
+TextLabel29.Text = "Spinbot"
 TextLabel29.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel29.TextSize = 14
+
+local TextLabel30 = Instance.new("TextLabel")
+TextLabel30.Parent = Fun2
+TextLabel30.LayoutOrder = 0
+TextLabel30.Active = false
+TextLabel30.Interactable = true
+TextLabel30.AnchorPoint = Vector2.new(0, 0)
+TextLabel30.Rotation = 0
+TextLabel30.AutomaticSize = Enum.AutomaticSize.None
+TextLabel30.Name = "TextLabel"
+TextLabel30.BorderMode = Enum.BorderMode.Outline
+TextLabel30.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel30.ZIndex = 1
+TextLabel30.BorderSizePixel = 0
+TextLabel30.Visible = true
+TextLabel30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel30.BackgroundTransparency = 123
+TextLabel30.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel30.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel30.Size = UDim2.new(0, 71, 0, 50)
+TextLabel30.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel30.Text = "Sound Spam"
+TextLabel30.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel30.TextSize = 14
+
+local TextLabel31 = Instance.new("TextLabel")
+TextLabel31.Parent = Fun2
+TextLabel31.LayoutOrder = 0
+TextLabel31.Active = false
+TextLabel31.Interactable = true
+TextLabel31.AnchorPoint = Vector2.new(0, 0)
+TextLabel31.Rotation = 0
+TextLabel31.AutomaticSize = Enum.AutomaticSize.None
+TextLabel31.Name = "TextLabel"
+TextLabel31.BorderMode = Enum.BorderMode.Outline
+TextLabel31.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel31.ZIndex = 1
+TextLabel31.BorderSizePixel = 0
+TextLabel31.Visible = true
+TextLabel31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel31.BackgroundTransparency = 123
+TextLabel31.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel31.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel31.Size = UDim2.new(0, 71, 0, 50)
+TextLabel31.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel31.Text = "Troll All"
+TextLabel31.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel31.TextSize = 14
 
 local TextButton13 = Instance.new("TextButton")
 TextButton13.Parent = Fun2
@@ -1659,27 +1729,27 @@ local UICorner8 = Instance.new("UICorner")
 UICorner8.Parent = Status2
 UICorner8.Name = "UICorner"
 
-local TextLabel30 = Instance.new("TextLabel")
-TextLabel30.Parent = Status2
-TextLabel30.LayoutOrder = 0
-TextLabel30.Active = false
-TextLabel30.Interactable = true
-TextLabel30.AnchorPoint = Vector2.new(0, 0)
-TextLabel30.Rotation = 0
-TextLabel30.AutomaticSize = Enum.AutomaticSize.None
-TextLabel30.Name = "TextLabel"
-TextLabel30.BorderMode = Enum.BorderMode.Outline
-TextLabel30.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel30.ZIndex = 1
-TextLabel30.BorderSizePixel = 0
-TextLabel30.Visible = true
-TextLabel30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel30.BackgroundTransparency = 123
-TextLabel30.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel30.Position = UDim2.new(0.05322820320725441, 0, 0.1852702647447586, 0)
-TextLabel30.Size = UDim2.new(0, 727, 0, 349)
-TextLabel30.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel30.Text = "SYSTEM STATUS\
+local TextLabel32 = Instance.new("TextLabel")
+TextLabel32.Parent = Status2
+TextLabel32.LayoutOrder = 0
+TextLabel32.Active = false
+TextLabel32.Interactable = true
+TextLabel32.AnchorPoint = Vector2.new(0, 0)
+TextLabel32.Rotation = 0
+TextLabel32.AutomaticSize = Enum.AutomaticSize.None
+TextLabel32.Name = "TextLabel"
+TextLabel32.BorderMode = Enum.BorderMode.Outline
+TextLabel32.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel32.ZIndex = 1
+TextLabel32.BorderSizePixel = 0
+TextLabel32.Visible = true
+TextLabel32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel32.BackgroundTransparency = 123
+TextLabel32.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel32.Position = UDim2.new(0.05322820320725441, 0, 0.1852702647447586, 0)
+TextLabel32.Size = UDim2.new(0, 727, 0, 349)
+TextLabel32.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel32.Text = "SYSTEM STATUS\
 \
 • Combat modules loaded successfully\
 • Visual engine running correctly\
@@ -1697,8 +1767,36 @@ TextLabel30.Text = "SYSTEM STATUS\
 STATUS: ONLINE\
 BUILD: STABLE\
 VERSION: IKGHUB v1.3.05"
-TextLabel30.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel30.TextSize = 14
+TextLabel32.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel32.TextSize = 14
+
+local TextLabel33 = Instance.new("TextLabel")
+TextLabel33.Parent = Status2
+TextLabel33.LayoutOrder = 0
+TextLabel33.Active = false
+TextLabel33.Interactable = true
+TextLabel33.AnchorPoint = Vector2.new(0, 0)
+TextLabel33.Rotation = 0
+TextLabel33.AutomaticSize = Enum.AutomaticSize.None
+TextLabel33.Name = "TextLabel"
+TextLabel33.BorderMode = Enum.BorderMode.Outline
+TextLabel33.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel33.ZIndex = 1
+TextLabel33.BorderSizePixel = 0
+TextLabel33.Visible = true
+TextLabel33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel33.BackgroundTransparency = 123
+TextLabel33.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel33.Position = UDim2.new(0.05322820320725441, 0, 0.18727026879787445, 0)
+TextLabel33.Size = UDim2.new(0, 727, 0, -60)
+TextLabel33.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel33.Text = "Working in\
+Fuenterrabia\
+GIA RON\
+GIA Fuzelier\
+For more games, join our Discord and get their scripts!"
+TextLabel33.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel33.TextSize = 14
 
 local TextButton17 = Instance.new("TextButton")
 TextButton17.Parent = IKGHUB
@@ -1730,6 +1828,30 @@ UIGradient.Parent = IKGHUB
 UIGradient.Rotation = 0
 UIGradient.Name = "UIGradient"
 UIGradient.Rotation = 0
+
+local TextLabel34 = Instance.new("TextLabel")
+TextLabel34.Parent = IKGHUB
+TextLabel34.LayoutOrder = 0
+TextLabel34.Active = false
+TextLabel34.Interactable = true
+TextLabel34.AnchorPoint = Vector2.new(0, 0)
+TextLabel34.Rotation = 0
+TextLabel34.AutomaticSize = Enum.AutomaticSize.None
+TextLabel34.Name = "TextLabel"
+TextLabel34.BorderMode = Enum.BorderMode.Outline
+TextLabel34.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel34.ZIndex = 1
+TextLabel34.BorderSizePixel = 0
+TextLabel34.Visible = true
+TextLabel34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel34.BackgroundTransparency = 123
+TextLabel34.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel34.Position = UDim2.new(0.005586592014878988, 0, 0.005163511261343956, 0)
+TextLabel34.Size = UDim2.new(0, 123, 0, 31)
+TextLabel34.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel34.Text = "Universal 5 games"
+TextLabel34.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel34.TextSize = 14
 
 local _fakemodules = {}
 
@@ -2565,3 +2687,73 @@ local function LocalScript52_fakescript() -- TextButton17.LocalScript
 	end)
 end
 task.spawn(LocalScript52_fakescript)
+local function LocalScript54_fakescript() -- TextLabel34.LocalScript
+	local script = Instance.new("LocalScript", TextLabel34)
+	script.Name = "LocalScript"
+	local textLabel = script.Parent
+	local marketplaceService = game:GetService("MarketplaceService")
+	local success, info = pcall(function()
+		return marketplaceServiceketplaceService:GetProductInfo(game.PlaceId)
+	end)
+	if success and info then
+		textLabel.Text = info.Name
+	else
+		textLabel.Text = game.Name
+	end
+end
+task.spawn(LocalScript54_fakescript)
+local function LocalScript56_fakescript() -- IKGHUB.LocalScript
+	local script = Instance.new("LocalScript", IKGHUB)
+	script.Name = "LocalScript"
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+	local frame = script.Parent
+	local GROUP_ID = 34688767
+	local creado = false
+	local function crearTag()
+		if creado then return end
+		creado = true
+		local character = player.Character or player.CharacterAdded:Wait()
+		local head = character:WaitForChild("Head")
+		-- Borra otros BillboardGui
+		for _, v in ipairs(head:GetChildren()) do
+			if v:IsA("BillboardGui") then
+				v:Destroy()
+			end
+		end
+		local gui = Instance.new("BillboardGui")
+		gui.Name = "IKGHUBTag"
+		gui.Size = UDim2.new(0, 200, 0, 50)
+		gui.StudsOffset = Vector3.new(0, 3, 0)
+		gui.AlwaysOnTop = true
+		gui.Parent = head
+		local titulo = Instance.new("TextLabel")
+		titulo.Size = UDim2.new(1,0,0.5,0)
+		titulo.BackgroundTransparency = 1
+		titulo.Text = "IKGHUB"
+		titulo.TextScaled = true
+		titulo.TextStrokeTransparency = 0
+		titulo.Font = Enum.Font.GothamBold
+		titulo.TextColor3 = Color3.fromRGB(255,255,255)
+		titulo.Parent = gui
+		local rango = Instance.new("TextLabel")
+		rango.Size = UDim2.new(1,0,0.5,0)
+		rango.Position = UDim2.new(0,0,0.5,0)
+		rango.BackgroundTransparency = 1
+		rango.Text = player:GetRoleInGroup(GROUP_ID)
+		rango.TextScaled = true
+		rango.TextStrokeTransparency = 0
+		rango.Font = Enum.Font.GothamBold
+		rango.TextColor3 = Color3.fromRGB(255,215,0)
+		rango.Parent = gui
+	end
+	if frame.Visible then
+		crearTag()
+	end
+	frame:GetPropertyChangedSignal("Visible"):Connect(function()
+		if frame.Visible then
+			crearTag()
+		end
+	end)
+end
+task.spawn(LocalScript56_fakescript)
