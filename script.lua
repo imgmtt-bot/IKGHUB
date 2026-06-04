@@ -142,7 +142,7 @@ Combat.BorderMode = Enum.BorderMode.Outline
 Combat.SizeConstraint = Enum.SizeConstraint.RelativeXY
 Combat.ZIndex = 1
 Combat.BorderSizePixel = 0
-Combat.Visible = true
+Combat.Visible = false
 Combat.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 Combat.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Combat.Position = UDim2.new(0.27058202028274536, 0, 0.13419805467128754, 0)
@@ -1145,7 +1145,7 @@ TextLabel20.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel20.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
 TextLabel20.Size = UDim2.new(0, 71, 0, 50)
 TextLabel20.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel20.Text = "(SOON) (PBAN Riesg)"
+TextLabel20.Text = "Lag (Baneable)"
 TextLabel20.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel20.TextSize = 14
 
@@ -2999,7 +2999,35 @@ local function LocalScript38_fakescript() -- TextButton18.LocalScript
 	end)
 end
 task.spawn(LocalScript38_fakescript)
-local function LocalScript40_fakescript() -- TextButton20.LocalScript
+local function LocalScript40_fakescript() -- TextButton19.LocalScript
+	local script = Instance.new("LocalScript", TextButton19)
+	script.Name = "LocalScript"
+	local boton = script.Parent
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character or Player.CharacterAdded:Wait()
+	local Humanoid = Character:WaitForChild("Humanoid")
+	local Activado = false
+	boton.Text = "Auto Tool: OFF"
+	boton.MouseButton1Click:Connect(function()
+		Activado = not Activado
+		boton.Text = Activado and "Auto Tool: ON" or "Auto Tool: OFF"
+	end)
+	task.spawn(function()
+		while true do
+			task.wait(0.05)
+			if Activado then
+				local Tool = Player.Backpack:FindFirstChildOfClass("Tool")
+				if Tool then
+					Humanoid:EquipTool(Tool)
+					task.wait(0.05)
+					Humanoid:UnequipTools()
+				end
+			end
+		end
+	end)
+end
+task.spawn(LocalScript40_fakescript)
+local function LocalScript42_fakescript() -- TextButton20.LocalScript
 	local script = Instance.new("LocalScript", TextButton20)
 	script.Name = "LocalScript"
 	-- LocalScript → Poner DENTRO del TextButton que tú creaste
@@ -3038,8 +3066,8 @@ local function LocalScript40_fakescript() -- TextButton20.LocalScript
 	-- Conectar el click
 	button.MouseButton1Click:Connect(teleport)
 end
-task.spawn(LocalScript40_fakescript)
-local function LocalScript42_fakescript() -- TextButton21.LocalScript
+task.spawn(LocalScript42_fakescript)
+local function LocalScript44_fakescript() -- TextButton21.LocalScript
 	local script = Instance.new("LocalScript", TextButton21)
 	script.Name = "LocalScript"
 	-- LocalScript → Poner DENTRO del TextButton que tú creaste
@@ -3078,8 +3106,8 @@ local function LocalScript42_fakescript() -- TextButton21.LocalScript
 	-- Conectar el click
 	button.MouseButton1Click:Connect(teleport)
 end
-task.spawn(LocalScript42_fakescript)
-local function LocalScript44_fakescript() -- TextButton22.LocalScript
+task.spawn(LocalScript44_fakescript)
+local function LocalScript46_fakescript() -- TextButton22.LocalScript
 	local script = Instance.new("LocalScript", TextButton22)
 	script.Name = "LocalScript"
 	-- LocalScript → Para el botón de Spawnear MG15
@@ -3122,8 +3150,8 @@ local function LocalScript44_fakescript() -- TextButton22.LocalScript
 	button.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
 	button.MouseButton1Click:Connect(giveWeapon)
 end
-task.spawn(LocalScript44_fakescript)
-local function LocalScript46_fakescript() -- Combatbutton.LocalScript
+task.spawn(LocalScript46_fakescript)
+local function LocalScript48_fakescript() -- Combatbutton.LocalScript
 	local script = Instance.new("LocalScript", Combatbutton)
 	script.Name = "LocalScript"
 	local Button = script.Parent
@@ -3211,8 +3239,8 @@ local function LocalScript46_fakescript() -- Combatbutton.LocalScript
 		end
 	end)
 end
-task.spawn(LocalScript46_fakescript)
-local function LocalScript48_fakescript() -- Minimize.LocalScript
+task.spawn(LocalScript48_fakescript)
+local function LocalScript50_fakescript() -- Minimize.LocalScript
 	local script = Instance.new("LocalScript", Minimize)
 	script.Name = "LocalScript"
 	local frame = script.Parent.Parent -- IKGHUB
@@ -3222,8 +3250,8 @@ local function LocalScript48_fakescript() -- Minimize.LocalScript
 		miniz.Visible = true
 	end)
 end
-task.spawn(LocalScript48_fakescript)
-local function LocalScript50_fakescript() -- Minimize.LocalScript
+task.spawn(LocalScript50_fakescript)
+local function LocalScript52_fakescript() -- Minimize.LocalScript
 	local script = Instance.new("LocalScript", Minimize)
 	script.Name = "LocalScript"
 	local SideLine = Instance.new("Frame")
@@ -3234,8 +3262,8 @@ local function LocalScript50_fakescript() -- Minimize.LocalScript
 	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
 	SideLine.BackgroundTransparency = 0.45
 end
-task.spawn(LocalScript50_fakescript)
-local function LocalScript52_fakescript() -- Comandsbutton.LocalScript
+task.spawn(LocalScript52_fakescript)
+local function LocalScript54_fakescript() -- Comandsbutton.LocalScript
 	local script = Instance.new("LocalScript", Comandsbutton)
 	script.Name = "LocalScript"
 	local Button = script.Parent
@@ -3323,8 +3351,8 @@ local function LocalScript52_fakescript() -- Comandsbutton.LocalScript
 		end
 	end)
 end
-task.spawn(LocalScript52_fakescript)
-local function LocalScript54_fakescript() -- menubutton.LocalScript
+task.spawn(LocalScript54_fakescript)
+local function LocalScript56_fakescript() -- menubutton.LocalScript
 	local script = Instance.new("LocalScript", menubutton)
 	script.Name = "LocalScript"
 	local Button = script.Parent
@@ -3412,8 +3440,8 @@ local function LocalScript54_fakescript() -- menubutton.LocalScript
 		end
 	end)
 end
-task.spawn(LocalScript54_fakescript)
-local function LocalScript56_fakescript() -- Visualbutton.LocalScript
+task.spawn(LocalScript56_fakescript)
+local function LocalScript58_fakescript() -- Visualbutton.LocalScript
 	local script = Instance.new("LocalScript", Visualbutton)
 	script.Name = "LocalScript"
 	local Button = script.Parent
@@ -3501,8 +3529,8 @@ local function LocalScript56_fakescript() -- Visualbutton.LocalScript
 		end
 	end)
 end
-task.spawn(LocalScript56_fakescript)
-local function LocalScript58_fakescript() -- Statusbutton.LocalScript
+task.spawn(LocalScript58_fakescript)
+local function LocalScript60_fakescript() -- Statusbutton.LocalScript
 	local script = Instance.new("LocalScript", Statusbutton)
 	script.Name = "LocalScript"
 	local Button = script.Parent
@@ -3590,8 +3618,8 @@ local function LocalScript58_fakescript() -- Statusbutton.LocalScript
 		end
 	end)
 end
-task.spawn(LocalScript58_fakescript)
-local function LocalScript60_fakescript() -- Movemetbutton.LocalScript
+task.spawn(LocalScript60_fakescript)
+local function LocalScript62_fakescript() -- Movemetbutton.LocalScript
 	local script = Instance.new("LocalScript", Movemetbutton)
 	script.Name = "LocalScript"
 	local Button = script.Parent
@@ -3679,8 +3707,8 @@ local function LocalScript60_fakescript() -- Movemetbutton.LocalScript
 		end
 	end)
 end
-task.spawn(LocalScript60_fakescript)
-local function LocalScript62_fakescript() -- TextLabel41.LocalScript
+task.spawn(LocalScript62_fakescript)
+local function LocalScript64_fakescript() -- TextLabel41.LocalScript
 	local script = Instance.new("LocalScript", TextLabel41)
 	script.Name = "LocalScript"
 	local textLabel = script.Parent
@@ -3694,8 +3722,8 @@ local function LocalScript62_fakescript() -- TextLabel41.LocalScript
 		textLabel.Text = game.Name
 	end
 end
-task.spawn(LocalScript62_fakescript)
-local function LocalScript64_fakescript() -- CloseButton.LocalScript
+task.spawn(LocalScript64_fakescript)
+local function LocalScript66_fakescript() -- CloseButton.LocalScript
 	local script = Instance.new("LocalScript", CloseButton)
 	script.Name = "LocalScript"
 	local Button = script.Parent
@@ -3783,7 +3811,7 @@ local function LocalScript64_fakescript() -- CloseButton.LocalScript
 		end
 	end)
 end
-task.spawn(LocalScript64_fakescript)
+task.spawn(LocalScript66_fakescript)
 local function Dragging4_fakescript() -- Miniz.Dragging
 	local script = Instance.new("LocalScript", Miniz)
 	script.Name = "Dragging"
@@ -3826,7 +3854,7 @@ local function Dragging4_fakescript() -- Miniz.Dragging
 	end)
 end
 task.spawn(Dragging4_fakescript)
-local function LocalScript66_fakescript() -- Abrir.LocalScript
+local function LocalScript68_fakescript() -- Abrir.LocalScript
 	local script = Instance.new("LocalScript", Abrir)
 	script.Name = "LocalScript"
 	local botonAbrir = script.Parent
@@ -3837,4 +3865,4 @@ local function LocalScript66_fakescript() -- Abrir.LocalScript
 		miniz.Visible = false
 	end)
 end
-task.spawn(LocalScript66_fakescript)
+task.spawn(LocalScript68_fakescript)
