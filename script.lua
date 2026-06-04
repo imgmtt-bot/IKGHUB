@@ -104,8 +104,56 @@ local corner = Instance.new("UICorner")
 corner.Parent = IKGHUBv2
 corner.Name = "corner"
 
+local Funbutton = Instance.new("TextButton")
+Funbutton.Parent = IKGHUBv2
+Funbutton.LayoutOrder = 0
+Funbutton.Active = true
+Funbutton.Interactable = true
+Funbutton.AnchorPoint = Vector2.new(0, 0)
+Funbutton.Rotation = 0
+Funbutton.AutomaticSize = Enum.AutomaticSize.None
+Funbutton.Name = "Funbutton"
+Funbutton.BorderMode = Enum.BorderMode.Outline
+Funbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Funbutton.ZIndex = 1
+Funbutton.BorderSizePixel = 0
+Funbutton.Visible = true
+Funbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Funbutton.BackgroundTransparency = 123
+Funbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Funbutton.Position = UDim2.new(0.023235971108078957, 0, 0.4935189485549927, 0)
+Funbutton.Size = UDim2.new(0, 112, 0, 39)
+Funbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Funbutton.Text = "Fun"
+Funbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Funbutton.TextSize = 14
+Funbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Combat = Instance.new("Frame")
+Combat.Parent = IKGHUBv2
+Combat.LayoutOrder = 0
+Combat.Active = false
+Combat.Interactable = true
+Combat.AnchorPoint = Vector2.new(0, 0)
+Combat.Rotation = 0
+Combat.AutomaticSize = Enum.AutomaticSize.None
+Combat.Name = "Combat"
+Combat.BorderMode = Enum.BorderMode.Outline
+Combat.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Combat.ZIndex = 1
+Combat.BorderSizePixel = 0
+Combat.Visible = true
+Combat.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Combat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Combat.Position = UDim2.new(0.27058202028274536, 0, 0.13419805467128754, 0)
+Combat.Size = UDim2.new(0, 432, 0, 266)
+
+local UICorner2 = Instance.new("UICorner")
+UICorner2.Parent = Combat
+UICorner2.Name = "UICorner"
+
 local TextLabel3 = Instance.new("TextLabel")
-TextLabel3.Parent = IKGHUBv2
+TextLabel3.Parent = Combat
 TextLabel3.LayoutOrder = 0
 TextLabel3.Active = false
 TextLabel3.Interactable = true
@@ -121,60 +169,12 @@ TextLabel3.Visible = true
 TextLabel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel3.BackgroundTransparency = 123
 TextLabel3.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel3.Position = UDim2.new(-0.0010402608895674348, 0, 0.9027754068374634, 0)
-TextLabel3.Size = UDim2.new(0, 120, 0, 37)
+TextLabel3.Position = UDim2.new(0.08148368448019028, 0, 0.013241815380752087, 0)
+TextLabel3.Size = UDim2.new(0, 71, 0, 50)
 TextLabel3.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel3.Text = "Ikghub"
+TextLabel3.Text = "Aimbot"
 TextLabel3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel3.TextSize = 14
-
-local Combatbutton = Instance.new("TextButton")
-Combatbutton.Parent = IKGHUBv2
-Combatbutton.LayoutOrder = 0
-Combatbutton.Active = true
-Combatbutton.Interactable = true
-Combatbutton.AnchorPoint = Vector2.new(0, 0)
-Combatbutton.Rotation = 0
-Combatbutton.AutomaticSize = Enum.AutomaticSize.None
-Combatbutton.Name = "Combatbutton"
-Combatbutton.BorderMode = Enum.BorderMode.Outline
-Combatbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
-Combatbutton.ZIndex = 1
-Combatbutton.BorderSizePixel = 0
-Combatbutton.Visible = true
-Combatbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Combatbutton.BackgroundTransparency = 123
-Combatbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Combatbutton.Position = UDim2.new(0.023235971108078957, 0, 0.18166327476501465, 0)
-Combatbutton.Size = UDim2.new(0, 112, 0, 29)
-Combatbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-Combatbutton.Text = "Combat"
-Combatbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-Combatbutton.TextSize = 14
-Combatbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-local Combat = Instance.new("Frame")
-Combat.Parent = IKGHUBv2
-Combat.LayoutOrder = 0
-Combat.Active = false
-Combat.Interactable = true
-Combat.AnchorPoint = Vector2.new(0, 0)
-Combat.Rotation = 0
-Combat.AutomaticSize = Enum.AutomaticSize.None
-Combat.Name = "Combat"
-Combat.BorderMode = Enum.BorderMode.Outline
-Combat.SizeConstraint = Enum.SizeConstraint.RelativeXY
-Combat.ZIndex = 1
-Combat.BorderSizePixel = 0
-Combat.Visible = false
-Combat.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Combat.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Combat.Position = UDim2.new(0.27058202028274536, 0, 0.13419805467128754, 0)
-Combat.Size = UDim2.new(0, 432, 0, 266)
-
-local UICorner2 = Instance.new("UICorner")
-UICorner2.Parent = Combat
-UICorner2.Name = "UICorner"
 
 local TextLabel4 = Instance.new("TextLabel")
 TextLabel4.Parent = Combat
@@ -193,10 +193,10 @@ TextLabel4.Visible = true
 TextLabel4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel4.BackgroundTransparency = 123
 TextLabel4.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel4.Position = UDim2.new(0.08148368448019028, 0, 0.013241815380752087, 0)
+TextLabel4.Position = UDim2.new(0.08148368448019028, 0, 0.5477383732795715, 0)
 TextLabel4.Size = UDim2.new(0, 71, 0, 50)
 TextLabel4.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel4.Text = "Aimbot"
+TextLabel4.Text = "Hitbox (patched)"
 TextLabel4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel4.TextSize = 14
 
@@ -217,10 +217,10 @@ TextLabel5.Visible = true
 TextLabel5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel5.BackgroundTransparency = 123
 TextLabel5.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel5.Position = UDim2.new(0.08148368448019028, 0, 0.5477383732795715, 0)
+TextLabel5.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
 TextLabel5.Size = UDim2.new(0, 71, 0, 50)
 TextLabel5.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel5.Text = "Hitbox"
+TextLabel5.Text = "Fov"
 TextLabel5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel5.TextSize = 14
 
@@ -241,36 +241,12 @@ TextLabel6.Visible = true
 TextLabel6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel6.BackgroundTransparency = 123
 TextLabel6.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel6.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel6.Position = UDim2.new(0.08148368448019028, 0, 0.19525600969791412, 0)
 TextLabel6.Size = UDim2.new(0, 71, 0, 50)
 TextLabel6.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel6.Text = "Fov"
+TextLabel6.Text = "Team check"
 TextLabel6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel6.TextSize = 14
-
-local TextLabel7 = Instance.new("TextLabel")
-TextLabel7.Parent = Combat
-TextLabel7.LayoutOrder = 0
-TextLabel7.Active = false
-TextLabel7.Interactable = true
-TextLabel7.AnchorPoint = Vector2.new(0, 0)
-TextLabel7.Rotation = 0
-TextLabel7.AutomaticSize = Enum.AutomaticSize.None
-TextLabel7.Name = "TextLabel"
-TextLabel7.BorderMode = Enum.BorderMode.Outline
-TextLabel7.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel7.ZIndex = 1
-TextLabel7.BorderSizePixel = 0
-TextLabel7.Visible = true
-TextLabel7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel7.BackgroundTransparency = 123
-TextLabel7.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel7.Position = UDim2.new(0.08148368448019028, 0, 0.19525600969791412, 0)
-TextLabel7.Size = UDim2.new(0, 71, 0, 50)
-TextLabel7.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel7.Text = "Team check"
-TextLabel7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel7.TextSize = 14
 
 local TextButton = Instance.new("TextButton")
 TextButton.Parent = Combat
@@ -372,30 +348,102 @@ TextButton4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton4.TextSize = 14
 TextButton4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-local Visualbutton = Instance.new("TextButton")
-Visualbutton.Parent = IKGHUBv2
-Visualbutton.LayoutOrder = 0
-Visualbutton.Active = true
-Visualbutton.Interactable = true
-Visualbutton.AnchorPoint = Vector2.new(0, 0)
-Visualbutton.Rotation = 0
-Visualbutton.AutomaticSize = Enum.AutomaticSize.None
-Visualbutton.Name = "Visualbutton"
-Visualbutton.BorderMode = Enum.BorderMode.Outline
-Visualbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
-Visualbutton.ZIndex = 1
-Visualbutton.BorderSizePixel = 0
-Visualbutton.Visible = true
-Visualbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Visualbutton.BackgroundTransparency = 123
-Visualbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Visualbutton.Position = UDim2.new(0.023235971108078957, 0, 0.2564055323600769, 0)
-Visualbutton.Size = UDim2.new(0, 112, 0, 27)
-Visualbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-Visualbutton.Text = "Visual"
-Visualbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-Visualbutton.TextSize = 14
-Visualbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+local close = Instance.new("Frame")
+close.Parent = IKGHUBv2
+close.LayoutOrder = 0
+close.Active = false
+close.Interactable = true
+close.AnchorPoint = Vector2.new(0, 0)
+close.Rotation = 0
+close.AutomaticSize = Enum.AutomaticSize.None
+close.Name = "close"
+close.BorderMode = Enum.BorderMode.Outline
+close.SizeConstraint = Enum.SizeConstraint.RelativeXY
+close.ZIndex = 1
+close.BorderSizePixel = 0
+close.Visible = false
+close.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+close.Position = UDim2.new(0.4451170861721039, 0, 0.33522897958755493, 0)
+close.Size = UDim2.new(0, 251, 0, 128)
+
+local UICorner3 = Instance.new("UICorner")
+UICorner3.Parent = close
+UICorner3.Name = "UICorner"
+
+local TextLabel7 = Instance.new("TextLabel")
+TextLabel7.Parent = close
+TextLabel7.LayoutOrder = 0
+TextLabel7.Active = false
+TextLabel7.Interactable = true
+TextLabel7.AnchorPoint = Vector2.new(0, 0)
+TextLabel7.Rotation = 0
+TextLabel7.AutomaticSize = Enum.AutomaticSize.None
+TextLabel7.Name = "TextLabel"
+TextLabel7.BorderMode = Enum.BorderMode.Outline
+TextLabel7.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel7.ZIndex = 1
+TextLabel7.BorderSizePixel = 0
+TextLabel7.Visible = true
+TextLabel7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel7.BackgroundTransparency = 123
+TextLabel7.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel7.Position = UDim2.new(0.3563840389251709, 0, -0.0026047229766845703, 0)
+TextLabel7.Size = UDim2.new(0, 71, 0, 50)
+TextLabel7.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel7.Text = "Do you really want to leave the hub?"
+TextLabel7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel7.TextSize = 14
+
+local TextButton5 = Instance.new("TextButton")
+TextButton5.Parent = close
+TextButton5.LayoutOrder = 0
+TextButton5.Active = true
+TextButton5.Interactable = true
+TextButton5.AnchorPoint = Vector2.new(0, 0)
+TextButton5.Rotation = 0
+TextButton5.AutomaticSize = Enum.AutomaticSize.None
+TextButton5.Name = "TextButton"
+TextButton5.BorderMode = Enum.BorderMode.Outline
+TextButton5.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton5.ZIndex = 1
+TextButton5.BorderSizePixel = 0
+TextButton5.Visible = true
+TextButton5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton5.BackgroundTransparency = 123
+TextButton5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton5.Position = UDim2.new(0.6368065476417542, 0, 0.45525145530700684, 0)
+TextButton5.Size = UDim2.new(0, 84, 0, 50)
+TextButton5.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton5.Text = "Yes"
+TextButton5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton5.TextSize = 14
+TextButton5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton6 = Instance.new("TextButton")
+TextButton6.Parent = close
+TextButton6.LayoutOrder = 0
+TextButton6.Active = true
+TextButton6.Interactable = true
+TextButton6.AnchorPoint = Vector2.new(0, 0)
+TextButton6.Rotation = 0
+TextButton6.AutomaticSize = Enum.AutomaticSize.None
+TextButton6.Name = "TextButton"
+TextButton6.BorderMode = Enum.BorderMode.Outline
+TextButton6.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton6.ZIndex = 1
+TextButton6.BorderSizePixel = 0
+TextButton6.Visible = true
+TextButton6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton6.BackgroundTransparency = 123
+TextButton6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton6.Position = UDim2.new(0.0511491633951664, 0, 0.45525145530700684, 0)
+TextButton6.Size = UDim2.new(0, 84, 0, 50)
+TextButton6.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton6.Text = "No"
+TextButton6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton6.TextSize = 14
+TextButton6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 local Visual = Instance.new("Frame")
 Visual.Parent = IKGHUBv2
@@ -416,9 +464,9 @@ Visual.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Visual.Position = UDim2.new(0.27058202028274536, 0, 0.13419805467128754, 0)
 Visual.Size = UDim2.new(0, 431, 0, 268)
 
-local UICorner3 = Instance.new("UICorner")
-UICorner3.Parent = Visual
-UICorner3.Name = "UICorner"
+local UICorner4 = Instance.new("UICorner")
+UICorner4.Parent = Visual
+UICorner4.Name = "UICorner"
 
 local TextLabel8 = Instance.new("TextLabel")
 TextLabel8.Parent = Visual
@@ -516,56 +564,6 @@ TextLabel11.Text = "Chams"
 TextLabel11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel11.TextSize = 14
 
-local TextButton5 = Instance.new("TextButton")
-TextButton5.Parent = Visual
-TextButton5.LayoutOrder = 0
-TextButton5.Active = true
-TextButton5.Interactable = true
-TextButton5.AnchorPoint = Vector2.new(0, 0)
-TextButton5.Rotation = 0
-TextButton5.AutomaticSize = Enum.AutomaticSize.None
-TextButton5.Name = "TextButton"
-TextButton5.BorderMode = Enum.BorderMode.Outline
-TextButton5.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextButton5.ZIndex = 1
-TextButton5.BorderSizePixel = 0
-TextButton5.Visible = true
-TextButton5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton5.BackgroundTransparency = 123
-TextButton5.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton5.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
-TextButton5.Size = UDim2.new(0, 188, 0, 50)
-TextButton5.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextButton5.Text = "Activar"
-TextButton5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton5.TextSize = 14
-TextButton5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-local TextButton6 = Instance.new("TextButton")
-TextButton6.Parent = Visual
-TextButton6.LayoutOrder = 0
-TextButton6.Active = true
-TextButton6.Interactable = true
-TextButton6.AnchorPoint = Vector2.new(0, 0)
-TextButton6.Rotation = 0
-TextButton6.AutomaticSize = Enum.AutomaticSize.None
-TextButton6.Name = "TextButton"
-TextButton6.BorderMode = Enum.BorderMode.Outline
-TextButton6.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextButton6.ZIndex = 1
-TextButton6.BorderSizePixel = 0
-TextButton6.Visible = true
-TextButton6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton6.BackgroundTransparency = 123
-TextButton6.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton6.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
-TextButton6.Size = UDim2.new(0, 188, 0, 50)
-TextButton6.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextButton6.Text = "Activar"
-TextButton6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton6.TextSize = 14
-TextButton6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
 local TextButton7 = Instance.new("TextButton")
 TextButton7.Parent = Visual
 TextButton7.LayoutOrder = 0
@@ -583,7 +581,7 @@ TextButton7.Visible = true
 TextButton7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton7.BackgroundTransparency = 123
 TextButton7.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton7.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton7.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
 TextButton7.Size = UDim2.new(0, 188, 0, 50)
 TextButton7.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
 TextButton7.Text = "Activar"
@@ -608,7 +606,7 @@ TextButton8.Visible = true
 TextButton8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton8.BackgroundTransparency = 123
 TextButton8.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton8.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton8.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
 TextButton8.Size = UDim2.new(0, 188, 0, 50)
 TextButton8.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
 TextButton8.Text = "Activar"
@@ -616,130 +614,55 @@ TextButton8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton8.TextSize = 14
 TextButton8.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-local Movemetbutton = Instance.new("TextButton")
-Movemetbutton.Parent = IKGHUBv2
-Movemetbutton.LayoutOrder = 0
-Movemetbutton.Active = true
-Movemetbutton.Interactable = true
-Movemetbutton.AnchorPoint = Vector2.new(0, 0)
-Movemetbutton.Rotation = 0
-Movemetbutton.AutomaticSize = Enum.AutomaticSize.None
-Movemetbutton.Name = "Movemetbutton"
-Movemetbutton.BorderMode = Enum.BorderMode.Outline
-Movemetbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
-Movemetbutton.ZIndex = 1
-Movemetbutton.BorderSizePixel = 0
-Movemetbutton.Visible = true
-Movemetbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Movemetbutton.BackgroundTransparency = 123
-Movemetbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Movemetbutton.Position = UDim2.new(0.023235971108078957, 0, 0.3259931802749634, 0)
-Movemetbutton.Size = UDim2.new(0, 112, 0, 27)
-Movemetbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-Movemetbutton.Text = "Movement"
-Movemetbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-Movemetbutton.TextSize = 14
-Movemetbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+local TextButton9 = Instance.new("TextButton")
+TextButton9.Parent = Visual
+TextButton9.LayoutOrder = 0
+TextButton9.Active = true
+TextButton9.Interactable = true
+TextButton9.AnchorPoint = Vector2.new(0, 0)
+TextButton9.Rotation = 0
+TextButton9.AutomaticSize = Enum.AutomaticSize.None
+TextButton9.Name = "TextButton"
+TextButton9.BorderMode = Enum.BorderMode.Outline
+TextButton9.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton9.ZIndex = 1
+TextButton9.BorderSizePixel = 0
+TextButton9.Visible = true
+TextButton9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton9.BackgroundTransparency = 123
+TextButton9.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton9.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton9.Size = UDim2.new(0, 188, 0, 50)
+TextButton9.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton9.Text = "Activar"
+TextButton9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton9.TextSize = 14
+TextButton9.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-local Funbutton = Instance.new("TextButton")
-Funbutton.Parent = IKGHUBv2
-Funbutton.LayoutOrder = 0
-Funbutton.Active = true
-Funbutton.Interactable = true
-Funbutton.AnchorPoint = Vector2.new(0, 0)
-Funbutton.Rotation = 0
-Funbutton.AutomaticSize = Enum.AutomaticSize.None
-Funbutton.Name = "Funbutton"
-Funbutton.BorderMode = Enum.BorderMode.Outline
-Funbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
-Funbutton.ZIndex = 1
-Funbutton.BorderSizePixel = 0
-Funbutton.Visible = true
-Funbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Funbutton.BackgroundTransparency = 123
-Funbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Funbutton.Position = UDim2.new(0.023235971108078957, 0, 0.39558079838752747, 0)
-Funbutton.Size = UDim2.new(0, 112, 0, 27)
-Funbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-Funbutton.Text = "Fun"
-Funbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-Funbutton.TextSize = 14
-Funbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-local Comandsbutton = Instance.new("TextButton")
-Comandsbutton.Parent = IKGHUBv2
-Comandsbutton.LayoutOrder = 0
-Comandsbutton.Active = true
-Comandsbutton.Interactable = true
-Comandsbutton.AnchorPoint = Vector2.new(0, 0)
-Comandsbutton.Rotation = 0
-Comandsbutton.AutomaticSize = Enum.AutomaticSize.None
-Comandsbutton.Name = "Comandsbutton"
-Comandsbutton.BorderMode = Enum.BorderMode.Outline
-Comandsbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
-Comandsbutton.ZIndex = 1
-Comandsbutton.BorderSizePixel = 0
-Comandsbutton.Visible = true
-Comandsbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Comandsbutton.BackgroundTransparency = 123
-Comandsbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Comandsbutton.Position = UDim2.new(0.023235971108078957, 0, 0.46516844630241394, 0)
-Comandsbutton.Size = UDim2.new(0, 112, 0, 27)
-Comandsbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-Comandsbutton.Text = "Comands"
-Comandsbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-Comandsbutton.TextSize = 14
-Comandsbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-local Statusbutton = Instance.new("TextButton")
-Statusbutton.Parent = IKGHUBv2
-Statusbutton.LayoutOrder = 0
-Statusbutton.Active = true
-Statusbutton.Interactable = true
-Statusbutton.AnchorPoint = Vector2.new(0, 0)
-Statusbutton.Rotation = 0
-Statusbutton.AutomaticSize = Enum.AutomaticSize.None
-Statusbutton.Name = "Statusbutton"
-Statusbutton.BorderMode = Enum.BorderMode.Outline
-Statusbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
-Statusbutton.ZIndex = 1
-Statusbutton.BorderSizePixel = 0
-Statusbutton.Visible = true
-Statusbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Statusbutton.BackgroundTransparency = 123
-Statusbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Statusbutton.Position = UDim2.new(0.023235971108078957, 0, 0.534756064414978, 0)
-Statusbutton.Size = UDim2.new(0, 112, 0, 27)
-Statusbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-Statusbutton.Text = "Status"
-Statusbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-Statusbutton.TextSize = 14
-Statusbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-local menubutton = Instance.new("TextButton")
-menubutton.Parent = IKGHUBv2
-menubutton.LayoutOrder = 0
-menubutton.Active = true
-menubutton.Interactable = true
-menubutton.AnchorPoint = Vector2.new(0, 0)
-menubutton.Rotation = 0
-menubutton.AutomaticSize = Enum.AutomaticSize.None
-menubutton.Name = "menubutton"
-menubutton.BorderMode = Enum.BorderMode.Outline
-menubutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
-menubutton.ZIndex = 1
-menubutton.BorderSizePixel = 0
-menubutton.Visible = true
-menubutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-menubutton.BackgroundTransparency = 123
-menubutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-menubutton.Position = UDim2.new(0.023235971108078957, 0, 0.1069210097193718, 0)
-menubutton.Size = UDim2.new(0, 112, 0, 29)
-menubutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-menubutton.Text = "Menu"
-menubutton.TextColor3 = Color3.fromRGB(255, 255, 255)
-menubutton.TextSize = 14
-menubutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+local TextButton10 = Instance.new("TextButton")
+TextButton10.Parent = Visual
+TextButton10.LayoutOrder = 0
+TextButton10.Active = true
+TextButton10.Interactable = true
+TextButton10.AnchorPoint = Vector2.new(0, 0)
+TextButton10.Rotation = 0
+TextButton10.AutomaticSize = Enum.AutomaticSize.None
+TextButton10.Name = "TextButton"
+TextButton10.BorderMode = Enum.BorderMode.Outline
+TextButton10.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton10.ZIndex = 1
+TextButton10.BorderSizePixel = 0
+TextButton10.Visible = true
+TextButton10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton10.BackgroundTransparency = 123
+TextButton10.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton10.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton10.Size = UDim2.new(0, 188, 0, 50)
+TextButton10.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton10.Text = "Activar"
+TextButton10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton10.TextSize = 14
+TextButton10.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 local Movement = Instance.new("Frame")
 Movement.Parent = IKGHUBv2
@@ -760,9 +683,9 @@ Movement.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Movement.Position = UDim2.new(0.27058202028274536, 0, 0.14327625930309296, 0)
 Movement.Size = UDim2.new(0, 432, 0, 262)
 
-local UICorner4 = Instance.new("UICorner")
-UICorner4.Parent = Movement
-UICorner4.Name = "UICorner"
+local UICorner5 = Instance.new("UICorner")
+UICorner5.Parent = Movement
+UICorner5.Name = "UICorner"
 
 local TextLabel12 = Instance.new("TextLabel")
 TextLabel12.Parent = Movement
@@ -860,56 +783,6 @@ TextLabel15.Text = "Speed"
 TextLabel15.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel15.TextSize = 14
 
-local TextButton9 = Instance.new("TextButton")
-TextButton9.Parent = Movement
-TextButton9.LayoutOrder = 0
-TextButton9.Active = true
-TextButton9.Interactable = true
-TextButton9.AnchorPoint = Vector2.new(0, 0)
-TextButton9.Rotation = 0
-TextButton9.AutomaticSize = Enum.AutomaticSize.None
-TextButton9.Name = "TextButton"
-TextButton9.BorderMode = Enum.BorderMode.Outline
-TextButton9.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextButton9.ZIndex = 1
-TextButton9.BorderSizePixel = 0
-TextButton9.Visible = true
-TextButton9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton9.BackgroundTransparency = 123
-TextButton9.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton9.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
-TextButton9.Size = UDim2.new(0, 188, 0, 50)
-TextButton9.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextButton9.Text = "Activar"
-TextButton9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton9.TextSize = 14
-TextButton9.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-local TextButton10 = Instance.new("TextButton")
-TextButton10.Parent = Movement
-TextButton10.LayoutOrder = 0
-TextButton10.Active = true
-TextButton10.Interactable = true
-TextButton10.AnchorPoint = Vector2.new(0, 0)
-TextButton10.Rotation = 0
-TextButton10.AutomaticSize = Enum.AutomaticSize.None
-TextButton10.Name = "TextButton"
-TextButton10.BorderMode = Enum.BorderMode.Outline
-TextButton10.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextButton10.ZIndex = 1
-TextButton10.BorderSizePixel = 0
-TextButton10.Visible = true
-TextButton10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton10.BackgroundTransparency = 123
-TextButton10.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton10.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
-TextButton10.Size = UDim2.new(0, 188, 0, 50)
-TextButton10.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextButton10.Text = "Activar"
-TextButton10.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton10.TextSize = 14
-TextButton10.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
 local TextButton11 = Instance.new("TextButton")
 TextButton11.Parent = Movement
 TextButton11.LayoutOrder = 0
@@ -927,7 +800,7 @@ TextButton11.Visible = true
 TextButton11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton11.BackgroundTransparency = 123
 TextButton11.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton11.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton11.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
 TextButton11.Size = UDim2.new(0, 188, 0, 50)
 TextButton11.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
 TextButton11.Text = "Activar"
@@ -952,13 +825,63 @@ TextButton12.Visible = true
 TextButton12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton12.BackgroundTransparency = 123
 TextButton12.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton12.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton12.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
 TextButton12.Size = UDim2.new(0, 188, 0, 50)
 TextButton12.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
 TextButton12.Text = "Activar"
 TextButton12.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton12.TextSize = 14
 TextButton12.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton13 = Instance.new("TextButton")
+TextButton13.Parent = Movement
+TextButton13.LayoutOrder = 0
+TextButton13.Active = true
+TextButton13.Interactable = true
+TextButton13.AnchorPoint = Vector2.new(0, 0)
+TextButton13.Rotation = 0
+TextButton13.AutomaticSize = Enum.AutomaticSize.None
+TextButton13.Name = "TextButton"
+TextButton13.BorderMode = Enum.BorderMode.Outline
+TextButton13.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton13.ZIndex = 1
+TextButton13.BorderSizePixel = 0
+TextButton13.Visible = true
+TextButton13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton13.BackgroundTransparency = 123
+TextButton13.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton13.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton13.Size = UDim2.new(0, 188, 0, 50)
+TextButton13.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton13.Text = "Activar"
+TextButton13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton13.TextSize = 14
+TextButton13.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton14 = Instance.new("TextButton")
+TextButton14.Parent = Movement
+TextButton14.LayoutOrder = 0
+TextButton14.Active = true
+TextButton14.Interactable = true
+TextButton14.AnchorPoint = Vector2.new(0, 0)
+TextButton14.Rotation = 0
+TextButton14.AutomaticSize = Enum.AutomaticSize.None
+TextButton14.Name = "TextButton"
+TextButton14.BorderMode = Enum.BorderMode.Outline
+TextButton14.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton14.ZIndex = 1
+TextButton14.BorderSizePixel = 0
+TextButton14.Visible = true
+TextButton14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton14.BackgroundTransparency = 123
+TextButton14.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton14.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton14.Size = UDim2.new(0, 188, 0, 50)
+TextButton14.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton14.Text = "Activar"
+TextButton14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton14.TextSize = 14
+TextButton14.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 local Fun = Instance.new("Frame")
 Fun.Parent = IKGHUBv2
@@ -979,9 +902,9 @@ Fun.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Fun.Position = UDim2.new(0.27058202028274536, 0, 0.13419805467128754, 0)
 Fun.Size = UDim2.new(0, 432, 0, 266)
 
-local UICorner5 = Instance.new("UICorner")
-UICorner5.Parent = Fun
-UICorner5.Name = "UICorner"
+local UICorner6 = Instance.new("UICorner")
+UICorner6.Parent = Fun
+UICorner6.Name = "UICorner"
 
 local TextLabel16 = Instance.new("TextLabel")
 TextLabel16.Parent = Fun
@@ -1079,56 +1002,6 @@ TextLabel19.Text = "Troll All"
 TextLabel19.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel19.TextSize = 14
 
-local TextButton13 = Instance.new("TextButton")
-TextButton13.Parent = Fun
-TextButton13.LayoutOrder = 0
-TextButton13.Active = true
-TextButton13.Interactable = true
-TextButton13.AnchorPoint = Vector2.new(0, 0)
-TextButton13.Rotation = 0
-TextButton13.AutomaticSize = Enum.AutomaticSize.None
-TextButton13.Name = "TextButton"
-TextButton13.BorderMode = Enum.BorderMode.Outline
-TextButton13.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextButton13.ZIndex = 1
-TextButton13.BorderSizePixel = 0
-TextButton13.Visible = true
-TextButton13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton13.BackgroundTransparency = 123
-TextButton13.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton13.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
-TextButton13.Size = UDim2.new(0, 188, 0, 50)
-TextButton13.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextButton13.Text = "Activar"
-TextButton13.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton13.TextSize = 14
-TextButton13.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-local TextButton14 = Instance.new("TextButton")
-TextButton14.Parent = Fun
-TextButton14.LayoutOrder = 0
-TextButton14.Active = true
-TextButton14.Interactable = true
-TextButton14.AnchorPoint = Vector2.new(0, 0)
-TextButton14.Rotation = 0
-TextButton14.AutomaticSize = Enum.AutomaticSize.None
-TextButton14.Name = "TextButton"
-TextButton14.BorderMode = Enum.BorderMode.Outline
-TextButton14.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextButton14.ZIndex = 1
-TextButton14.BorderSizePixel = 0
-TextButton14.Visible = true
-TextButton14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton14.BackgroundTransparency = 123
-TextButton14.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton14.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
-TextButton14.Size = UDim2.new(0, 188, 0, 50)
-TextButton14.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextButton14.Text = "Activar"
-TextButton14.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton14.TextSize = 14
-TextButton14.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
 local TextButton15 = Instance.new("TextButton")
 TextButton15.Parent = Fun
 TextButton15.LayoutOrder = 0
@@ -1146,7 +1019,7 @@ TextButton15.Visible = true
 TextButton15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton15.BackgroundTransparency = 123
 TextButton15.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton15.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton15.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
 TextButton15.Size = UDim2.new(0, 188, 0, 50)
 TextButton15.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
 TextButton15.Text = "Activar"
@@ -1171,13 +1044,63 @@ TextButton16.Visible = true
 TextButton16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton16.BackgroundTransparency = 123
 TextButton16.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton16.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton16.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
 TextButton16.Size = UDim2.new(0, 188, 0, 50)
 TextButton16.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
 TextButton16.Text = "Activar"
 TextButton16.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton16.TextSize = 14
 TextButton16.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton17 = Instance.new("TextButton")
+TextButton17.Parent = Fun
+TextButton17.LayoutOrder = 0
+TextButton17.Active = true
+TextButton17.Interactable = true
+TextButton17.AnchorPoint = Vector2.new(0, 0)
+TextButton17.Rotation = 0
+TextButton17.AutomaticSize = Enum.AutomaticSize.None
+TextButton17.Name = "TextButton"
+TextButton17.BorderMode = Enum.BorderMode.Outline
+TextButton17.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton17.ZIndex = 1
+TextButton17.BorderSizePixel = 0
+TextButton17.Visible = true
+TextButton17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton17.BackgroundTransparency = 123
+TextButton17.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton17.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton17.Size = UDim2.new(0, 188, 0, 50)
+TextButton17.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton17.Text = "Activar"
+TextButton17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton17.TextSize = 14
+TextButton17.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton18 = Instance.new("TextButton")
+TextButton18.Parent = Fun
+TextButton18.LayoutOrder = 0
+TextButton18.Active = true
+TextButton18.Interactable = true
+TextButton18.AnchorPoint = Vector2.new(0, 0)
+TextButton18.Rotation = 0
+TextButton18.AutomaticSize = Enum.AutomaticSize.None
+TextButton18.Name = "TextButton"
+TextButton18.BorderMode = Enum.BorderMode.Outline
+TextButton18.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton18.ZIndex = 1
+TextButton18.BorderSizePixel = 0
+TextButton18.Visible = true
+TextButton18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton18.BackgroundTransparency = 123
+TextButton18.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton18.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton18.Size = UDim2.new(0, 188, 0, 50)
+TextButton18.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton18.Text = "Activar"
+TextButton18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton18.TextSize = 14
+TextButton18.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 local Comands = Instance.new("Frame")
 Comands.Parent = IKGHUBv2
@@ -1198,9 +1121,9 @@ Comands.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Comands.Position = UDim2.new(0.2691514194011688, 0, 0.13162073493003845, 0)
 Comands.Size = UDim2.new(0, 428, 0, 267)
 
-local UICorner6 = Instance.new("UICorner")
-UICorner6.Parent = Comands
-UICorner6.Name = "UICorner"
+local UICorner7 = Instance.new("UICorner")
+UICorner7.Parent = Comands
+UICorner7.Name = "UICorner"
 
 local TextLabel20 = Instance.new("TextLabel")
 TextLabel20.Parent = Comands
@@ -1298,56 +1221,6 @@ TextLabel23.Text = "Teleport HEER"
 TextLabel23.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel23.TextSize = 14
 
-local TextButton17 = Instance.new("TextButton")
-TextButton17.Parent = Comands
-TextButton17.LayoutOrder = 0
-TextButton17.Active = true
-TextButton17.Interactable = true
-TextButton17.AnchorPoint = Vector2.new(0, 0)
-TextButton17.Rotation = 0
-TextButton17.AutomaticSize = Enum.AutomaticSize.None
-TextButton17.Name = "TextButton"
-TextButton17.BorderMode = Enum.BorderMode.Outline
-TextButton17.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextButton17.ZIndex = 1
-TextButton17.BorderSizePixel = 0
-TextButton17.Visible = true
-TextButton17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton17.BackgroundTransparency = 123
-TextButton17.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton17.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
-TextButton17.Size = UDim2.new(0, 188, 0, 50)
-TextButton17.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextButton17.Text = "Activar"
-TextButton17.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton17.TextSize = 14
-TextButton17.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
-local TextButton18 = Instance.new("TextButton")
-TextButton18.Parent = Comands
-TextButton18.LayoutOrder = 0
-TextButton18.Active = true
-TextButton18.Interactable = true
-TextButton18.AnchorPoint = Vector2.new(0, 0)
-TextButton18.Rotation = 0
-TextButton18.AutomaticSize = Enum.AutomaticSize.None
-TextButton18.Name = "TextButton"
-TextButton18.BorderMode = Enum.BorderMode.Outline
-TextButton18.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextButton18.ZIndex = 1
-TextButton18.BorderSizePixel = 0
-TextButton18.Visible = true
-TextButton18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton18.BackgroundTransparency = 123
-TextButton18.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton18.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
-TextButton18.Size = UDim2.new(0, 188, 0, 50)
-TextButton18.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextButton18.Text = "Activar"
-TextButton18.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton18.TextSize = 14
-TextButton18.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-
 local TextButton19 = Instance.new("TextButton")
 TextButton19.Parent = Comands
 TextButton19.LayoutOrder = 0
@@ -1365,7 +1238,7 @@ TextButton19.Visible = true
 TextButton19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton19.BackgroundTransparency = 123
 TextButton19.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton19.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton19.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
 TextButton19.Size = UDim2.new(0, 188, 0, 50)
 TextButton19.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
 TextButton19.Text = "Activar"
@@ -1390,13 +1263,63 @@ TextButton20.Visible = true
 TextButton20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton20.BackgroundTransparency = 123
 TextButton20.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextButton20.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton20.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
 TextButton20.Size = UDim2.new(0, 188, 0, 50)
 TextButton20.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
 TextButton20.Text = "Activar"
 TextButton20.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton20.TextSize = 14
 TextButton20.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton21 = Instance.new("TextButton")
+TextButton21.Parent = Comands
+TextButton21.LayoutOrder = 0
+TextButton21.Active = true
+TextButton21.Interactable = true
+TextButton21.AnchorPoint = Vector2.new(0, 0)
+TextButton21.Rotation = 0
+TextButton21.AutomaticSize = Enum.AutomaticSize.None
+TextButton21.Name = "TextButton"
+TextButton21.BorderMode = Enum.BorderMode.Outline
+TextButton21.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton21.ZIndex = 1
+TextButton21.BorderSizePixel = 0
+TextButton21.Visible = true
+TextButton21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton21.BackgroundTransparency = 123
+TextButton21.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton21.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton21.Size = UDim2.new(0, 188, 0, 50)
+TextButton21.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton21.Text = "Activar"
+TextButton21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton21.TextSize = 14
+TextButton21.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton22 = Instance.new("TextButton")
+TextButton22.Parent = Comands
+TextButton22.LayoutOrder = 0
+TextButton22.Active = true
+TextButton22.Interactable = true
+TextButton22.AnchorPoint = Vector2.new(0, 0)
+TextButton22.Rotation = 0
+TextButton22.AutomaticSize = Enum.AutomaticSize.None
+TextButton22.Name = "TextButton"
+TextButton22.BorderMode = Enum.BorderMode.Outline
+TextButton22.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton22.ZIndex = 1
+TextButton22.BorderSizePixel = 0
+TextButton22.Visible = true
+TextButton22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton22.BackgroundTransparency = 123
+TextButton22.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton22.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton22.Size = UDim2.new(0, 188, 0, 50)
+TextButton22.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton22.Text = "Activar"
+TextButton22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton22.TextSize = 14
+TextButton22.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 local Status = Instance.new("Frame")
 Status.Parent = IKGHUBv2
@@ -1417,9 +1340,9 @@ Status.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Status.Position = UDim2.new(0.19332881271839142, 0, 0.1069210097193718, 0)
 Status.Size = UDim2.new(0, 548, 0, 317)
 
-local UICorner7 = Instance.new("UICorner")
-UICorner7.Parent = Status
-UICorner7.Name = "UICorner"
+local UICorner8 = Instance.new("UICorner")
+UICorner8.Parent = Status
+UICorner8.Name = "UICorner"
 
 local TextLabel24 = Instance.new("TextLabel")
 TextLabel24.Parent = Status
@@ -1507,9 +1430,9 @@ Menu.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Menu.Position = UDim2.new(0.1834648698568344, 0, 0.09296094626188278, 0)
 Menu.Size = UDim2.new(0, 563, 0, 351)
 
-local UICorner8 = Instance.new("UICorner")
-UICorner8.Parent = Menu
-UICorner8.Name = "UICorner"
+local UICorner9 = Instance.new("UICorner")
+UICorner9.Parent = Menu
+UICorner9.Name = "UICorner"
 
 local ImageLabel = Instance.new("ImageLabel")
 ImageLabel.Parent = Menu
@@ -1671,10 +1594,10 @@ ImageLabel2.Position = UDim2.new(0.11711026728153229, 0, 0.25727027654647827, 0)
 ImageLabel2.Size = UDim2.new(0, 50, 0, 50)
 ImageLabel2.Image = "rbxassetid://112869881577825"
 
-local UICorner9 = Instance.new("UICorner")
-UICorner9.Parent = ImageLabel2
-UICorner9.Name = "UICorner"
-UICorner9.CornerRadius = UDim.new(0, 123)
+local UICorner10 = Instance.new("UICorner")
+UICorner10.Parent = ImageLabel2
+UICorner10.Name = "UICorner"
+UICorner10.CornerRadius = UDim.new(0, 123)
 
 local TextLabel31 = Instance.new("TextLabel")
 TextLabel31.Parent = Menu
@@ -1939,6 +1862,31 @@ TextLabel40.Text = "(v1.3.09) New ui"
 TextLabel40.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel40.TextSize = 14
 
+local Combatbutton = Instance.new("TextButton")
+Combatbutton.Parent = IKGHUBv2
+Combatbutton.LayoutOrder = 0
+Combatbutton.Active = true
+Combatbutton.Interactable = true
+Combatbutton.AnchorPoint = Vector2.new(0, 0)
+Combatbutton.Rotation = 0
+Combatbutton.AutomaticSize = Enum.AutomaticSize.None
+Combatbutton.Name = "Combatbutton"
+Combatbutton.BorderMode = Enum.BorderMode.Outline
+Combatbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Combatbutton.ZIndex = 1
+Combatbutton.BorderSizePixel = 0
+Combatbutton.Visible = true
+Combatbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Combatbutton.BackgroundTransparency = 123
+Combatbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Combatbutton.Position = UDim2.new(0.020374739542603493, 0, 0.2924880087375641, 0)
+Combatbutton.Size = UDim2.new(0, 112, 0, 39)
+Combatbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Combatbutton.Text = "Combat"
+Combatbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Combatbutton.TextSize = 14
+Combatbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
 local Minimize = Instance.new("TextButton")
 Minimize.Parent = IKGHUBv2
 Minimize.LayoutOrder = 0
@@ -1963,6 +1911,179 @@ Minimize.Text = "-"
 Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
 Minimize.TextSize = 14
 Minimize.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Comandsbutton = Instance.new("TextButton")
+Comandsbutton.Parent = IKGHUBv2
+Comandsbutton.LayoutOrder = 0
+Comandsbutton.Active = true
+Comandsbutton.Interactable = true
+Comandsbutton.AnchorPoint = Vector2.new(0, 0)
+Comandsbutton.Rotation = 0
+Comandsbutton.AutomaticSize = Enum.AutomaticSize.None
+Comandsbutton.Name = "Comandsbutton"
+Comandsbutton.BorderMode = Enum.BorderMode.Outline
+Comandsbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Comandsbutton.ZIndex = 1
+Comandsbutton.BorderSizePixel = 0
+Comandsbutton.Visible = true
+Comandsbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Comandsbutton.BackgroundTransparency = 123
+Comandsbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Comandsbutton.Position = UDim2.new(0.0200286116451025, 0, 0.592783510684967, 0)
+Comandsbutton.Size = UDim2.new(0, 112, 0, 39)
+Comandsbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Comandsbutton.Text = "Comands"
+Comandsbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Comandsbutton.TextSize = 14
+Comandsbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local menubutton = Instance.new("TextButton")
+menubutton.Parent = IKGHUBv2
+menubutton.LayoutOrder = 0
+menubutton.Active = true
+menubutton.Interactable = true
+menubutton.AnchorPoint = Vector2.new(0, 0)
+menubutton.Rotation = 0
+menubutton.AutomaticSize = Enum.AutomaticSize.None
+menubutton.Name = "menubutton"
+menubutton.BorderMode = Enum.BorderMode.Outline
+menubutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+menubutton.ZIndex = 1
+menubutton.BorderSizePixel = 0
+menubutton.Visible = true
+menubutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+menubutton.BackgroundTransparency = 123
+menubutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+menubutton.Position = UDim2.new(0.021459227427840233, 0, 0.09349705278873444, 0)
+menubutton.Size = UDim2.new(0, 112, 0, 39)
+menubutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+menubutton.Text = "Menu"
+menubutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+menubutton.TextSize = 14
+menubutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Visualbutton = Instance.new("TextButton")
+Visualbutton.Parent = IKGHUBv2
+Visualbutton.LayoutOrder = 0
+Visualbutton.Active = true
+Visualbutton.Interactable = true
+Visualbutton.AnchorPoint = Vector2.new(0, 0)
+Visualbutton.Rotation = 0
+Visualbutton.AutomaticSize = Enum.AutomaticSize.None
+Visualbutton.Name = "Visualbutton"
+Visualbutton.BorderMode = Enum.BorderMode.Outline
+Visualbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Visualbutton.ZIndex = 1
+Visualbutton.BorderSizePixel = 0
+Visualbutton.Visible = true
+Visualbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Visualbutton.BackgroundTransparency = 123
+Visualbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Visualbutton.Position = UDim2.new(0.020374739542603493, 0, 0.191972553730011, 0)
+Visualbutton.Size = UDim2.new(0, 112, 0, 39)
+Visualbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Visualbutton.Text = "Visual"
+Visualbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Visualbutton.TextSize = 14
+Visualbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Statusbutton = Instance.new("TextButton")
+Statusbutton.Parent = IKGHUBv2
+Statusbutton.LayoutOrder = 0
+Statusbutton.Active = true
+Statusbutton.Interactable = true
+Statusbutton.AnchorPoint = Vector2.new(0, 0)
+Statusbutton.Rotation = 0
+Statusbutton.AutomaticSize = Enum.AutomaticSize.None
+Statusbutton.Name = "Statusbutton"
+Statusbutton.BorderMode = Enum.BorderMode.Outline
+Statusbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Statusbutton.ZIndex = 1
+Statusbutton.BorderSizePixel = 0
+Statusbutton.Visible = true
+Statusbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Statusbutton.BackgroundTransparency = 123
+Statusbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Statusbutton.Position = UDim2.new(0.023235971108078957, 0, 0.691972553730011, 0)
+Statusbutton.Size = UDim2.new(0, 112, 0, 39)
+Statusbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Statusbutton.Text = "Status"
+Statusbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Statusbutton.TextSize = 14
+Statusbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Movemetbutton = Instance.new("TextButton")
+Movemetbutton.Parent = IKGHUBv2
+Movemetbutton.LayoutOrder = 0
+Movemetbutton.Active = true
+Movemetbutton.Interactable = true
+Movemetbutton.AnchorPoint = Vector2.new(0, 0)
+Movemetbutton.Rotation = 0
+Movemetbutton.AutomaticSize = Enum.AutomaticSize.None
+Movemetbutton.Name = "Movemetbutton"
+Movemetbutton.BorderMode = Enum.BorderMode.Outline
+Movemetbutton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Movemetbutton.ZIndex = 1
+Movemetbutton.BorderSizePixel = 0
+Movemetbutton.Visible = true
+Movemetbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Movemetbutton.BackgroundTransparency = 123
+Movemetbutton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Movemetbutton.Position = UDim2.new(0.020374739542603493, 0, 0.3930034935474396, 0)
+Movemetbutton.Size = UDim2.new(0, 112, 0, 39)
+Movemetbutton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Movemetbutton.Text = "Movement"
+Movemetbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+Movemetbutton.TextSize = 14
+Movemetbutton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextLabel41 = Instance.new("TextLabel")
+TextLabel41.Parent = IKGHUBv2
+TextLabel41.LayoutOrder = 0
+TextLabel41.Active = false
+TextLabel41.Interactable = true
+TextLabel41.AnchorPoint = Vector2.new(0, 0)
+TextLabel41.Rotation = 0
+TextLabel41.AutomaticSize = Enum.AutomaticSize.None
+TextLabel41.Name = "TextLabel"
+TextLabel41.BorderMode = Enum.BorderMode.Outline
+TextLabel41.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel41.ZIndex = 1
+TextLabel41.BorderSizePixel = 0
+TextLabel41.Visible = true
+TextLabel41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel41.BackgroundTransparency = 123
+TextLabel41.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel41.Position = UDim2.new(0.8258552551269531, 0, 0.9027754068374634, 0)
+TextLabel41.Size = UDim2.new(0, 120, 0, 37)
+TextLabel41.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel41.Text = "Ikghub"
+TextLabel41.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel41.TextSize = 14
+
+local TextLabel42 = Instance.new("TextLabel")
+TextLabel42.Parent = IKGHUBv2
+TextLabel42.LayoutOrder = 0
+TextLabel42.Active = false
+TextLabel42.Interactable = true
+TextLabel42.AnchorPoint = Vector2.new(0, 0)
+TextLabel42.Rotation = 0
+TextLabel42.AutomaticSize = Enum.AutomaticSize.None
+TextLabel42.Name = "TextLabel"
+TextLabel42.BorderMode = Enum.BorderMode.Outline
+TextLabel42.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel42.ZIndex = 1
+TextLabel42.BorderSizePixel = 0
+TextLabel42.Visible = true
+TextLabel42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel42.BackgroundTransparency = 123
+TextLabel42.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel42.Position = UDim2.new(-0.0010402608895674348, 0, -0.001863774610683322, 0)
+TextLabel42.Size = UDim2.new(0, 120, 0, 37)
+TextLabel42.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel42.Text = "Ikghub"
+TextLabel42.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel42.TextSize = 14
 
 local CloseButton = Instance.new("TextButton")
 CloseButton.Parent = IKGHUBv2
@@ -1989,29 +2110,54 @@ CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 CloseButton.TextSize = 14
 CloseButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
-local TextLabel41 = Instance.new("TextLabel")
-TextLabel41.Parent = IKGHUBv2
-TextLabel41.LayoutOrder = 0
-TextLabel41.Active = false
-TextLabel41.Interactable = true
-TextLabel41.AnchorPoint = Vector2.new(0, 0)
-TextLabel41.Rotation = 0
-TextLabel41.AutomaticSize = Enum.AutomaticSize.None
-TextLabel41.Name = "TextLabel"
-TextLabel41.BorderMode = Enum.BorderMode.Outline
-TextLabel41.SizeConstraint = Enum.SizeConstraint.RelativeXY
-TextLabel41.ZIndex = 1
-TextLabel41.BorderSizePixel = 0
-TextLabel41.Visible = true
-TextLabel41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel41.BackgroundTransparency = 123
-TextLabel41.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel41.Position = UDim2.new(-0.0010402608895674348, 0, -0.001863774610683322, 0)
-TextLabel41.Size = UDim2.new(0, 120, 0, 37)
-TextLabel41.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
-TextLabel41.Text = "Ikghub"
-TextLabel41.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel41.TextSize = 14
+local Miniz = Instance.new("Frame")
+Miniz.Parent = Ikghubv2
+Miniz.LayoutOrder = 0
+Miniz.Active = false
+Miniz.Interactable = true
+Miniz.AnchorPoint = Vector2.new(0, 0)
+Miniz.Rotation = 0
+Miniz.AutomaticSize = Enum.AutomaticSize.None
+Miniz.Name = "Miniz"
+Miniz.BorderMode = Enum.BorderMode.Outline
+Miniz.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Miniz.ZIndex = 1
+Miniz.BorderSizePixel = 0
+Miniz.Visible = false
+Miniz.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Miniz.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Miniz.Position = UDim2.new(0, 0, 0.8296943306922913, 0)
+Miniz.Size = UDim2.new(0, 112, 0, 33)
+
+local UICorner11 = Instance.new("UICorner")
+UICorner11.Parent = Miniz
+UICorner11.Name = "UICorner"
+UICorner11.CornerRadius = UDim.new(1, 0)
+
+local Abrir = Instance.new("TextButton")
+Abrir.Parent = Miniz
+Abrir.LayoutOrder = 0
+Abrir.Active = true
+Abrir.Interactable = true
+Abrir.AnchorPoint = Vector2.new(0, 0)
+Abrir.Rotation = 0
+Abrir.AutomaticSize = Enum.AutomaticSize.None
+Abrir.Name = "Abrir"
+Abrir.BorderMode = Enum.BorderMode.Outline
+Abrir.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Abrir.ZIndex = 1
+Abrir.BorderSizePixel = 0
+Abrir.Visible = true
+Abrir.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Abrir.BackgroundTransparency = 123
+Abrir.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Abrir.Position = UDim2.new(0.2857142984867096, 0, 0.06060606241226196, 0)
+Abrir.Size = UDim2.new(0, 48, 0, 28)
+Abrir.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Abrir.Text = "Ikghub"
+Abrir.TextColor3 = Color3.fromRGB(19, 173, 168)
+Abrir.TextSize = 14
+Abrir.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 
 local _fakemodules = {}
 
@@ -2168,611 +2314,7 @@ local function Rankg_tag2_fakescript() -- IKGHUBv2.Rankg tag
 	end)
 end
 task.spawn(Rankg_tag2_fakescript)
-local function LocalScript4_fakescript() -- TextLabel3.LocalScript
-	local script = Instance.new("LocalScript", TextLabel3)
-	script.Name = "LocalScript"
-	local textLabel = script.Parent
-	local marketplaceService = game:GetService("MarketplaceService")
-	local success, info = pcall(function()
-		return marketplaceServiceketplaceService:GetProductInfo(game.PlaceId)
-		end)
-	if success and info then
-		textLabel.Text = info.Name
-	else
-		textLabel.Text = game.Name
-	end
-end
-task.spawn(LocalScript4_fakescript)
-local function LocalScript6_fakescript() -- Combatbutton.LocalScript
-	local script = Instance.new("LocalScript", Combatbutton)
-	script.Name = "LocalScript"
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Combat") -- CAMBIA ESTO
-	local TweenService = game:GetService("TweenService")
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	local OriginalColor = Button.BackgroundColor3
-	-- Hover
-	Button.MouseEnter:Connect(function()
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	end)
-	Button.MouseLeave:Connect(function()
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	end)
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-		local ParentGui = Frame.Parent
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-		if Frame.Visible then
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-			CloseTween:Play()
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-		else
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-		end
-	end)
-end
-task.spawn(LocalScript6_fakescript)
-local function LocalScript8_fakescript() -- TextButton.LocalScript
-	local script = Instance.new("LocalScript", TextButton)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local toggled = false
-	local player = game.Players.LocalPlayer
-	local camera = workspace.CurrentCamera
-	button.MouseButton1Click:Connect(function()
-		toggled = not toggled
-		button.Text = toggled and "Aimbot: ON" or "Aimbot: OFF"
-		if toggled then
-			game:GetService("RunService").RenderStepped:Connect(function()
-				if not toggled then return end
-				local closest = nil
-				local shortest = math.huge
-				for _, p in pairs(game.Players:GetPlayers()) do
-					if p ~= player and p.Character and p.Character:FindFirstChild("Head") then
-						local dist = (p.Character.Head.Position - camera.CFrame.Position).Magnitude
-						if dist < shortest then
-							shortest = dist
-							closest = p
-						end
-					end
-				end
-				if closest and closest.Character and closest.Character:FindFirstChild("Head") then
-					camera.CFrame = CFrame.lookAt(camera.CFrame.Position, closest.Character.Head.Position)
-				end
-			end)
-		end
-	end)
-end
-task.spawn(LocalScript8_fakescript)
-local function LocalScript10_fakescript() -- TextButton2.LocalScript
-	local script = Instance.new("LocalScript", TextButton2)
-	script.Name = "LocalScript"
-	getgenv().TeamCheck = true  -- Cambia a false si quieres desactivar por default
-	game.Players.PlayerAdded:Connect(function(plr)
-		plr.CharacterAdded:Connect(function(char)
-			char:WaitForChild("Humanoid")
-		end)
-	end)
-end
-task.spawn(LocalScript10_fakescript)
-local function LocalScript12_fakescript() -- TextButton3.LocalScript
-	local script = Instance.new("LocalScript", TextButton3)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local fovEnabled = false
-	local fovValue = 80  -- Cambia este valor (normal es 70)
-	local circle
-	button.MouseButton1Click:Connect(function()
-		fovEnabled = not fovEnabled
-		button.Text = fovEnabled and "FOV: ON" or "FOV: OFF"
-		local camera = workspace.CurrentCamera
-		if fovEnabled then
-			camera.FieldOfView = fovValue
-			-- Círculo de FOV
-			circle = Drawing.new("Circle")
-			circle.Thickness = 2
-			circle.Color = Color3.fromRGB(255, 255, 255)
-			circle.Filled = false
-			circle.Transparency = 0.8
-			circle.NumSides = 100
-			circle.Radius = 150  -- Tamaño del círculo en pantalla
-			spawn(function()
-				while fovEnabled do
-					circle.Position = Vector2.new(camera.ViewportSize.X/2, camera.ViewportSize.Y/2)
-					circle.Visible = true
-					wait()
-				end
-			end)
-		else
-			camera.FieldOfView = 70
-			if circle then
-				circle.Visible = false
-				circle:Remove()
-			end
-		end
-	end)
-end
-task.spawn(LocalScript12_fakescript)
-local function LocalScript14_fakescript() -- TextButton4.LocalScript
-	local script = Instance.new("LocalScript", TextButton4)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local toggled = false
-	button.MouseButton1Click:Connect(function()
-		toggled = not toggled
-		button.Text = toggled and "Hitbox: ON" or "Hitbox: OFF"
-		while toggled do
-			for _, p in pairs(game.Players:GetPlayers()) do
-				if p ~= game.Players.LocalPlayer and p.Character then
-					for _, part in pairs(p.Character:GetChildren()) do
-						if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
-							part.Size = Vector3.new(5, 5, 5)  -- Cambia el tamaño
-							part.Transparency = 0.7
-						end
-					end
-				end
-			end
-			wait(0.1)
-		end
-	end)
-end
-task.spawn(LocalScript14_fakescript)
-local function LocalScript16_fakescript() -- Visualbutton.LocalScript
-	local script = Instance.new("LocalScript", Visualbutton)
-	script.Name = "LocalScript"
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Visual") -- CAMBIA ESTO
-	local TweenService = game:GetService("TweenService")
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	local OriginalColor = Button.BackgroundColor3
-	-- Hover
-	Button.MouseEnter:Connect(function()
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	end)
-	Button.MouseLeave:Connect(function()
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	end)
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-		local ParentGui = Frame.Parent
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-		if Frame.Visible then
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-			CloseTween:Play()
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-		else
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-		end
-	end)
-end
-task.spawn(LocalScript16_fakescript)
-local function LocalScript18_fakescript() -- TextButton5.LocalScript
-	local script = Instance.new("LocalScript", TextButton5)
-	script.Name = "LocalScript"
-	local Button = script.Parent
-	local Players = game:GetService("Players")
-	local LocalPlayer = Players.LocalPlayer
-	local ESPEnabled = false
-	local function CreateESP(character)
-		if character:FindFirstChild("ESPHighlight") then
-			return
-		end
-		local Highlight = Instance.new("Highlight")
-		Highlight.Name = "ESPHighlight"
-		Highlight.FillColor = Color3.fromRGB(255, 0, 0)
-		Highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
-		Highlight.FillTransparency = 0.5
-		Highlight.OutlineTransparency = 0
-		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-		Highlight.Parent = character
-	end
-	local function RemoveESP(character)
-		local Highlight = character:FindFirstChild("ESPHighlight")
-		if Highlight then
-			Highlight:Destroy()
-		end
-	end
-	local function ToggleESP()
-		ESPEnabled = not ESPEnabled
-		for _, Player in ipairs(Players:GetPlayers()) do
-			if Player ~= LocalPlayer and Player.Character then
-				if ESPEnabled then
-					CreateESP(Player.Character)
-				else
-					RemoveESP(Player.Character)
-				end
-			end
-		end
-		Button.Text = ESPEnabled and "ESP ON" or "ESP OFF"
-	end
-	Button.MouseButton1Click:Connect(ToggleESP)
-	Players.PlayerAdded:Connect(function(Player)
-		Player.CharacterAdded:Connect(function(Character)
-			task.wait(1)
-			if ESPEnabled then
-				CreateESP(Character)
-			end
-		end)
-	end)
-end
-task.spawn(LocalScript18_fakescript)
-local function LocalScript20_fakescript() -- TextButton6.LocalScript
-	local script = Instance.new("LocalScript", TextButton6)
-	script.Name = "LocalScript"
-	local Button = script.Parent
-	local Players = game:GetService("Players")
-	local LocalPlayer = Players.LocalPlayer
-	local Enabled = false
-	local function AddChams(player)
-		local character = player.Character
-		if not character then return end
-		local old = character:FindFirstChild("TeamChams")
-		if old then old:Destroy() end
-		local Highlight = Instance.new("Highlight")
-		Highlight.Name = "TeamChams"
-		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
-		Highlight.FillTransparency = 0.3
-		Highlight.OutlineTransparency = 0
-		if player.Team == LocalPlayer.Team then
-			Highlight.FillColor = Color3.fromRGB(0, 255, 0) -- Verde aliado
-		else
-			Highlight.FillColor = Color3.fromRGB(255, 0, 0) -- Rojo enemigo
-		end
-		Highlight.Parent = character
-	end
-	local function RemoveChams(character)
-		local h = character:FindFirstChild("TeamChams")
-		if h then
-			h:Destroy()
-		end
-	end
-	Button.MouseButton1Click:Connect(function()
-		Enabled = not Enabled
-		for _, player in ipairs(Players:GetPlayers()) do
-			if player ~= LocalPlayer and player.Character then
-				if Enabled then
-					AddChams(player)
-				else
-					RemoveChams(player.Character)
-				end
-			end
-		end
-		Button.Text = Enabled and "CHAMS ON" or "CHAMS OFF"
-	end)
-	Players.PlayerAdded:Connect(function(player)
-		player.CharacterAdded:Connect(function()
-			task.wait(1)
-			if Enabled then
-				AddChams(player)
-			end
-		end)
-	end)
-end
-task.spawn(LocalScript20_fakescript)
-local function LocalScript22_fakescript() -- TextButton7.LocalScript
-	local script = Instance.new("LocalScript", TextButton7)
-	script.Name = "LocalScript"
-	local Button = script.Parent
-	local Players = game:GetService("Players")
-	local RunService = game:GetService("RunService")
-	local LocalPlayer = Players.LocalPlayer
-	local Camera = workspace.CurrentCamera
-	local Enabled = false
-	local Tracers = {}
-	local function ClearTracers()
-		for _, line in pairs(Tracers) do
-			line:Remove()
-		end
-		Tracers = {}
-	end
-	local function CreateTracer(player)
-		local line = Drawing.new("Line")
-		line.Thickness = 2
-		line.Transparency = 1
-		Tracers[player] = line
-	end
-	Button.MouseButton1Click:Connect(function()
-		Enabled = not Enabled
-		if Enabled then
-			for _, player in ipairs(Players:GetPlayers()) do
-				if player ~= LocalPlayer then
-					CreateTracer(player)
-				end
-			end
-			Button.Text = "TRACERS ON"
-		else
-			ClearTracers()
-			Button.Text = "TRACERS OFF"
-		end
-	end)
-	Players.PlayerAdded:Connect(function(player)
-		if Enabled and player ~= LocalPlayer then
-			CreateTracer(player)
-		end
-	end)
-	RunService.RenderStepped:Connect(function()
-		if not Enabled then return end
-		for player, line in pairs(Tracers) do
-			local character = player.Character
-			local root = character and character:FindFirstChild("HumanoidRootPart")
-			if root then
-				local pos, visible = Camera:WorldToViewportPoint(root.Position)
-				if visible then
-					line.Visible = true
-					line.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
-					line.To = Vector2.new(pos.X, pos.Y)
-					if player.Team == LocalPlayer.Team then
-						line.Color = Color3.fromRGB(0, 255, 0)
-					else
-						line.Color = Color3.fromRGB(255, 0, 0)
-					end
-				else
-					line.Visible = false
-				end
-			else
-				line.Visible = false
-			end
-		end
-	end)
-end
-task.spawn(LocalScript22_fakescript)
-local function LocalScript24_fakescript() -- TextButton8.LocalScript
-	local script = Instance.new("LocalScript", TextButton8)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local fullbrightOn = false
-	button.MouseButton1Click:Connect(function()
-		fullbrightOn = not fullbrightOn
-		button.Text = fullbrightOn and "Fullbright: ON" or "Fullbright: OFF"
-		local lighting = game:GetService("Lighting")
-		if fullbrightOn then
-			-- Guardamos valores originales
-			getgenv().OriginalLighting = {
-				Brightness = lighting.Brightness,
-				ClockTime = lighting.ClockTime,
-				FogEnd = lighting.FogEnd,
-				GlobalShadows = lighting.GlobalShadows,
-				Ambient = lighting.Ambient
-			}
-			lighting.Brightness = 2
-			lighting.ClockTime = 14
-			lighting.FogEnd = 100000
-			lighting.GlobalShadows = false
-			lighting.Ambient = Color3.fromRGB(255, 255, 255)
-			-- Para que se mantenga siempre
-			spawn(function()
-				while fullbrightOn do
-					lighting.Brightness = 2
-					lighting.ClockTime = 14
-					lighting.FogEnd = 100000
-					lighting.GlobalShadows = false
-					lighting.Ambient = Color3.fromRGB(255, 255, 255)
-					wait(1)
-				end
-			end)
-		else
-			-- Restaurar valores originales
-			if getgenv().OriginalLighting then
-				lighting.Brightness = getgenv().OriginalLighting.Brightness
-				lighting.ClockTime = getgenv().OriginalLighting.ClockTime
-				lighting.FogEnd = getgenv().OriginalLighting.FogEnd
-				lighting.GlobalShadows = getgenv().OriginalLighting.GlobalShadows
-				lighting.Ambient = getgenv().OriginalLighting.Ambient
-			end
-		end
-	end)
-end
-task.spawn(LocalScript24_fakescript)
-local function LocalScript26_fakescript() -- Movemetbutton.LocalScript
-	local script = Instance.new("LocalScript", Movemetbutton)
-	script.Name = "LocalScript"
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Movement") -- CAMBIA ESTO
-	local TweenService = game:GetService("TweenService")
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	local OriginalColor = Button.BackgroundColor3
-	-- Hover
-	Button.MouseEnter:Connect(function()
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	end)
-	Button.MouseLeave:Connect(function()
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	end)
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-		local ParentGui = Frame.Parent
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-		if Frame.Visible then
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-			CloseTween:Play()
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-		else
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-		end
-	end)
-end
-task.spawn(LocalScript26_fakescript)
-local function LocalScript28_fakescript() -- Funbutton.LocalScript
+local function LocalScript4_fakescript() -- Funbutton.LocalScript
 	local script = Instance.new("LocalScript", Funbutton)
 	script.Name = "LocalScript"
 	local Button = script.Parent
@@ -2860,8 +2402,840 @@ local function LocalScript28_fakescript() -- Funbutton.LocalScript
 		end
 	end)
 end
+task.spawn(LocalScript4_fakescript)
+local function LocalScript6_fakescript() -- TextButton.LocalScript
+	local script = Instance.new("LocalScript", TextButton)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local toggled = false
+	local player = game.Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	button.MouseButton1Click:Connect(function()
+		toggled = not toggled
+		button.Text = toggled and "Aimbot: ON" or "Aimbot: OFF"
+		if toggled then
+			game:GetService("RunService").RenderStepped:Connect(function()
+				if not toggled then return end
+				local closest = nil
+				local shortest = math.huge
+				for _, p in pairs(game.Players:GetPlayers()) do
+					if p ~= player and p.Character and p.Character:FindFirstChild("Head") then
+						local dist = (p.Character.Head.Position - camera.CFrame.Position).Magnitude
+						if dist < shortest then
+							shortest = dist
+							closest = p
+						end
+					end
+				end
+				if closest and closest.Character and closest.Character:FindFirstChild("Head") then
+					camera.CFrame = CFrame.lookAt(camera.CFrame.Position, closest.Character.Head.Position)
+				end
+			end)
+		end
+	end)
+end
+task.spawn(LocalScript6_fakescript)
+local function LocalScript8_fakescript() -- TextButton2.LocalScript
+	local script = Instance.new("LocalScript", TextButton2)
+	script.Name = "LocalScript"
+	getgenv().TeamCheck = true  -- Cambia a false si quieres desactivar por default
+	game.Players.PlayerAdded:Connect(function(plr)
+		plr.CharacterAdded:Connect(function(char)
+			char:WaitForChild("Humanoid")
+		end)
+	end)
+end
+task.spawn(LocalScript8_fakescript)
+local function LocalScript10_fakescript() -- TextButton3.LocalScript
+	local script = Instance.new("LocalScript", TextButton3)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local fovEnabled = false
+	local fovValue = 80  -- Cambia este valor (normal es 70)
+	local circle
+	button.MouseButton1Click:Connect(function()
+		fovEnabled = not fovEnabled
+		button.Text = fovEnabled and "FOV: ON" or "FOV: OFF"
+		local camera = workspace.CurrentCamera
+		if fovEnabled then
+			camera.FieldOfView = fovValue
+			-- Círculo de FOV
+			circle = Drawing.new("Circle")
+			circle.Thickness = 2
+			circle.Color = Color3.fromRGB(255, 255, 255)
+			circle.Filled = false
+			circle.Transparency = 0.8
+			circle.NumSides = 100
+			circle.Radius = 150  -- Tamaño del círculo en pantalla
+			spawn(function()
+				while fovEnabled do
+					circle.Position = Vector2.new(camera.ViewportSize.X/2, camera.ViewportSize.Y/2)
+					circle.Visible = true
+					wait()
+				end
+			end)
+		else
+			camera.FieldOfView = 70
+			if circle then
+				circle.Visible = false
+				circle:Remove()
+			end
+		end
+	end)
+end
+task.spawn(LocalScript10_fakescript)
+local function LocalScript12_fakescript() -- TextButton5.LocalScript
+	local script = Instance.new("LocalScript", TextButton5)
+	script.Name = "LocalScript"
+	local botonCerrar = script.Parent
+	-- Busca el Frame llamado IKGHUB subiendo en las carpetas
+	local frame = botonCerrar:FindFirstAncestor("IKGHUBv2") 
+	botonCerrar.MouseButton1Click:Connect(function()
+		if frame then
+			frame.Visible = false
+		else
+			warn("No se encontró el Frame llamado IKGHUB")
+		end
+	end)
+end
+task.spawn(LocalScript12_fakescript)
+local function LocalScript14_fakescript() -- TextButton6.LocalScript
+	local script = Instance.new("LocalScript", TextButton6)
+	script.Name = "LocalScript"
+	local botonCerrar = script.Parent
+	-- Busca el Frame llamado IKGHUB subiendo en las carpetas
+	local frame = botonCerrar:FindFirstAncestor("close") 
+	botonCerrar.MouseButton1Click:Connect(function()
+		if frame then
+			frame.Visible = false
+		else
+			warn("No se encontró el Frame llamado IKGHUB")
+		end
+	end)
+end
+task.spawn(LocalScript14_fakescript)
+local function LocalScript16_fakescript() -- TextButton7.LocalScript
+	local script = Instance.new("LocalScript", TextButton7)
+	script.Name = "LocalScript"
+	local Button = script.Parent
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local ESPEnabled = false
+	local function CreateESP(character)
+		if character:FindFirstChild("ESPHighlight") then
+			return
+		end
+		local Highlight = Instance.new("Highlight")
+		Highlight.Name = "ESPHighlight"
+		Highlight.FillColor = Color3.fromRGB(255, 0, 0)
+		Highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+		Highlight.FillTransparency = 0.5
+		Highlight.OutlineTransparency = 0
+		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+		Highlight.Parent = character
+	end
+	local function RemoveESP(character)
+		local Highlight = character:FindFirstChild("ESPHighlight")
+		if Highlight then
+			Highlight:Destroy()
+		end
+	end
+	local function ToggleESP()
+		ESPEnabled = not ESPEnabled
+		for _, Player in ipairs(Players:GetPlayers()) do
+			if Player ~= LocalPlayer and Player.Character then
+				if ESPEnabled then
+					CreateESP(Player.Character)
+				else
+					RemoveESP(Player.Character)
+				end
+			end
+		end
+		Button.Text = ESPEnabled and "ESP ON" or "ESP OFF"
+	end
+	Button.MouseButton1Click:Connect(ToggleESP)
+	Players.PlayerAdded:Connect(function(Player)
+		Player.CharacterAdded:Connect(function(Character)
+			task.wait(1)
+			if ESPEnabled then
+				CreateESP(Character)
+			end
+		end)
+	end)
+end
+task.spawn(LocalScript16_fakescript)
+local function LocalScript18_fakescript() -- TextButton8.LocalScript
+	local script = Instance.new("LocalScript", TextButton8)
+	script.Name = "LocalScript"
+	local Button = script.Parent
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local Enabled = false
+	local function AddChams(player)
+		local character = player.Character
+		if not character then return end
+		local old = character:FindFirstChild("TeamChams")
+		if old then old:Destroy() end
+		local Highlight = Instance.new("Highlight")
+		Highlight.Name = "TeamChams"
+		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+		Highlight.FillTransparency = 0.3
+		Highlight.OutlineTransparency = 0
+		if player.Team == LocalPlayer.Team then
+			Highlight.FillColor = Color3.fromRGB(0, 255, 0) -- Verde aliado
+		else
+			Highlight.FillColor = Color3.fromRGB(255, 0, 0) -- Rojo enemigo
+		end
+		Highlight.Parent = character
+	end
+	local function RemoveChams(character)
+		local h = character:FindFirstChild("TeamChams")
+		if h then
+			h:Destroy()
+		end
+	end
+	Button.MouseButton1Click:Connect(function()
+		Enabled = not Enabled
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer and player.Character then
+				if Enabled then
+					AddChams(player)
+				else
+					RemoveChams(player.Character)
+				end
+			end
+		end
+		Button.Text = Enabled and "CHAMS ON" or "CHAMS OFF"
+	end)
+	Players.PlayerAdded:Connect(function(player)
+		player.CharacterAdded:Connect(function()
+			task.wait(1)
+			if Enabled then
+				AddChams(player)
+			end
+		end)
+	end)
+end
+task.spawn(LocalScript18_fakescript)
+local function LocalScript20_fakescript() -- TextButton9.LocalScript
+	local script = Instance.new("LocalScript", TextButton9)
+	script.Name = "LocalScript"
+	local Button = script.Parent
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	local LocalPlayer = Players.LocalPlayer
+	local Camera = workspace.CurrentCamera
+	local Enabled = false
+	local Tracers = {}
+	local function ClearTracers()
+		for _, line in pairs(Tracers) do
+			line:Remove()
+		end
+		Tracers = {}
+	end
+	local function CreateTracer(player)
+		local line = Drawing.new("Line")
+		line.Thickness = 2
+		line.Transparency = 1
+		Tracers[player] = line
+	end
+	Button.MouseButton1Click:Connect(function()
+		Enabled = not Enabled
+		if Enabled then
+			for _, player in ipairs(Players:GetPlayers()) do
+				if player ~= LocalPlayer then
+					CreateTracer(player)
+				end
+			end
+			Button.Text = "TRACERS ON"
+		else
+			ClearTracers()
+			Button.Text = "TRACERS OFF"
+		end
+	end)
+	Players.PlayerAdded:Connect(function(player)
+		if Enabled and player ~= LocalPlayer then
+			CreateTracer(player)
+		end
+	end)
+	RunService.RenderStepped:Connect(function()
+		if not Enabled then return end
+		for player, line in pairs(Tracers) do
+			local character = player.Character
+			local root = character and character:FindFirstChild("HumanoidRootPart")
+			if root then
+				local pos, visible = Camera:WorldToViewportPoint(root.Position)
+				if visible then
+					line.Visible = true
+					line.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
+					line.To = Vector2.new(pos.X, pos.Y)
+					if player.Team == LocalPlayer.Team then
+						line.Color = Color3.fromRGB(0, 255, 0)
+					else
+						line.Color = Color3.fromRGB(255, 0, 0)
+					end
+				else
+					line.Visible = false
+				end
+			else
+				line.Visible = false
+			end
+		end
+	end)
+end
+task.spawn(LocalScript20_fakescript)
+local function LocalScript22_fakescript() -- TextButton10.LocalScript
+	local script = Instance.new("LocalScript", TextButton10)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local fullbrightOn = false
+	button.MouseButton1Click:Connect(function()
+		fullbrightOn = not fullbrightOn
+		button.Text = fullbrightOn and "Fullbright: ON" or "Fullbright: OFF"
+		local lighting = game:GetService("Lighting")
+		if fullbrightOn then
+			-- Guardamos valores originales
+			getgenv().OriginalLighting = {
+				Brightness = lighting.Brightness,
+				ClockTime = lighting.ClockTime,
+				FogEnd = lighting.FogEnd,
+				GlobalShadows = lighting.GlobalShadows,
+				Ambient = lighting.Ambient
+			}
+			lighting.Brightness = 2
+			lighting.ClockTime = 14
+			lighting.FogEnd = 100000
+			lighting.GlobalShadows = false
+			lighting.Ambient = Color3.fromRGB(255, 255, 255)
+			-- Para que se mantenga siempre
+			spawn(function()
+				while fullbrightOn do
+					lighting.Brightness = 2
+					lighting.ClockTime = 14
+					lighting.FogEnd = 100000
+					lighting.GlobalShadows = false
+					lighting.Ambient = Color3.fromRGB(255, 255, 255)
+					wait(1)
+				end
+			end)
+		else
+			-- Restaurar valores originales
+			if getgenv().OriginalLighting then
+				lighting.Brightness = getgenv().OriginalLighting.Brightness
+				lighting.ClockTime = getgenv().OriginalLighting.ClockTime
+				lighting.FogEnd = getgenv().OriginalLighting.FogEnd
+				lighting.GlobalShadows = getgenv().OriginalLighting.GlobalShadows
+				lighting.Ambient = getgenv().OriginalLighting.Ambient
+			end
+		end
+	end)
+end
+task.spawn(LocalScript22_fakescript)
+local function LocalScript24_fakescript() -- TextButton11.LocalScript
+	local script = Instance.new("LocalScript", TextButton11)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local UIS = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	local flying = false
+	local speed = 50
+	local bv
+	local bg
+	local connection
+	button.Text = "Fly: OFF"
+	local function stopFly()
+		flying = false
+		button.Text = "Fly: OFF"
+		if connection then
+			connection:Disconnect()
+			connection = nil
+		end
+		if bv then
+			bv:Destroy()
+			bv = nil
+		end
+		if bg then
+			bg:Destroy()
+			bg = nil
+		end
+	end
+	local function startFly()
+		local character = player.Character or player.CharacterAdded:Wait()
+		local root = character:WaitForChild("HumanoidRootPart")
+		flying = true
+		button.Text = "Fly: ON"
+		bv = Instance.new("BodyVelocity")
+		bv.MaxForce = Vector3.new(1e9, 1e9, 1e9)
+		bv.Velocity = Vector3.zero
+		bv.Parent = root
+		bg = Instance.new("BodyGyro")
+		bg.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
+		bg.P = 10000
+		bg.Parent = root
+		connection = RunService.RenderStepped:Connect(function()
+			if not flying or not root then
+				return
+			end
+			local camera = workspace.CurrentCamera
+			local moveDir = Vector3.zero
+			if UIS:IsKeyDown(Enum.KeyCode.W) then
+				moveDir += camera.CFrame.LookVector
+			end
+			if UIS:IsKeyDown(Enum.KeyCode.S) then
+				moveDir -= camera.CFrame.LookVector
+			end
+			if UIS:IsKeyDown(Enum.KeyCode.A) then
+				moveDir -= camera.CFrame.RightVector
+			end
+			if UIS:IsKeyDown(Enum.KeyCode.D) then
+				moveDir += camera.CFrame.RightVector
+			end
+			if UIS:IsKeyDown(Enum.KeyCode.Space) then
+				moveDir += Vector3.new(0,1,0)
+			end
+			if UIS:IsKeyDown(Enum.KeyCode.LeftControl) then
+				moveDir -= Vector3.new(0,1,0)
+			end
+			if moveDir.Magnitude > 0 then
+				bv.Velocity = moveDir.Unit * speed
+			else
+				bv.Velocity = Vector3.zero
+			end
+			bg.CFrame = camera.CFrame
+		end)
+	end
+	button.MouseButton1Click:Connect(function()
+		if flying then
+			stopFly()
+		else
+			startFly()
+		end
+	end)
+end
+task.spawn(LocalScript24_fakescript)
+local function LocalScript26_fakescript() -- TextButton12.LocalScript
+	local script = Instance.new("LocalScript", TextButton12)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local speedOn = false
+	local defaultSpeed = 16
+	button.MouseButton1Click:Connect(function()
+		speedOn = not speedOn
+		button.Text = speedOn and "Speed: ON" or "Speed: OFF"
+		local char = game.Players.LocalPlayer.Character
+		if char then
+			local hum = char:FindFirstChild("Humanoid")
+			if hum then
+				hum.WalkSpeed = speedOn and 50 or defaultSpeed
+			end
+		end
+	end)
+end
+task.spawn(LocalScript26_fakescript)
+local function LocalScript28_fakescript() -- TextButton13.LocalScript
+	local script = Instance.new("LocalScript", TextButton13)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local noclip = false
+	button.MouseButton1Click:Connect(function()
+		noclip = not noclip
+		button.Text = noclip and "Noclip: ON" or "Noclip: OFF"
+		game:GetService("RunService").Stepped:Connect(function()
+			if noclip then
+				local char = game.Players.LocalPlayer.Character
+				if char then
+					for _, part in pairs(char:GetDescendants()) do
+						if part:IsA("BasePart") then
+							part.CanCollide = false
+						end
+					end
+				end
+			end
+		end)
+	end)
+end
 task.spawn(LocalScript28_fakescript)
-local function LocalScript30_fakescript() -- Comandsbutton.LocalScript
+local function LocalScript30_fakescript() -- TextButton14.LocalScript
+	local script = Instance.new("LocalScript", TextButton14)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local highJump = false
+	button.MouseButton1Click:Connect(function()
+		local character = player.Character
+		if not character then return end
+		local humanoid = character:FindFirstChild("Humanoid")
+		if not humanoid then return end
+		highJump = not highJump
+		if highJump then
+			humanoid.UseJumpPower = true
+			humanoid.JumpPower = 120
+			button.Text = "High Jump ON"
+		else
+			humanoid.JumpPower = 50
+			button.Text = "High Jump OFF"
+		end
+	end)
+end
+task.spawn(LocalScript30_fakescript)
+local function LocalScript32_fakescript() -- TextButton15.LocalScript
+	local script = Instance.new("LocalScript", TextButton15)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local spamming = false
+	local messages = {"Get good", "Ez", "LOL", "You suck", "Ratio"}
+	button.MouseButton1Click:Connect(function()
+		spamming = not spamming
+		button.Text = spamming and "Chat Spam: ON" or "Chat Spam: OFF"
+		spawn(function()
+			while spamming do
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+					messages[math.random(1, #messages)], "All"
+				)
+				wait(1.5)
+			end
+		end)
+	end)
+end
+task.spawn(LocalScript32_fakescript)
+local function LocalScript34_fakescript() -- TextButton16.LocalScript
+	local script = Instance.new("LocalScript", TextButton16)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local trolling = false
+	local trollEffects = {}
+	button.MouseButton1Click:Connect(function()
+		trolling = not trolling
+		button.Text = trolling and "Troll All: ON" or "Troll All: OFF"
+		if trolling then
+			spawn(function()
+				while trolling do
+					for _, plr in pairs(game.Players:GetPlayers()) do
+						if plr ~= game.Players.LocalPlayer and plr.Character then
+							-- Team Check (opcional)
+							if getgenv().TeamCheck and plr.Team == game.Players.LocalPlayer.Team then
+								continue
+							end
+							local char = plr.Character
+							local torso = char:FindFirstChild("Torso")
+							if not torso then continue end
+							-- Efecto Troll: Partícula + Spin + Fire
+							if not trollEffects[plr] then
+								-- Crear fuego/molesto
+								local fire = Instance.new("Fire")
+								fire.Size = 8
+								fire.Heat = 20
+								fire.Parent = torso
+								-- Crear humo
+								local smoke = Instance.new("Smoke")
+								smoke.Color = Color3.fromRGB(255, 0, 0)
+								smoke.Size = 10
+								smoke.Parent = torso
+								trollEffects[plr] = {fire, smoke}
+							end
+							-- Hacer que giren (Spin)
+							torso.CFrame = torso.CFrame * CFrame.Angles(0, math.rad(25), 0)
+							-- Hacer que salten random
+							local hum = char:FindFirstChild("Humanoid")
+							if hum and math.random(1, 8) == 1 then
+								hum:ChangeState(Enum.HumanoidStateType.Jumping)
+							end
+						end
+					end
+					wait(0.1)
+				end
+			end)
+		else
+			-- Limpiar efectos
+			for _, effects in pairs(trollEffects) do
+				for _, effect in pairs(effects) do
+					if effect and effect.Parent then
+						effect:Destroy()
+					end
+				end
+			end
+			trollEffects = {}
+		end
+	end)
+end
+task.spawn(LocalScript34_fakescript)
+local function LocalScript36_fakescript() -- TextButton17.LocalScript
+	local script = Instance.new("LocalScript", TextButton17)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local soundSpam = false
+	button.MouseButton1Click:Connect(function()
+		soundSpam = not soundSpam
+		button.Text = soundSpam and "Sound Spam: ON" or "Sound Spam: OFF"
+		spawn(function()
+			while soundSpam do
+				local sound = Instance.new("Sound")
+				sound.SoundId = "rbxassetid://131057058" -- Cambia el ID si quieres
+				sound.Volume = 10
+				sound.Parent = workspace
+				sound:Play()
+				game.Debris:AddItem(sound, 3)
+				wait(0.8)
+			end
+		end)
+	end)
+end
+task.spawn(LocalScript36_fakescript)
+local function LocalScript38_fakescript() -- TextButton18.LocalScript
+	local script = Instance.new("LocalScript", TextButton18)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local spinning = false
+	button.MouseButton1Click:Connect(function()
+		spinning = not spinning
+		button.Text = spinning and "Spinbot: ON" or "Spinbot: OFF"
+		local char = game.Players.LocalPlayer.Character
+		local root = char:WaitForChild("Torso")
+		while spinning do
+			root.CFrame = root.CFrame * CFrame.Angles(0, math.rad(30), 0)
+			wait()
+		end
+	end)
+end
+task.spawn(LocalScript38_fakescript)
+local function LocalScript40_fakescript() -- TextButton20.LocalScript
+	local script = Instance.new("LocalScript", TextButton20)
+	script.Name = "LocalScript"
+	-- LocalScript → Poner DENTRO del TextButton que tú creaste
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local spawnName = "SpawnEjercito"   -- ← CAMBIA ESTO por el nombre exacto de tu Part
+	button.Text = "Teleport a Spawn"   -- Puedes cambiar el texto
+	local function teleport()
+		local character = player.Character
+		if not character then
+			button.Text = "Spawnea primero!"
+			wait(2)
+			button.Text = "Teleport a Spawn"
+			return
+		end
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		if not hrp then
+			button.Text = "Error"
+			wait(2)
+			button.Text = "Teleport a Spawn"
+			return
+		end
+		-- Buscar la Part
+		local target = workspace:FindFirstChild(spawnName, true)
+		if target then
+			hrp.CFrame = target.CFrame * CFrame.new(0, 6, 0)  -- 6 studs arriba
+			button.Text = "¡Teletransportado! ✓"
+			wait(1.5)
+			button.Text = "Teleport a Spawn"
+		else
+			button.Text = spawnName .. " no encontrado"
+			wait(2.5)
+			button.Text = "Teleport a Spawn"
+		end
+	end
+	-- Conectar el click
+	button.MouseButton1Click:Connect(teleport)
+end
+task.spawn(LocalScript40_fakescript)
+local function LocalScript42_fakescript() -- TextButton21.LocalScript
+	local script = Instance.new("LocalScript", TextButton21)
+	script.Name = "LocalScript"
+	-- LocalScript → Poner DENTRO del TextButton que tú creaste
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local spawnName = "SpawnAereo"   -- ← CAMBIA ESTO por el nombre exacto de tu Part
+	button.Text = "Teleport a Spawn"   -- Puedes cambiar el texto
+	local function teleport()
+		local character = player.Character
+		if not character then
+			button.Text = "Spawnea primero!"
+			wait(2)
+			button.Text = "Teleport a Spawn"
+			return
+		end
+		local hrp = character:FindFirstChild("HumanoidRootPart")
+		if not hrp then
+			button.Text = "Error"
+			wait(2)
+			button.Text = "Teleport a Spawn"
+			return
+		end
+		-- Buscar la Part
+		local target = workspace:FindFirstChild(spawnName, true)
+		if target then
+			hrp.CFrame = target.CFrame * CFrame.new(0, 6, 0)  -- 6 studs arriba
+			button.Text = "¡Teletransportado! ✓"
+			wait(1.5)
+			button.Text = "Teleport a Spawn"
+		else
+			button.Text = spawnName .. " no encontrado"
+			wait(2.5)
+			button.Text = "Teleport a Spawn"
+		end
+	end
+	-- Conectar el click
+	button.MouseButton1Click:Connect(teleport)
+end
+task.spawn(LocalScript42_fakescript)
+local function LocalScript44_fakescript() -- TextButton22.LocalScript
+	local script = Instance.new("LocalScript", TextButton22)
+	script.Name = "LocalScript"
+	-- LocalScript → Para el botón de Spawnear MG15
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local replicatedStorage = game:GetService("ReplicatedStorage")
+	local weaponName = "Winchester"
+	local function giveWeapon()
+		local character = player.Character
+		if not character then 
+			button.Text = "¡Primero spawnea!"
+			wait(2)
+			button.Text = "Dar MG15"
+			return 
+		end
+		-- Buscar el arma en ReplicatedStorage
+		local weapon = replicatedStorage:FindFirstChild(weaponName)
+		if not weapon then
+			button.Text = "MG15 no encontrado"
+			wait(2)
+			button.Text = "Dar MG15"
+			return
+		end
+		-- Evitar duplicados (no dar si ya la tiene)
+		if player.Backpack:FindFirstChild(weaponName) or character:FindFirstChild(weaponName) then
+			button.Text = "Ya tienes el MG15"
+			wait(1.5)
+			button.Text = "Dar MG15"
+			return
+		end
+		-- Clonar y dar el arma
+		local weaponClone = weapon:Clone()
+		weaponClone.Parent = player.Backpack
+		button.Text = "MG15 Entregada ✓"
+		wait(1.5)
+		button.Text = "Dar MG15"
+	end
+	-- Configuración inicial del botón
+	button.Text = "Dar MG15"
+	button.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+	button.MouseButton1Click:Connect(giveWeapon)
+end
+task.spawn(LocalScript44_fakescript)
+local function LocalScript46_fakescript() -- Combatbutton.LocalScript
+	local script = Instance.new("LocalScript", Combatbutton)
+	script.Name = "LocalScript"
+	local Button = script.Parent
+	local Frame = Button.Parent:WaitForChild("Combat") -- CAMBIA ESTO
+	local TweenService = game:GetService("TweenService")
+	-- Guarda la posición original
+	local OpenPos = Frame.Position
+	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
+	Frame.Visible = false
+	Frame.Position = ClosedPos
+	-- Crear raya blanca automática
+	local SideLine = Instance.new("Frame")
+	SideLine.Name = "SideLine"
+	SideLine.Parent = Button
+	SideLine.Size = UDim2.new(0,0,1,0)
+	SideLine.Position = UDim2.new(0,0,0,0)
+	SideLine.BorderSizePixel = 0
+	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	SideLine.BackgroundTransparency = 0.45
+	local OriginalColor = Button.BackgroundColor3
+	-- Hover
+	Button.MouseEnter:Connect(function()
+		TweenService:Create(
+			Button,
+			TweenInfo.new(0.15),
+			{
+				BackgroundColor3 = Color3.fromRGB(40,40,40)
+			}
+		):Play()
+		TweenService:Create(
+			SideLine,
+			TweenInfo.new(0.15),
+			{
+				Size = UDim2.new(0,4,1,0)
+			}
+		):Play()
+	end)
+	Button.MouseLeave:Connect(function()
+		TweenService:Create(
+			Button,
+			TweenInfo.new(0.15),
+			{
+				BackgroundColor3 = OriginalColor
+			}
+		):Play()
+		TweenService:Create(
+			SideLine,
+			TweenInfo.new(0.15),
+			{
+				Size = UDim2.new(0,0,1,0)
+			}
+		):Play()
+	end)
+	-- Abrir/Cerrar Frame
+	Button.MouseButton1Click:Connect(function()
+		local ParentGui = Frame.Parent
+		-- Cierra otros frames
+		for _,v in pairs(ParentGui:GetChildren()) do
+			if v:IsA("Frame") and v ~= Frame then
+				v.Visible = false
+			end
+		end
+		if Frame.Visible then
+			local CloseTween = TweenService:Create(
+				Frame,
+				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
+				{
+					Position = ClosedPos
+				}
+			)
+			CloseTween:Play()
+			CloseTween.Completed:Connect(function()
+				Frame.Visible = false
+			end)
+		else
+			Frame.Visible = true
+			Frame.Position = ClosedPos
+			TweenService:Create(
+				Frame,
+				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
+				{
+					Position = OpenPos
+				}
+			):Play()
+		end
+	end)
+end
+task.spawn(LocalScript46_fakescript)
+local function LocalScript48_fakescript() -- Minimize.LocalScript
+	local script = Instance.new("LocalScript", Minimize)
+	script.Name = "LocalScript"
+	local frame = script.Parent.Parent -- IKGHUB
+	local miniz = frame.Parent:WaitForChild("Miniz")
+	script.Parent.MouseButton1Click:Connect(function()
+		frame.Visible = false
+		miniz.Visible = true
+	end)
+end
+task.spawn(LocalScript48_fakescript)
+local function LocalScript50_fakescript() -- Minimize.LocalScript
+	local script = Instance.new("LocalScript", Minimize)
+	script.Name = "LocalScript"
+	local SideLine = Instance.new("Frame")
+	SideLine.Name = "SideLine"
+	SideLine.Size = UDim2.new(0,0,1,0)
+	SideLine.Position = UDim2.new(0,0,0,0)
+	SideLine.BorderSizePixel = 0
+	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	SideLine.BackgroundTransparency = 0.45
+end
+task.spawn(LocalScript50_fakescript)
+local function LocalScript52_fakescript() -- Comandsbutton.LocalScript
 	local script = Instance.new("LocalScript", Comandsbutton)
 	script.Name = "LocalScript"
 	local Button = script.Parent
@@ -2949,97 +3323,8 @@ local function LocalScript30_fakescript() -- Comandsbutton.LocalScript
 		end
 	end)
 end
-task.spawn(LocalScript30_fakescript)
-local function LocalScript32_fakescript() -- Statusbutton.LocalScript
-	local script = Instance.new("LocalScript", Statusbutton)
-	script.Name = "LocalScript"
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Status") -- CAMBIA ESTO
-	local TweenService = game:GetService("TweenService")
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	local OriginalColor = Button.BackgroundColor3
-	-- Hover
-	Button.MouseEnter:Connect(function()
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	end)
-	Button.MouseLeave:Connect(function()
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	end)
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-		local ParentGui = Frame.Parent
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-		if Frame.Visible then
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-			CloseTween:Play()
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-		else
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-		end
-	end)
-end
-task.spawn(LocalScript32_fakescript)
-local function LocalScript34_fakescript() -- menubutton.LocalScript
+task.spawn(LocalScript52_fakescript)
+local function LocalScript54_fakescript() -- menubutton.LocalScript
 	local script = Instance.new("LocalScript", menubutton)
 	script.Name = "LocalScript"
 	local Button = script.Parent
@@ -3127,456 +3412,429 @@ local function LocalScript34_fakescript() -- menubutton.LocalScript
 		end
 	end)
 end
-task.spawn(LocalScript34_fakescript)
-local function LocalScript36_fakescript() -- TextButton9.LocalScript
-	local script = Instance.new("LocalScript", TextButton9)
+task.spawn(LocalScript54_fakescript)
+local function LocalScript56_fakescript() -- Visualbutton.LocalScript
+	local script = Instance.new("LocalScript", Visualbutton)
 	script.Name = "LocalScript"
-	local button = script.Parent
-	local player = game.Players.LocalPlayer
-	local UIS = game:GetService("UserInputService")
-	local RunService = game:GetService("RunService")
-	local flying = false
-	local speed = 50
-	local bv
-	local bg
-	local connection
-	button.Text = "Fly: OFF"
-	local function stopFly()
-		flying = false
-		button.Text = "Fly: OFF"
-		if connection then
-			connection:Disconnect()
-			connection = nil
-		end
-		if bv then
-			bv:Destroy()
-			bv = nil
-		end
-		if bg then
-			bg:Destroy()
-			bg = nil
-		end
-	end
-	local function startFly()
-		local character = player.Character or player.CharacterAdded:Wait()
-		local root = character:WaitForChild("HumanoidRootPart")
-		flying = true
-		button.Text = "Fly: ON"
-		bv = Instance.new("BodyVelocity")
-		bv.MaxForce = Vector3.new(1e9, 1e9, 1e9)
-		bv.Velocity = Vector3.zero
-		bv.Parent = root
-		bg = Instance.new("BodyGyro")
-		bg.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
-		bg.P = 10000
-		bg.Parent = root
-		connection = RunService.RenderStepped:Connect(function()
-			if not flying or not root then
-				return
-			end
-			local camera = workspace.CurrentCamera
-			local moveDir = Vector3.zero
-			if UIS:IsKeyDown(Enum.KeyCode.W) then
-				moveDir += camera.CFrame.LookVector
-			end
-			if UIS:IsKeyDown(Enum.KeyCode.S) then
-				moveDir -= camera.CFrame.LookVector
-			end
-			if UIS:IsKeyDown(Enum.KeyCode.A) then
-				moveDir -= camera.CFrame.RightVector
-			end
-			if UIS:IsKeyDown(Enum.KeyCode.D) then
-				moveDir += camera.CFrame.RightVector
-			end
-			if UIS:IsKeyDown(Enum.KeyCode.Space) then
-				moveDir += Vector3.new(0,1,0)
-			end
-			if UIS:IsKeyDown(Enum.KeyCode.LeftControl) then
-				moveDir -= Vector3.new(0,1,0)
-			end
-			if moveDir.Magnitude > 0 then
-				bv.Velocity = moveDir.Unit * speed
-			else
-				bv.Velocity = Vector3.zero
-			end
-			bg.CFrame = camera.CFrame
-		end)
-	end
-	button.MouseButton1Click:Connect(function()
-		if flying then
-			stopFly()
-		else
-			startFly()
-		end
+	local Button = script.Parent
+	local Frame = Button.Parent:WaitForChild("Visual") -- CAMBIA ESTO
+	local TweenService = game:GetService("TweenService")
+	-- Guarda la posición original
+	local OpenPos = Frame.Position
+	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
+	Frame.Visible = false
+	Frame.Position = ClosedPos
+	-- Crear raya blanca automática
+	local SideLine = Instance.new("Frame")
+	SideLine.Name = "SideLine"
+	SideLine.Parent = Button
+	SideLine.Size = UDim2.new(0,0,1,0)
+	SideLine.Position = UDim2.new(0,0,0,0)
+	SideLine.BorderSizePixel = 0
+	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	SideLine.BackgroundTransparency = 0.45
+	local OriginalColor = Button.BackgroundColor3
+	-- Hover
+	Button.MouseEnter:Connect(function()
+		TweenService:Create(
+			Button,
+			TweenInfo.new(0.15),
+			{
+				BackgroundColor3 = Color3.fromRGB(40,40,40)
+			}
+		):Play()
+		TweenService:Create(
+			SideLine,
+			TweenInfo.new(0.15),
+			{
+				Size = UDim2.new(0,4,1,0)
+			}
+		):Play()
 	end)
-end
-task.spawn(LocalScript36_fakescript)
-local function LocalScript38_fakescript() -- TextButton10.LocalScript
-	local script = Instance.new("LocalScript", TextButton10)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local speedOn = false
-	local defaultSpeed = 16
-	button.MouseButton1Click:Connect(function()
-		speedOn = not speedOn
-		button.Text = speedOn and "Speed: ON" or "Speed: OFF"
-		local char = game.Players.LocalPlayer.Character
-		if char then
-			local hum = char:FindFirstChild("Humanoid")
-			if hum then
-				hum.WalkSpeed = speedOn and 50 or defaultSpeed
+	Button.MouseLeave:Connect(function()
+		TweenService:Create(
+			Button,
+			TweenInfo.new(0.15),
+			{
+				BackgroundColor3 = OriginalColor
+			}
+		):Play()
+		TweenService:Create(
+			SideLine,
+			TweenInfo.new(0.15),
+			{
+				Size = UDim2.new(0,0,1,0)
+			}
+		):Play()
+	end)
+	-- Abrir/Cerrar Frame
+	Button.MouseButton1Click:Connect(function()
+		local ParentGui = Frame.Parent
+		-- Cierra otros frames
+		for _,v in pairs(ParentGui:GetChildren()) do
+			if v:IsA("Frame") and v ~= Frame then
+				v.Visible = false
 			end
 		end
-	end)
-end
-task.spawn(LocalScript38_fakescript)
-local function LocalScript40_fakescript() -- TextButton11.LocalScript
-	local script = Instance.new("LocalScript", TextButton11)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local noclip = false
-	button.MouseButton1Click:Connect(function()
-		noclip = not noclip
-		button.Text = noclip and "Noclip: ON" or "Noclip: OFF"
-		game:GetService("RunService").Stepped:Connect(function()
-			if noclip then
-				local char = game.Players.LocalPlayer.Character
-				if char then
-					for _, part in pairs(char:GetDescendants()) do
-						if part:IsA("BasePart") then
-							part.CanCollide = false
-						end
-					end
-				end
-			end
-		end)
-	end)
-end
-task.spawn(LocalScript40_fakescript)
-local function LocalScript42_fakescript() -- TextButton12.LocalScript
-	local script = Instance.new("LocalScript", TextButton12)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local player = game.Players.LocalPlayer
-	local highJump = false
-	button.MouseButton1Click:Connect(function()
-		local character = player.Character
-		if not character then return end
-		local humanoid = character:FindFirstChild("Humanoid")
-		if not humanoid then return end
-		highJump = not highJump
-		if highJump then
-			humanoid.UseJumpPower = true
-			humanoid.JumpPower = 120
-			button.Text = "High Jump ON"
-		else
-			humanoid.JumpPower = 50
-			button.Text = "High Jump OFF"
-		end
-	end)
-end
-task.spawn(LocalScript42_fakescript)
-local function LocalScript44_fakescript() -- TextButton13.LocalScript
-	local script = Instance.new("LocalScript", TextButton13)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local spamming = false
-	local messages = {"Get good", "Ez", "LOL", "You suck", "Ratio"}
-	button.MouseButton1Click:Connect(function()
-		spamming = not spamming
-		button.Text = spamming and "Chat Spam: ON" or "Chat Spam: OFF"
-		spawn(function()
-			while spamming do
-				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
-					messages[math.random(1, #messages)], "All"
-				)
-				wait(1.5)
-			end
-		end)
-	end)
-end
-task.spawn(LocalScript44_fakescript)
-local function LocalScript46_fakescript() -- TextButton14.LocalScript
-	local script = Instance.new("LocalScript", TextButton14)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local trolling = false
-	local trollEffects = {}
-	button.MouseButton1Click:Connect(function()
-		trolling = not trolling
-		button.Text = trolling and "Troll All: ON" or "Troll All: OFF"
-		if trolling then
-			spawn(function()
-				while trolling do
-					for _, plr in pairs(game.Players:GetPlayers()) do
-						if plr ~= game.Players.LocalPlayer and plr.Character then
-							-- Team Check (opcional)
-							if getgenv().TeamCheck and plr.Team == game.Players.LocalPlayer.Team then
-								continue
-							end
-							local char = plr.Character
-							local torso = char:FindFirstChild("Torso")
-							if not torso then continue end
-							-- Efecto Troll: Partícula + Spin + Fire
-							if not trollEffects[plr] then
-								-- Crear fuego/molesto
-								local fire = Instance.new("Fire")
-								fire.Size = 8
-								fire.Heat = 20
-								fire.Parent = torso
-								-- Crear humo
-								local smoke = Instance.new("Smoke")
-								smoke.Color = Color3.fromRGB(255, 0, 0)
-								smoke.Size = 10
-								smoke.Parent = torso
-								trollEffects[plr] = {fire, smoke}
-							end
-							-- Hacer que giren (Spin)
-							torso.CFrame = torso.CFrame * CFrame.Angles(0, math.rad(25), 0)
-							-- Hacer que salten random
-							local hum = char:FindFirstChild("Humanoid")
-							if hum and math.random(1, 8) == 1 then
-								hum:ChangeState(Enum.HumanoidStateType.Jumping)
-							end
-						end
-					end
-					wait(0.1)
-				end
+		if Frame.Visible then
+			local CloseTween = TweenService:Create(
+				Frame,
+				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
+				{
+					Position = ClosedPos
+				}
+			)
+			CloseTween:Play()
+			CloseTween.Completed:Connect(function()
+				Frame.Visible = false
 			end)
 		else
-			-- Limpiar efectos
-			for _, effects in pairs(trollEffects) do
-				for _, effect in pairs(effects) do
-					if effect and effect.Parent then
-						effect:Destroy()
-					end
-				end
-			end
-			trollEffects = {}
+			Frame.Visible = true
+			Frame.Position = ClosedPos
+			TweenService:Create(
+				Frame,
+				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
+				{
+					Position = OpenPos
+				}
+			):Play()
 		end
 	end)
-end
-task.spawn(LocalScript46_fakescript)
-local function LocalScript48_fakescript() -- TextButton15.LocalScript
-	local script = Instance.new("LocalScript", TextButton15)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local soundSpam = false
-	button.MouseButton1Click:Connect(function()
-		soundSpam = not soundSpam
-		button.Text = soundSpam and "Sound Spam: ON" or "Sound Spam: OFF"
-		spawn(function()
-			while soundSpam do
-				local sound = Instance.new("Sound")
-				sound.SoundId = "rbxassetid://131057058" -- Cambia el ID si quieres
-				sound.Volume = 10
-				sound.Parent = workspace
-				sound:Play()
-				game.Debris:AddItem(sound, 3)
-				wait(0.8)
-			end
-		end)
-	end)
-end
-task.spawn(LocalScript48_fakescript)
-local function LocalScript50_fakescript() -- TextButton16.LocalScript
-	local script = Instance.new("LocalScript", TextButton16)
-	script.Name = "LocalScript"
-	local button = script.Parent
-	local spinning = false
-	button.MouseButton1Click:Connect(function()
-		spinning = not spinning
-		button.Text = spinning and "Spinbot: ON" or "Spinbot: OFF"
-		local char = game.Players.LocalPlayer.Character
-		local root = char:WaitForChild("Torso")
-		while spinning do
-			root.CFrame = root.CFrame * CFrame.Angles(0, math.rad(30), 0)
-			wait()
-		end
-	end)
-end
-task.spawn(LocalScript50_fakescript)
-local function LocalScript52_fakescript() -- TextButton18.LocalScript
-	local script = Instance.new("LocalScript", TextButton18)
-	script.Name = "LocalScript"
-	-- LocalScript → Poner DENTRO del TextButton que tú creaste
-	local button = script.Parent
-	local player = game.Players.LocalPlayer
-	local spawnName = "SpawnEjercito"   -- ← CAMBIA ESTO por el nombre exacto de tu Part
-	button.Text = "Teleport a Spawn"   -- Puedes cambiar el texto
-	local function teleport()
-		local character = player.Character
-		if not character then
-			button.Text = "Spawnea primero!"
-			wait(2)
-			button.Text = "Teleport a Spawn"
-			return
-		end
-		local hrp = character:FindFirstChild("HumanoidRootPart")
-		if not hrp then
-			button.Text = "Error"
-			wait(2)
-			button.Text = "Teleport a Spawn"
-			return
-		end
-		-- Buscar la Part
-		local target = workspace:FindFirstChild(spawnName, true)
-		if target then
-			hrp.CFrame = target.CFrame * CFrame.new(0, 6, 0)  -- 6 studs arriba
-			button.Text = "¡Teletransportado! ✓"
-			wait(1.5)
-			button.Text = "Teleport a Spawn"
-		else
-			button.Text = spawnName .. " no encontrado"
-			wait(2.5)
-			button.Text = "Teleport a Spawn"
-		end
-	end
-	-- Conectar el click
-	button.MouseButton1Click:Connect(teleport)
-end
-task.spawn(LocalScript52_fakescript)
-local function LocalScript54_fakescript() -- TextButton19.LocalScript
-	local script = Instance.new("LocalScript", TextButton19)
-	script.Name = "LocalScript"
-	-- LocalScript → Poner DENTRO del TextButton que tú creaste
-	local button = script.Parent
-	local player = game.Players.LocalPlayer
-	local spawnName = "SpawnAereo"   -- ← CAMBIA ESTO por el nombre exacto de tu Part
-	button.Text = "Teleport a Spawn"   -- Puedes cambiar el texto
-	local function teleport()
-		local character = player.Character
-		if not character then
-			button.Text = "Spawnea primero!"
-			wait(2)
-			button.Text = "Teleport a Spawn"
-			return
-		end
-		local hrp = character:FindFirstChild("HumanoidRootPart")
-		if not hrp then
-			button.Text = "Error"
-			wait(2)
-			button.Text = "Teleport a Spawn"
-			return
-		end
-		-- Buscar la Part
-		local target = workspace:FindFirstChild(spawnName, true)
-		if target then
-			hrp.CFrame = target.CFrame * CFrame.new(0, 6, 0)  -- 6 studs arriba
-			button.Text = "¡Teletransportado! ✓"
-			wait(1.5)
-			button.Text = "Teleport a Spawn"
-		else
-			button.Text = spawnName .. " no encontrado"
-			wait(2.5)
-			button.Text = "Teleport a Spawn"
-		end
-	end
-	-- Conectar el click
-	button.MouseButton1Click:Connect(teleport)
-end
-task.spawn(LocalScript54_fakescript)
-local function LocalScript56_fakescript() -- TextButton20.LocalScript
-	local script = Instance.new("LocalScript", TextButton20)
-	script.Name = "LocalScript"
-	-- LocalScript → Para el botón de Spawnear MG15
-	local button = script.Parent
-	local player = game.Players.LocalPlayer
-	local replicatedStorage = game:GetService("ReplicatedStorage")
-	local weaponName = "Winchester"
-	local function giveWeapon()
-		local character = player.Character
-		if not character then 
-			button.Text = "¡Primero spawnea!"
-			wait(2)
-			button.Text = "Dar MG15"
-			return 
-		end
-		-- Buscar el arma en ReplicatedStorage
-		local weapon = replicatedStorage:FindFirstChild(weaponName)
-		if not weapon then
-			button.Text = "MG15 no encontrado"
-			wait(2)
-			button.Text = "Dar MG15"
-			return
-		end
-		-- Evitar duplicados (no dar si ya la tiene)
-		if player.Backpack:FindFirstChild(weaponName) or character:FindFirstChild(weaponName) then
-			button.Text = "Ya tienes el MG15"
-			wait(1.5)
-			button.Text = "Dar MG15"
-			return
-		end
-		-- Clonar y dar el arma
-		local weaponClone = weapon:Clone()
-		weaponClone.Parent = player.Backpack
-		button.Text = "MG15 Entregada ✓"
-		wait(1.5)
-		button.Text = "Dar MG15"
-	end
-	-- Configuración inicial del botón
-	button.Text = "Dar MG15"
-	button.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
-	button.MouseButton1Click:Connect(giveWeapon)
 end
 task.spawn(LocalScript56_fakescript)
-local function LocalScript58_fakescript() -- Minimize.LocalScript
-	local script = Instance.new("LocalScript", Minimize)
+local function LocalScript58_fakescript() -- Statusbutton.LocalScript
+	local script = Instance.new("LocalScript", Statusbutton)
 	script.Name = "LocalScript"
-	local botonCerrar = script.Parent
-	-- Busca el Frame llamado IKGHUB subiendo en las carpetas
-	local frame = botonCerrar:FindFirstAncestor("IKGHUBv2") 
-	local screenGui = frame.Parent -- El ScreenGui donde está metido todo
-	-- Variable para guardar el botón negro cuando se cree
-	local botonNegro = nil
-	botonCerrar.MouseButton1Click:Connect(function()
-		if frame then
-			-- 1. Ocultar el panel principal
-			frame.Visible = false
-			-- 2. Si el botón negro no existe todavía, lo creamos
-			if not botonNegro then
-				botonNegro = Instance.new("TextButton")
-				botonNegro.Name = "BotonAbrirNegro"
-				botonNegro.Text = "ikghub"
-				botonNegro.Size = UDim2.new(0, 120, 0, 40)
-				botonNegro.Position = UDim2.new(0, 20, 0.85, 0) -- Abajo a la izquierda
-				-- Estilo Negro
-				botonNegro.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Negro
-				botonNegro.TextColor3 = Color3.fromRGB(255, 255, 255) -- Texto blanco
-				botonNegro.Font = Enum.Font.SourceSansBold
-				botonNegro.TextSize = 18
-				-- Bordes redondeados para que se vea bien
-				local uiCorner = Instance.new("UICorner")
-				uiCorner.CornerRadius = UDim.new(0, 8)
-				uiCorner.Parent = botonNegro
-				botonNegro.Parent = screenGui
-				-- 3. Lógica para cuando pulses el botón negro
-				botonNegro.MouseButton1Click:Connect(function()
-					frame.Visible = true -- Reabre el menú
-					botonNegro.Visible = false -- Esconde el botón negro
-				end)
-			else
-				-- Si ya se había creado antes, solo lo volvemos a mostrar
-				botonNegro.Visible = true
+	local Button = script.Parent
+	local Frame = Button.Parent:WaitForChild("Status") -- CAMBIA ESTO
+	local TweenService = game:GetService("TweenService")
+	-- Guarda la posición original
+	local OpenPos = Frame.Position
+	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
+	Frame.Visible = false
+	Frame.Position = ClosedPos
+	-- Crear raya blanca automática
+	local SideLine = Instance.new("Frame")
+	SideLine.Name = "SideLine"
+	SideLine.Parent = Button
+	SideLine.Size = UDim2.new(0,0,1,0)
+	SideLine.Position = UDim2.new(0,0,0,0)
+	SideLine.BorderSizePixel = 0
+	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	SideLine.BackgroundTransparency = 0.45
+	local OriginalColor = Button.BackgroundColor3
+	-- Hover
+	Button.MouseEnter:Connect(function()
+		TweenService:Create(
+			Button,
+			TweenInfo.new(0.15),
+			{
+				BackgroundColor3 = Color3.fromRGB(40,40,40)
+			}
+		):Play()
+		TweenService:Create(
+			SideLine,
+			TweenInfo.new(0.15),
+			{
+				Size = UDim2.new(0,4,1,0)
+			}
+		):Play()
+	end)
+	Button.MouseLeave:Connect(function()
+		TweenService:Create(
+			Button,
+			TweenInfo.new(0.15),
+			{
+				BackgroundColor3 = OriginalColor
+			}
+		):Play()
+		TweenService:Create(
+			SideLine,
+			TweenInfo.new(0.15),
+			{
+				Size = UDim2.new(0,0,1,0)
+			}
+		):Play()
+	end)
+	-- Abrir/Cerrar Frame
+	Button.MouseButton1Click:Connect(function()
+		local ParentGui = Frame.Parent
+		-- Cierra otros frames
+		for _,v in pairs(ParentGui:GetChildren()) do
+			if v:IsA("Frame") and v ~= Frame then
+				v.Visible = false
 			end
+		end
+		if Frame.Visible then
+			local CloseTween = TweenService:Create(
+				Frame,
+				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
+				{
+					Position = ClosedPos
+				}
+			)
+			CloseTween:Play()
+			CloseTween.Completed:Connect(function()
+				Frame.Visible = false
+			end)
 		else
-			warn("No se encontró el Frame llamado IKGHUB")
+			Frame.Visible = true
+			Frame.Position = ClosedPos
+			TweenService:Create(
+				Frame,
+				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
+				{
+					Position = OpenPos
+				}
+			):Play()
 		end
 	end)
 end
 task.spawn(LocalScript58_fakescript)
-local function LocalScript60_fakescript() -- CloseButton.LocalScript
-	local script = Instance.new("LocalScript", CloseButton)
+local function LocalScript60_fakescript() -- Movemetbutton.LocalScript
+	local script = Instance.new("LocalScript", Movemetbutton)
 	script.Name = "LocalScript"
-	local botonCerrar = script.Parent
-	-- Busca el Frame llamado IKGHUB subiendo en las carpetas
-	local frame = botonCerrar:FindFirstAncestor("IKGHUBv2") 
-	botonCerrar.MouseButton1Click:Connect(function()
-		if frame then
-			frame.Visible = false
+	local Button = script.Parent
+	local Frame = Button.Parent:WaitForChild("Movement") -- CAMBIA ESTO
+	local TweenService = game:GetService("TweenService")
+	-- Guarda la posición original
+	local OpenPos = Frame.Position
+	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
+	Frame.Visible = false
+	Frame.Position = ClosedPos
+	-- Crear raya blanca automática
+	local SideLine = Instance.new("Frame")
+	SideLine.Name = "SideLine"
+	SideLine.Parent = Button
+	SideLine.Size = UDim2.new(0,0,1,0)
+	SideLine.Position = UDim2.new(0,0,0,0)
+	SideLine.BorderSizePixel = 0
+	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	SideLine.BackgroundTransparency = 0.45
+	local OriginalColor = Button.BackgroundColor3
+	-- Hover
+	Button.MouseEnter:Connect(function()
+		TweenService:Create(
+			Button,
+			TweenInfo.new(0.15),
+			{
+				BackgroundColor3 = Color3.fromRGB(40,40,40)
+			}
+		):Play()
+		TweenService:Create(
+			SideLine,
+			TweenInfo.new(0.15),
+			{
+				Size = UDim2.new(0,4,1,0)
+			}
+		):Play()
+	end)
+	Button.MouseLeave:Connect(function()
+		TweenService:Create(
+			Button,
+			TweenInfo.new(0.15),
+			{
+				BackgroundColor3 = OriginalColor
+			}
+		):Play()
+		TweenService:Create(
+			SideLine,
+			TweenInfo.new(0.15),
+			{
+				Size = UDim2.new(0,0,1,0)
+			}
+		):Play()
+	end)
+	-- Abrir/Cerrar Frame
+	Button.MouseButton1Click:Connect(function()
+		local ParentGui = Frame.Parent
+		-- Cierra otros frames
+		for _,v in pairs(ParentGui:GetChildren()) do
+			if v:IsA("Frame") and v ~= Frame then
+				v.Visible = false
+			end
+		end
+		if Frame.Visible then
+			local CloseTween = TweenService:Create(
+				Frame,
+				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
+				{
+					Position = ClosedPos
+				}
+			)
+			CloseTween:Play()
+			CloseTween.Completed:Connect(function()
+				Frame.Visible = false
+			end)
 		else
-			warn("No se encontró el Frame llamado IKGHUB")
+			Frame.Visible = true
+			Frame.Position = ClosedPos
+			TweenService:Create(
+				Frame,
+				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
+				{
+					Position = OpenPos
+				}
+			):Play()
 		end
 	end)
 end
 task.spawn(LocalScript60_fakescript)
+local function LocalScript62_fakescript() -- TextLabel41.LocalScript
+	local script = Instance.new("LocalScript", TextLabel41)
+	script.Name = "LocalScript"
+	local textLabel = script.Parent
+	local marketplaceService = game:GetService("MarketplaceService")
+	local success, info = pcall(function()
+		return marketplaceServiceketplaceService:GetProductInfo(game.PlaceId)
+		end)
+	if success and info then
+		textLabel.Text = info.Name
+	else
+		textLabel.Text = game.Name
+	end
+end
+task.spawn(LocalScript62_fakescript)
+local function LocalScript64_fakescript() -- CloseButton.LocalScript
+	local script = Instance.new("LocalScript", CloseButton)
+	script.Name = "LocalScript"
+	local Button = script.Parent
+	local Frame = Button.Parent:WaitForChild("close") -- CAMBIA ESTO
+	local TweenService = game:GetService("TweenService")
+	-- Guarda la posición original
+	local OpenPos = Frame.Position
+	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
+	Frame.Visible = false
+	Frame.Position = ClosedPos
+	-- Crear raya blanca automática
+	local SideLine = Instance.new("Frame")
+	SideLine.Name = "SideLine"
+	SideLine.Parent = Button
+	SideLine.Size = UDim2.new(0,0,1,0)
+	SideLine.Position = UDim2.new(0,0,0,0)
+	SideLine.BorderSizePixel = 0
+	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
+	SideLine.BackgroundTransparency = 0.45
+	local OriginalColor = Button.BackgroundColor3
+	-- Hover
+	Button.MouseEnter:Connect(function()
+		TweenService:Create(
+			Button,
+			TweenInfo.new(0.15),
+			{
+				BackgroundColor3 = Color3.fromRGB(40,40,40)
+			}
+		):Play()
+		TweenService:Create(
+			SideLine,
+			TweenInfo.new(0.15),
+			{
+				Size = UDim2.new(0,4,1,0)
+			}
+		):Play()
+	end)
+	Button.MouseLeave:Connect(function()
+		TweenService:Create(
+			Button,
+			TweenInfo.new(0.15),
+			{
+				BackgroundColor3 = OriginalColor
+			}
+		):Play()
+		TweenService:Create(
+			SideLine,
+			TweenInfo.new(0.15),
+			{
+				Size = UDim2.new(0,0,1,0)
+			}
+		):Play()
+	end)
+	-- Abrir/Cerrar Frame
+	Button.MouseButton1Click:Connect(function()
+		local ParentGui = Frame.Parent
+		-- Cierra otros frames
+		for _,v in pairs(ParentGui:GetChildren()) do
+			if v:IsA("Frame") and v ~= Frame then
+				v.Visible = false
+			end
+		end
+		if Frame.Visible then
+			local CloseTween = TweenService:Create(
+				Frame,
+				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
+				{
+					Position = ClosedPos
+				}
+			)
+			CloseTween:Play()
+			CloseTween.Completed:Connect(function()
+				Frame.Visible = false
+			end)
+		else
+			Frame.Visible = true
+			Frame.Position = ClosedPos
+			TweenService:Create(
+				Frame,
+				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
+				{
+					Position = OpenPos
+				}
+			):Play()
+		end
+	end)
+end
+task.spawn(LocalScript64_fakescript)
+local function Dragging4_fakescript() -- Miniz.Dragging
+	local script = Instance.new("LocalScript", Miniz)
+	script.Name = "Dragging"
+	local frame = script.Parent
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local dragging = false
+	local dragStart
+	local startPos
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	UserInputService.InputChanged:Connect(function(input)
+		if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+			local delta = input.Position - dragStart
+			local goal = {
+				Position = UDim2.new(
+					startPos.X.Scale,
+					startPos.X.Offset + delta.X,
+					startPos.Y.Scale,
+					startPos.Y.Offset + delta.Y
+				)
+			}
+			local tween = TweenService:Create(
+				frame,
+				TweenInfo.new(0.08, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				goal
+			)
+			tween:Play()
+		end
+	end)
+end
+task.spawn(Dragging4_fakescript)
+local function LocalScript66_fakescript() -- Abrir.LocalScript
+	local script = Instance.new("LocalScript", Abrir)
+	script.Name = "LocalScript"
+	local botonAbrir = script.Parent
+	local miniz = botonAbrir.Parent
+	local frame = miniz.Parent:WaitForChild("IKGHUBv2")
+	botonAbrir.MouseButton1Click:Connect(function()
+		frame.Visible = true
+		miniz.Visible = false
+	end)
+end
+task.spawn(LocalScript66_fakescript)
