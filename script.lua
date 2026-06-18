@@ -1,545 +1,2065 @@
-ine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
+-- FRVGMXNT GUI2LUA CONVERTER 1.2. Like pls!
+local Ikghubv2 = {
+	Ikghubv2 = Instance.new("ScreenGui"),
+	coso2 = Instance.new("Frame"),
+	button3 = Instance.new("ImageButton"),
+	UICorner = Instance.new("UICorner"),
+	Bienvenida = Instance.new("Frame"),
+	TextLabel = Instance.new("TextLabel"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	UICorner_2 = Instance.new("UICorner"),
+	IKGHUBv2 = Instance.new("Frame"),
+	corner = Instance.new("UICorner"),
+	Funbutton = Instance.new("TextButton"),
+	ImageLabel = Instance.new("ImageLabel"),
+	Combat = Instance.new("Frame"),
+	UICorner_3 = Instance.new("UICorner"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	TextLabel_4 = Instance.new("TextLabel"),
+	TextLabel_5 = Instance.new("TextLabel"),
+	TextLabel_6 = Instance.new("TextLabel"),
+	TextButton = Instance.new("TextButton"),
+	TextButton_2 = Instance.new("TextButton"),
+	TextButton_3 = Instance.new("TextButton"),
+	TextButton_4 = Instance.new("TextButton"),
+	close = Instance.new("Frame"),
+	UICorner_4 = Instance.new("UICorner"),
+	TextLabel_7 = Instance.new("TextLabel"),
+	TextButton_5 = Instance.new("TextButton"),
+	TextButton_6 = Instance.new("TextButton"),
+	Visual = Instance.new("Frame"),
+	UICorner_5 = Instance.new("UICorner"),
+	TextLabel_8 = Instance.new("TextLabel"),
+	TextLabel_9 = Instance.new("TextLabel"),
+	TextLabel_10 = Instance.new("TextLabel"),
+	TextLabel_11 = Instance.new("TextLabel"),
+	TextButton_7 = Instance.new("TextButton"),
+	TextButton_8 = Instance.new("TextButton"),
+	TextButton_9 = Instance.new("TextButton"),
+	TextButton_10 = Instance.new("TextButton"),
+	Movement = Instance.new("Frame"),
+	UICorner_6 = Instance.new("UICorner"),
+	TextLabel_12 = Instance.new("TextLabel"),
+	TextLabel_13 = Instance.new("TextLabel"),
+	TextLabel_14 = Instance.new("TextLabel"),
+	TextLabel_15 = Instance.new("TextLabel"),
+	TextButton_11 = Instance.new("TextButton"),
+	TextButton_12 = Instance.new("TextButton"),
+	TextButton_13 = Instance.new("TextButton"),
+	TextButton_14 = Instance.new("TextButton"),
+	Fun = Instance.new("Frame"),
+	UICorner_7 = Instance.new("UICorner"),
+	TextLabel_16 = Instance.new("TextLabel"),
+	TextLabel_17 = Instance.new("TextLabel"),
+	TextLabel_18 = Instance.new("TextLabel"),
+	TextLabel_19 = Instance.new("TextLabel"),
+	TextButton_15 = Instance.new("TextButton"),
+	TextButton_16 = Instance.new("TextButton"),
+	TextButton_17 = Instance.new("TextButton"),
+	TextButton_18 = Instance.new("TextButton"),
+	Comands = Instance.new("Frame"),
+	UICorner_8 = Instance.new("UICorner"),
+	TextLabel_20 = Instance.new("TextLabel"),
+	TextLabel_21 = Instance.new("TextLabel"),
+	TextLabel_22 = Instance.new("TextLabel"),
+	TextLabel_23 = Instance.new("TextLabel"),
+	TextButton_19 = Instance.new("TextButton"),
+	TextButton_20 = Instance.new("TextButton"),
+	TextButton_21 = Instance.new("TextButton"),
+	TextButton_22 = Instance.new("TextButton"),
+	Status = Instance.new("Frame"),
+	UICorner_9 = Instance.new("UICorner"),
+	TextLabel_24 = Instance.new("TextLabel"),
+	TextLabel_25 = Instance.new("TextLabel"),
+	Menu = Instance.new("Frame"),
+	UICorner_10 = Instance.new("UICorner"),
+	ImageLabel_2 = Instance.new("ImageLabel"),
+	TextLabel_26 = Instance.new("TextLabel"),
+	TextLabel_27 = Instance.new("TextLabel"),
+	TextLabel_28 = Instance.new("TextLabel"),
+	TextLabel_29 = Instance.new("TextLabel"),
+	TextLabel_30 = Instance.new("TextLabel"),
+	ImageLabel_3 = Instance.new("ImageLabel"),
+	UICorner_11 = Instance.new("UICorner"),
+	TextLabel_31 = Instance.new("TextLabel"),
+	ScrollingFrame = Instance.new("ScrollingFrame"),
+	TextLabel_32 = Instance.new("TextLabel"),
+	TextLabel_33 = Instance.new("TextLabel"),
+	TextLabel_34 = Instance.new("TextLabel"),
+	TextLabel_35 = Instance.new("TextLabel"),
+	TextLabel_36 = Instance.new("TextLabel"),
+	TextLabel_37 = Instance.new("TextLabel"),
+	TextLabel_38 = Instance.new("TextLabel"),
+	TextLabel_39 = Instance.new("TextLabel"),
+	TextLabel_40 = Instance.new("TextLabel"),
+	Combatbutton = Instance.new("TextButton"),
+	ImageLabel_4 = Instance.new("ImageLabel"),
+	Minimize = Instance.new("TextButton"),
+	Comandsbutton = Instance.new("TextButton"),
+	ImageLabel_5 = Instance.new("ImageLabel"),
+	menubutton = Instance.new("TextButton"),
+	ImageLabel_6 = Instance.new("ImageLabel"),
+	Visualbutton = Instance.new("TextButton"),
+	ImageLabel_7 = Instance.new("ImageLabel"),
+	Statusbutton = Instance.new("TextButton"),
+	ImageLabel_8 = Instance.new("ImageLabel"),
+	Movemetbutton = Instance.new("TextButton"),
+	ImageLabel_9 = Instance.new("ImageLabel"),
+	CloseButton = Instance.new("TextButton"),
+	TextLabel_41 = Instance.new("TextLabel"),
+}
 
-task.spawn(SCRIPT_82)
-local function SCRIPT_85()
-local script = UnSkyUIGUI["85"]
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Visual") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
-end
-task.spawn(SCRIPT_85)
-local function SCRIPT_88()
-local script = UnSkyUIGUI["88"]
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Status") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
-end
-task.spawn(SCRIPT_88)
-local function SCRIPT_8b()
-local script = UnSkyUIGUI["8b"]
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Movement") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
-end
-task.spawn(SCRIPT_8b)
-local function SCRIPT_8e()
-local script = UnSkyUIGUI["8e"]
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("close") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
-end
-task.spawn(SCRIPT_8e)
+Ikghubv2.Ikghubv2.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Ikghubv2.coso2.Parent = Ikghubv2.Ikghubv2
+Ikghubv2.button3.Parent = Ikghubv2.coso2
+Ikghubv2.UICorner.Parent = Ikghubv2.button3
+Ikghubv2.Bienvenida.Parent = Ikghubv2.Ikghubv2
+Ikghubv2.TextLabel.Parent = Ikghubv2.Bienvenida
+Ikghubv2.TextLabel_2.Parent = Ikghubv2.TextLabel
+Ikghubv2.UICorner_2.Parent = Ikghubv2.Bienvenida
+Ikghubv2.IKGHUBv2.Parent = Ikghubv2.Ikghubv2
+Ikghubv2.corner.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.Funbutton.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.ImageLabel.Parent = Ikghubv2.Funbutton
+Ikghubv2.Combat.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.UICorner_3.Parent = Ikghubv2.Combat
+Ikghubv2.TextLabel_3.Parent = Ikghubv2.Combat
+Ikghubv2.TextLabel_4.Parent = Ikghubv2.Combat
+Ikghubv2.TextLabel_5.Parent = Ikghubv2.Combat
+Ikghubv2.TextLabel_6.Parent = Ikghubv2.Combat
+Ikghubv2.TextButton.Parent = Ikghubv2.Combat
+Ikghubv2.TextButton_2.Parent = Ikghubv2.Combat
+Ikghubv2.TextButton_3.Parent = Ikghubv2.Combat
+Ikghubv2.TextButton_4.Parent = Ikghubv2.Combat
+Ikghubv2.close.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.UICorner_4.Parent = Ikghubv2.close
+Ikghubv2.TextLabel_7.Parent = Ikghubv2.close
+Ikghubv2.TextButton_5.Parent = Ikghubv2.close
+Ikghubv2.TextButton_6.Parent = Ikghubv2.close
+Ikghubv2.Visual.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.UICorner_5.Parent = Ikghubv2.Visual
+Ikghubv2.TextLabel_8.Parent = Ikghubv2.Visual
+Ikghubv2.TextLabel_9.Parent = Ikghubv2.Visual
+Ikghubv2.TextLabel_10.Parent = Ikghubv2.Visual
+Ikghubv2.TextLabel_11.Parent = Ikghubv2.Visual
+Ikghubv2.TextButton_7.Parent = Ikghubv2.Visual
+Ikghubv2.TextButton_8.Parent = Ikghubv2.Visual
+Ikghubv2.TextButton_9.Parent = Ikghubv2.Visual
+Ikghubv2.TextButton_10.Parent = Ikghubv2.Visual
+Ikghubv2.Movement.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.UICorner_6.Parent = Ikghubv2.Movement
+Ikghubv2.TextLabel_12.Parent = Ikghubv2.Movement
+Ikghubv2.TextLabel_13.Parent = Ikghubv2.Movement
+Ikghubv2.TextLabel_14.Parent = Ikghubv2.Movement
+Ikghubv2.TextLabel_15.Parent = Ikghubv2.Movement
+Ikghubv2.TextButton_11.Parent = Ikghubv2.Movement
+Ikghubv2.TextButton_12.Parent = Ikghubv2.Movement
+Ikghubv2.TextButton_13.Parent = Ikghubv2.Movement
+Ikghubv2.TextButton_14.Parent = Ikghubv2.Movement
+Ikghubv2.Fun.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.UICorner_7.Parent = Ikghubv2.Fun
+Ikghubv2.TextLabel_16.Parent = Ikghubv2.Fun
+Ikghubv2.TextLabel_17.Parent = Ikghubv2.Fun
+Ikghubv2.TextLabel_18.Parent = Ikghubv2.Fun
+Ikghubv2.TextLabel_19.Parent = Ikghubv2.Fun
+Ikghubv2.TextButton_15.Parent = Ikghubv2.Fun
+Ikghubv2.TextButton_16.Parent = Ikghubv2.Fun
+Ikghubv2.TextButton_17.Parent = Ikghubv2.Fun
+Ikghubv2.TextButton_18.Parent = Ikghubv2.Fun
+Ikghubv2.Comands.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.UICorner_8.Parent = Ikghubv2.Comands
+Ikghubv2.TextLabel_20.Parent = Ikghubv2.Comands
+Ikghubv2.TextLabel_21.Parent = Ikghubv2.Comands
+Ikghubv2.TextLabel_22.Parent = Ikghubv2.Comands
+Ikghubv2.TextLabel_23.Parent = Ikghubv2.Comands
+Ikghubv2.TextButton_19.Parent = Ikghubv2.Comands
+Ikghubv2.TextButton_20.Parent = Ikghubv2.Comands
+Ikghubv2.TextButton_21.Parent = Ikghubv2.Comands
+Ikghubv2.TextButton_22.Parent = Ikghubv2.Comands
+Ikghubv2.Status.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.UICorner_9.Parent = Ikghubv2.Status
+Ikghubv2.TextLabel_24.Parent = Ikghubv2.Status
+Ikghubv2.TextLabel_25.Parent = Ikghubv2.Status
+Ikghubv2.Menu.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.UICorner_10.Parent = Ikghubv2.Menu
+Ikghubv2.ImageLabel_2.Parent = Ikghubv2.Menu
+Ikghubv2.TextLabel_26.Parent = Ikghubv2.Menu
+Ikghubv2.TextLabel_27.Parent = Ikghubv2.Menu
+Ikghubv2.TextLabel_28.Parent = Ikghubv2.Menu
+Ikghubv2.TextLabel_29.Parent = Ikghubv2.Menu
+Ikghubv2.TextLabel_30.Parent = Ikghubv2.Menu
+Ikghubv2.ImageLabel_3.Parent = Ikghubv2.Menu
+Ikghubv2.UICorner_11.Parent = Ikghubv2.ImageLabel_3
+Ikghubv2.TextLabel_31.Parent = Ikghubv2.Menu
+Ikghubv2.ScrollingFrame.Parent = Ikghubv2.Menu
+Ikghubv2.TextLabel_32.Parent = Ikghubv2.ScrollingFrame
+Ikghubv2.TextLabel_33.Parent = Ikghubv2.ScrollingFrame
+Ikghubv2.TextLabel_34.Parent = Ikghubv2.ScrollingFrame
+Ikghubv2.TextLabel_35.Parent = Ikghubv2.ScrollingFrame
+Ikghubv2.TextLabel_36.Parent = Ikghubv2.ScrollingFrame
+Ikghubv2.TextLabel_37.Parent = Ikghubv2.ScrollingFrame
+Ikghubv2.TextLabel_38.Parent = Ikghubv2.ScrollingFrame
+Ikghubv2.TextLabel_39.Parent = Ikghubv2.ScrollingFrame
+Ikghubv2.TextLabel_40.Parent = Ikghubv2.ScrollingFrame
+Ikghubv2.Combatbutton.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.ImageLabel_4.Parent = Ikghubv2.Combatbutton
+Ikghubv2.Minimize.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.Comandsbutton.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.ImageLabel_5.Parent = Ikghubv2.Comandsbutton
+Ikghubv2.menubutton.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.ImageLabel_6.Parent = Ikghubv2.menubutton
+Ikghubv2.Visualbutton.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.ImageLabel_7.Parent = Ikghubv2.Visualbutton
+Ikghubv2.Statusbutton.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.ImageLabel_8.Parent = Ikghubv2.Statusbutton
+Ikghubv2.Movemetbutton.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.ImageLabel_9.Parent = Ikghubv2.Movemetbutton
+Ikghubv2.CloseButton.Parent = Ikghubv2.IKGHUBv2
+Ikghubv2.TextLabel_41.Parent = Ikghubv2.IKGHUBv2
 
-return UnSkyUIGUI["1"], require;
+Ikghubv2.Ikghubv2.Name = "Ikghubv2"
+Ikghubv2.Ikghubv2.ResetOnSpawn = false
+Ikghubv2.Ikghubv2.IgnoreGuiInset = false
+Ikghubv2.Ikghubv2.DisplayOrder = 0
+
+Ikghubv2.coso2.Name = "coso2"
+Ikghubv2.coso2.ZIndex = 1
+Ikghubv2.coso2.Position = UDim2.new(0, 0, 0.58531028, 0)
+Ikghubv2.coso2.Size = UDim2.new(0, 100, 0, 0)
+Ikghubv2.coso2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.coso2.BackgroundTransparency = 123
+Ikghubv2.coso2.Visible = true
+Ikghubv2.coso2.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.coso2.ClipsDescendants = false
+Ikghubv2.coso2.BorderSizePixel = 0
+
+Ikghubv2.button3.Name = "button3"
+Ikghubv2.button3.ZIndex = 1
+Ikghubv2.button3.Position = UDim2.new(13.0251541, 0, -190, 0)
+Ikghubv2.button3.Size = UDim2.new(0, 59, 0, 56)
+Ikghubv2.button3.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.button3.BackgroundTransparency = 0
+Ikghubv2.button3.Image = "rbxassetid://121523571905862"
+Ikghubv2.button3.ScaleType = Enum.ScaleType.Stretch
+Ikghubv2.button3.ImageColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.button3.ImageTransparency = 0
+Ikghubv2.button3.Visible = true
+Ikghubv2.button3.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.button3.ClipsDescendants = false
+
+Ikghubv2.UICorner.Name = "UICorner"
+Ikghubv2.UICorner.CornerRadius = UDim.new(0, 123123)
+
+Ikghubv2.Bienvenida.Name = "Bienvenida"
+Ikghubv2.Bienvenida.ZIndex = 1
+Ikghubv2.Bienvenida.Position = UDim2.new(0.855571866, 0, 0.740902483, 0)
+Ikghubv2.Bienvenida.Size = UDim2.new(0, 197, 0, 38)
+Ikghubv2.Bienvenida.BackgroundColor3 = Color3.fromRGB(18,18,18)
+Ikghubv2.Bienvenida.BackgroundTransparency = 0
+Ikghubv2.Bienvenida.Visible = true
+Ikghubv2.Bienvenida.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Bienvenida.ClipsDescendants = false
+Ikghubv2.Bienvenida.BorderSizePixel = 0
+
+Ikghubv2.TextLabel.Name = "TextLabel"
+Ikghubv2.TextLabel.ZIndex = 1
+Ikghubv2.TextLabel.Position = UDim2.new(0.0608474016, 0, -0.177091897, 0)
+Ikghubv2.TextLabel.Size = UDim2.new(0, 131, 0, 50)
+Ikghubv2.TextLabel.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel.BackgroundTransparency = 123
+Ikghubv2.TextLabel.Text = "Welcome to"
+Ikghubv2.TextLabel.TextScaled = false
+Ikghubv2.TextLabel.TextSize = 14
+Ikghubv2.TextLabel.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel.TextColor3 = Color3.fromRGB(165,142,255)
+Ikghubv2.TextLabel.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel.TextStrokeTransparency = 1
+Ikghubv2.TextLabel.TextWrapped = false
+Ikghubv2.TextLabel.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel.TextTransparency = 0
+Ikghubv2.TextLabel.Visible = true
+Ikghubv2.TextLabel.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel.ClipsDescendants = false
+
+Ikghubv2.TextLabel_2.Name = "TextLabel"
+Ikghubv2.TextLabel_2.ZIndex = 1
+Ikghubv2.TextLabel_2.Position = UDim2.new(0.261369318, 0, -0.00999999978, 0)
+Ikghubv2.TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+Ikghubv2.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_2.BackgroundTransparency = 7
+Ikghubv2.TextLabel_2.Text = "IKGHUB"
+Ikghubv2.TextLabel_2.TextScaled = false
+Ikghubv2.TextLabel_2.TextSize = 14
+Ikghubv2.TextLabel_2.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_2.TextColor3 = Color3.fromRGB(100,194,13)
+Ikghubv2.TextLabel_2.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_2.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_2.TextWrapped = false
+Ikghubv2.TextLabel_2.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_2.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_2.TextTransparency = 0
+Ikghubv2.TextLabel_2.Visible = true
+Ikghubv2.TextLabel_2.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_2.ClipsDescendants = false
+
+Ikghubv2.UICorner_2.Name = "UICorner"
+Ikghubv2.UICorner_2.CornerRadius = UDim.new(1, 0)
+
+Ikghubv2.IKGHUBv2.Name = "IKGHUBv2"
+Ikghubv2.IKGHUBv2.ZIndex = 1
+Ikghubv2.IKGHUBv2.Position = UDim2.new(0.243401766, 0, 0.216885, 0)
+Ikghubv2.IKGHUBv2.Size = UDim2.new(0, 699, 0, 388)
+Ikghubv2.IKGHUBv2.BackgroundColor3 = Color3.fromRGB(16,16,16)
+Ikghubv2.IKGHUBv2.BackgroundTransparency = 0
+Ikghubv2.IKGHUBv2.Visible = false
+Ikghubv2.IKGHUBv2.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.IKGHUBv2.ClipsDescendants = false
+Ikghubv2.IKGHUBv2.BorderSizePixel = 0
+
+Ikghubv2.corner.Name = "corner"
+Ikghubv2.corner.CornerRadius = UDim.new(0, 8)
+
+Ikghubv2.Funbutton.Name = "Funbutton"
+Ikghubv2.Funbutton.ZIndex = 1
+Ikghubv2.Funbutton.Position = UDim2.new(0.0232359711, 0, 0.493518949, 0)
+Ikghubv2.Funbutton.Size = UDim2.new(0, 112, 0, 39)
+Ikghubv2.Funbutton.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Funbutton.BackgroundTransparency = 123
+Ikghubv2.Funbutton.Text = "Fun"
+Ikghubv2.Funbutton.TextScaled = false
+Ikghubv2.Funbutton.TextSize = 14
+Ikghubv2.Funbutton.Font = Enum.Font.Gotham
+Ikghubv2.Funbutton.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Funbutton.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Funbutton.TextStrokeTransparency = 1
+Ikghubv2.Funbutton.TextWrapped = false
+Ikghubv2.Funbutton.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.Funbutton.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.Funbutton.TextTransparency = 0
+Ikghubv2.Funbutton.Visible = true
+Ikghubv2.Funbutton.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Funbutton.ClipsDescendants = false
+
+Ikghubv2.ImageLabel.Name = "ImageLabel"
+Ikghubv2.ImageLabel.ZIndex = 1
+Ikghubv2.ImageLabel.Position = UDim2.new(-0.0892857164, 0, 0.0972180516, 0)
+Ikghubv2.ImageLabel.Size = UDim2.new(0, 32, 0, 31)
+Ikghubv2.ImageLabel.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel.BackgroundTransparency = 0
+Ikghubv2.ImageLabel.Image = "rbxassetid://79374207636999"
+Ikghubv2.ImageLabel.ScaleType = Enum.ScaleType.Stretch
+Ikghubv2.ImageLabel.ImageColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel.ImageTransparency = 0
+Ikghubv2.ImageLabel.Visible = true
+Ikghubv2.ImageLabel.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.ImageLabel.ClipsDescendants = false
+
+Ikghubv2.Combat.Name = "Combat"
+Ikghubv2.Combat.ZIndex = 1
+Ikghubv2.Combat.Position = UDim2.new(0.27058202, 0, 0.134198055, 0)
+Ikghubv2.Combat.Size = UDim2.new(0, 432, 0, 266)
+Ikghubv2.Combat.BackgroundColor3 = Color3.fromRGB(26,26,26)
+Ikghubv2.Combat.BackgroundTransparency = 0
+Ikghubv2.Combat.Visible = false
+Ikghubv2.Combat.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Combat.ClipsDescendants = false
+Ikghubv2.Combat.BorderSizePixel = 0
+
+Ikghubv2.UICorner_3.Name = "UICorner"
+Ikghubv2.UICorner_3.CornerRadius = UDim.new(0, 8)
+
+Ikghubv2.TextLabel_3.Name = "TextLabel"
+Ikghubv2.TextLabel_3.ZIndex = 1
+Ikghubv2.TextLabel_3.Position = UDim2.new(0.0814836845, 0, 0.0132418154, 0)
+Ikghubv2.TextLabel_3.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_3.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_3.BackgroundTransparency = 123
+Ikghubv2.TextLabel_3.Text = "Aimbot"
+Ikghubv2.TextLabel_3.TextScaled = false
+Ikghubv2.TextLabel_3.TextSize = 14
+Ikghubv2.TextLabel_3.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_3.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_3.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_3.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_3.TextWrapped = false
+Ikghubv2.TextLabel_3.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_3.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_3.TextTransparency = 0
+Ikghubv2.TextLabel_3.Visible = true
+Ikghubv2.TextLabel_3.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_3.ClipsDescendants = false
+
+Ikghubv2.TextLabel_4.Name = "TextLabel"
+Ikghubv2.TextLabel_4.ZIndex = 1
+Ikghubv2.TextLabel_4.Position = UDim2.new(0.0814836845, 0, 0.547738373, 0)
+Ikghubv2.TextLabel_4.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_4.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_4.BackgroundTransparency = 123
+Ikghubv2.TextLabel_4.Text = "Hitbox (patched)"
+Ikghubv2.TextLabel_4.TextScaled = false
+Ikghubv2.TextLabel_4.TextSize = 14
+Ikghubv2.TextLabel_4.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_4.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_4.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_4.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_4.TextWrapped = false
+Ikghubv2.TextLabel_4.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_4.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_4.TextTransparency = 0
+Ikghubv2.TextLabel_4.Visible = true
+Ikghubv2.TextLabel_4.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_4.ClipsDescendants = false
+
+Ikghubv2.TextLabel_5.Name = "TextLabel"
+Ikghubv2.TextLabel_5.ZIndex = 1
+Ikghubv2.TextLabel_5.Position = UDim2.new(0.0814837366, 0, 0.373270273, 0)
+Ikghubv2.TextLabel_5.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_5.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_5.BackgroundTransparency = 123
+Ikghubv2.TextLabel_5.Text = "Fov"
+Ikghubv2.TextLabel_5.TextScaled = false
+Ikghubv2.TextLabel_5.TextSize = 14
+Ikghubv2.TextLabel_5.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_5.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_5.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_5.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_5.TextWrapped = false
+Ikghubv2.TextLabel_5.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_5.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_5.TextTransparency = 0
+Ikghubv2.TextLabel_5.Visible = true
+Ikghubv2.TextLabel_5.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_5.ClipsDescendants = false
+
+Ikghubv2.TextLabel_6.Name = "TextLabel"
+Ikghubv2.TextLabel_6.ZIndex = 1
+Ikghubv2.TextLabel_6.Position = UDim2.new(0.0814836845, 0, 0.19525601, 0)
+Ikghubv2.TextLabel_6.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_6.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_6.BackgroundTransparency = 123
+Ikghubv2.TextLabel_6.Text = "Team check"
+Ikghubv2.TextLabel_6.TextScaled = false
+Ikghubv2.TextLabel_6.TextSize = 14
+Ikghubv2.TextLabel_6.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_6.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_6.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_6.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_6.TextWrapped = false
+Ikghubv2.TextLabel_6.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_6.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_6.TextTransparency = 0
+Ikghubv2.TextLabel_6.Visible = true
+Ikghubv2.TextLabel_6.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_6.ClipsDescendants = false
+
+Ikghubv2.TextButton.Name = "TextButton"
+Ikghubv2.TextButton.ZIndex = 1
+Ikghubv2.TextButton.Position = UDim2.new(0.591977239, 0, -0.00271390006, 0)
+Ikghubv2.TextButton.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton.BackgroundTransparency = 123
+Ikghubv2.TextButton.Text = "Activar"
+Ikghubv2.TextButton.TextScaled = false
+Ikghubv2.TextButton.TextSize = 14
+Ikghubv2.TextButton.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton.TextStrokeTransparency = 1
+Ikghubv2.TextButton.TextWrapped = false
+Ikghubv2.TextButton.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton.TextTransparency = 0
+Ikghubv2.TextButton.Visible = true
+Ikghubv2.TextButton.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton.ClipsDescendants = false
+
+Ikghubv2.TextButton_2.Name = "TextButton"
+Ikghubv2.TextButton_2.ZIndex = 1
+Ikghubv2.TextButton_2.Position = UDim2.new(0.591977239, 0, 0.193030819, 0)
+Ikghubv2.TextButton_2.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_2.BackgroundTransparency = 123
+Ikghubv2.TextButton_2.Text = "Activar"
+Ikghubv2.TextButton_2.TextScaled = false
+Ikghubv2.TextButton_2.TextSize = 14
+Ikghubv2.TextButton_2.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_2.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_2.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_2.TextStrokeTransparency = 1
+Ikghubv2.TextButton_2.TextWrapped = false
+Ikghubv2.TextButton_2.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_2.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_2.TextTransparency = 0
+Ikghubv2.TextButton_2.Visible = true
+Ikghubv2.TextButton_2.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_2.ClipsDescendants = false
+
+Ikghubv2.TextButton_3.Name = "TextButton"
+Ikghubv2.TextButton_3.ZIndex = 1
+Ikghubv2.TextButton_3.Position = UDim2.new(0.591977239, 0, 0.37286064, 0)
+Ikghubv2.TextButton_3.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_3.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_3.BackgroundTransparency = 123
+Ikghubv2.TextButton_3.Text = "Activar"
+Ikghubv2.TextButton_3.TextScaled = false
+Ikghubv2.TextButton_3.TextSize = 14
+Ikghubv2.TextButton_3.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_3.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_3.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_3.TextStrokeTransparency = 1
+Ikghubv2.TextButton_3.TextWrapped = false
+Ikghubv2.TextButton_3.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_3.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_3.TextTransparency = 0
+Ikghubv2.TextButton_3.Visible = true
+Ikghubv2.TextButton_3.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_3.ClipsDescendants = false
+
+Ikghubv2.TextButton_4.Name = "TextButton"
+Ikghubv2.TextButton_4.ZIndex = 1
+Ikghubv2.TextButton_4.Position = UDim2.new(0.591977239, 0, 0.548690379, 0)
+Ikghubv2.TextButton_4.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_4.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_4.BackgroundTransparency = 123
+Ikghubv2.TextButton_4.Text = "Activar"
+Ikghubv2.TextButton_4.TextScaled = false
+Ikghubv2.TextButton_4.TextSize = 14
+Ikghubv2.TextButton_4.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_4.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_4.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_4.TextStrokeTransparency = 1
+Ikghubv2.TextButton_4.TextWrapped = false
+Ikghubv2.TextButton_4.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_4.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_4.TextTransparency = 0
+Ikghubv2.TextButton_4.Visible = true
+Ikghubv2.TextButton_4.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_4.ClipsDescendants = false
+
+Ikghubv2.close.Name = "close"
+Ikghubv2.close.ZIndex = 1
+Ikghubv2.close.Position = UDim2.new(0.445117086, 0, 0.33522898, 0)
+Ikghubv2.close.Size = UDim2.new(0, 251, 0, 128)
+Ikghubv2.close.BackgroundColor3 = Color3.fromRGB(26,26,26)
+Ikghubv2.close.BackgroundTransparency = 0
+Ikghubv2.close.Visible = false
+Ikghubv2.close.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.close.ClipsDescendants = false
+Ikghubv2.close.BorderSizePixel = 0
+
+Ikghubv2.UICorner_4.Name = "UICorner"
+Ikghubv2.UICorner_4.CornerRadius = UDim.new(0, 8)
+
+Ikghubv2.TextLabel_7.Name = "TextLabel"
+Ikghubv2.TextLabel_7.ZIndex = 1
+Ikghubv2.TextLabel_7.Position = UDim2.new(0.356384039, 0, -0.00260472298, 0)
+Ikghubv2.TextLabel_7.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_7.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_7.BackgroundTransparency = 123
+Ikghubv2.TextLabel_7.Text = "Do you really want to leave the hub?"
+Ikghubv2.TextLabel_7.TextScaled = false
+Ikghubv2.TextLabel_7.TextSize = 14
+Ikghubv2.TextLabel_7.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_7.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_7.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_7.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_7.TextWrapped = false
+Ikghubv2.TextLabel_7.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_7.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_7.TextTransparency = 0
+Ikghubv2.TextLabel_7.Visible = true
+Ikghubv2.TextLabel_7.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_7.ClipsDescendants = false
+
+Ikghubv2.TextButton_5.Name = "TextButton"
+Ikghubv2.TextButton_5.ZIndex = 1
+Ikghubv2.TextButton_5.Position = UDim2.new(0.636806548, 0, 0.455251455, 0)
+Ikghubv2.TextButton_5.Size = UDim2.new(0, 84, 0, 50)
+Ikghubv2.TextButton_5.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_5.BackgroundTransparency = 123
+Ikghubv2.TextButton_5.Text = "Yes"
+Ikghubv2.TextButton_5.TextScaled = false
+Ikghubv2.TextButton_5.TextSize = 14
+Ikghubv2.TextButton_5.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_5.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_5.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_5.TextStrokeTransparency = 1
+Ikghubv2.TextButton_5.TextWrapped = false
+Ikghubv2.TextButton_5.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_5.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_5.TextTransparency = 0
+Ikghubv2.TextButton_5.Visible = true
+Ikghubv2.TextButton_5.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_5.ClipsDescendants = false
+
+Ikghubv2.TextButton_6.Name = "TextButton"
+Ikghubv2.TextButton_6.ZIndex = 1
+Ikghubv2.TextButton_6.Position = UDim2.new(0.0511491634, 0, 0.455251455, 0)
+Ikghubv2.TextButton_6.Size = UDim2.new(0, 84, 0, 50)
+Ikghubv2.TextButton_6.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_6.BackgroundTransparency = 123
+Ikghubv2.TextButton_6.Text = "No"
+Ikghubv2.TextButton_6.TextScaled = false
+Ikghubv2.TextButton_6.TextSize = 14
+Ikghubv2.TextButton_6.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_6.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_6.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_6.TextStrokeTransparency = 1
+Ikghubv2.TextButton_6.TextWrapped = false
+Ikghubv2.TextButton_6.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_6.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_6.TextTransparency = 0
+Ikghubv2.TextButton_6.Visible = true
+Ikghubv2.TextButton_6.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_6.ClipsDescendants = false
+
+Ikghubv2.Visual.Name = "Visual"
+Ikghubv2.Visual.ZIndex = 1
+Ikghubv2.Visual.Position = UDim2.new(0.27058202, 0, 0.134198055, 0)
+Ikghubv2.Visual.Size = UDim2.new(0, 431, 0, 268)
+Ikghubv2.Visual.BackgroundColor3 = Color3.fromRGB(26,26,26)
+Ikghubv2.Visual.BackgroundTransparency = 0
+Ikghubv2.Visual.Visible = false
+Ikghubv2.Visual.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Visual.ClipsDescendants = false
+Ikghubv2.Visual.BorderSizePixel = 0
+
+Ikghubv2.UICorner_5.Name = "UICorner"
+Ikghubv2.UICorner_5.CornerRadius = UDim.new(0, 8)
+
+Ikghubv2.TextLabel_8.Name = "TextLabel"
+Ikghubv2.TextLabel_8.ZIndex = 1
+Ikghubv2.TextLabel_8.Position = UDim2.new(0.0814837366, 0, 0.169270232, 0)
+Ikghubv2.TextLabel_8.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_8.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_8.BackgroundTransparency = 123
+Ikghubv2.TextLabel_8.Text = "ESP"
+Ikghubv2.TextLabel_8.TextScaled = false
+Ikghubv2.TextLabel_8.TextSize = 14
+Ikghubv2.TextLabel_8.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_8.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_8.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_8.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_8.TextWrapped = false
+Ikghubv2.TextLabel_8.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_8.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_8.TextTransparency = 0
+Ikghubv2.TextLabel_8.Visible = true
+Ikghubv2.TextLabel_8.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_8.ClipsDescendants = false
+
+Ikghubv2.TextLabel_9.Name = "TextLabel"
+Ikghubv2.TextLabel_9.ZIndex = 1
+Ikghubv2.TextLabel_9.Position = UDim2.new(0.0814837366, 0, 0.473270267, 0)
+Ikghubv2.TextLabel_9.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_9.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_9.BackgroundTransparency = 123
+Ikghubv2.TextLabel_9.Text = "Fullbright"
+Ikghubv2.TextLabel_9.TextScaled = false
+Ikghubv2.TextLabel_9.TextSize = 14
+Ikghubv2.TextLabel_9.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_9.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_9.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_9.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_9.TextWrapped = false
+Ikghubv2.TextLabel_9.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_9.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_9.TextTransparency = 0
+Ikghubv2.TextLabel_9.Visible = true
+Ikghubv2.TextLabel_9.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_9.ClipsDescendants = false
+
+Ikghubv2.TextLabel_10.Name = "TextLabel"
+Ikghubv2.TextLabel_10.ZIndex = 1
+Ikghubv2.TextLabel_10.Position = UDim2.new(0.0814837366, 0, 0.373270273, 0)
+Ikghubv2.TextLabel_10.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_10.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_10.BackgroundTransparency = 123
+Ikghubv2.TextLabel_10.Text = "Tracers"
+Ikghubv2.TextLabel_10.TextScaled = false
+Ikghubv2.TextLabel_10.TextSize = 14
+Ikghubv2.TextLabel_10.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_10.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_10.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_10.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_10.TextWrapped = false
+Ikghubv2.TextLabel_10.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_10.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_10.TextTransparency = 0
+Ikghubv2.TextLabel_10.Visible = true
+Ikghubv2.TextLabel_10.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_10.ClipsDescendants = false
+
+Ikghubv2.TextLabel_11.Name = "TextLabel"
+Ikghubv2.TextLabel_11.ZIndex = 1
+Ikghubv2.TextLabel_11.Position = UDim2.new(0.0814837366, 0, 0.273270249, 0)
+Ikghubv2.TextLabel_11.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_11.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_11.BackgroundTransparency = 123
+Ikghubv2.TextLabel_11.Text = "Chams"
+Ikghubv2.TextLabel_11.TextScaled = false
+Ikghubv2.TextLabel_11.TextSize = 14
+Ikghubv2.TextLabel_11.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_11.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_11.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_11.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_11.TextWrapped = false
+Ikghubv2.TextLabel_11.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_11.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_11.TextTransparency = 0
+Ikghubv2.TextLabel_11.Visible = true
+Ikghubv2.TextLabel_11.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_11.ClipsDescendants = false
+
+Ikghubv2.TextButton_7.Name = "TextButton"
+Ikghubv2.TextButton_7.ZIndex = 1
+Ikghubv2.TextButton_7.Position = UDim2.new(0.723124862, 0, 0.15686059, 0)
+Ikghubv2.TextButton_7.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_7.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_7.BackgroundTransparency = 123
+Ikghubv2.TextButton_7.Text = "Activar"
+Ikghubv2.TextButton_7.TextScaled = false
+Ikghubv2.TextButton_7.TextSize = 14
+Ikghubv2.TextButton_7.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_7.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_7.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_7.TextStrokeTransparency = 1
+Ikghubv2.TextButton_7.TextWrapped = false
+Ikghubv2.TextButton_7.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_7.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_7.TextTransparency = 0
+Ikghubv2.TextButton_7.Visible = true
+Ikghubv2.TextButton_7.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_7.ClipsDescendants = false
+
+Ikghubv2.TextButton_8.Name = "TextButton"
+Ikghubv2.TextButton_8.ZIndex = 1
+Ikghubv2.TextButton_8.Position = UDim2.new(0.723124862, 0, 0.256860584, 0)
+Ikghubv2.TextButton_8.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_8.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_8.BackgroundTransparency = 123
+Ikghubv2.TextButton_8.Text = "Activar"
+Ikghubv2.TextButton_8.TextScaled = false
+Ikghubv2.TextButton_8.TextSize = 14
+Ikghubv2.TextButton_8.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_8.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_8.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_8.TextStrokeTransparency = 1
+Ikghubv2.TextButton_8.TextWrapped = false
+Ikghubv2.TextButton_8.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_8.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_8.TextTransparency = 0
+Ikghubv2.TextButton_8.Visible = true
+Ikghubv2.TextButton_8.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_8.ClipsDescendants = false
+
+Ikghubv2.TextButton_9.Name = "TextButton"
+Ikghubv2.TextButton_9.ZIndex = 1
+Ikghubv2.TextButton_9.Position = UDim2.new(0.723124862, 0, 0.37286061, 0)
+Ikghubv2.TextButton_9.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_9.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_9.BackgroundTransparency = 123
+Ikghubv2.TextButton_9.Text = "Activar"
+Ikghubv2.TextButton_9.TextScaled = false
+Ikghubv2.TextButton_9.TextSize = 14
+Ikghubv2.TextButton_9.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_9.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_9.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_9.TextStrokeTransparency = 1
+Ikghubv2.TextButton_9.TextWrapped = false
+Ikghubv2.TextButton_9.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_9.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_9.TextTransparency = 0
+Ikghubv2.TextButton_9.Visible = true
+Ikghubv2.TextButton_9.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_9.ClipsDescendants = false
+
+Ikghubv2.TextButton_10.Name = "TextButton"
+Ikghubv2.TextButton_10.ZIndex = 1
+Ikghubv2.TextButton_10.Position = UDim2.new(0.723124862, 0, 0.484860599, 0)
+Ikghubv2.TextButton_10.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_10.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_10.BackgroundTransparency = 123
+Ikghubv2.TextButton_10.Text = "Activar"
+Ikghubv2.TextButton_10.TextScaled = false
+Ikghubv2.TextButton_10.TextSize = 14
+Ikghubv2.TextButton_10.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_10.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_10.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_10.TextStrokeTransparency = 1
+Ikghubv2.TextButton_10.TextWrapped = false
+Ikghubv2.TextButton_10.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_10.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_10.TextTransparency = 0
+Ikghubv2.TextButton_10.Visible = true
+Ikghubv2.TextButton_10.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_10.ClipsDescendants = false
+
+Ikghubv2.Movement.Name = "Movement"
+Ikghubv2.Movement.ZIndex = 1
+Ikghubv2.Movement.Position = UDim2.new(0.27058202, 0, 0.143276259, 0)
+Ikghubv2.Movement.Size = UDim2.new(0, 432, 0, 262)
+Ikghubv2.Movement.BackgroundColor3 = Color3.fromRGB(26,26,26)
+Ikghubv2.Movement.BackgroundTransparency = 0
+Ikghubv2.Movement.Visible = false
+Ikghubv2.Movement.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Movement.ClipsDescendants = false
+Ikghubv2.Movement.BorderSizePixel = 0
+
+Ikghubv2.UICorner_6.Name = "UICorner"
+Ikghubv2.UICorner_6.CornerRadius = UDim.new(0, 8)
+
+Ikghubv2.TextLabel_12.Name = "TextLabel"
+Ikghubv2.TextLabel_12.ZIndex = 1
+Ikghubv2.TextLabel_12.Position = UDim2.new(0.0814837366, 0, 0.169270232, 0)
+Ikghubv2.TextLabel_12.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_12.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_12.BackgroundTransparency = 123
+Ikghubv2.TextLabel_12.Text = "Fly"
+Ikghubv2.TextLabel_12.TextScaled = false
+Ikghubv2.TextLabel_12.TextSize = 14
+Ikghubv2.TextLabel_12.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_12.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_12.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_12.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_12.TextWrapped = false
+Ikghubv2.TextLabel_12.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_12.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_12.TextTransparency = 0
+Ikghubv2.TextLabel_12.Visible = true
+Ikghubv2.TextLabel_12.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_12.ClipsDescendants = false
+
+Ikghubv2.TextLabel_13.Name = "TextLabel"
+Ikghubv2.TextLabel_13.ZIndex = 1
+Ikghubv2.TextLabel_13.Position = UDim2.new(0.0814837366, 0, 0.473270267, 0)
+Ikghubv2.TextLabel_13.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_13.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_13.BackgroundTransparency = 123
+Ikghubv2.TextLabel_13.Text = "High Jump"
+Ikghubv2.TextLabel_13.TextScaled = false
+Ikghubv2.TextLabel_13.TextSize = 14
+Ikghubv2.TextLabel_13.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_13.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_13.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_13.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_13.TextWrapped = false
+Ikghubv2.TextLabel_13.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_13.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_13.TextTransparency = 0
+Ikghubv2.TextLabel_13.Visible = true
+Ikghubv2.TextLabel_13.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_13.ClipsDescendants = false
+
+Ikghubv2.TextLabel_14.Name = "TextLabel"
+Ikghubv2.TextLabel_14.ZIndex = 1
+Ikghubv2.TextLabel_14.Position = UDim2.new(0.0814837366, 0, 0.373270273, 0)
+Ikghubv2.TextLabel_14.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_14.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_14.BackgroundTransparency = 123
+Ikghubv2.TextLabel_14.Text = "Noclip"
+Ikghubv2.TextLabel_14.TextScaled = false
+Ikghubv2.TextLabel_14.TextSize = 14
+Ikghubv2.TextLabel_14.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_14.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_14.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_14.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_14.TextWrapped = false
+Ikghubv2.TextLabel_14.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_14.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_14.TextTransparency = 0
+Ikghubv2.TextLabel_14.Visible = true
+Ikghubv2.TextLabel_14.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_14.ClipsDescendants = false
+
+Ikghubv2.TextLabel_15.Name = "TextLabel"
+Ikghubv2.TextLabel_15.ZIndex = 1
+Ikghubv2.TextLabel_15.Position = UDim2.new(0.0814837366, 0, 0.273270249, 0)
+Ikghubv2.TextLabel_15.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_15.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_15.BackgroundTransparency = 123
+Ikghubv2.TextLabel_15.Text = "Speed"
+Ikghubv2.TextLabel_15.TextScaled = false
+Ikghubv2.TextLabel_15.TextSize = 14
+Ikghubv2.TextLabel_15.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_15.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_15.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_15.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_15.TextWrapped = false
+Ikghubv2.TextLabel_15.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_15.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_15.TextTransparency = 0
+Ikghubv2.TextLabel_15.Visible = true
+Ikghubv2.TextLabel_15.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_15.ClipsDescendants = false
+
+Ikghubv2.TextButton_11.Name = "TextButton"
+Ikghubv2.TextButton_11.ZIndex = 1
+Ikghubv2.TextButton_11.Position = UDim2.new(0.723124862, 0, 0.15686059, 0)
+Ikghubv2.TextButton_11.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_11.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_11.BackgroundTransparency = 123
+Ikghubv2.TextButton_11.Text = "Activar"
+Ikghubv2.TextButton_11.TextScaled = false
+Ikghubv2.TextButton_11.TextSize = 14
+Ikghubv2.TextButton_11.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_11.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_11.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_11.TextStrokeTransparency = 1
+Ikghubv2.TextButton_11.TextWrapped = false
+Ikghubv2.TextButton_11.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_11.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_11.TextTransparency = 0
+Ikghubv2.TextButton_11.Visible = true
+Ikghubv2.TextButton_11.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_11.ClipsDescendants = false
+
+Ikghubv2.TextButton_12.Name = "TextButton"
+Ikghubv2.TextButton_12.ZIndex = 1
+Ikghubv2.TextButton_12.Position = UDim2.new(0.723124862, 0, 0.256860584, 0)
+Ikghubv2.TextButton_12.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_12.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_12.BackgroundTransparency = 123
+Ikghubv2.TextButton_12.Text = "Activar"
+Ikghubv2.TextButton_12.TextScaled = false
+Ikghubv2.TextButton_12.TextSize = 14
+Ikghubv2.TextButton_12.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_12.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_12.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_12.TextStrokeTransparency = 1
+Ikghubv2.TextButton_12.TextWrapped = false
+Ikghubv2.TextButton_12.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_12.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_12.TextTransparency = 0
+Ikghubv2.TextButton_12.Visible = true
+Ikghubv2.TextButton_12.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_12.ClipsDescendants = false
+
+Ikghubv2.TextButton_13.Name = "TextButton"
+Ikghubv2.TextButton_13.ZIndex = 1
+Ikghubv2.TextButton_13.Position = UDim2.new(0.723124862, 0, 0.37286061, 0)
+Ikghubv2.TextButton_13.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_13.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_13.BackgroundTransparency = 123
+Ikghubv2.TextButton_13.Text = "Activar"
+Ikghubv2.TextButton_13.TextScaled = false
+Ikghubv2.TextButton_13.TextSize = 14
+Ikghubv2.TextButton_13.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_13.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_13.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_13.TextStrokeTransparency = 1
+Ikghubv2.TextButton_13.TextWrapped = false
+Ikghubv2.TextButton_13.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_13.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_13.TextTransparency = 0
+Ikghubv2.TextButton_13.Visible = true
+Ikghubv2.TextButton_13.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_13.ClipsDescendants = false
+
+Ikghubv2.TextButton_14.Name = "TextButton"
+Ikghubv2.TextButton_14.ZIndex = 1
+Ikghubv2.TextButton_14.Position = UDim2.new(0.723124862, 0, 0.484860599, 0)
+Ikghubv2.TextButton_14.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_14.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_14.BackgroundTransparency = 123
+Ikghubv2.TextButton_14.Text = "Activar"
+Ikghubv2.TextButton_14.TextScaled = false
+Ikghubv2.TextButton_14.TextSize = 14
+Ikghubv2.TextButton_14.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_14.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_14.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_14.TextStrokeTransparency = 1
+Ikghubv2.TextButton_14.TextWrapped = false
+Ikghubv2.TextButton_14.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_14.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_14.TextTransparency = 0
+Ikghubv2.TextButton_14.Visible = true
+Ikghubv2.TextButton_14.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_14.ClipsDescendants = false
+
+Ikghubv2.Fun.Name = "Fun"
+Ikghubv2.Fun.ZIndex = 1
+Ikghubv2.Fun.Position = UDim2.new(0.27058202, 0, 0.134198055, 0)
+Ikghubv2.Fun.Size = UDim2.new(0, 432, 0, 266)
+Ikghubv2.Fun.BackgroundColor3 = Color3.fromRGB(26,26,26)
+Ikghubv2.Fun.BackgroundTransparency = 0
+Ikghubv2.Fun.Visible = false
+Ikghubv2.Fun.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Fun.ClipsDescendants = false
+Ikghubv2.Fun.BorderSizePixel = 0
+
+Ikghubv2.UICorner_7.Name = "UICorner"
+Ikghubv2.UICorner_7.CornerRadius = UDim.new(0, 8)
+
+Ikghubv2.TextLabel_16.Name = "TextLabel"
+Ikghubv2.TextLabel_16.ZIndex = 1
+Ikghubv2.TextLabel_16.Position = UDim2.new(0.0814837366, 0, 0.169270232, 0)
+Ikghubv2.TextLabel_16.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_16.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_16.BackgroundTransparency = 123
+Ikghubv2.TextLabel_16.Text = "Chat Spam"
+Ikghubv2.TextLabel_16.TextScaled = false
+Ikghubv2.TextLabel_16.TextSize = 14
+Ikghubv2.TextLabel_16.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_16.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_16.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_16.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_16.TextWrapped = false
+Ikghubv2.TextLabel_16.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_16.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_16.TextTransparency = 0
+Ikghubv2.TextLabel_16.Visible = true
+Ikghubv2.TextLabel_16.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_16.ClipsDescendants = false
+
+Ikghubv2.TextLabel_17.Name = "TextLabel"
+Ikghubv2.TextLabel_17.ZIndex = 1
+Ikghubv2.TextLabel_17.Position = UDim2.new(0.0814837366, 0, 0.473270267, 0)
+Ikghubv2.TextLabel_17.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_17.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_17.BackgroundTransparency = 123
+Ikghubv2.TextLabel_17.Text = "Spinbot"
+Ikghubv2.TextLabel_17.TextScaled = false
+Ikghubv2.TextLabel_17.TextSize = 14
+Ikghubv2.TextLabel_17.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_17.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_17.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_17.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_17.TextWrapped = false
+Ikghubv2.TextLabel_17.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_17.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_17.TextTransparency = 0
+Ikghubv2.TextLabel_17.Visible = true
+Ikghubv2.TextLabel_17.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_17.ClipsDescendants = false
+
+Ikghubv2.TextLabel_18.Name = "TextLabel"
+Ikghubv2.TextLabel_18.ZIndex = 1
+Ikghubv2.TextLabel_18.Position = UDim2.new(0.0814837366, 0, 0.373270273, 0)
+Ikghubv2.TextLabel_18.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_18.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_18.BackgroundTransparency = 123
+Ikghubv2.TextLabel_18.Text = "Sound Spam"
+Ikghubv2.TextLabel_18.TextScaled = false
+Ikghubv2.TextLabel_18.TextSize = 14
+Ikghubv2.TextLabel_18.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_18.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_18.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_18.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_18.TextWrapped = false
+Ikghubv2.TextLabel_18.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_18.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_18.TextTransparency = 0
+Ikghubv2.TextLabel_18.Visible = true
+Ikghubv2.TextLabel_18.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_18.ClipsDescendants = false
+
+Ikghubv2.TextLabel_19.Name = "TextLabel"
+Ikghubv2.TextLabel_19.ZIndex = 1
+Ikghubv2.TextLabel_19.Position = UDim2.new(0.0814837366, 0, 0.273270249, 0)
+Ikghubv2.TextLabel_19.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_19.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_19.BackgroundTransparency = 123
+Ikghubv2.TextLabel_19.Text = "Troll All"
+Ikghubv2.TextLabel_19.TextScaled = false
+Ikghubv2.TextLabel_19.TextSize = 14
+Ikghubv2.TextLabel_19.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_19.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_19.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_19.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_19.TextWrapped = false
+Ikghubv2.TextLabel_19.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_19.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_19.TextTransparency = 0
+Ikghubv2.TextLabel_19.Visible = true
+Ikghubv2.TextLabel_19.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_19.ClipsDescendants = false
+
+Ikghubv2.TextButton_15.Name = "TextButton"
+Ikghubv2.TextButton_15.ZIndex = 1
+Ikghubv2.TextButton_15.Position = UDim2.new(0.723124862, 0, 0.15686059, 0)
+Ikghubv2.TextButton_15.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_15.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_15.BackgroundTransparency = 123
+Ikghubv2.TextButton_15.Text = "Activar"
+Ikghubv2.TextButton_15.TextScaled = false
+Ikghubv2.TextButton_15.TextSize = 14
+Ikghubv2.TextButton_15.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_15.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_15.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_15.TextStrokeTransparency = 1
+Ikghubv2.TextButton_15.TextWrapped = false
+Ikghubv2.TextButton_15.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_15.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_15.TextTransparency = 0
+Ikghubv2.TextButton_15.Visible = true
+Ikghubv2.TextButton_15.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_15.ClipsDescendants = false
+
+Ikghubv2.TextButton_16.Name = "TextButton"
+Ikghubv2.TextButton_16.ZIndex = 1
+Ikghubv2.TextButton_16.Position = UDim2.new(0.723124862, 0, 0.256860584, 0)
+Ikghubv2.TextButton_16.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_16.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_16.BackgroundTransparency = 123
+Ikghubv2.TextButton_16.Text = "Activar"
+Ikghubv2.TextButton_16.TextScaled = false
+Ikghubv2.TextButton_16.TextSize = 14
+Ikghubv2.TextButton_16.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_16.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_16.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_16.TextStrokeTransparency = 1
+Ikghubv2.TextButton_16.TextWrapped = false
+Ikghubv2.TextButton_16.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_16.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_16.TextTransparency = 0
+Ikghubv2.TextButton_16.Visible = true
+Ikghubv2.TextButton_16.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_16.ClipsDescendants = false
+
+Ikghubv2.TextButton_17.Name = "TextButton"
+Ikghubv2.TextButton_17.ZIndex = 1
+Ikghubv2.TextButton_17.Position = UDim2.new(0.723124862, 0, 0.37286061, 0)
+Ikghubv2.TextButton_17.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_17.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_17.BackgroundTransparency = 123
+Ikghubv2.TextButton_17.Text = "Activar"
+Ikghubv2.TextButton_17.TextScaled = false
+Ikghubv2.TextButton_17.TextSize = 14
+Ikghubv2.TextButton_17.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_17.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_17.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_17.TextStrokeTransparency = 1
+Ikghubv2.TextButton_17.TextWrapped = false
+Ikghubv2.TextButton_17.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_17.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_17.TextTransparency = 0
+Ikghubv2.TextButton_17.Visible = true
+Ikghubv2.TextButton_17.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_17.ClipsDescendants = false
+
+Ikghubv2.TextButton_18.Name = "TextButton"
+Ikghubv2.TextButton_18.ZIndex = 1
+Ikghubv2.TextButton_18.Position = UDim2.new(0.723124862, 0, 0.484860599, 0)
+Ikghubv2.TextButton_18.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_18.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_18.BackgroundTransparency = 123
+Ikghubv2.TextButton_18.Text = "Activar"
+Ikghubv2.TextButton_18.TextScaled = false
+Ikghubv2.TextButton_18.TextSize = 14
+Ikghubv2.TextButton_18.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_18.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_18.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_18.TextStrokeTransparency = 1
+Ikghubv2.TextButton_18.TextWrapped = false
+Ikghubv2.TextButton_18.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_18.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_18.TextTransparency = 0
+Ikghubv2.TextButton_18.Visible = true
+Ikghubv2.TextButton_18.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_18.ClipsDescendants = false
+
+Ikghubv2.Comands.Name = "Comands"
+Ikghubv2.Comands.ZIndex = 1
+Ikghubv2.Comands.Position = UDim2.new(0.269151419, 0, 0.131620735, 0)
+Ikghubv2.Comands.Size = UDim2.new(0, 428, 0, 267)
+Ikghubv2.Comands.BackgroundColor3 = Color3.fromRGB(26,26,26)
+Ikghubv2.Comands.BackgroundTransparency = 0
+Ikghubv2.Comands.Visible = false
+Ikghubv2.Comands.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Comands.ClipsDescendants = false
+Ikghubv2.Comands.BorderSizePixel = 0
+
+Ikghubv2.UICorner_8.Name = "UICorner"
+Ikghubv2.UICorner_8.CornerRadius = UDim.new(0, 8)
+
+Ikghubv2.TextLabel_20.Name = "TextLabel"
+Ikghubv2.TextLabel_20.ZIndex = 1
+Ikghubv2.TextLabel_20.Position = UDim2.new(0.0814837366, 0, 0.169270232, 0)
+Ikghubv2.TextLabel_20.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_20.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_20.BackgroundTransparency = 123
+Ikghubv2.TextLabel_20.Text = "Lag (Baneable)"
+Ikghubv2.TextLabel_20.TextScaled = false
+Ikghubv2.TextLabel_20.TextSize = 14
+Ikghubv2.TextLabel_20.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_20.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_20.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_20.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_20.TextWrapped = false
+Ikghubv2.TextLabel_20.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_20.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_20.TextTransparency = 0
+Ikghubv2.TextLabel_20.Visible = true
+Ikghubv2.TextLabel_20.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_20.ClipsDescendants = false
+
+Ikghubv2.TextLabel_21.Name = "TextLabel"
+Ikghubv2.TextLabel_21.ZIndex = 1
+Ikghubv2.TextLabel_21.Position = UDim2.new(0.0814837366, 0, 0.473270267, 0)
+Ikghubv2.TextLabel_21.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_21.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_21.BackgroundTransparency = 123
+Ikghubv2.TextLabel_21.Text = "Spawn Winchester"
+Ikghubv2.TextLabel_21.TextScaled = false
+Ikghubv2.TextLabel_21.TextSize = 14
+Ikghubv2.TextLabel_21.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_21.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_21.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_21.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_21.TextWrapped = false
+Ikghubv2.TextLabel_21.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_21.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_21.TextTransparency = 0
+Ikghubv2.TextLabel_21.Visible = true
+Ikghubv2.TextLabel_21.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_21.ClipsDescendants = false
+
+Ikghubv2.TextLabel_22.Name = "TextLabel"
+Ikghubv2.TextLabel_22.ZIndex = 1
+Ikghubv2.TextLabel_22.Position = UDim2.new(0.0814837366, 0, 0.373270273, 0)
+Ikghubv2.TextLabel_22.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_22.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_22.BackgroundTransparency = 123
+Ikghubv2.TextLabel_22.Text = "Teleport luft"
+Ikghubv2.TextLabel_22.TextScaled = false
+Ikghubv2.TextLabel_22.TextSize = 14
+Ikghubv2.TextLabel_22.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_22.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_22.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_22.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_22.TextWrapped = false
+Ikghubv2.TextLabel_22.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_22.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_22.TextTransparency = 0
+Ikghubv2.TextLabel_22.Visible = true
+Ikghubv2.TextLabel_22.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_22.ClipsDescendants = false
+
+Ikghubv2.TextLabel_23.Name = "TextLabel"
+Ikghubv2.TextLabel_23.ZIndex = 1
+Ikghubv2.TextLabel_23.Position = UDim2.new(0.0814837366, 0, 0.273270249, 0)
+Ikghubv2.TextLabel_23.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_23.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_23.BackgroundTransparency = 123
+Ikghubv2.TextLabel_23.Text = "Teleport HEER"
+Ikghubv2.TextLabel_23.TextScaled = false
+Ikghubv2.TextLabel_23.TextSize = 14
+Ikghubv2.TextLabel_23.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_23.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_23.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_23.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_23.TextWrapped = false
+Ikghubv2.TextLabel_23.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_23.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_23.TextTransparency = 0
+Ikghubv2.TextLabel_23.Visible = true
+Ikghubv2.TextLabel_23.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_23.ClipsDescendants = false
+
+Ikghubv2.TextButton_19.Name = "TextButton"
+Ikghubv2.TextButton_19.ZIndex = 1
+Ikghubv2.TextButton_19.Position = UDim2.new(0.723124862, 0, 0.15686059, 0)
+Ikghubv2.TextButton_19.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_19.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_19.BackgroundTransparency = 123
+Ikghubv2.TextButton_19.Text = "Activar"
+Ikghubv2.TextButton_19.TextScaled = false
+Ikghubv2.TextButton_19.TextSize = 14
+Ikghubv2.TextButton_19.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_19.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_19.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_19.TextStrokeTransparency = 1
+Ikghubv2.TextButton_19.TextWrapped = false
+Ikghubv2.TextButton_19.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_19.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_19.TextTransparency = 0
+Ikghubv2.TextButton_19.Visible = true
+Ikghubv2.TextButton_19.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_19.ClipsDescendants = false
+
+Ikghubv2.TextButton_20.Name = "TextButton"
+Ikghubv2.TextButton_20.ZIndex = 1
+Ikghubv2.TextButton_20.Position = UDim2.new(0.723124862, 0, 0.271841913, 0)
+Ikghubv2.TextButton_20.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_20.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_20.BackgroundTransparency = 123
+Ikghubv2.TextButton_20.Text = "Activar"
+Ikghubv2.TextButton_20.TextScaled = false
+Ikghubv2.TextButton_20.TextSize = 14
+Ikghubv2.TextButton_20.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_20.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_20.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_20.TextStrokeTransparency = 1
+Ikghubv2.TextButton_20.TextWrapped = false
+Ikghubv2.TextButton_20.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_20.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_20.TextTransparency = 0
+Ikghubv2.TextButton_20.Visible = true
+Ikghubv2.TextButton_20.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_20.ClipsDescendants = false
+
+Ikghubv2.TextButton_21.Name = "TextButton"
+Ikghubv2.TextButton_21.ZIndex = 1
+Ikghubv2.TextButton_21.Position = UDim2.new(0.723124862, 0, 0.37286061, 0)
+Ikghubv2.TextButton_21.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_21.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_21.BackgroundTransparency = 123
+Ikghubv2.TextButton_21.Text = "Activar"
+Ikghubv2.TextButton_21.TextScaled = false
+Ikghubv2.TextButton_21.TextSize = 14
+Ikghubv2.TextButton_21.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_21.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_21.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_21.TextStrokeTransparency = 1
+Ikghubv2.TextButton_21.TextWrapped = false
+Ikghubv2.TextButton_21.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_21.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_21.TextTransparency = 0
+Ikghubv2.TextButton_21.Visible = true
+Ikghubv2.TextButton_21.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_21.ClipsDescendants = false
+
+Ikghubv2.TextButton_22.Name = "TextButton"
+Ikghubv2.TextButton_22.ZIndex = 1
+Ikghubv2.TextButton_22.Position = UDim2.new(0.723124862, 0, 0.484860599, 0)
+Ikghubv2.TextButton_22.Size = UDim2.new(0, 188, 0, 50)
+Ikghubv2.TextButton_22.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_22.BackgroundTransparency = 123
+Ikghubv2.TextButton_22.Text = "Activar"
+Ikghubv2.TextButton_22.TextScaled = false
+Ikghubv2.TextButton_22.TextSize = 14
+Ikghubv2.TextButton_22.Font = Enum.Font.GothamBold
+Ikghubv2.TextButton_22.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_22.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextButton_22.TextStrokeTransparency = 1
+Ikghubv2.TextButton_22.TextWrapped = false
+Ikghubv2.TextButton_22.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextButton_22.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextButton_22.TextTransparency = 0
+Ikghubv2.TextButton_22.Visible = true
+Ikghubv2.TextButton_22.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextButton_22.ClipsDescendants = false
+
+Ikghubv2.Status.Name = "Status"
+Ikghubv2.Status.ZIndex = 1
+Ikghubv2.Status.Position = UDim2.new(0.193328813, 0, 0.10692101, 0)
+Ikghubv2.Status.Size = UDim2.new(0, 548, 0, 317)
+Ikghubv2.Status.BackgroundColor3 = Color3.fromRGB(26,26,26)
+Ikghubv2.Status.BackgroundTransparency = 0
+Ikghubv2.Status.Visible = false
+Ikghubv2.Status.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Status.ClipsDescendants = false
+Ikghubv2.Status.BorderSizePixel = 0
+
+Ikghubv2.UICorner_9.Name = "UICorner"
+Ikghubv2.UICorner_9.CornerRadius = UDim.new(0, 8)
+
+Ikghubv2.TextLabel_24.Name = "TextLabel"
+Ikghubv2.TextLabel_24.ZIndex = 1
+Ikghubv2.TextLabel_24.Position = UDim2.new(0, 0, 0.197771236, 0)
+Ikghubv2.TextLabel_24.Size = UDim2.new(0, 547, 0, 233)
+Ikghubv2.TextLabel_24.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_24.BackgroundTransparency = 123
+Ikghubv2.TextLabel_24.Text = "SYSTEM STATUS\
+\
+• Combat modules loaded successfully\
+• Visual engine functioning correctly\
+• Movement functions operational\
+• Entertainment utilities synchronized\
+• Security bypass enabled\
+• No issues detected\
+• All scripts executed successfully\
+• Connected to IKGHUB services\
+• Stable performance detected\
+• Client reported no errors\
+• Functionality verified\
+• More than 5 games supported\
+\
+STATUS: ONLINE\
+VERSION: STABLE\
+VERSION: IKGHUB v1.3.09"
+Ikghubv2.TextLabel_24.TextScaled = false
+Ikghubv2.TextLabel_24.TextSize = 14
+Ikghubv2.TextLabel_24.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_24.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_24.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_24.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_24.TextWrapped = false
+Ikghubv2.TextLabel_24.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_24.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_24.TextTransparency = 0
+Ikghubv2.TextLabel_24.Visible = true
+Ikghubv2.TextLabel_24.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_24.ClipsDescendants = false
+
+Ikghubv2.TextLabel_25.Name = "TextLabel"
+Ikghubv2.TextLabel_25.ZIndex = 1
+Ikghubv2.TextLabel_25.Position = UDim2.new(0.00364963501, 0, 0.14555499, 0)
+Ikghubv2.TextLabel_25.Size = UDim2.new(0, 546, 0, -52)
+Ikghubv2.TextLabel_25.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_25.BackgroundTransparency = 123
+Ikghubv2.TextLabel_25.Text = "Working in\
+GIA Fuzelier\
+For more games, join our Discord and get their scripts!"
+Ikghubv2.TextLabel_25.TextScaled = false
+Ikghubv2.TextLabel_25.TextSize = 14
+Ikghubv2.TextLabel_25.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_25.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_25.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_25.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_25.TextWrapped = false
+Ikghubv2.TextLabel_25.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_25.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_25.TextTransparency = 0
+Ikghubv2.TextLabel_25.Visible = true
+Ikghubv2.TextLabel_25.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_25.ClipsDescendants = false
+
+Ikghubv2.Menu.Name = "Menu"
+Ikghubv2.Menu.ZIndex = 1
+Ikghubv2.Menu.Position = UDim2.new(0.18346487, 0, 0.0929609463, 0)
+Ikghubv2.Menu.Size = UDim2.new(0, 563, 0, 351)
+Ikghubv2.Menu.BackgroundColor3 = Color3.fromRGB(26,26,26)
+Ikghubv2.Menu.BackgroundTransparency = 0
+Ikghubv2.Menu.Visible = false
+Ikghubv2.Menu.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Menu.ClipsDescendants = false
+Ikghubv2.Menu.BorderSizePixel = 0
+
+Ikghubv2.UICorner_10.Name = "UICorner"
+Ikghubv2.UICorner_10.CornerRadius = UDim.new(0, 8)
+
+Ikghubv2.ImageLabel_2.Name = "ImageLabel"
+Ikghubv2.ImageLabel_2.ZIndex = 1
+Ikghubv2.ImageLabel_2.Position = UDim2.new(0.0427313298, 0, 0.0251264032, 0)
+Ikghubv2.ImageLabel_2.Size = UDim2.new(0, 535, 0, 46)
+Ikghubv2.ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_2.BackgroundTransparency = 0
+Ikghubv2.ImageLabel_2.Image = "rbxassetid://79185016293068"
+Ikghubv2.ImageLabel_2.ScaleType = Enum.ScaleType.Stretch
+Ikghubv2.ImageLabel_2.ImageColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_2.ImageTransparency = 0
+Ikghubv2.ImageLabel_2.Visible = true
+Ikghubv2.ImageLabel_2.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.ImageLabel_2.ClipsDescendants = false
+
+Ikghubv2.TextLabel_26.Name = "TextLabel"
+Ikghubv2.TextLabel_26.ZIndex = 1
+Ikghubv2.TextLabel_26.Position = UDim2.new(0.0977204293, 0, 0.12789093, 0)
+Ikghubv2.TextLabel_26.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_26.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_26.BackgroundTransparency = 123
+Ikghubv2.TextLabel_26.Text = "STATUS:"
+Ikghubv2.TextLabel_26.TextScaled = false
+Ikghubv2.TextLabel_26.TextSize = 14
+Ikghubv2.TextLabel_26.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_26.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_26.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_26.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_26.TextWrapped = false
+Ikghubv2.TextLabel_26.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_26.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_26.TextTransparency = 0
+Ikghubv2.TextLabel_26.Visible = true
+Ikghubv2.TextLabel_26.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_26.ClipsDescendants = false
+
+Ikghubv2.TextLabel_27.Name = "TextLabel"
+Ikghubv2.TextLabel_27.ZIndex = 1
+Ikghubv2.TextLabel_27.Position = UDim2.new(0.454400331, 0, 0.119270235, 0)
+Ikghubv2.TextLabel_27.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_27.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_27.BackgroundTransparency = 123
+Ikghubv2.TextLabel_27.Text = "VERSION:"
+Ikghubv2.TextLabel_27.TextScaled = false
+Ikghubv2.TextLabel_27.TextSize = 14
+Ikghubv2.TextLabel_27.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_27.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_27.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_27.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_27.TextWrapped = false
+Ikghubv2.TextLabel_27.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_27.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_27.TextTransparency = 0
+Ikghubv2.TextLabel_27.Visible = true
+Ikghubv2.TextLabel_27.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_27.ClipsDescendants = false
+
+Ikghubv2.TextLabel_28.Name = "TextLabel"
+Ikghubv2.TextLabel_28.ZIndex = 1
+Ikghubv2.TextLabel_28.Position = UDim2.new(0.811894178, 0, 0.119270235, 0)
+Ikghubv2.TextLabel_28.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_28.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_28.BackgroundTransparency = 123
+Ikghubv2.TextLabel_28.Text = "JOIN DISCORD:"
+Ikghubv2.TextLabel_28.TextScaled = false
+Ikghubv2.TextLabel_28.TextSize = 14
+Ikghubv2.TextLabel_28.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_28.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_28.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_28.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_28.TextWrapped = false
+Ikghubv2.TextLabel_28.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_28.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_28.TextTransparency = 0
+Ikghubv2.TextLabel_28.Visible = true
+Ikghubv2.TextLabel_28.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_28.ClipsDescendants = false
+
+Ikghubv2.TextLabel_29.Name = "TextLabel"
+Ikghubv2.TextLabel_29.ZIndex = 1
+Ikghubv2.TextLabel_29.Position = UDim2.new(0.456176609, 0, 0.273270249, 0)
+Ikghubv2.TextLabel_29.Size = UDim2.new(0, 71, 0, 50)
+Ikghubv2.TextLabel_29.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_29.BackgroundTransparency = 123
+Ikghubv2.TextLabel_29.Text = "v1.3.09"
+Ikghubv2.TextLabel_29.TextScaled = false
+Ikghubv2.TextLabel_29.TextSize = 14
+Ikghubv2.TextLabel_29.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_29.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_29.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_29.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_29.TextWrapped = false
+Ikghubv2.TextLabel_29.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_29.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_29.TextTransparency = 0
+Ikghubv2.TextLabel_29.Visible = true
+Ikghubv2.TextLabel_29.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_29.ClipsDescendants = false
+
+Ikghubv2.TextLabel_30.Name = "TextLabel"
+Ikghubv2.TextLabel_30.ZIndex = 1
+Ikghubv2.TextLabel_30.Position = UDim2.new(0.813670397, 0, 0.273270279, 0)
+Ikghubv2.TextLabel_30.Size = UDim2.new(0, 18, 0, 50)
+Ikghubv2.TextLabel_30.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_30.BackgroundTransparency = 123
+Ikghubv2.TextLabel_30.Text = "https://discord.gg/dG3rcTk3NQ"
+Ikghubv2.TextLabel_30.TextScaled = false
+Ikghubv2.TextLabel_30.TextSize = 14
+Ikghubv2.TextLabel_30.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_30.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_30.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_30.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_30.TextWrapped = false
+Ikghubv2.TextLabel_30.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_30.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_30.TextTransparency = 0
+Ikghubv2.TextLabel_30.Visible = true
+Ikghubv2.TextLabel_30.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_30.ClipsDescendants = false
+
+Ikghubv2.ImageLabel_3.Name = "ImageLabel"
+Ikghubv2.ImageLabel_3.ZIndex = 1
+Ikghubv2.ImageLabel_3.Position = UDim2.new(0.117110267, 0, 0.257270277, 0)
+Ikghubv2.ImageLabel_3.Size = UDim2.new(0, 50, 0, 50)
+Ikghubv2.ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_3.BackgroundTransparency = 0
+Ikghubv2.ImageLabel_3.Image = "rbxassetid://112869881577825"
+Ikghubv2.ImageLabel_3.ScaleType = Enum.ScaleType.Stretch
+Ikghubv2.ImageLabel_3.ImageColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_3.ImageTransparency = 0
+Ikghubv2.ImageLabel_3.Visible = true
+Ikghubv2.ImageLabel_3.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.ImageLabel_3.ClipsDescendants = false
+
+Ikghubv2.UICorner_11.Name = "UICorner"
+Ikghubv2.UICorner_11.CornerRadius = UDim.new(0, 123)
+
+Ikghubv2.TextLabel_31.Name = "TextLabel"
+Ikghubv2.TextLabel_31.ZIndex = 1
+Ikghubv2.TextLabel_31.Position = UDim2.new(0.459459454, 0, 0.447270274, 0)
+Ikghubv2.TextLabel_31.Size = UDim2.new(0, 76, 0, 50)
+Ikghubv2.TextLabel_31.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_31.BackgroundTransparency = 123
+Ikghubv2.TextLabel_31.Text = "Records:"
+Ikghubv2.TextLabel_31.TextScaled = false
+Ikghubv2.TextLabel_31.TextSize = 14
+Ikghubv2.TextLabel_31.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_31.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_31.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_31.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_31.TextWrapped = false
+Ikghubv2.TextLabel_31.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_31.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_31.TextTransparency = 0
+Ikghubv2.TextLabel_31.Visible = true
+Ikghubv2.TextLabel_31.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_31.ClipsDescendants = false
+
+Ikghubv2.ScrollingFrame.Name = "ScrollingFrame"
+Ikghubv2.ScrollingFrame.ZIndex = 1
+Ikghubv2.ScrollingFrame.Position = UDim2.new(0.0356265344, 0, 0.586000085, 0)
+Ikghubv2.ScrollingFrame.Size = UDim2.new(0, 549, 0, 146)
+Ikghubv2.ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ScrollingFrame.BackgroundTransparency = 123
+Ikghubv2.ScrollingFrame.Visible = true
+Ikghubv2.ScrollingFrame.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.ScrollingFrame.ClipsDescendants = true
+Ikghubv2.ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2, 0)
+Ikghubv2.ScrollingFrame.ScrollBarThickness = 12
+Ikghubv2.ScrollingFrame.ScrollingEnabled = true
+Ikghubv2.ScrollingFrame.BorderSizePixel = 0
+
+Ikghubv2.TextLabel_32.Name = "TextLabel"
+Ikghubv2.TextLabel_32.ZIndex = 1
+Ikghubv2.TextLabel_32.Position = UDim2.new(-0.00906404667, 0, 0.119327724, 0)
+Ikghubv2.TextLabel_32.Size = UDim2.new(0, 302, 0, 40)
+Ikghubv2.TextLabel_32.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_32.BackgroundTransparency = 123
+Ikghubv2.TextLabel_32.Text = "(v1.3.05) New GUI! "
+Ikghubv2.TextLabel_32.TextScaled = false
+Ikghubv2.TextLabel_32.TextSize = 14
+Ikghubv2.TextLabel_32.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_32.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_32.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_32.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_32.TextWrapped = false
+Ikghubv2.TextLabel_32.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_32.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_32.TextTransparency = 0
+Ikghubv2.TextLabel_32.Visible = true
+Ikghubv2.TextLabel_32.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_32.ClipsDescendants = false
+
+Ikghubv2.TextLabel_33.Name = "TextLabel"
+Ikghubv2.TextLabel_33.ZIndex = 1
+Ikghubv2.TextLabel_33.Position = UDim2.new(-0.00906404667, 0, 0.177753016, 0)
+Ikghubv2.TextLabel_33.Size = UDim2.new(0, 302, 0, 40)
+Ikghubv2.TextLabel_33.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_33.BackgroundTransparency = 123
+Ikghubv2.TextLabel_33.Text = "(v1.3.01) Fixed hitbox, speed"
+Ikghubv2.TextLabel_33.TextScaled = false
+Ikghubv2.TextLabel_33.TextSize = 14
+Ikghubv2.TextLabel_33.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_33.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_33.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_33.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_33.TextWrapped = false
+Ikghubv2.TextLabel_33.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_33.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_33.TextTransparency = 0
+Ikghubv2.TextLabel_33.Visible = true
+Ikghubv2.TextLabel_33.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_33.ClipsDescendants = false
+
+Ikghubv2.TextLabel_34.Name = "TextLabel"
+Ikghubv2.TextLabel_34.ZIndex = 1
+Ikghubv2.TextLabel_34.Position = UDim2.new(-0.0184223354, 0, 0.206357032, 0)
+Ikghubv2.TextLabel_34.Size = UDim2.new(0, 302, 0, 40)
+Ikghubv2.TextLabel_34.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_34.BackgroundTransparency = 123
+Ikghubv2.TextLabel_34.Text = "(v1.1.00)Create ikghub!"
+Ikghubv2.TextLabel_34.TextScaled = false
+Ikghubv2.TextLabel_34.TextSize = 14
+Ikghubv2.TextLabel_34.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_34.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_34.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_34.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_34.TextWrapped = false
+Ikghubv2.TextLabel_34.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_34.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_34.TextTransparency = 0
+Ikghubv2.TextLabel_34.Visible = true
+Ikghubv2.TextLabel_34.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_34.ClipsDescendants = false
+
+Ikghubv2.TextLabel_35.Name = "TextLabel"
+Ikghubv2.TextLabel_35.ZIndex = 1
+Ikghubv2.TextLabel_35.Position = UDim2.new(0.418008, 0, 0.0667868927, 0)
+Ikghubv2.TextLabel_35.Size = UDim2.new(0, 118, 0, 40)
+Ikghubv2.TextLabel_35.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_35.BackgroundTransparency = 123
+Ikghubv2.TextLabel_35.Text = "Created by "
+Ikghubv2.TextLabel_35.TextScaled = false
+Ikghubv2.TextLabel_35.TextSize = 14
+Ikghubv2.TextLabel_35.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_35.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_35.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_35.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_35.TextWrapped = false
+Ikghubv2.TextLabel_35.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_35.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_35.TextTransparency = 0
+Ikghubv2.TextLabel_35.Visible = true
+Ikghubv2.TextLabel_35.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_35.ClipsDescendants = false
+
+Ikghubv2.TextLabel_36.Name = "TextLabel"
+Ikghubv2.TextLabel_36.ZIndex = 1
+Ikghubv2.TextLabel_36.Position = UDim2.new(0.558114469, 0, 0.0677745864, 0)
+Ikghubv2.TextLabel_36.Size = UDim2.new(0, 118, 0, 40)
+Ikghubv2.TextLabel_36.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_36.BackgroundTransparency = 123
+Ikghubv2.TextLabel_36.Text = "ikgmonher"
+Ikghubv2.TextLabel_36.TextScaled = false
+Ikghubv2.TextLabel_36.TextSize = 14
+Ikghubv2.TextLabel_36.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_36.TextColor3 = Color3.fromRGB(179,101,234)
+Ikghubv2.TextLabel_36.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_36.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_36.TextWrapped = false
+Ikghubv2.TextLabel_36.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_36.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_36.TextTransparency = 0
+Ikghubv2.TextLabel_36.Visible = true
+Ikghubv2.TextLabel_36.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_36.ClipsDescendants = false
+
+Ikghubv2.TextLabel_37.Name = "TextLabel"
+Ikghubv2.TextLabel_37.ZIndex = 1
+Ikghubv2.TextLabel_37.Position = UDim2.new(-0.0184223354, 0, 0.148799017, 0)
+Ikghubv2.TextLabel_37.Size = UDim2.new(0, 302, 0, 40)
+Ikghubv2.TextLabel_37.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_37.BackgroundTransparency = 123
+Ikghubv2.TextLabel_37.Text = "(v1.3.06) Flying fixed and high jump too"
+Ikghubv2.TextLabel_37.TextScaled = false
+Ikghubv2.TextLabel_37.TextSize = 14
+Ikghubv2.TextLabel_37.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_37.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_37.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_37.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_37.TextWrapped = false
+Ikghubv2.TextLabel_37.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_37.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_37.TextTransparency = 0
+Ikghubv2.TextLabel_37.Visible = true
+Ikghubv2.TextLabel_37.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_37.ClipsDescendants = false
+
+Ikghubv2.TextLabel_38.Name = "TextLabel"
+Ikghubv2.TextLabel_38.ZIndex = 1
+Ikghubv2.TextLabel_38.Position = UDim2.new(-0.0277806241, 0, 0.0606840737, 0)
+Ikghubv2.TextLabel_38.Size = UDim2.new(0, 302, 0, 40)
+Ikghubv2.TextLabel_38.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_38.BackgroundTransparency = 123
+Ikghubv2.TextLabel_38.Text = "(v1.3.08) Fixed Visuals"
+Ikghubv2.TextLabel_38.TextScaled = false
+Ikghubv2.TextLabel_38.TextSize = 14
+Ikghubv2.TextLabel_38.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_38.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_38.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_38.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_38.TextWrapped = false
+Ikghubv2.TextLabel_38.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_38.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_38.TextTransparency = 0
+Ikghubv2.TextLabel_38.Visible = true
+Ikghubv2.TextLabel_38.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_38.ClipsDescendants = false
+
+Ikghubv2.TextLabel_39.Name = "TextLabel"
+Ikghubv2.TextLabel_39.ZIndex = 1
+Ikghubv2.TextLabel_39.Position = UDim2.new(-0.0184223894, 0, 0.0892020985, 0)
+Ikghubv2.TextLabel_39.Size = UDim2.new(0, 302, 0, 40)
+Ikghubv2.TextLabel_39.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_39.BackgroundTransparency = 123
+Ikghubv2.TextLabel_39.Text = "(v1.3.07) New section (Commands) "
+Ikghubv2.TextLabel_39.TextScaled = false
+Ikghubv2.TextLabel_39.TextSize = 14
+Ikghubv2.TextLabel_39.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_39.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_39.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_39.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_39.TextWrapped = false
+Ikghubv2.TextLabel_39.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_39.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_39.TextTransparency = 0
+Ikghubv2.TextLabel_39.Visible = true
+Ikghubv2.TextLabel_39.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_39.ClipsDescendants = false
+
+Ikghubv2.TextLabel_40.Name = "TextLabel"
+Ikghubv2.TextLabel_40.ZIndex = 1
+Ikghubv2.TextLabel_40.Position = UDim2.new(-0.0277806241, 0, 0.033618547, 0)
+Ikghubv2.TextLabel_40.Size = UDim2.new(0, 302, 0, 40)
+Ikghubv2.TextLabel_40.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_40.BackgroundTransparency = 123
+Ikghubv2.TextLabel_40.Text = "(v1.3.09) New ui"
+Ikghubv2.TextLabel_40.TextScaled = false
+Ikghubv2.TextLabel_40.TextSize = 14
+Ikghubv2.TextLabel_40.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_40.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_40.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_40.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_40.TextWrapped = false
+Ikghubv2.TextLabel_40.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_40.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_40.TextTransparency = 0
+Ikghubv2.TextLabel_40.Visible = true
+Ikghubv2.TextLabel_40.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_40.ClipsDescendants = false
+
+Ikghubv2.Combatbutton.Name = "Combatbutton"
+Ikghubv2.Combatbutton.ZIndex = 1
+Ikghubv2.Combatbutton.Position = UDim2.new(0.0203747395, 0, 0.292488009, 0)
+Ikghubv2.Combatbutton.Size = UDim2.new(0, 112, 0, 39)
+Ikghubv2.Combatbutton.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Combatbutton.BackgroundTransparency = 123
+Ikghubv2.Combatbutton.Text = "Combat"
+Ikghubv2.Combatbutton.TextScaled = false
+Ikghubv2.Combatbutton.TextSize = 14
+Ikghubv2.Combatbutton.Font = Enum.Font.Gotham
+Ikghubv2.Combatbutton.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Combatbutton.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Combatbutton.TextStrokeTransparency = 1
+Ikghubv2.Combatbutton.TextWrapped = false
+Ikghubv2.Combatbutton.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.Combatbutton.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.Combatbutton.TextTransparency = 0
+Ikghubv2.Combatbutton.Visible = true
+Ikghubv2.Combatbutton.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Combatbutton.ClipsDescendants = false
+
+Ikghubv2.ImageLabel_4.Name = "ImageLabel"
+Ikghubv2.ImageLabel_4.ZIndex = 1
+Ikghubv2.ImageLabel_4.Position = UDim2.new(-0.0714285746, 0, 0.0972180516, 0)
+Ikghubv2.ImageLabel_4.Size = UDim2.new(0, 32, 0, 31)
+Ikghubv2.ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_4.BackgroundTransparency = 0
+Ikghubv2.ImageLabel_4.Image = "rbxassetid://91777051532445"
+Ikghubv2.ImageLabel_4.ScaleType = Enum.ScaleType.Stretch
+Ikghubv2.ImageLabel_4.ImageColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_4.ImageTransparency = 0
+Ikghubv2.ImageLabel_4.Visible = true
+Ikghubv2.ImageLabel_4.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.ImageLabel_4.ClipsDescendants = false
+
+Ikghubv2.Minimize.Name = "Minimize"
+Ikghubv2.Minimize.ZIndex = 1
+Ikghubv2.Minimize.Position = UDim2.new(0.893902719, 0, 0, 0)
+Ikghubv2.Minimize.Size = UDim2.new(0, 37, 0, 37)
+Ikghubv2.Minimize.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Minimize.BackgroundTransparency = 123
+Ikghubv2.Minimize.Text = "-"
+Ikghubv2.Minimize.TextScaled = false
+Ikghubv2.Minimize.TextSize = 14
+Ikghubv2.Minimize.Font = Enum.Font.GothamBold
+Ikghubv2.Minimize.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Minimize.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Minimize.TextStrokeTransparency = 1
+Ikghubv2.Minimize.TextWrapped = false
+Ikghubv2.Minimize.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.Minimize.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.Minimize.TextTransparency = 0
+Ikghubv2.Minimize.Visible = true
+Ikghubv2.Minimize.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Minimize.ClipsDescendants = false
+
+Ikghubv2.Comandsbutton.Name = "Comandsbutton"
+Ikghubv2.Comandsbutton.ZIndex = 1
+Ikghubv2.Comandsbutton.Position = UDim2.new(0.0200286116, 0, 0.592783511, 0)
+Ikghubv2.Comandsbutton.Size = UDim2.new(0, 112, 0, 39)
+Ikghubv2.Comandsbutton.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Comandsbutton.BackgroundTransparency = 123
+Ikghubv2.Comandsbutton.Text = "Comands"
+Ikghubv2.Comandsbutton.TextScaled = false
+Ikghubv2.Comandsbutton.TextSize = 14
+Ikghubv2.Comandsbutton.Font = Enum.Font.Gotham
+Ikghubv2.Comandsbutton.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Comandsbutton.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Comandsbutton.TextStrokeTransparency = 1
+Ikghubv2.Comandsbutton.TextWrapped = false
+Ikghubv2.Comandsbutton.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.Comandsbutton.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.Comandsbutton.TextTransparency = 0
+Ikghubv2.Comandsbutton.Visible = true
+Ikghubv2.Comandsbutton.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Comandsbutton.ClipsDescendants = false
+
+Ikghubv2.ImageLabel_5.Name = "ImageLabel"
+Ikghubv2.ImageLabel_5.ZIndex = 1
+Ikghubv2.ImageLabel_5.Position = UDim2.new(-0.0714285746, 0, 0.0972180516, 0)
+Ikghubv2.ImageLabel_5.Size = UDim2.new(0, 32, 0, 31)
+Ikghubv2.ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_5.BackgroundTransparency = 0
+Ikghubv2.ImageLabel_5.Image = "rbxassetid://110941979689025"
+Ikghubv2.ImageLabel_5.ScaleType = Enum.ScaleType.Stretch
+Ikghubv2.ImageLabel_5.ImageColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_5.ImageTransparency = 0
+Ikghubv2.ImageLabel_5.Visible = true
+Ikghubv2.ImageLabel_5.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.ImageLabel_5.ClipsDescendants = false
+
+Ikghubv2.menubutton.Name = "menubutton"
+Ikghubv2.menubutton.ZIndex = 1
+Ikghubv2.menubutton.Position = UDim2.new(0.0214592274, 0, 0.0934970528, 0)
+Ikghubv2.menubutton.Size = UDim2.new(0, 112, 0, 39)
+Ikghubv2.menubutton.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.menubutton.BackgroundTransparency = 123
+Ikghubv2.menubutton.Text = "Menu"
+Ikghubv2.menubutton.TextScaled = false
+Ikghubv2.menubutton.TextSize = 14
+Ikghubv2.menubutton.Font = Enum.Font.Gotham
+Ikghubv2.menubutton.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.menubutton.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.menubutton.TextStrokeTransparency = 1
+Ikghubv2.menubutton.TextWrapped = false
+Ikghubv2.menubutton.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.menubutton.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.menubutton.TextTransparency = 0
+Ikghubv2.menubutton.Visible = true
+Ikghubv2.menubutton.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.menubutton.ClipsDescendants = false
+
+Ikghubv2.ImageLabel_6.Name = "ImageLabel"
+Ikghubv2.ImageLabel_6.ZIndex = 1
+Ikghubv2.ImageLabel_6.Position = UDim2.new(-0.0357142873, 0, 0.225423172, 0)
+Ikghubv2.ImageLabel_6.Size = UDim2.new(0, 21, 0, 20)
+Ikghubv2.ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_6.BackgroundTransparency = 0
+Ikghubv2.ImageLabel_6.Image = "rbxassetid://114888136003418"
+Ikghubv2.ImageLabel_6.ScaleType = Enum.ScaleType.Stretch
+Ikghubv2.ImageLabel_6.ImageColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_6.ImageTransparency = 0
+Ikghubv2.ImageLabel_6.Visible = true
+Ikghubv2.ImageLabel_6.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.ImageLabel_6.ClipsDescendants = false
+
+Ikghubv2.Visualbutton.Name = "Visualbutton"
+Ikghubv2.Visualbutton.ZIndex = 1
+Ikghubv2.Visualbutton.Position = UDim2.new(0.0203747395, 0, 0.191972554, 0)
+Ikghubv2.Visualbutton.Size = UDim2.new(0, 112, 0, 39)
+Ikghubv2.Visualbutton.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Visualbutton.BackgroundTransparency = 123
+Ikghubv2.Visualbutton.Text = "Visual"
+Ikghubv2.Visualbutton.TextScaled = false
+Ikghubv2.Visualbutton.TextSize = 14
+Ikghubv2.Visualbutton.Font = Enum.Font.Gotham
+Ikghubv2.Visualbutton.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Visualbutton.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Visualbutton.TextStrokeTransparency = 1
+Ikghubv2.Visualbutton.TextWrapped = false
+Ikghubv2.Visualbutton.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.Visualbutton.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.Visualbutton.TextTransparency = 0
+Ikghubv2.Visualbutton.Visible = true
+Ikghubv2.Visualbutton.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Visualbutton.ClipsDescendants = false
+
+Ikghubv2.ImageLabel_7.Name = "ImageLabel"
+Ikghubv2.ImageLabel_7.ZIndex = 1
+Ikghubv2.ImageLabel_7.Position = UDim2.new(-0.0714285746, 0, 0.199782148, 0)
+Ikghubv2.ImageLabel_7.Size = UDim2.new(0, 32, 0, 31)
+Ikghubv2.ImageLabel_7.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_7.BackgroundTransparency = 0
+Ikghubv2.ImageLabel_7.Image = "rbxassetid://75030029732198"
+Ikghubv2.ImageLabel_7.ScaleType = Enum.ScaleType.Stretch
+Ikghubv2.ImageLabel_7.ImageColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_7.ImageTransparency = 0
+Ikghubv2.ImageLabel_7.Visible = true
+Ikghubv2.ImageLabel_7.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.ImageLabel_7.ClipsDescendants = false
+
+Ikghubv2.Statusbutton.Name = "Statusbutton"
+Ikghubv2.Statusbutton.ZIndex = 1
+Ikghubv2.Statusbutton.Position = UDim2.new(0.0232359711, 0, 0.691972554, 0)
+Ikghubv2.Statusbutton.Size = UDim2.new(0, 112, 0, 39)
+Ikghubv2.Statusbutton.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Statusbutton.BackgroundTransparency = 123
+Ikghubv2.Statusbutton.Text = "Status"
+Ikghubv2.Statusbutton.TextScaled = false
+Ikghubv2.Statusbutton.TextSize = 14
+Ikghubv2.Statusbutton.Font = Enum.Font.Gotham
+Ikghubv2.Statusbutton.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Statusbutton.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Statusbutton.TextStrokeTransparency = 1
+Ikghubv2.Statusbutton.TextWrapped = false
+Ikghubv2.Statusbutton.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.Statusbutton.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.Statusbutton.TextTransparency = 0
+Ikghubv2.Statusbutton.Visible = true
+Ikghubv2.Statusbutton.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Statusbutton.ClipsDescendants = false
+
+Ikghubv2.ImageLabel_8.Name = "ImageLabel"
+Ikghubv2.ImageLabel_8.ZIndex = 1
+Ikghubv2.ImageLabel_8.Position = UDim2.new(-0.0535714291, 0, 0.199782148, 0)
+Ikghubv2.ImageLabel_8.Size = UDim2.new(0, 32, 0, 31)
+Ikghubv2.ImageLabel_8.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_8.BackgroundTransparency = 0
+Ikghubv2.ImageLabel_8.Image = "rbxassetid://70616425053580"
+Ikghubv2.ImageLabel_8.ScaleType = Enum.ScaleType.Stretch
+Ikghubv2.ImageLabel_8.ImageColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_8.ImageTransparency = 0
+Ikghubv2.ImageLabel_8.Visible = true
+Ikghubv2.ImageLabel_8.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.ImageLabel_8.ClipsDescendants = false
+
+Ikghubv2.Movemetbutton.Name = "Movemetbutton"
+Ikghubv2.Movemetbutton.ZIndex = 1
+Ikghubv2.Movemetbutton.Position = UDim2.new(0.0203747395, 0, 0.393003494, 0)
+Ikghubv2.Movemetbutton.Size = UDim2.new(0, 112, 0, 39)
+Ikghubv2.Movemetbutton.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Movemetbutton.BackgroundTransparency = 123
+Ikghubv2.Movemetbutton.Text = "Movement"
+Ikghubv2.Movemetbutton.TextScaled = false
+Ikghubv2.Movemetbutton.TextSize = 14
+Ikghubv2.Movemetbutton.Font = Enum.Font.Gotham
+Ikghubv2.Movemetbutton.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Movemetbutton.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.Movemetbutton.TextStrokeTransparency = 1
+Ikghubv2.Movemetbutton.TextWrapped = false
+Ikghubv2.Movemetbutton.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.Movemetbutton.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.Movemetbutton.TextTransparency = 0
+Ikghubv2.Movemetbutton.Visible = true
+Ikghubv2.Movemetbutton.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.Movemetbutton.ClipsDescendants = false
+
+Ikghubv2.ImageLabel_9.Name = "ImageLabel"
+Ikghubv2.ImageLabel_9.ZIndex = 1
+Ikghubv2.ImageLabel_9.Position = UDim2.new(-0.0803571418, 0, 0.0972180516, 0)
+Ikghubv2.ImageLabel_9.Size = UDim2.new(0, 32, 0, 31)
+Ikghubv2.ImageLabel_9.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_9.BackgroundTransparency = 0
+Ikghubv2.ImageLabel_9.Image = "rbxassetid://90394421725466"
+Ikghubv2.ImageLabel_9.ScaleType = Enum.ScaleType.Stretch
+Ikghubv2.ImageLabel_9.ImageColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.ImageLabel_9.ImageTransparency = 0
+Ikghubv2.ImageLabel_9.Visible = true
+Ikghubv2.ImageLabel_9.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.ImageLabel_9.ClipsDescendants = false
+
+Ikghubv2.CloseButton.Name = "CloseButton"
+Ikghubv2.CloseButton.ZIndex = 1
+Ikghubv2.CloseButton.Position = UDim2.new(0.945520639, 0, 0, 0)
+Ikghubv2.CloseButton.Size = UDim2.new(0, 37, 0, 37)
+Ikghubv2.CloseButton.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.CloseButton.BackgroundTransparency = 123
+Ikghubv2.CloseButton.Text = "x"
+Ikghubv2.CloseButton.TextScaled = false
+Ikghubv2.CloseButton.TextSize = 14
+Ikghubv2.CloseButton.Font = Enum.Font.GothamBold
+Ikghubv2.CloseButton.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.CloseButton.TextStrokeColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.CloseButton.TextStrokeTransparency = 1
+Ikghubv2.CloseButton.TextWrapped = false
+Ikghubv2.CloseButton.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.CloseButton.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.CloseButton.TextTransparency = 0
+Ikghubv2.CloseButton.Visible = true
+Ikghubv2.CloseButton.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.CloseButton.ClipsDescendants = false
+
+Ikghubv2.TextLabel_41.Name = "TextLabel"
+Ikghubv2.TextLabel_41.ZIndex = 1
+Ikghubv2.TextLabel_41.Position = UDim2.new(-0.00104026089, 0, -0.00186377461, 0)
+Ikghubv2.TextLabel_41.Size = UDim2.new(0, 120, 0, 37)
+Ikghubv2.TextLabel_41.BackgroundColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_41.BackgroundTransparency = 123
+Ikghubv2.TextLabel_41.Text = "Ikghub"
+Ikghubv2.TextLabel_41.TextScaled = false
+Ikghubv2.TextLabel_41.TextSize = 14
+Ikghubv2.TextLabel_41.Font = Enum.Font.GothamBold
+Ikghubv2.TextLabel_41.TextColor3 = Color3.fromRGB(255,255,255)
+Ikghubv2.TextLabel_41.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+Ikghubv2.TextLabel_41.TextStrokeTransparency = 1
+Ikghubv2.TextLabel_41.TextWrapped = false
+Ikghubv2.TextLabel_41.TextXAlignment = Enum.TextXAlignment.Center
+Ikghubv2.TextLabel_41.TextYAlignment = Enum.TextYAlignment.Center
+Ikghubv2.TextLabel_41.TextTransparency = 0
+Ikghubv2.TextLabel_41.Visible = true
+Ikghubv2.TextLabel_41.AnchorPoint = Vector2.new(0, 0)
+Ikghubv2.TextLabel_41.ClipsDescendants = false
