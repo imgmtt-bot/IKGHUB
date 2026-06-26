@@ -1,1712 +1,2244 @@
---[=[
- d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
-88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
-88      88    88    88            odD'      88      88    88 88ooo88 
-88  ooo 88    88    88          .88'        88      88    88 88~~~88 
-88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
- Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
-]=]
-
--- Instances: 143 | Scripts: 36 | Modules: 0 | Tags: 0
-local G2L = {};
-
--- StarterGui.Ikghubv2
-G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
-G2L["1"]["Name"] = [[Ikghubv2]];
-G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
-G2L["1"]["ResetOnSpawn"] = false;
-
-
--- StarterGui.Ikghubv2.coso2
-G2L["2"] = Instance.new("Frame", G2L["1"]);
-G2L["2"]["BorderSizePixel"] = 0;
-G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2"]["Size"] = UDim2.new(0, 100, 0, 0);
-G2L["2"]["Position"] = UDim2.new(0, 0, 0.58531, 0);
-G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["2"]["Name"] = [[coso2]];
-G2L["2"]["BackgroundTransparency"] = 123;
-
-
--- StarterGui.Ikghubv2.coso2.button3
-G2L["3"] = Instance.new("ImageButton", G2L["2"]);
-G2L["3"]["BorderSizePixel"] = 0;
-G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3"]["Image"] = [[rbxassetid://121523571905862]];
-G2L["3"]["Size"] = UDim2.new(0, 59, 0, 56);
-G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["3"]["Name"] = [[button3]];
-G2L["3"]["Position"] = UDim2.new(13.02515, 0, -190, 0);
-
-
--- StarterGui.Ikghubv2.coso2.button3.Dragging
-G2L["4"] = Instance.new("LocalScript", G2L["3"]);
-G2L["4"]["Name"] = [[Dragging]];
-
-
--- StarterGui.Ikghubv2.coso2.button3.LocalScript
-G2L["5"] = Instance.new("LocalScript", G2L["3"]);
-
-
-
--- StarterGui.Ikghubv2.coso2.button3.UICorner
-G2L["6"] = Instance.new("UICorner", G2L["3"]);
-G2L["6"]["CornerRadius"] = UDim.new(0, 123123);
-
-
--- StarterGui.Ikghubv2.Bienvenida
-G2L["7"] = Instance.new("Frame", G2L["1"]);
-G2L["7"]["BorderSizePixel"] = 0;
-G2L["7"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 19);
-G2L["7"]["Size"] = UDim2.new(0, 197, 0, 38);
-G2L["7"]["Position"] = UDim2.new(0.85557, 0, 0.7409, 0);
-G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7"]["Name"] = [[Bienvenida]];
-
-
--- StarterGui.Ikghubv2.Bienvenida.LocalScript
-G2L["8"] = Instance.new("LocalScript", G2L["7"]);
-
-
-
--- StarterGui.Ikghubv2.Bienvenida.TextLabel
-G2L["9"] = Instance.new("TextLabel", G2L["7"]);
-G2L["9"]["BorderSizePixel"] = 0;
-G2L["9"]["TextSize"] = 14;
-G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["9"]["TextColor3"] = Color3.fromRGB(166, 143, 255);
-G2L["9"]["BackgroundTransparency"] = 123;
-G2L["9"]["Size"] = UDim2.new(0, 131, 0, 50);
-G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["9"]["Text"] = [[Welcome to]];
-G2L["9"]["Position"] = UDim2.new(0.06085, 0, -0.17709, 0);
-
-
--- StarterGui.Ikghubv2.Bienvenida.TextLabel.TextLabel
-G2L["a"] = Instance.new("TextLabel", G2L["9"]);
-G2L["a"]["BorderSizePixel"] = 0;
-G2L["a"]["TextSize"] = 14;
-G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["a"]["TextColor3"] = Color3.fromRGB(101, 195, 14);
-G2L["a"]["BackgroundTransparency"] = 7;
-G2L["a"]["Size"] = UDim2.new(0, 200, 0, 50);
-G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["a"]["Text"] = [[IKGHUB]];
-G2L["a"]["Position"] = UDim2.new(0.26137, 0, -0.01, 0);
-
-
--- StarterGui.Ikghubv2.Bienvenida.UICorner
-G2L["b"] = Instance.new("UICorner", G2L["7"]);
-G2L["b"]["CornerRadius"] = UDim.new(1, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2
-G2L["c"] = Instance.new("Frame", G2L["1"]);
-G2L["c"]["Visible"] = false;
-G2L["c"]["BorderSizePixel"] = 0;
-G2L["c"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
-G2L["c"]["Size"] = UDim2.new(0, 699, 0, 388);
-G2L["c"]["Position"] = UDim2.new(0.2434, 0, 0.21689, 0);
-G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["c"]["Name"] = [[IKGHUBv2]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Dragging
-G2L["d"] = Instance.new("LocalScript", G2L["c"]);
-G2L["d"]["Name"] = [[Dragging]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Rankg tag
-G2L["e"] = Instance.new("LocalScript", G2L["c"]);
-G2L["e"]["Name"] = [[Rankg tag]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.corner
-G2L["f"] = Instance.new("UICorner", G2L["c"]);
-G2L["f"]["Name"] = [[corner]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Funbutton
-G2L["10"] = Instance.new("TextButton", G2L["c"]);
-G2L["10"]["BorderSizePixel"] = 0;
-G2L["10"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["TextSize"] = 14;
-G2L["10"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["10"]["BackgroundTransparency"] = 123;
-G2L["10"]["Size"] = UDim2.new(0, 112, 0, 39);
-G2L["10"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["10"]["Text"] = [[Fun]];
-G2L["10"]["Name"] = [[Funbutton]];
-G2L["10"]["Position"] = UDim2.new(0.02324, 0, 0.49352, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Funbutton.LocalScript
-G2L["11"] = Instance.new("LocalScript", G2L["10"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Funbutton.ImageLabel
-G2L["12"] = Instance.new("ImageLabel", G2L["10"]);
-G2L["12"]["BorderSizePixel"] = 0;
-G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["12"]["Image"] = [[rbxassetid://79374207636999]];
-G2L["12"]["Size"] = UDim2.new(0, 32, 0, 31);
-G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["12"]["Position"] = UDim2.new(-0.08929, 0, 0.09722, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat
-G2L["13"] = Instance.new("Frame", G2L["c"]);
-G2L["13"]["Visible"] = false;
-G2L["13"]["BorderSizePixel"] = 0;
-G2L["13"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["13"]["Size"] = UDim2.new(0, 432, 0, 266);
-G2L["13"]["Position"] = UDim2.new(0.27058, 0, 0.1342, 0);
-G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["13"]["Name"] = [[Combat]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.UICorner
-G2L["14"] = Instance.new("UICorner", G2L["13"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextLabel
-G2L["15"] = Instance.new("TextLabel", G2L["13"]);
-G2L["15"]["BorderSizePixel"] = 0;
-G2L["15"]["TextSize"] = 14;
-G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["BackgroundTransparency"] = 123;
-G2L["15"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["15"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["15"]["Text"] = [[Aimbot]];
-G2L["15"]["Position"] = UDim2.new(0.08148, 0, 0.01324, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextLabel
-G2L["16"] = Instance.new("TextLabel", G2L["13"]);
-G2L["16"]["BorderSizePixel"] = 0;
-G2L["16"]["TextSize"] = 14;
-G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["BackgroundTransparency"] = 123;
-G2L["16"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["16"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["16"]["Text"] = [[Hitbox (patched)]];
-G2L["16"]["Position"] = UDim2.new(0.08148, 0, 0.54774, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextLabel
-G2L["17"] = Instance.new("TextLabel", G2L["13"]);
-G2L["17"]["BorderSizePixel"] = 0;
-G2L["17"]["TextSize"] = 14;
-G2L["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["BackgroundTransparency"] = 123;
-G2L["17"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["17"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["17"]["Text"] = [[Fov]];
-G2L["17"]["Position"] = UDim2.new(0.08148, 0, 0.37327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextLabel
-G2L["18"] = Instance.new("TextLabel", G2L["13"]);
-G2L["18"]["BorderSizePixel"] = 0;
-G2L["18"]["TextSize"] = 14;
-G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["18"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["BackgroundTransparency"] = 123;
-G2L["18"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["18"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18"]["Text"] = [[Team check]];
-G2L["18"]["Position"] = UDim2.new(0.08148, 0, 0.19526, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextButton
-G2L["19"] = Instance.new("TextButton", G2L["13"]);
-G2L["19"]["BorderSizePixel"] = 0;
-G2L["19"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["TextSize"] = 14;
-G2L["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["19"]["BackgroundTransparency"] = 123;
-G2L["19"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["19"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19"]["Text"] = [[Activar]];
-G2L["19"]["Position"] = UDim2.new(0.59198, 0, -0.00271, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextButton.LocalScript
-G2L["1a"] = Instance.new("LocalScript", G2L["19"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextButton
-G2L["1b"] = Instance.new("TextButton", G2L["13"]);
-G2L["1b"]["BorderSizePixel"] = 0;
-G2L["1b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["TextSize"] = 14;
-G2L["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1b"]["BackgroundTransparency"] = 123;
-G2L["1b"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["1b"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1b"]["Text"] = [[Activar]];
-G2L["1b"]["Position"] = UDim2.new(0.59198, 0, 0.19303, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextButton.LocalScript
-G2L["1c"] = Instance.new("LocalScript", G2L["1b"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextButton
-G2L["1d"] = Instance.new("TextButton", G2L["13"]);
-G2L["1d"]["BorderSizePixel"] = 0;
-G2L["1d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["TextSize"] = 14;
-G2L["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1d"]["BackgroundTransparency"] = 123;
-G2L["1d"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["1d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1d"]["Text"] = [[Activar]];
-G2L["1d"]["Position"] = UDim2.new(0.59198, 0, 0.37286, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextButton.LocalScript
-G2L["1e"] = Instance.new("LocalScript", G2L["1d"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextButton
-G2L["1f"] = Instance.new("TextButton", G2L["13"]);
-G2L["1f"]["BorderSizePixel"] = 0;
-G2L["1f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["TextSize"] = 14;
-G2L["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["1f"]["BackgroundTransparency"] = 123;
-G2L["1f"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["1f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["1f"]["Text"] = [[Activar]];
-G2L["1f"]["Position"] = UDim2.new(0.59198, 0, 0.54869, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.close
-G2L["20"] = Instance.new("Frame", G2L["c"]);
-G2L["20"]["Visible"] = false;
-G2L["20"]["BorderSizePixel"] = 0;
-G2L["20"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["20"]["Size"] = UDim2.new(0, 251, 0, 128);
-G2L["20"]["Position"] = UDim2.new(0.44512, 0, 0.33523, 0);
-G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["20"]["Name"] = [[close]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.close.UICorner
-G2L["21"] = Instance.new("UICorner", G2L["20"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.close.TextLabel
-G2L["22"] = Instance.new("TextLabel", G2L["20"]);
-G2L["22"]["BorderSizePixel"] = 0;
-G2L["22"]["TextSize"] = 14;
-G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["22"]["BackgroundTransparency"] = 123;
-G2L["22"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["22"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["22"]["Text"] = [[Do you really want to leave the hub?]];
-G2L["22"]["Position"] = UDim2.new(0.35638, 0, -0.0026, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.close.TextButton
-G2L["23"] = Instance.new("TextButton", G2L["20"]);
-G2L["23"]["BorderSizePixel"] = 0;
-G2L["23"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["TextSize"] = 14;
-G2L["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["23"]["BackgroundTransparency"] = 123;
-G2L["23"]["Size"] = UDim2.new(0, 84, 0, 50);
-G2L["23"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["Text"] = [[Yes]];
-G2L["23"]["Position"] = UDim2.new(0.63681, 0, 0.45525, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.close.TextButton.LocalScript
-G2L["24"] = Instance.new("LocalScript", G2L["23"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.close.TextButton
-G2L["25"] = Instance.new("TextButton", G2L["20"]);
-G2L["25"]["BorderSizePixel"] = 0;
-G2L["25"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["TextSize"] = 14;
-G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["25"]["BackgroundTransparency"] = 123;
-G2L["25"]["Size"] = UDim2.new(0, 84, 0, 50);
-G2L["25"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["25"]["Text"] = [[No]];
-G2L["25"]["Position"] = UDim2.new(0.05115, 0, 0.45525, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.close.TextButton.LocalScript
-G2L["26"] = Instance.new("LocalScript", G2L["25"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual
-G2L["27"] = Instance.new("Frame", G2L["c"]);
-G2L["27"]["Visible"] = false;
-G2L["27"]["BorderSizePixel"] = 0;
-G2L["27"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["27"]["Size"] = UDim2.new(0, 431, 0, 268);
-G2L["27"]["Position"] = UDim2.new(0.27058, 0, 0.1342, 0);
-G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["27"]["Name"] = [[Visual]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.UICorner
-G2L["28"] = Instance.new("UICorner", G2L["27"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextLabel
-G2L["29"] = Instance.new("TextLabel", G2L["27"]);
-G2L["29"]["BorderSizePixel"] = 0;
-G2L["29"]["TextSize"] = 14;
-G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["BackgroundTransparency"] = 123;
-G2L["29"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["29"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["29"]["Text"] = [[ESP]];
-G2L["29"]["Position"] = UDim2.new(0.08148, 0, 0.16927, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextLabel
-G2L["2a"] = Instance.new("TextLabel", G2L["27"]);
-G2L["2a"]["BorderSizePixel"] = 0;
-G2L["2a"]["TextSize"] = 14;
-G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a"]["BackgroundTransparency"] = 123;
-G2L["2a"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["2a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2a"]["Text"] = [[Fullbright]];
-G2L["2a"]["Position"] = UDim2.new(0.08148, 0, 0.47327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextLabel
-G2L["2b"] = Instance.new("TextLabel", G2L["27"]);
-G2L["2b"]["BorderSizePixel"] = 0;
-G2L["2b"]["TextSize"] = 14;
-G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["BackgroundTransparency"] = 123;
-G2L["2b"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["2b"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2b"]["Text"] = [[Tracers]];
-G2L["2b"]["Position"] = UDim2.new(0.08148, 0, 0.37327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextLabel
-G2L["2c"] = Instance.new("TextLabel", G2L["27"]);
-G2L["2c"]["BorderSizePixel"] = 0;
-G2L["2c"]["TextSize"] = 14;
-G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c"]["BackgroundTransparency"] = 123;
-G2L["2c"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["2c"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2c"]["Text"] = [[Chams]];
-G2L["2c"]["Position"] = UDim2.new(0.08148, 0, 0.27327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton
-G2L["2d"] = Instance.new("TextButton", G2L["27"]);
-G2L["2d"]["BorderSizePixel"] = 0;
-G2L["2d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["TextSize"] = 14;
-G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2d"]["BackgroundTransparency"] = 123;
-G2L["2d"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["2d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2d"]["Text"] = [[Activar]];
-G2L["2d"]["Position"] = UDim2.new(0.72312, 0, 0.15686, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton.LocalScript
-G2L["2e"] = Instance.new("LocalScript", G2L["2d"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton
-G2L["2f"] = Instance.new("TextButton", G2L["27"]);
-G2L["2f"]["BorderSizePixel"] = 0;
-G2L["2f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f"]["TextSize"] = 14;
-G2L["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["2f"]["BackgroundTransparency"] = 123;
-G2L["2f"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["2f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["2f"]["Text"] = [[Activar]];
-G2L["2f"]["Position"] = UDim2.new(0.72312, 0, 0.25686, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton.LocalScript
-G2L["30"] = Instance.new("LocalScript", G2L["2f"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton
-G2L["31"] = Instance.new("TextButton", G2L["27"]);
-G2L["31"]["BorderSizePixel"] = 0;
-G2L["31"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["31"]["TextSize"] = 14;
-G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["31"]["BackgroundTransparency"] = 123;
-G2L["31"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["31"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["31"]["Text"] = [[Activar]];
-G2L["31"]["Position"] = UDim2.new(0.72312, 0, 0.37286, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton.LocalScript
-G2L["32"] = Instance.new("LocalScript", G2L["31"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton
-G2L["33"] = Instance.new("TextButton", G2L["27"]);
-G2L["33"]["BorderSizePixel"] = 0;
-G2L["33"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["33"]["TextSize"] = 14;
-G2L["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["33"]["BackgroundTransparency"] = 123;
-G2L["33"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["33"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["33"]["Text"] = [[Activar]];
-G2L["33"]["Position"] = UDim2.new(0.72312, 0, 0.48486, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton.LocalScript
-G2L["34"] = Instance.new("LocalScript", G2L["33"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement
-G2L["35"] = Instance.new("Frame", G2L["c"]);
-G2L["35"]["Visible"] = false;
-G2L["35"]["BorderSizePixel"] = 0;
-G2L["35"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["35"]["Size"] = UDim2.new(0, 432, 0, 262);
-G2L["35"]["Position"] = UDim2.new(0.27058, 0, 0.14328, 0);
-G2L["35"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["35"]["Name"] = [[Movement]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.UICorner
-G2L["36"] = Instance.new("UICorner", G2L["35"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextLabel
-G2L["37"] = Instance.new("TextLabel", G2L["35"]);
-G2L["37"]["BorderSizePixel"] = 0;
-G2L["37"]["TextSize"] = 14;
-G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37"]["BackgroundTransparency"] = 123;
-G2L["37"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["37"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["37"]["Text"] = [[Fly]];
-G2L["37"]["Position"] = UDim2.new(0.08148, 0, 0.16927, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextLabel
-G2L["38"] = Instance.new("TextLabel", G2L["35"]);
-G2L["38"]["BorderSizePixel"] = 0;
-G2L["38"]["TextSize"] = 14;
-G2L["38"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["38"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["38"]["BackgroundTransparency"] = 123;
-G2L["38"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["38"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["38"]["Text"] = [[High Jump]];
-G2L["38"]["Position"] = UDim2.new(0.08148, 0, 0.47327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextLabel
-G2L["39"] = Instance.new("TextLabel", G2L["35"]);
-G2L["39"]["BorderSizePixel"] = 0;
-G2L["39"]["TextSize"] = 14;
-G2L["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["39"]["BackgroundTransparency"] = 123;
-G2L["39"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["39"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["39"]["Text"] = [[Noclip]];
-G2L["39"]["Position"] = UDim2.new(0.08148, 0, 0.37327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextLabel
-G2L["3a"] = Instance.new("TextLabel", G2L["35"]);
-G2L["3a"]["BorderSizePixel"] = 0;
-G2L["3a"]["TextSize"] = 14;
-G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3a"]["BackgroundTransparency"] = 123;
-G2L["3a"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["3a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3a"]["Text"] = [[Speed]];
-G2L["3a"]["Position"] = UDim2.new(0.08148, 0, 0.27327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton
-G2L["3b"] = Instance.new("TextButton", G2L["35"]);
-G2L["3b"]["BorderSizePixel"] = 0;
-G2L["3b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3b"]["TextSize"] = 14;
-G2L["3b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["3b"]["BackgroundTransparency"] = 123;
-G2L["3b"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["3b"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3b"]["Text"] = [[Activar]];
-G2L["3b"]["Position"] = UDim2.new(0.72312, 0, 0.15686, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton.LocalScript
-G2L["3c"] = Instance.new("LocalScript", G2L["3b"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton
-G2L["3d"] = Instance.new("TextButton", G2L["35"]);
-G2L["3d"]["BorderSizePixel"] = 0;
-G2L["3d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3d"]["TextSize"] = 14;
-G2L["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["3d"]["BackgroundTransparency"] = 123;
-G2L["3d"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["3d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3d"]["Text"] = [[Activar]];
-G2L["3d"]["Position"] = UDim2.new(0.72312, 0, 0.25686, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton.LocalScript
-G2L["3e"] = Instance.new("LocalScript", G2L["3d"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton
-G2L["3f"] = Instance.new("TextButton", G2L["35"]);
-G2L["3f"]["BorderSizePixel"] = 0;
-G2L["3f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["TextSize"] = 14;
-G2L["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["3f"]["BackgroundTransparency"] = 123;
-G2L["3f"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["3f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["3f"]["Text"] = [[Activar]];
-G2L["3f"]["Position"] = UDim2.new(0.72312, 0, 0.37286, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton.LocalScript
-G2L["40"] = Instance.new("LocalScript", G2L["3f"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton
-G2L["41"] = Instance.new("TextButton", G2L["35"]);
-G2L["41"]["BorderSizePixel"] = 0;
-G2L["41"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["TextSize"] = 14;
-G2L["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["41"]["BackgroundTransparency"] = 123;
-G2L["41"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["41"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["41"]["Text"] = [[Activar]];
-G2L["41"]["Position"] = UDim2.new(0.72312, 0, 0.48486, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton.LocalScript
-G2L["42"] = Instance.new("LocalScript", G2L["41"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun
-G2L["43"] = Instance.new("Frame", G2L["c"]);
-G2L["43"]["Visible"] = false;
-G2L["43"]["BorderSizePixel"] = 0;
-G2L["43"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["43"]["Size"] = UDim2.new(0, 432, 0, 266);
-G2L["43"]["Position"] = UDim2.new(0.27058, 0, 0.1342, 0);
-G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["43"]["Name"] = [[Fun]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.UICorner
-G2L["44"] = Instance.new("UICorner", G2L["43"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextLabel
-G2L["45"] = Instance.new("TextLabel", G2L["43"]);
-G2L["45"]["BorderSizePixel"] = 0;
-G2L["45"]["TextSize"] = 14;
-G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["45"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["45"]["BackgroundTransparency"] = 123;
-G2L["45"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["45"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["45"]["Text"] = [[Chat Spam]];
-G2L["45"]["Position"] = UDim2.new(0.08148, 0, 0.16927, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextLabel
-G2L["46"] = Instance.new("TextLabel", G2L["43"]);
-G2L["46"]["BorderSizePixel"] = 0;
-G2L["46"]["TextSize"] = 14;
-G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["46"]["BackgroundTransparency"] = 123;
-G2L["46"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["46"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["46"]["Text"] = [[Spinbot]];
-G2L["46"]["Position"] = UDim2.new(0.08148, 0, 0.47327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextLabel
-G2L["47"] = Instance.new("TextLabel", G2L["43"]);
-G2L["47"]["BorderSizePixel"] = 0;
-G2L["47"]["TextSize"] = 14;
-G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["47"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["BackgroundTransparency"] = 123;
-G2L["47"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["47"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["47"]["Text"] = [[Sound Spam]];
-G2L["47"]["Position"] = UDim2.new(0.08148, 0, 0.37327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextLabel
-G2L["48"] = Instance.new("TextLabel", G2L["43"]);
-G2L["48"]["BorderSizePixel"] = 0;
-G2L["48"]["TextSize"] = 14;
-G2L["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["48"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["48"]["BackgroundTransparency"] = 123;
-G2L["48"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["48"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["48"]["Text"] = [[Troll All]];
-G2L["48"]["Position"] = UDim2.new(0.08148, 0, 0.27327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton
-G2L["49"] = Instance.new("TextButton", G2L["43"]);
-G2L["49"]["BorderSizePixel"] = 0;
-G2L["49"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["49"]["TextSize"] = 14;
-G2L["49"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["49"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["49"]["BackgroundTransparency"] = 123;
-G2L["49"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["49"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["49"]["Text"] = [[Activar]];
-G2L["49"]["Position"] = UDim2.new(0.72312, 0, 0.15686, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton.LocalScript
-G2L["4a"] = Instance.new("LocalScript", G2L["49"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton
-G2L["4b"] = Instance.new("TextButton", G2L["43"]);
-G2L["4b"]["BorderSizePixel"] = 0;
-G2L["4b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4b"]["TextSize"] = 14;
-G2L["4b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["4b"]["BackgroundTransparency"] = 123;
-G2L["4b"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["4b"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4b"]["Text"] = [[Activar]];
-G2L["4b"]["Position"] = UDim2.new(0.72312, 0, 0.25686, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton.LocalScript
-G2L["4c"] = Instance.new("LocalScript", G2L["4b"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton
-G2L["4d"] = Instance.new("TextButton", G2L["43"]);
-G2L["4d"]["BorderSizePixel"] = 0;
-G2L["4d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4d"]["TextSize"] = 14;
-G2L["4d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["4d"]["BackgroundTransparency"] = 123;
-G2L["4d"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["4d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4d"]["Text"] = [[Activar]];
-G2L["4d"]["Position"] = UDim2.new(0.72312, 0, 0.37286, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton.LocalScript
-G2L["4e"] = Instance.new("LocalScript", G2L["4d"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton
-G2L["4f"] = Instance.new("TextButton", G2L["43"]);
-G2L["4f"]["BorderSizePixel"] = 0;
-G2L["4f"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4f"]["TextSize"] = 14;
-G2L["4f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["4f"]["BackgroundTransparency"] = 123;
-G2L["4f"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["4f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["4f"]["Text"] = [[Activar]];
-G2L["4f"]["Position"] = UDim2.new(0.72312, 0, 0.48486, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton.LocalScript
-G2L["50"] = Instance.new("LocalScript", G2L["4f"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands
-G2L["51"] = Instance.new("Frame", G2L["c"]);
-G2L["51"]["Visible"] = false;
-G2L["51"]["BorderSizePixel"] = 0;
-G2L["51"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["51"]["Size"] = UDim2.new(0, 428, 0, 267);
-G2L["51"]["Position"] = UDim2.new(0.26915, 0, 0.13162, 0);
-G2L["51"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["51"]["Name"] = [[Comands]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.UICorner
-G2L["52"] = Instance.new("UICorner", G2L["51"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextLabel
-G2L["53"] = Instance.new("TextLabel", G2L["51"]);
-G2L["53"]["BorderSizePixel"] = 0;
-G2L["53"]["TextSize"] = 14;
-G2L["53"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["53"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["53"]["BackgroundTransparency"] = 123;
-G2L["53"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["53"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["53"]["Text"] = [[Lag (Baneable)]];
-G2L["53"]["Position"] = UDim2.new(0.08148, 0, 0.16927, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextLabel
-G2L["54"] = Instance.new("TextLabel", G2L["51"]);
-G2L["54"]["BorderSizePixel"] = 0;
-G2L["54"]["TextSize"] = 14;
-G2L["54"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["54"]["BackgroundTransparency"] = 123;
-G2L["54"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["54"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["54"]["Text"] = [[Spawn Winchester]];
-G2L["54"]["Position"] = UDim2.new(0.08148, 0, 0.47327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextLabel
-G2L["55"] = Instance.new("TextLabel", G2L["51"]);
-G2L["55"]["BorderSizePixel"] = 0;
-G2L["55"]["TextSize"] = 14;
-G2L["55"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["55"]["BackgroundTransparency"] = 123;
-G2L["55"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["55"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["55"]["Text"] = [[Teleport luft]];
-G2L["55"]["Position"] = UDim2.new(0.08148, 0, 0.37327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextLabel
-G2L["56"] = Instance.new("TextLabel", G2L["51"]);
-G2L["56"]["BorderSizePixel"] = 0;
-G2L["56"]["TextSize"] = 14;
-G2L["56"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["56"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["56"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["56"]["BackgroundTransparency"] = 123;
-G2L["56"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["56"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["56"]["Text"] = [[Teleport HEER]];
-G2L["56"]["Position"] = UDim2.new(0.08148, 0, 0.27327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton
-G2L["57"] = Instance.new("TextButton", G2L["51"]);
-G2L["57"]["BorderSizePixel"] = 0;
-G2L["57"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["57"]["TextSize"] = 14;
-G2L["57"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["57"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["57"]["BackgroundTransparency"] = 123;
-G2L["57"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["57"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["57"]["Text"] = [[Activar]];
-G2L["57"]["Position"] = UDim2.new(0.72312, 0, 0.15686, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton.LocalScript
-G2L["58"] = Instance.new("LocalScript", G2L["57"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton
-G2L["59"] = Instance.new("TextButton", G2L["51"]);
-G2L["59"]["BorderSizePixel"] = 0;
-G2L["59"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["59"]["TextSize"] = 14;
-G2L["59"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["59"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["59"]["BackgroundTransparency"] = 123;
-G2L["59"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["59"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["59"]["Text"] = [[Activar]];
-G2L["59"]["Position"] = UDim2.new(0.72312, 0, 0.27184, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton.LocalScript
-G2L["5a"] = Instance.new("LocalScript", G2L["59"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton
-G2L["5b"] = Instance.new("TextButton", G2L["51"]);
-G2L["5b"]["BorderSizePixel"] = 0;
-G2L["5b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5b"]["TextSize"] = 14;
-G2L["5b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["5b"]["BackgroundTransparency"] = 123;
-G2L["5b"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["5b"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5b"]["Text"] = [[Activar]];
-G2L["5b"]["Position"] = UDim2.new(0.72312, 0, 0.37286, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton.LocalScript
-G2L["5c"] = Instance.new("LocalScript", G2L["5b"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton
-G2L["5d"] = Instance.new("TextButton", G2L["51"]);
-G2L["5d"]["BorderSizePixel"] = 0;
-G2L["5d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5d"]["TextSize"] = 14;
-G2L["5d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["5d"]["BackgroundTransparency"] = 123;
-G2L["5d"]["Size"] = UDim2.new(0, 188, 0, 50);
-G2L["5d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["5d"]["Text"] = [[Activar]];
-G2L["5d"]["Position"] = UDim2.new(0.72312, 0, 0.48486, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton.LocalScript
-G2L["5e"] = Instance.new("LocalScript", G2L["5d"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Status
-G2L["5f"] = Instance.new("Frame", G2L["c"]);
-G2L["5f"]["Visible"] = false;
-G2L["5f"]["BorderSizePixel"] = 0;
-G2L["5f"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["5f"]["Size"] = UDim2.new(0, 548, 0, 317);
-G2L["5f"]["Position"] = UDim2.new(0.19333, 0, 0.10692, 0);
-G2L["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["5f"]["Name"] = [[Status]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Status.UICorner
-G2L["60"] = Instance.new("UICorner", G2L["5f"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Status.TextLabel
-G2L["61"] = Instance.new("TextLabel", G2L["5f"]);
-G2L["61"]["BorderSizePixel"] = 0;
-G2L["61"]["TextSize"] = 14;
-G2L["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["61"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["61"]["BackgroundTransparency"] = 123;
-G2L["61"]["Size"] = UDim2.new(0, 547, 0, 233);
-G2L["61"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["61"]["Text"] = [[SYSTEM STATUS
-
-• Combat modules loaded successfully
-• Visual engine functioning correctly
-• Movement functions operational
-• Entertainment utilities synchronized
-• Security bypass enabled
-• No issues detected
-• All scripts executed successfully
-• Connected to IKGHUB services
-• Stable performance detected
-• Client reported no errors
-• Functionality verified
-• More than 5 games supported
-
-STATUS: ONLINE
-VERSION: STABLE
-VERSION: IKGHUB v1.3.09]];
-G2L["61"]["Position"] = UDim2.new(0, 0, 0.19777, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Status.TextLabel
-G2L["62"] = Instance.new("TextLabel", G2L["5f"]);
-G2L["62"]["BorderSizePixel"] = 0;
-G2L["62"]["TextSize"] = 14;
-G2L["62"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["62"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["62"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["62"]["BackgroundTransparency"] = 123;
-G2L["62"]["Size"] = UDim2.new(0, 546, 0, -52);
-G2L["62"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["62"]["Text"] = [[Working in
-GIA Fuzelier
-For more games, join our Discord and get their scripts!]];
-G2L["62"]["Position"] = UDim2.new(0.00365, 0, 0.14555, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu
-G2L["63"] = Instance.new("Frame", G2L["c"]);
-G2L["63"]["Visible"] = false;
-G2L["63"]["BorderSizePixel"] = 0;
-G2L["63"]["BackgroundColor3"] = Color3.fromRGB(27, 27, 27);
-G2L["63"]["Size"] = UDim2.new(0, 563, 0, 351);
-G2L["63"]["Position"] = UDim2.new(0.18346, 0, 0.09296, 0);
-G2L["63"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["63"]["Name"] = [[Menu]];
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.UICorner
-G2L["64"] = Instance.new("UICorner", G2L["63"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ImageLabel
-G2L["65"] = Instance.new("ImageLabel", G2L["63"]);
-G2L["65"]["BorderSizePixel"] = 0;
-G2L["65"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["65"]["Image"] = [[rbxassetid://79185016293068]];
-G2L["65"]["Size"] = UDim2.new(0, 535, 0, 46);
-G2L["65"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["65"]["Position"] = UDim2.new(0.04273, 0, 0.02513, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.TextLabel
-G2L["66"] = Instance.new("TextLabel", G2L["63"]);
-G2L["66"]["BorderSizePixel"] = 0;
-G2L["66"]["TextSize"] = 14;
-G2L["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["66"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["66"]["BackgroundTransparency"] = 123;
-G2L["66"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["66"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["66"]["Text"] = [[STATUS:]];
-G2L["66"]["Position"] = UDim2.new(0.09772, 0, 0.12789, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.TextLabel
-G2L["67"] = Instance.new("TextLabel", G2L["63"]);
-G2L["67"]["BorderSizePixel"] = 0;
-G2L["67"]["TextSize"] = 14;
-G2L["67"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["67"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["67"]["BackgroundTransparency"] = 123;
-G2L["67"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["67"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["67"]["Text"] = [[VERSION:]];
-G2L["67"]["Position"] = UDim2.new(0.4544, 0, 0.11927, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.TextLabel
-G2L["68"] = Instance.new("TextLabel", G2L["63"]);
-G2L["68"]["BorderSizePixel"] = 0;
-G2L["68"]["TextSize"] = 14;
-G2L["68"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["68"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["68"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["68"]["BackgroundTransparency"] = 123;
-G2L["68"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["68"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["68"]["Text"] = [[JOIN DISCORD:]];
-G2L["68"]["Position"] = UDim2.new(0.81189, 0, 0.11927, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.TextLabel
-G2L["69"] = Instance.new("TextLabel", G2L["63"]);
-G2L["69"]["BorderSizePixel"] = 0;
-G2L["69"]["TextSize"] = 14;
-G2L["69"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["69"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["69"]["BackgroundTransparency"] = 123;
-G2L["69"]["Size"] = UDim2.new(0, 71, 0, 50);
-G2L["69"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["69"]["Text"] = [[v1.3.09]];
-G2L["69"]["Position"] = UDim2.new(0.45618, 0, 0.27327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.TextLabel
-G2L["6a"] = Instance.new("TextLabel", G2L["63"]);
-G2L["6a"]["BorderSizePixel"] = 0;
-G2L["6a"]["TextSize"] = 14;
-G2L["6a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["6a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6a"]["BackgroundTransparency"] = 123;
-G2L["6a"]["Size"] = UDim2.new(0, 18, 0, 50);
-G2L["6a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6a"]["Text"] = [[https://discord.gg/dG3rcTk3NQ]];
-G2L["6a"]["Position"] = UDim2.new(0.81367, 0, 0.27327, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ImageLabel
-G2L["6b"] = Instance.new("ImageLabel", G2L["63"]);
-G2L["6b"]["BorderSizePixel"] = 0;
-G2L["6b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6b"]["Image"] = [[rbxassetid://112869881577825]];
-G2L["6b"]["Size"] = UDim2.new(0, 50, 0, 50);
-G2L["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6b"]["Position"] = UDim2.new(0.11711, 0, 0.25727, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ImageLabel.UICorner
-G2L["6c"] = Instance.new("UICorner", G2L["6b"]);
-G2L["6c"]["CornerRadius"] = UDim.new(0, 123);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.TextLabel
-G2L["6d"] = Instance.new("TextLabel", G2L["63"]);
-G2L["6d"]["BorderSizePixel"] = 0;
-G2L["6d"]["TextSize"] = 14;
-G2L["6d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6d"]["BackgroundTransparency"] = 123;
-G2L["6d"]["Size"] = UDim2.new(0, 76, 0, 50);
-G2L["6d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6d"]["Text"] = [[Records:]];
-G2L["6d"]["Position"] = UDim2.new(0.45946, 0, 0.44727, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ScrollingFrame
-G2L["6e"] = Instance.new("ScrollingFrame", G2L["63"]);
-G2L["6e"]["Active"] = true;
-G2L["6e"]["BorderSizePixel"] = 0;
-G2L["6e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6e"]["Size"] = UDim2.new(0, 549, 0, 146);
-G2L["6e"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6e"]["Position"] = UDim2.new(0.03563, 0, 0.586, 0);
-G2L["6e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["6e"]["BackgroundTransparency"] = 123;
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ScrollingFrame.TextLabel
-G2L["6f"] = Instance.new("TextLabel", G2L["6e"]);
-G2L["6f"]["BorderSizePixel"] = 0;
-G2L["6f"]["TextSize"] = 14;
-G2L["6f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["6f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6f"]["BackgroundTransparency"] = 123;
-G2L["6f"]["Size"] = UDim2.new(0, 302, 0, 40);
-G2L["6f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["6f"]["Text"] = [[(v1.3.05) New GUI! ]];
-G2L["6f"]["Position"] = UDim2.new(-0.00906, 0, 0.11933, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ScrollingFrame.TextLabel
-G2L["70"] = Instance.new("TextLabel", G2L["6e"]);
-G2L["70"]["BorderSizePixel"] = 0;
-G2L["70"]["TextSize"] = 14;
-G2L["70"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["70"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["70"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["70"]["BackgroundTransparency"] = 123;
-G2L["70"]["Size"] = UDim2.new(0, 302, 0, 40);
-G2L["70"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["70"]["Text"] = [[(v1.3.01) Fixed hitbox, speed]];
-G2L["70"]["Position"] = UDim2.new(-0.00906, 0, 0.17775, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ScrollingFrame.TextLabel
-G2L["71"] = Instance.new("TextLabel", G2L["6e"]);
-G2L["71"]["BorderSizePixel"] = 0;
-G2L["71"]["TextSize"] = 14;
-G2L["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["71"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["71"]["BackgroundTransparency"] = 123;
-G2L["71"]["Size"] = UDim2.new(0, 302, 0, 40);
-G2L["71"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["71"]["Text"] = [[(v1.1.00)Create ikghub!]];
-G2L["71"]["Position"] = UDim2.new(-0.01842, 0, 0.20636, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ScrollingFrame.TextLabel
-G2L["72"] = Instance.new("TextLabel", G2L["6e"]);
-G2L["72"]["BorderSizePixel"] = 0;
-G2L["72"]["TextSize"] = 14;
-G2L["72"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["72"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["72"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["72"]["BackgroundTransparency"] = 123;
-G2L["72"]["Size"] = UDim2.new(0, 118, 0, 40);
-G2L["72"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["72"]["Text"] = [[Created by ]];
-G2L["72"]["Position"] = UDim2.new(0.41801, 0, 0.06679, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ScrollingFrame.TextLabel
-G2L["73"] = Instance.new("TextLabel", G2L["6e"]);
-G2L["73"]["BorderSizePixel"] = 0;
-G2L["73"]["TextSize"] = 14;
-G2L["73"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["73"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["73"]["TextColor3"] = Color3.fromRGB(180, 102, 235);
-G2L["73"]["BackgroundTransparency"] = 123;
-G2L["73"]["Size"] = UDim2.new(0, 118, 0, 40);
-G2L["73"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["73"]["Text"] = [[ikgmonher]];
-G2L["73"]["Position"] = UDim2.new(0.55811, 0, 0.06777, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ScrollingFrame.TextLabel
-G2L["74"] = Instance.new("TextLabel", G2L["6e"]);
-G2L["74"]["BorderSizePixel"] = 0;
-G2L["74"]["TextSize"] = 14;
-G2L["74"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["74"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["74"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["74"]["BackgroundTransparency"] = 123;
-G2L["74"]["Size"] = UDim2.new(0, 302, 0, 40);
-G2L["74"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["74"]["Text"] = [[(v1.3.06) Flying fixed and high jump too]];
-G2L["74"]["Position"] = UDim2.new(-0.01842, 0, 0.1488, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ScrollingFrame.TextLabel
-G2L["75"] = Instance.new("TextLabel", G2L["6e"]);
-G2L["75"]["BorderSizePixel"] = 0;
-G2L["75"]["TextSize"] = 14;
-G2L["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["75"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["75"]["BackgroundTransparency"] = 123;
-G2L["75"]["Size"] = UDim2.new(0, 302, 0, 40);
-G2L["75"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["75"]["Text"] = [[(v1.3.08) Fixed Visuals]];
-G2L["75"]["Position"] = UDim2.new(-0.02778, 0, 0.06068, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ScrollingFrame.TextLabel
-G2L["76"] = Instance.new("TextLabel", G2L["6e"]);
-G2L["76"]["BorderSizePixel"] = 0;
-G2L["76"]["TextSize"] = 14;
-G2L["76"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["76"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["76"]["BackgroundTransparency"] = 123;
-G2L["76"]["Size"] = UDim2.new(0, 302, 0, 40);
-G2L["76"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["76"]["Text"] = [[(v1.3.07) New section (Commands) ]];
-G2L["76"]["Position"] = UDim2.new(-0.01842, 0, 0.0892, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Menu.ScrollingFrame.TextLabel
-G2L["77"] = Instance.new("TextLabel", G2L["6e"]);
-G2L["77"]["BorderSizePixel"] = 0;
-G2L["77"]["TextSize"] = 14;
-G2L["77"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["77"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["77"]["BackgroundTransparency"] = 123;
-G2L["77"]["Size"] = UDim2.new(0, 302, 0, 40);
-G2L["77"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["77"]["Text"] = [[(v1.3.09) New ui]];
-G2L["77"]["Position"] = UDim2.new(-0.02778, 0, 0.03362, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combatbutton
-G2L["78"] = Instance.new("TextButton", G2L["c"]);
-G2L["78"]["BorderSizePixel"] = 0;
-G2L["78"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["78"]["TextSize"] = 14;
-G2L["78"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["78"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["78"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["78"]["BackgroundTransparency"] = 123;
-G2L["78"]["Size"] = UDim2.new(0, 112, 0, 39);
-G2L["78"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["78"]["Text"] = [[Combat]];
-G2L["78"]["Name"] = [[Combatbutton]];
-G2L["78"]["Position"] = UDim2.new(0.02037, 0, 0.29249, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combatbutton.LocalScript
-G2L["79"] = Instance.new("LocalScript", G2L["78"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Combatbutton.ImageLabel
-G2L["7a"] = Instance.new("ImageLabel", G2L["78"]);
-G2L["7a"]["BorderSizePixel"] = 0;
-G2L["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7a"]["Image"] = [[rbxassetid://91777051532445]];
-G2L["7a"]["Size"] = UDim2.new(0, 32, 0, 31);
-G2L["7a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["7a"]["Position"] = UDim2.new(-0.07143, 0, 0.09722, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Minimize
-G2L["7b"] = Instance.new("TextButton", G2L["c"]);
-G2L["7b"]["BorderSizePixel"] = 0;
-G2L["7b"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7b"]["TextSize"] = 14;
-G2L["7b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["7b"]["BackgroundTransparency"] = 123;
-G2L["7b"]["Size"] = UDim2.new(0, 37, 0, 37);
-G2L["7b"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7b"]["Text"] = [[-]];
-G2L["7b"]["Name"] = [[Minimize]];
-G2L["7b"]["Position"] = UDim2.new(0.8939, 0, 0, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Minimize.LocalScript
-G2L["7c"] = Instance.new("LocalScript", G2L["7b"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Minimize.LocalScript
-G2L["7d"] = Instance.new("LocalScript", G2L["7b"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comandsbutton
-G2L["7e"] = Instance.new("TextButton", G2L["c"]);
-G2L["7e"]["BorderSizePixel"] = 0;
-G2L["7e"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7e"]["TextSize"] = 14;
-G2L["7e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7e"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["7e"]["BackgroundTransparency"] = 123;
-G2L["7e"]["Size"] = UDim2.new(0, 112, 0, 39);
-G2L["7e"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["7e"]["Text"] = [[Comands]];
-G2L["7e"]["Name"] = [[Comandsbutton]];
-G2L["7e"]["Position"] = UDim2.new(0.02003, 0, 0.59278, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comandsbutton.LocalScript
-G2L["7f"] = Instance.new("LocalScript", G2L["7e"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Comandsbutton.ImageLabel
-G2L["80"] = Instance.new("ImageLabel", G2L["7e"]);
-G2L["80"]["BorderSizePixel"] = 0;
-G2L["80"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["80"]["Image"] = [[rbxassetid://110941979689025]];
-G2L["80"]["Size"] = UDim2.new(0, 32, 0, 31);
-G2L["80"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["80"]["Position"] = UDim2.new(-0.07143, 0, 0.09722, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.menubutton
-G2L["81"] = Instance.new("TextButton", G2L["c"]);
-G2L["81"]["BorderSizePixel"] = 0;
-G2L["81"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["81"]["TextSize"] = 14;
-G2L["81"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["81"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["81"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["81"]["BackgroundTransparency"] = 123;
-G2L["81"]["Size"] = UDim2.new(0, 112, 0, 39);
-G2L["81"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["81"]["Text"] = [[Menu]];
-G2L["81"]["Name"] = [[menubutton]];
-G2L["81"]["Position"] = UDim2.new(0.02146, 0, 0.0935, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.menubutton.LocalScript
-G2L["82"] = Instance.new("LocalScript", G2L["81"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.menubutton.ImageLabel
-G2L["83"] = Instance.new("ImageLabel", G2L["81"]);
-G2L["83"]["BorderSizePixel"] = 0;
-G2L["83"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["83"]["Image"] = [[rbxassetid://114888136003418]];
-G2L["83"]["Size"] = UDim2.new(0, 21, 0, 20);
-G2L["83"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["83"]["Position"] = UDim2.new(-0.03571, 0, 0.22542, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visualbutton
-G2L["84"] = Instance.new("TextButton", G2L["c"]);
-G2L["84"]["BorderSizePixel"] = 0;
-G2L["84"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["TextSize"] = 14;
-G2L["84"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["84"]["BackgroundTransparency"] = 123;
-G2L["84"]["Size"] = UDim2.new(0, 112, 0, 39);
-G2L["84"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["84"]["Text"] = [[Visual]];
-G2L["84"]["Name"] = [[Visualbutton]];
-G2L["84"]["Position"] = UDim2.new(0.02037, 0, 0.19197, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visualbutton.LocalScript
-G2L["85"] = Instance.new("LocalScript", G2L["84"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Visualbutton.ImageLabel
-G2L["86"] = Instance.new("ImageLabel", G2L["84"]);
-G2L["86"]["BorderSizePixel"] = 0;
-G2L["86"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["86"]["Image"] = [[rbxassetid://75030029732198]];
-G2L["86"]["Size"] = UDim2.new(0, 32, 0, 31);
-G2L["86"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["86"]["Position"] = UDim2.new(-0.07143, 0, 0.19978, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Statusbutton
-G2L["87"] = Instance.new("TextButton", G2L["c"]);
-G2L["87"]["BorderSizePixel"] = 0;
-G2L["87"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["87"]["TextSize"] = 14;
-G2L["87"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["87"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["87"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["87"]["BackgroundTransparency"] = 123;
-G2L["87"]["Size"] = UDim2.new(0, 112, 0, 39);
-G2L["87"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["87"]["Text"] = [[Status]];
-G2L["87"]["Name"] = [[Statusbutton]];
-G2L["87"]["Position"] = UDim2.new(0.02324, 0, 0.69197, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Statusbutton.LocalScript
-G2L["88"] = Instance.new("LocalScript", G2L["87"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Statusbutton.ImageLabel
-G2L["89"] = Instance.new("ImageLabel", G2L["87"]);
-G2L["89"]["BorderSizePixel"] = 0;
-G2L["89"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["89"]["Image"] = [[rbxassetid://70616425053580]];
-G2L["89"]["Size"] = UDim2.new(0, 32, 0, 31);
-G2L["89"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["89"]["Position"] = UDim2.new(-0.05357, 0, 0.19978, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movemetbutton
-G2L["8a"] = Instance.new("TextButton", G2L["c"]);
-G2L["8a"]["BorderSizePixel"] = 0;
-G2L["8a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8a"]["TextSize"] = 14;
-G2L["8a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["8a"]["BackgroundTransparency"] = 123;
-G2L["8a"]["Size"] = UDim2.new(0, 112, 0, 39);
-G2L["8a"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8a"]["Text"] = [[Movement]];
-G2L["8a"]["Name"] = [[Movemetbutton]];
-G2L["8a"]["Position"] = UDim2.new(0.02037, 0, 0.393, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movemetbutton.LocalScript
-G2L["8b"] = Instance.new("LocalScript", G2L["8a"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.Movemetbutton.ImageLabel
-G2L["8c"] = Instance.new("ImageLabel", G2L["8a"]);
-G2L["8c"]["BorderSizePixel"] = 0;
-G2L["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8c"]["Image"] = [[rbxassetid://90394421725466]];
-G2L["8c"]["Size"] = UDim2.new(0, 32, 0, 31);
-G2L["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["8c"]["Position"] = UDim2.new(-0.08036, 0, 0.09722, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.CloseButton
-G2L["8d"] = Instance.new("TextButton", G2L["c"]);
-G2L["8d"]["BorderSizePixel"] = 0;
-G2L["8d"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["TextSize"] = 14;
-G2L["8d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8d"]["BackgroundTransparency"] = 123;
-G2L["8d"]["Size"] = UDim2.new(0, 37, 0, 37);
-G2L["8d"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8d"]["Text"] = [[x]];
-G2L["8d"]["Name"] = [[CloseButton]];
-G2L["8d"]["Position"] = UDim2.new(0.94552, 0, 0, 0);
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.CloseButton.LocalScript
-G2L["8e"] = Instance.new("LocalScript", G2L["8d"]);
-
-
-
--- StarterGui.Ikghubv2.IKGHUBv2.TextLabel
-G2L["8f"] = Instance.new("TextLabel", G2L["c"]);
-G2L["8f"]["BorderSizePixel"] = 0;
-G2L["8f"]["TextSize"] = 14;
-G2L["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
-G2L["8f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["BackgroundTransparency"] = 123;
-G2L["8f"]["Size"] = UDim2.new(0, 120, 0, 37);
-G2L["8f"]["BorderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["8f"]["Text"] = [[Ikghub]];
-G2L["8f"]["Position"] = UDim2.new(-0.00104, 0, -0.00186, 0);
-
-
--- StarterGui.Ikghubv2.coso2.button3.Dragging
-local function C_4()
-local script = G2L["4"];
-	local frame = script.Parent
-	
-	local UserInputService = game:GetService("UserInputService")
-	local TweenService = game:GetService("TweenService")
-	
-	local dragging = false
-	local dragStart
-	local startPos
-	
-	frame.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			dragging = true
-			dragStart = input.Position
-			startPos = frame.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-	
-			local delta = input.Position - dragStart
-	
-			local goal = {
-				Position = UDim2.new(
-					startPos.X.Scale,
-					startPos.X.Offset + delta.X,
-					startPos.Y.Scale,
-					startPos.Y.Offset + delta.Y
-				)
-			}
-	
-			local tween = TweenService:Create(
-				frame,
-				TweenInfo.new(0.08, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-				goal
-			)
-	
-			tween:Play()
-		end
-	end)
-end;
-task.spawn(C_4);
--- StarterGui.Ikghubv2.coso2.button3.LocalScript
-local function C_5()
-local script = G2L["5"];
-	local button3 = script.Parent
-	local coso2 = button3.Parent
-	
-	local player = game.Players.LocalPlayer
-	local playerGui = player:WaitForChild("PlayerGui")
-	
-	-- Busca el Frame principal
-	local gui = playerGui:WaitForChild("IKGHUBv2"):WaitForChild("IKGHUBv1")
-	
-	button3.MouseButton1Click:Connect(function()
-		-- Vuelve a mostrar el Hub
-		gui.Visible = true
-	
-		-- Oculta el botón
-		button3.Visible = false
-	end)
-end;
-task.spawn(C_5);
--- StarterGui.Ikghubv2.Bienvenida.LocalScript
-local function C_8()
-local script = G2L["8"];
-	-- LocalScript con Animación → Poner DENTRO del Frame inicial
-	
-	local frame = script.Parent
-	local TweenService = game:GetService("TweenService")
-	local player = game.Players.LocalPlayer
-	
-	-- ================== CONFIGURACIÓN ==================
-	local tiempoEspera = 4          -- Segundos antes de cambiar
-	local frameSiguienteNombre = "IKGHUBv2"  -- ← Cambia por el nombre exacto del siguiente frame
-	local duracionFade = 0.6        -- Duración de la animación en segundos
-	-- ===================================================
-	
-	player:WaitForChild("PlayerGui")
-	task.wait(tiempoEspera)
-	
-	local playerGui = player.PlayerGui
-	local siguienteFrame = playerGui:FindFirstChild(frameSiguienteNombre, true)
-	
-	if siguienteFrame then
-	
-		-- Preparar siguiente frame (invisible pero listo)
-		siguienteFrame.Visible = true
-		siguienteFrame.BackgroundTransparency = 1
-	
-		-- Fade Out del frame actual
-		local tweenOut = TweenService:Create(frame, TweenInfo.new(duracionFade, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-			BackgroundTransparency = 1
-		})
-	
-		-- Fade In del siguiente frame
-		local tweenIn = TweenService:Create(siguienteFrame, TweenInfo.new(duracionFade, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-			BackgroundTransparency = 0
-		})
-	
-		-- Animar todos los hijos del frame actual (para que se desvanezcan)
-		for _, descendant in pairs(frame:GetDescendants()) do
-			if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("ImageLabel") then
-				TweenService:Create(descendant, TweenInfo.new(duracionFade), {TextTransparency = 1}):Play()
-			elseif descendant:IsA("Frame") or descendant:IsA("ImageLabel") then
-				TweenService:Create(descendant, TweenInfo.new(duracionFade), {BackgroundTransparency = 1}):Play()
-			end
-		end
-	
-		tweenOut:Play()
-	
-		tweenOut.Completed:Connect(function()
-			frame.Visible = false
-			tweenIn:Play()
-		end)
-	
-		print("✅ Transición con animación completada: " .. frame.Name .. " → " .. siguienteFrame.Name)
-	
-	else
-		warn("No se encontró el frame: " .. frameSiguienteNombre)
+--rev's gui2lua | @revisionedd
+
+local player = game:GetService("Players").LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Parent = playerGui
+ScreenGui.Name = "ScreenGui"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+local IKGHUB = Instance.new("Frame")
+IKGHUB.Parent = ScreenGui
+IKGHUB.LayoutOrder = 0
+IKGHUB.Active = false
+IKGHUB.Interactable = true
+IKGHUB.AnchorPoint = Vector2.new(0, 0)
+IKGHUB.Rotation = 0
+IKGHUB.AutomaticSize = Enum.AutomaticSize.None
+IKGHUB.Name = "IKGHUB"
+IKGHUB.BorderMode = Enum.BorderMode.Outline
+IKGHUB.SizeConstraint = Enum.SizeConstraint.RelativeXY
+IKGHUB.ZIndex = 1
+IKGHUB.BorderSizePixel = 0
+IKGHUB.Visible = true
+IKGHUB.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+IKGHUB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+IKGHUB.Position = UDim2.new(0.10630498826503754, 0, 0.07456140220165253, 0)
+IKGHUB.Size = UDim2.new(0, 1074, 0, 581)
+
+local decorationforgetseveavienthing_V = Instance.new("UICorner")
+decorationforgetseveavienthing_V.Parent = IKGHUB
+decorationforgetseveavienthing_V.Name = "decorationforgetseveavienthing:V"
+
+local Minimize = Instance.new("TextButton")
+Minimize.Parent = IKGHUB
+Minimize.LayoutOrder = 0
+Minimize.Active = true
+Minimize.Interactable = true
+Minimize.AnchorPoint = Vector2.new(0, 0)
+Minimize.Rotation = 0
+Minimize.AutomaticSize = Enum.AutomaticSize.None
+Minimize.Name = "Minimize"
+Minimize.BorderMode = Enum.BorderMode.Outline
+Minimize.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Minimize.ZIndex = 1
+Minimize.BorderSizePixel = 0
+Minimize.Visible = true
+Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.BackgroundTransparency = 123
+Minimize.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.Position = UDim2.new(0.9310986995697021, 0, 0, 0)
+Minimize.Size = UDim2.new(0, 37, 0, 37)
+Minimize.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Minimize.Text = "-"
+Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextSize = 14
+Minimize.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Textikg = Instance.new("TextLabel")
+Textikg.Parent = IKGHUB
+Textikg.LayoutOrder = 0
+Textikg.Active = false
+Textikg.Interactable = true
+Textikg.AnchorPoint = Vector2.new(0, 0)
+Textikg.Rotation = 0
+Textikg.AutomaticSize = Enum.AutomaticSize.None
+Textikg.Name = "Textikg"
+Textikg.BorderMode = Enum.BorderMode.Outline
+Textikg.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Textikg.ZIndex = 1
+Textikg.BorderSizePixel = 0
+Textikg.Visible = true
+Textikg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Textikg.BackgroundTransparency = 123
+Textikg.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Textikg.Position = UDim2.new(0.06797020137310028, 0, 0.10327022522687912, 0)
+Textikg.Size = UDim2.new(0, 71, 0, 50)
+Textikg.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Textikg.Text = "IKGHUB"
+Textikg.TextColor3 = Color3.fromRGB(255, 255, 255)
+Textikg.TextSize = 14
+
+local Decoracion = Instance.new("TextLabel")
+Decoracion.Parent = IKGHUB
+Decoracion.LayoutOrder = 0
+Decoracion.Active = false
+Decoracion.Interactable = true
+Decoracion.AnchorPoint = Vector2.new(0, 0)
+Decoracion.Rotation = 0
+Decoracion.AutomaticSize = Enum.AutomaticSize.None
+Decoracion.Name = "Decoracion"
+Decoracion.BorderMode = Enum.BorderMode.Outline
+Decoracion.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Decoracion.ZIndex = 1
+Decoracion.BorderSizePixel = 0
+Decoracion.Visible = true
+Decoracion.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Decoracion.BackgroundTransparency = 123
+Decoracion.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Decoracion.Position = UDim2.new(0, 0, 0.06540447473526001, 0)
+Decoracion.Size = UDim2.new(0, 200, 0, 95)
+Decoracion.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json")
+Decoracion.Text = ""
+Decoracion.TextColor3 = Color3.fromRGB(0, 0, 0)
+Decoracion.TextSize = 14
+
+local UIStroke = Instance.new("UIStroke")
+UIStroke.Parent = Decoracion
+UIStroke.Name = "UIStroke"
+UIStroke.ZIndex = 1
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke.Color = Color3.fromRGB(120, 120, 120)
+
+local Options = Instance.new("ScrollingFrame")
+Options.Parent = IKGHUB
+Options.LayoutOrder = 0
+Options.Active = true
+Options.Interactable = true
+Options.AnchorPoint = Vector2.new(0, 0)
+Options.Rotation = 0
+Options.AutomaticSize = Enum.AutomaticSize.None
+Options.Name = "Options"
+Options.BorderMode = Enum.BorderMode.Outline
+Options.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Options.ZIndex = 1
+Options.BorderSizePixel = 0
+Options.Visible = true
+Options.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Options.BackgroundTransparency = 123
+Options.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Options.BorderMode = Enum.BorderMode.Outline
+Options.BorderSizePixel = 0
+Options.Position = UDim2.new(0.006517691072076559, 0, 0.2375214844942093, 0)
+Options.Size = UDim2.new(0, 186, 0, 426)
+Options.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+
+local Menu = Instance.new("TextButton")
+Menu.Parent = Options
+Menu.LayoutOrder = 0
+Menu.Active = true
+Menu.Interactable = true
+Menu.AnchorPoint = Vector2.new(0, 0)
+Menu.Rotation = 0
+Menu.AutomaticSize = Enum.AutomaticSize.None
+Menu.Name = "Menu"
+Menu.BorderMode = Enum.BorderMode.Outline
+Menu.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Menu.ZIndex = 1
+Menu.BorderSizePixel = 0
+Menu.Visible = true
+Menu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Menu.BackgroundTransparency = 123
+Menu.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Menu.Position = UDim2.new(-0.005376344081014395, 0, 0.000860585190821439, 0)
+Menu.Size = UDim2.new(0, 188, 0, 50)
+Menu.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Menu.Text = "Menu"
+Menu.TextColor3 = Color3.fromRGB(255, 255, 255)
+Menu.TextSize = 14
+Menu.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Combat = Instance.new("TextButton")
+Combat.Parent = Options
+Combat.LayoutOrder = 0
+Combat.Active = true
+Combat.Interactable = true
+Combat.AnchorPoint = Vector2.new(0, 0)
+Combat.Rotation = 0
+Combat.AutomaticSize = Enum.AutomaticSize.None
+Combat.Name = "Combat"
+Combat.BorderMode = Enum.BorderMode.Outline
+Combat.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Combat.ZIndex = 1
+Combat.BorderSizePixel = 0
+Combat.Visible = true
+Combat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Combat.BackgroundTransparency = 123
+Combat.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Combat.Position = UDim2.new(-0.005376344081014395, 0, 0.0438898466527462, 0)
+Combat.Size = UDim2.new(0, 188, 0, 50)
+Combat.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Combat.Text = "Combat"
+Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Combat.TextSize = 14
+Combat.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Movement = Instance.new("TextButton")
+Movement.Parent = Options
+Movement.LayoutOrder = 0
+Movement.Active = true
+Movement.Interactable = true
+Movement.AnchorPoint = Vector2.new(0, 0)
+Movement.Rotation = 0
+Movement.AutomaticSize = Enum.AutomaticSize.None
+Movement.Name = "Movement"
+Movement.BorderMode = Enum.BorderMode.Outline
+Movement.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Movement.ZIndex = 1
+Movement.BorderSizePixel = 0
+Movement.Visible = true
+Movement.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Movement.BackgroundTransparency = 123
+Movement.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Movement.Position = UDim2.new(-0.005376344081014395, 0, 0.0938037857413292, 0)
+Movement.Size = UDim2.new(0, 188, 0, 50)
+Movement.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Movement.Text = "Movement"
+Movement.TextColor3 = Color3.fromRGB(255, 255, 255)
+Movement.TextSize = 14
+Movement.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Visual = Instance.new("TextButton")
+Visual.Parent = Options
+Visual.LayoutOrder = 0
+Visual.Active = true
+Visual.Interactable = true
+Visual.AnchorPoint = Vector2.new(0, 0)
+Visual.Rotation = 0
+Visual.AutomaticSize = Enum.AutomaticSize.None
+Visual.Name = "Visual"
+Visual.BorderMode = Enum.BorderMode.Outline
+Visual.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Visual.ZIndex = 1
+Visual.BorderSizePixel = 0
+Visual.Visible = true
+Visual.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Visual.BackgroundTransparency = 123
+Visual.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Visual.Position = UDim2.new(-0.005376344081014395, 0, 0.1419965624809265, 0)
+Visual.Size = UDim2.new(0, 188, 0, 50)
+Visual.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Visual.Text = "Visual"
+Visual.TextColor3 = Color3.fromRGB(255, 255, 255)
+Visual.TextSize = 14
+Visual.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Fun = Instance.new("TextButton")
+Fun.Parent = Options
+Fun.LayoutOrder = 0
+Fun.Active = true
+Fun.Interactable = true
+Fun.AnchorPoint = Vector2.new(0, 0)
+Fun.Rotation = 0
+Fun.AutomaticSize = Enum.AutomaticSize.None
+Fun.Name = "Fun"
+Fun.BorderMode = Enum.BorderMode.Outline
+Fun.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Fun.ZIndex = 1
+Fun.BorderSizePixel = 0
+Fun.Visible = true
+Fun.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fun.BackgroundTransparency = 123
+Fun.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Fun.Position = UDim2.new(-0.005376344081014395, 0, 0.18502581119537354, 0)
+Fun.Size = UDim2.new(0, 188, 0, 50)
+Fun.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Fun.Text = "Fun"
+Fun.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fun.TextSize = 14
+Fun.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Status = Instance.new("TextButton")
+Status.Parent = Options
+Status.LayoutOrder = 0
+Status.Active = true
+Status.Interactable = true
+Status.AnchorPoint = Vector2.new(0, 0)
+Status.Rotation = 0
+Status.AutomaticSize = Enum.AutomaticSize.None
+Status.Name = "Status"
+Status.BorderMode = Enum.BorderMode.Outline
+Status.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Status.ZIndex = 1
+Status.BorderSizePixel = 0
+Status.Visible = true
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 123
+Status.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Status.Position = UDim2.new(-0.01075268816202879, 0, 0.27108433842658997, 0)
+Status.Size = UDim2.new(0, 188, 0, 50)
+Status.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Status.Text = "Status"
+Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+Status.TextSize = 14
+Status.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextLabel = Instance.new("TextLabel")
+TextLabel.Parent = Options
+TextLabel.LayoutOrder = 0
+TextLabel.Active = false
+TextLabel.Interactable = true
+TextLabel.AnchorPoint = Vector2.new(0, 0)
+TextLabel.Rotation = 0
+TextLabel.AutomaticSize = Enum.AutomaticSize.None
+TextLabel.Name = "TextLabel"
+TextLabel.BorderMode = Enum.BorderMode.Outline
+TextLabel.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel.ZIndex = 1
+TextLabel.BorderSizePixel = 0
+TextLabel.Visible = true
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 123
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.3045293390750885, 0, 0.38123923540115356, 0)
+TextLabel.Size = UDim2.new(0, 71, 0, 50)
+TextLabel.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel.Text = "By ikgmonher"
+TextLabel.TextColor3 = Color3.fromRGB(97, 147, 255)
+TextLabel.TextSize = 14
+
+local Comands = Instance.new("TextButton")
+Comands.Parent = Options
+Comands.LayoutOrder = 0
+Comands.Active = true
+Comands.Interactable = true
+Comands.AnchorPoint = Vector2.new(0, 0)
+Comands.Rotation = 0
+Comands.AutomaticSize = Enum.AutomaticSize.None
+Comands.Name = "Comands"
+Comands.BorderMode = Enum.BorderMode.Outline
+Comands.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Comands.ZIndex = 1
+Comands.BorderSizePixel = 0
+Comands.Visible = true
+Comands.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Comands.BackgroundTransparency = 123
+Comands.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Comands.Position = UDim2.new(-0.005376344081014395, 0, 0.22805507481098175, 0)
+Comands.Size = UDim2.new(0, 188, 0, 50)
+Comands.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Comands.Text = "Comands"
+Comands.TextColor3 = Color3.fromRGB(255, 255, 255)
+Comands.TextSize = 14
+Comands.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Menu2 = Instance.new("Frame")
+Menu2.Parent = IKGHUB
+Menu2.LayoutOrder = 0
+Menu2.Active = false
+Menu2.Interactable = true
+Menu2.AnchorPoint = Vector2.new(0, 0)
+Menu2.Rotation = 0
+Menu2.AutomaticSize = Enum.AutomaticSize.None
+Menu2.Name = "Menu"
+Menu2.BorderMode = Enum.BorderMode.Outline
+Menu2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Menu2.ZIndex = 1
+Menu2.BorderSizePixel = 0
+Menu2.Visible = true
+Menu2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Menu2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Menu2.Position = UDim2.new(0.20763501524925232, 0, 0.10327022522687912, 0)
+Menu2.Size = UDim2.new(0, 814, 0, 500)
+
+local UICorner = Instance.new("UICorner")
+UICorner.Parent = Menu2
+UICorner.Name = "UICorner"
+
+local ImageLabel = Instance.new("ImageLabel")
+ImageLabel.Parent = Menu2
+ImageLabel.LayoutOrder = 0
+ImageLabel.Active = false
+ImageLabel.Interactable = true
+ImageLabel.AnchorPoint = Vector2.new(0, 0)
+ImageLabel.Rotation = 0
+ImageLabel.AutomaticSize = Enum.AutomaticSize.None
+ImageLabel.Name = "ImageLabel"
+ImageLabel.BorderMode = Enum.BorderMode.Outline
+ImageLabel.SizeConstraint = Enum.SizeConstraint.RelativeXY
+ImageLabel.ZIndex = 1
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Visible = true
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.Position = UDim2.new(0.03562653437256813, 0, 0.02800000086426735, 0)
+ImageLabel.Size = UDim2.new(0, 766, 0, 46)
+ImageLabel.Image = "rbxassetid://79185016293068"
+
+local TextLabel2 = Instance.new("TextLabel")
+TextLabel2.Parent = Menu2
+TextLabel2.LayoutOrder = 0
+TextLabel2.Active = false
+TextLabel2.Interactable = true
+TextLabel2.AnchorPoint = Vector2.new(0, 0)
+TextLabel2.Rotation = 0
+TextLabel2.AutomaticSize = Enum.AutomaticSize.None
+TextLabel2.Name = "TextLabel"
+TextLabel2.BorderMode = Enum.BorderMode.Outline
+TextLabel2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel2.ZIndex = 1
+TextLabel2.BorderSizePixel = 0
+TextLabel2.Visible = true
+TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.BackgroundTransparency = 123
+TextLabel2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.Position = UDim2.new(0.10482525825500488, 0, 0.11927023530006409, 0)
+TextLabel2.Size = UDim2.new(0, 71, 0, 50)
+TextLabel2.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel2.Text = "STATUS:"
+TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.TextSize = 14
+
+local TextLabel3 = Instance.new("TextLabel")
+TextLabel3.Parent = Menu2
+TextLabel3.LayoutOrder = 0
+TextLabel3.Active = false
+TextLabel3.Interactable = true
+TextLabel3.AnchorPoint = Vector2.new(0, 0)
+TextLabel3.Rotation = 0
+TextLabel3.AutomaticSize = Enum.AutomaticSize.None
+TextLabel3.Name = "TextLabel"
+TextLabel3.BorderMode = Enum.BorderMode.Outline
+TextLabel3.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel3.ZIndex = 1
+TextLabel3.BorderSizePixel = 0
+TextLabel3.Visible = true
+TextLabel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel3.BackgroundTransparency = 123
+TextLabel3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel3.Position = UDim2.new(0.45617660880088806, 0, 0.11927023530006409, 0)
+TextLabel3.Size = UDim2.new(0, 71, 0, 50)
+TextLabel3.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel3.Text = "VERSION:"
+TextLabel3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel3.TextSize = 14
+
+local TextLabel4 = Instance.new("TextLabel")
+TextLabel4.Parent = Menu2
+TextLabel4.LayoutOrder = 0
+TextLabel4.Active = false
+TextLabel4.Interactable = true
+TextLabel4.AnchorPoint = Vector2.new(0, 0)
+TextLabel4.Rotation = 0
+TextLabel4.AutomaticSize = Enum.AutomaticSize.None
+TextLabel4.Name = "TextLabel"
+TextLabel4.BorderMode = Enum.BorderMode.Outline
+TextLabel4.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel4.ZIndex = 1
+TextLabel4.BorderSizePixel = 0
+TextLabel4.Visible = true
+TextLabel4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel4.BackgroundTransparency = 123
+TextLabel4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel4.Position = UDim2.new(0.8136704564094543, 0, 0.11927023530006409, 0)
+TextLabel4.Size = UDim2.new(0, 71, 0, 50)
+TextLabel4.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel4.Text = "JOIN DISCORD:"
+TextLabel4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel4.TextSize = 14
+
+local TextLabel5 = Instance.new("TextLabel")
+TextLabel5.Parent = Menu2
+TextLabel5.LayoutOrder = 0
+TextLabel5.Active = false
+TextLabel5.Interactable = true
+TextLabel5.AnchorPoint = Vector2.new(0, 0)
+TextLabel5.Rotation = 0
+TextLabel5.AutomaticSize = Enum.AutomaticSize.None
+TextLabel5.Name = "TextLabel"
+TextLabel5.BorderMode = Enum.BorderMode.Outline
+TextLabel5.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel5.ZIndex = 1
+TextLabel5.BorderSizePixel = 0
+TextLabel5.Visible = true
+TextLabel5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel5.BackgroundTransparency = 123
+TextLabel5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel5.Position = UDim2.new(0.45617660880088806, 0, 0.27327024936676025, 0)
+TextLabel5.Size = UDim2.new(0, 71, 0, 50)
+TextLabel5.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel5.Text = "v1.3.07"
+TextLabel5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel5.TextSize = 14
+
+local TextLabel6 = Instance.new("TextLabel")
+TextLabel6.Parent = Menu2
+TextLabel6.LayoutOrder = 0
+TextLabel6.Active = false
+TextLabel6.Interactable = true
+TextLabel6.AnchorPoint = Vector2.new(0, 0)
+TextLabel6.Rotation = 0
+TextLabel6.AutomaticSize = Enum.AutomaticSize.None
+TextLabel6.Name = "TextLabel"
+TextLabel6.BorderMode = Enum.BorderMode.Outline
+TextLabel6.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel6.ZIndex = 1
+TextLabel6.BorderSizePixel = 0
+TextLabel6.Visible = true
+TextLabel6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel6.BackgroundTransparency = 123
+TextLabel6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel6.Position = UDim2.new(0.8136704564094543, 0, 0.27327024936676025, 0)
+TextLabel6.Size = UDim2.new(0, 71, 0, 50)
+TextLabel6.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel6.Text = "https://discord.gg/dG3rcTk3NQ"
+TextLabel6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel6.TextSize = 14
+
+local ImageLabel2 = Instance.new("ImageLabel")
+ImageLabel2.Parent = Menu2
+ImageLabel2.LayoutOrder = 0
+ImageLabel2.Active = false
+ImageLabel2.Interactable = true
+ImageLabel2.AnchorPoint = Vector2.new(0, 0)
+ImageLabel2.Rotation = 0
+ImageLabel2.AutomaticSize = Enum.AutomaticSize.None
+ImageLabel2.Name = "ImageLabel"
+ImageLabel2.BorderMode = Enum.BorderMode.Outline
+ImageLabel2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+ImageLabel2.ZIndex = 1
+ImageLabel2.BorderSizePixel = 0
+ImageLabel2.Visible = true
+ImageLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel2.Position = UDim2.new(0.11711026728153229, 0, 0.25727027654647827, 0)
+ImageLabel2.Size = UDim2.new(0, 50, 0, 50)
+ImageLabel2.Image = "rbxassetid://112869881577825"
+
+local UICorner2 = Instance.new("UICorner")
+UICorner2.Parent = ImageLabel2
+UICorner2.Name = "UICorner"
+UICorner2.CornerRadius = UDim.new(0, 123)
+
+local TextLabel7 = Instance.new("TextLabel")
+TextLabel7.Parent = Menu2
+TextLabel7.LayoutOrder = 0
+TextLabel7.Active = false
+TextLabel7.Interactable = true
+TextLabel7.AnchorPoint = Vector2.new(0, 0)
+TextLabel7.Rotation = 0
+TextLabel7.AutomaticSize = Enum.AutomaticSize.None
+TextLabel7.Name = "TextLabel"
+TextLabel7.BorderMode = Enum.BorderMode.Outline
+TextLabel7.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel7.ZIndex = 1
+TextLabel7.BorderSizePixel = 0
+TextLabel7.Visible = true
+TextLabel7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel7.BackgroundTransparency = 123
+TextLabel7.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel7.Position = UDim2.new(0.45945945382118225, 0, 0.4472702741622925, 0)
+TextLabel7.Size = UDim2.new(0, 76, 0, 50)
+TextLabel7.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel7.Text = "Records:"
+TextLabel7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel7.TextSize = 14
+
+local ScrollingFrame = Instance.new("ScrollingFrame")
+ScrollingFrame.Parent = Menu2
+ScrollingFrame.LayoutOrder = 0
+ScrollingFrame.Active = true
+ScrollingFrame.Interactable = true
+ScrollingFrame.AnchorPoint = Vector2.new(0, 0)
+ScrollingFrame.Rotation = 0
+ScrollingFrame.AutomaticSize = Enum.AutomaticSize.None
+ScrollingFrame.Name = "ScrollingFrame"
+ScrollingFrame.BorderMode = Enum.BorderMode.Outline
+ScrollingFrame.SizeConstraint = Enum.SizeConstraint.RelativeXY
+ScrollingFrame.ZIndex = 1
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Visible = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 123
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderMode = Enum.BorderMode.Outline
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.03562653437256813, 0, 0.5860000252723694, 0)
+ScrollingFrame.Size = UDim2.new(0, 748, 0, 195)
+ScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+
+local TextLabel8 = Instance.new("TextLabel")
+TextLabel8.Parent = ScrollingFrame
+TextLabel8.LayoutOrder = 0
+TextLabel8.Active = false
+TextLabel8.Interactable = true
+TextLabel8.AnchorPoint = Vector2.new(0, 0)
+TextLabel8.Rotation = 0
+TextLabel8.AutomaticSize = Enum.AutomaticSize.None
+TextLabel8.Name = "TextLabel"
+TextLabel8.BorderMode = Enum.BorderMode.Outline
+TextLabel8.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel8.ZIndex = 1
+TextLabel8.BorderSizePixel = 0
+TextLabel8.Visible = true
+TextLabel8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel8.BackgroundTransparency = 123
+TextLabel8.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel8.Position = UDim2.new(-0.009064046666026115, 0, 0.10927026718854904, 0)
+TextLabel8.Size = UDim2.new(0, 302, 0, 40)
+TextLabel8.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel8.Text = "(v1.3.05) New GUI! "
+TextLabel8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel8.TextSize = 14
+
+local TextLabel9 = Instance.new("TextLabel")
+TextLabel9.Parent = ScrollingFrame
+TextLabel9.LayoutOrder = 0
+TextLabel9.Active = false
+TextLabel9.Interactable = true
+TextLabel9.AnchorPoint = Vector2.new(0, 0)
+TextLabel9.Rotation = 0
+TextLabel9.AutomaticSize = Enum.AutomaticSize.None
+TextLabel9.Name = "TextLabel"
+TextLabel9.BorderMode = Enum.BorderMode.Outline
+TextLabel9.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel9.ZIndex = 1
+TextLabel9.BorderSizePixel = 0
+TextLabel9.Visible = true
+TextLabel9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel9.BackgroundTransparency = 123
+TextLabel9.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel9.Position = UDim2.new(-0.009064046666026115, 0, 0.14327026903629303, 0)
+TextLabel9.Size = UDim2.new(0, 302, 0, 40)
+TextLabel9.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel9.Text = "(v1.3.01) Fixed hitbox, speed"
+TextLabel9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel9.TextSize = 14
+
+local TextLabel10 = Instance.new("TextLabel")
+TextLabel10.Parent = ScrollingFrame
+TextLabel10.LayoutOrder = 0
+TextLabel10.Active = false
+TextLabel10.Interactable = true
+TextLabel10.AnchorPoint = Vector2.new(0, 0)
+TextLabel10.Rotation = 0
+TextLabel10.AutomaticSize = Enum.AutomaticSize.None
+TextLabel10.Name = "TextLabel"
+TextLabel10.BorderMode = Enum.BorderMode.Outline
+TextLabel10.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel10.ZIndex = 1
+TextLabel10.BorderSizePixel = 0
+TextLabel10.Visible = true
+TextLabel10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel10.BackgroundTransparency = 123
+TextLabel10.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel10.Position = UDim2.new(-0.009064046666026115, 0, 0.18327026069164276, 0)
+TextLabel10.Size = UDim2.new(0, 302, 0, 40)
+TextLabel10.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel10.Text = "(v1.1.00)Create ikghub!"
+TextLabel10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel10.TextSize = 14
+
+local ImageLabel3 = Instance.new("ImageLabel")
+ImageLabel3.Parent = ScrollingFrame
+ImageLabel3.LayoutOrder = 0
+ImageLabel3.Active = false
+ImageLabel3.Interactable = true
+ImageLabel3.AnchorPoint = Vector2.new(0, 0)
+ImageLabel3.Rotation = 0
+ImageLabel3.AutomaticSize = Enum.AutomaticSize.None
+ImageLabel3.Name = "ImageLabel"
+ImageLabel3.BorderMode = Enum.BorderMode.Outline
+ImageLabel3.SizeConstraint = Enum.SizeConstraint.RelativeXY
+ImageLabel3.ZIndex = 1
+ImageLabel3.BorderSizePixel = 0
+ImageLabel3.Visible = true
+ImageLabel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel3.BackgroundTransparency = 12
+ImageLabel3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel3.Position = UDim2.new(0.2820855677127838, 0, 0.2070000022649765, 0)
+ImageLabel3.Size = UDim2.new(0, 332, 0, 100)
+ImageLabel3.Image = "rbxassetid://135791267582791"
+
+local TextLabel11 = Instance.new("TextLabel")
+TextLabel11.Parent = ScrollingFrame
+TextLabel11.LayoutOrder = 0
+TextLabel11.Active = false
+TextLabel11.Interactable = true
+TextLabel11.AnchorPoint = Vector2.new(0, 0)
+TextLabel11.Rotation = 0
+TextLabel11.AutomaticSize = Enum.AutomaticSize.None
+TextLabel11.Name = "TextLabel"
+TextLabel11.BorderMode = Enum.BorderMode.Outline
+TextLabel11.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel11.ZIndex = 1
+TextLabel11.BorderSizePixel = 0
+TextLabel11.Visible = true
+TextLabel11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel11.BackgroundTransparency = 123
+TextLabel11.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel11.Position = UDim2.new(0.3946792781352997, 0, 0.33127033710479736, 0)
+TextLabel11.Size = UDim2.new(0, 118, 0, 40)
+TextLabel11.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel11.Text = "Created by "
+TextLabel11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel11.TextSize = 14
+
+local TextLabel12 = Instance.new("TextLabel")
+TextLabel12.Parent = ScrollingFrame
+TextLabel12.LayoutOrder = 0
+TextLabel12.Active = false
+TextLabel12.Interactable = true
+TextLabel12.AnchorPoint = Vector2.new(0, 0)
+TextLabel12.Rotation = 0
+TextLabel12.AutomaticSize = Enum.AutomaticSize.None
+TextLabel12.Name = "TextLabel"
+TextLabel12.BorderMode = Enum.BorderMode.Outline
+TextLabel12.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel12.ZIndex = 1
+TextLabel12.BorderSizePixel = 0
+TextLabel12.Visible = true
+TextLabel12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel12.BackgroundTransparency = 123
+TextLabel12.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel12.Position = UDim2.new(0.5083156228065491, 0, 0.3322703242301941, 0)
+TextLabel12.Size = UDim2.new(0, 118, 0, 40)
+TextLabel12.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel12.Text = "ikgmonher"
+TextLabel12.TextColor3 = Color3.fromRGB(179, 101, 234)
+TextLabel12.TextSize = 14
+
+local TextLabel13 = Instance.new("TextLabel")
+TextLabel13.Parent = ScrollingFrame
+TextLabel13.LayoutOrder = 0
+TextLabel13.Active = false
+TextLabel13.Interactable = true
+TextLabel13.AnchorPoint = Vector2.new(0, 0)
+TextLabel13.Rotation = 0
+TextLabel13.AutomaticSize = Enum.AutomaticSize.None
+TextLabel13.Name = "TextLabel"
+TextLabel13.BorderMode = Enum.BorderMode.Outline
+TextLabel13.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel13.ZIndex = 1
+TextLabel13.BorderSizePixel = 0
+TextLabel13.Visible = true
+TextLabel13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel13.BackgroundTransparency = 123
+TextLabel13.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel13.Position = UDim2.new(-0.009064046666026115, 0, 0.0812702625989914, 0)
+TextLabel13.Size = UDim2.new(0, 302, 0, 40)
+TextLabel13.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel13.Text = "(v1.3.06) Flying fixed and high jump too(Current)"
+TextLabel13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel13.TextSize = 14
+
+local TextLabel14 = Instance.new("TextLabel")
+TextLabel14.Parent = ScrollingFrame
+TextLabel14.LayoutOrder = 0
+TextLabel14.Active = false
+TextLabel14.Interactable = true
+TextLabel14.AnchorPoint = Vector2.new(0, 0)
+TextLabel14.Rotation = 0
+TextLabel14.AutomaticSize = Enum.AutomaticSize.None
+TextLabel14.Name = "TextLabel"
+TextLabel14.BorderMode = Enum.BorderMode.Outline
+TextLabel14.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel14.ZIndex = 1
+TextLabel14.BorderSizePixel = 0
+TextLabel14.Visible = true
+TextLabel14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel14.BackgroundTransparency = 123
+TextLabel14.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel14.Position = UDim2.new(-0.009064046666026115, 0, 0.013270263560116291, 0)
+TextLabel14.Size = UDim2.new(0, 302, 0, 40)
+TextLabel14.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel14.Text = "(v1.3.08) Fixed Visuals"
+TextLabel14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel14.TextSize = 14
+
+local TextLabel15 = Instance.new("TextLabel")
+TextLabel15.Parent = ScrollingFrame
+TextLabel15.LayoutOrder = 0
+TextLabel15.Active = false
+TextLabel15.Interactable = true
+TextLabel15.AnchorPoint = Vector2.new(0, 0)
+TextLabel15.Rotation = 0
+TextLabel15.AutomaticSize = Enum.AutomaticSize.None
+TextLabel15.Name = "TextLabel"
+TextLabel15.BorderMode = Enum.BorderMode.Outline
+TextLabel15.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel15.ZIndex = 1
+TextLabel15.BorderSizePixel = 0
+TextLabel15.Visible = true
+TextLabel15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel15.BackgroundTransparency = 123
+TextLabel15.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel15.Position = UDim2.new(-0.009064046666026115, 0, 0.05327026546001434, 0)
+TextLabel15.Size = UDim2.new(0, 302, 0, 40)
+TextLabel15.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel15.Text = "(v1.3.07) New section (Commands) "
+TextLabel15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel15.TextSize = 14
+
+local Ikghubicon = Instance.new("ImageLabel")
+Ikghubicon.Parent = IKGHUB
+Ikghubicon.LayoutOrder = 0
+Ikghubicon.Active = false
+Ikghubicon.Interactable = true
+Ikghubicon.AnchorPoint = Vector2.new(0, 0)
+Ikghubicon.Rotation = 0
+Ikghubicon.AutomaticSize = Enum.AutomaticSize.None
+Ikghubicon.Name = "Ikghubicon"
+Ikghubicon.BorderMode = Enum.BorderMode.Outline
+Ikghubicon.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Ikghubicon.ZIndex = 1
+Ikghubicon.BorderSizePixel = 0
+Ikghubicon.Visible = true
+Ikghubicon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ikghubicon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ikghubicon.Position = UDim2.new(0, 0, 0.08605851978063583, 0)
+Ikghubicon.Size = UDim2.new(0, 73, 0, 70)
+Ikghubicon.Image = "rbxassetid://81587838979557"
+
+local Combat2 = Instance.new("Frame")
+Combat2.Parent = IKGHUB
+Combat2.LayoutOrder = 0
+Combat2.Active = false
+Combat2.Interactable = true
+Combat2.AnchorPoint = Vector2.new(0, 0)
+Combat2.Rotation = 0
+Combat2.AutomaticSize = Enum.AutomaticSize.None
+Combat2.Name = "Combat"
+Combat2.BorderMode = Enum.BorderMode.Outline
+Combat2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Combat2.ZIndex = 1
+Combat2.BorderSizePixel = 0
+Combat2.Visible = false
+Combat2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Combat2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Combat2.Position = UDim2.new(0.20763501524925232, 0, 0.10327022522687912, 0)
+Combat2.Size = UDim2.new(0, 814, 0, 500)
+
+local UICorner3 = Instance.new("UICorner")
+UICorner3.Parent = Combat2
+UICorner3.Name = "UICorner"
+
+local TextLabel16 = Instance.new("TextLabel")
+TextLabel16.Parent = Combat2
+TextLabel16.LayoutOrder = 0
+TextLabel16.Active = false
+TextLabel16.Interactable = true
+TextLabel16.AnchorPoint = Vector2.new(0, 0)
+TextLabel16.Rotation = 0
+TextLabel16.AutomaticSize = Enum.AutomaticSize.None
+TextLabel16.Name = "TextLabel"
+TextLabel16.BorderMode = Enum.BorderMode.Outline
+TextLabel16.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel16.ZIndex = 1
+TextLabel16.BorderSizePixel = 0
+TextLabel16.Visible = true
+TextLabel16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel16.BackgroundTransparency = 123
+TextLabel16.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel16.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
+TextLabel16.Size = UDim2.new(0, 71, 0, 50)
+TextLabel16.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel16.Text = "Aimbot"
+TextLabel16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel16.TextSize = 14
+
+local TextLabel17 = Instance.new("TextLabel")
+TextLabel17.Parent = Combat2
+TextLabel17.LayoutOrder = 0
+TextLabel17.Active = false
+TextLabel17.Interactable = true
+TextLabel17.AnchorPoint = Vector2.new(0, 0)
+TextLabel17.Rotation = 0
+TextLabel17.AutomaticSize = Enum.AutomaticSize.None
+TextLabel17.Name = "TextLabel"
+TextLabel17.BorderMode = Enum.BorderMode.Outline
+TextLabel17.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel17.ZIndex = 1
+TextLabel17.BorderSizePixel = 0
+TextLabel17.Visible = true
+TextLabel17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel17.BackgroundTransparency = 123
+TextLabel17.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel17.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
+TextLabel17.Size = UDim2.new(0, 71, 0, 50)
+TextLabel17.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel17.Text = "Hitbox"
+TextLabel17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel17.TextSize = 14
+
+local TextLabel18 = Instance.new("TextLabel")
+TextLabel18.Parent = Combat2
+TextLabel18.LayoutOrder = 0
+TextLabel18.Active = false
+TextLabel18.Interactable = true
+TextLabel18.AnchorPoint = Vector2.new(0, 0)
+TextLabel18.Rotation = 0
+TextLabel18.AutomaticSize = Enum.AutomaticSize.None
+TextLabel18.Name = "TextLabel"
+TextLabel18.BorderMode = Enum.BorderMode.Outline
+TextLabel18.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel18.ZIndex = 1
+TextLabel18.BorderSizePixel = 0
+TextLabel18.Visible = true
+TextLabel18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel18.BackgroundTransparency = 123
+TextLabel18.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel18.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel18.Size = UDim2.new(0, 71, 0, 50)
+TextLabel18.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel18.Text = "Fov"
+TextLabel18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel18.TextSize = 14
+
+local TextLabel19 = Instance.new("TextLabel")
+TextLabel19.Parent = Combat2
+TextLabel19.LayoutOrder = 0
+TextLabel19.Active = false
+TextLabel19.Interactable = true
+TextLabel19.AnchorPoint = Vector2.new(0, 0)
+TextLabel19.Rotation = 0
+TextLabel19.AutomaticSize = Enum.AutomaticSize.None
+TextLabel19.Name = "TextLabel"
+TextLabel19.BorderMode = Enum.BorderMode.Outline
+TextLabel19.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel19.ZIndex = 1
+TextLabel19.BorderSizePixel = 0
+TextLabel19.Visible = true
+TextLabel19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel19.BackgroundTransparency = 123
+TextLabel19.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel19.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel19.Size = UDim2.new(0, 71, 0, 50)
+TextLabel19.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel19.Text = "Team check"
+TextLabel19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel19.TextSize = 14
+
+local TextButton = Instance.new("TextButton")
+TextButton.Parent = Combat2
+TextButton.LayoutOrder = 0
+TextButton.Active = true
+TextButton.Interactable = true
+TextButton.AnchorPoint = Vector2.new(0, 0)
+TextButton.Rotation = 0
+TextButton.AutomaticSize = Enum.AutomaticSize.None
+TextButton.Name = "TextButton"
+TextButton.BorderMode = Enum.BorderMode.Outline
+TextButton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton.ZIndex = 1
+TextButton.BorderSizePixel = 0
+TextButton.Visible = true
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 123
+TextButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
+TextButton.Size = UDim2.new(0, 188, 0, 50)
+TextButton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton.Text = "Activar"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton2 = Instance.new("TextButton")
+TextButton2.Parent = Combat2
+TextButton2.LayoutOrder = 0
+TextButton2.Active = true
+TextButton2.Interactable = true
+TextButton2.AnchorPoint = Vector2.new(0, 0)
+TextButton2.Rotation = 0
+TextButton2.AutomaticSize = Enum.AutomaticSize.None
+TextButton2.Name = "TextButton"
+TextButton2.BorderMode = Enum.BorderMode.Outline
+TextButton2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton2.ZIndex = 1
+TextButton2.BorderSizePixel = 0
+TextButton2.Visible = true
+TextButton2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton2.BackgroundTransparency = 123
+TextButton2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton2.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
+TextButton2.Size = UDim2.new(0, 188, 0, 50)
+TextButton2.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton2.Text = "Activar"
+TextButton2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton2.TextSize = 14
+TextButton2.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton3 = Instance.new("TextButton")
+TextButton3.Parent = Combat2
+TextButton3.LayoutOrder = 0
+TextButton3.Active = true
+TextButton3.Interactable = true
+TextButton3.AnchorPoint = Vector2.new(0, 0)
+TextButton3.Rotation = 0
+TextButton3.AutomaticSize = Enum.AutomaticSize.None
+TextButton3.Name = "TextButton"
+TextButton3.BorderMode = Enum.BorderMode.Outline
+TextButton3.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton3.ZIndex = 1
+TextButton3.BorderSizePixel = 0
+TextButton3.Visible = true
+TextButton3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton3.BackgroundTransparency = 123
+TextButton3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton3.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton3.Size = UDim2.new(0, 188, 0, 50)
+TextButton3.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton3.Text = "Activar"
+TextButton3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton3.TextSize = 14
+TextButton3.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton4 = Instance.new("TextButton")
+TextButton4.Parent = Combat2
+TextButton4.LayoutOrder = 0
+TextButton4.Active = true
+TextButton4.Interactable = true
+TextButton4.AnchorPoint = Vector2.new(0, 0)
+TextButton4.Rotation = 0
+TextButton4.AutomaticSize = Enum.AutomaticSize.None
+TextButton4.Name = "TextButton"
+TextButton4.BorderMode = Enum.BorderMode.Outline
+TextButton4.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton4.ZIndex = 1
+TextButton4.BorderSizePixel = 0
+TextButton4.Visible = true
+TextButton4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton4.BackgroundTransparency = 123
+TextButton4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton4.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton4.Size = UDim2.new(0, 188, 0, 50)
+TextButton4.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton4.Text = "Activar"
+TextButton4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton4.TextSize = 14
+TextButton4.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Visual2 = Instance.new("Frame")
+Visual2.Parent = IKGHUB
+Visual2.LayoutOrder = 0
+Visual2.Active = false
+Visual2.Interactable = true
+Visual2.AnchorPoint = Vector2.new(0, 0)
+Visual2.Rotation = 0
+Visual2.AutomaticSize = Enum.AutomaticSize.None
+Visual2.Name = "Visual"
+Visual2.BorderMode = Enum.BorderMode.Outline
+Visual2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Visual2.ZIndex = 1
+Visual2.BorderSizePixel = 0
+Visual2.Visible = false
+Visual2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Visual2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Visual2.Position = UDim2.new(0.20763501524925232, 0, 0.10327022522687912, 0)
+Visual2.Size = UDim2.new(0, 814, 0, 500)
+
+local UICorner4 = Instance.new("UICorner")
+UICorner4.Parent = Visual2
+UICorner4.Name = "UICorner"
+
+local TextLabel20 = Instance.new("TextLabel")
+TextLabel20.Parent = Visual2
+TextLabel20.LayoutOrder = 0
+TextLabel20.Active = false
+TextLabel20.Interactable = true
+TextLabel20.AnchorPoint = Vector2.new(0, 0)
+TextLabel20.Rotation = 0
+TextLabel20.AutomaticSize = Enum.AutomaticSize.None
+TextLabel20.Name = "TextLabel"
+TextLabel20.BorderMode = Enum.BorderMode.Outline
+TextLabel20.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel20.ZIndex = 1
+TextLabel20.BorderSizePixel = 0
+TextLabel20.Visible = true
+TextLabel20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel20.BackgroundTransparency = 123
+TextLabel20.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel20.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
+TextLabel20.Size = UDim2.new(0, 71, 0, 50)
+TextLabel20.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel20.Text = "ESP"
+TextLabel20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel20.TextSize = 14
+
+local TextLabel21 = Instance.new("TextLabel")
+TextLabel21.Parent = Visual2
+TextLabel21.LayoutOrder = 0
+TextLabel21.Active = false
+TextLabel21.Interactable = true
+TextLabel21.AnchorPoint = Vector2.new(0, 0)
+TextLabel21.Rotation = 0
+TextLabel21.AutomaticSize = Enum.AutomaticSize.None
+TextLabel21.Name = "TextLabel"
+TextLabel21.BorderMode = Enum.BorderMode.Outline
+TextLabel21.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel21.ZIndex = 1
+TextLabel21.BorderSizePixel = 0
+TextLabel21.Visible = true
+TextLabel21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel21.BackgroundTransparency = 123
+TextLabel21.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel21.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
+TextLabel21.Size = UDim2.new(0, 71, 0, 50)
+TextLabel21.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel21.Text = "Fullbright"
+TextLabel21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel21.TextSize = 14
+
+local TextLabel22 = Instance.new("TextLabel")
+TextLabel22.Parent = Visual2
+TextLabel22.LayoutOrder = 0
+TextLabel22.Active = false
+TextLabel22.Interactable = true
+TextLabel22.AnchorPoint = Vector2.new(0, 0)
+TextLabel22.Rotation = 0
+TextLabel22.AutomaticSize = Enum.AutomaticSize.None
+TextLabel22.Name = "TextLabel"
+TextLabel22.BorderMode = Enum.BorderMode.Outline
+TextLabel22.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel22.ZIndex = 1
+TextLabel22.BorderSizePixel = 0
+TextLabel22.Visible = true
+TextLabel22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel22.BackgroundTransparency = 123
+TextLabel22.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel22.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel22.Size = UDim2.new(0, 71, 0, 50)
+TextLabel22.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel22.Text = "Tracers"
+TextLabel22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel22.TextSize = 14
+
+local TextLabel23 = Instance.new("TextLabel")
+TextLabel23.Parent = Visual2
+TextLabel23.LayoutOrder = 0
+TextLabel23.Active = false
+TextLabel23.Interactable = true
+TextLabel23.AnchorPoint = Vector2.new(0, 0)
+TextLabel23.Rotation = 0
+TextLabel23.AutomaticSize = Enum.AutomaticSize.None
+TextLabel23.Name = "TextLabel"
+TextLabel23.BorderMode = Enum.BorderMode.Outline
+TextLabel23.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel23.ZIndex = 1
+TextLabel23.BorderSizePixel = 0
+TextLabel23.Visible = true
+TextLabel23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel23.BackgroundTransparency = 123
+TextLabel23.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel23.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel23.Size = UDim2.new(0, 71, 0, 50)
+TextLabel23.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel23.Text = "Chams"
+TextLabel23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel23.TextSize = 14
+
+local TextButton5 = Instance.new("TextButton")
+TextButton5.Parent = Visual2
+TextButton5.LayoutOrder = 0
+TextButton5.Active = true
+TextButton5.Interactable = true
+TextButton5.AnchorPoint = Vector2.new(0, 0)
+TextButton5.Rotation = 0
+TextButton5.AutomaticSize = Enum.AutomaticSize.None
+TextButton5.Name = "TextButton"
+TextButton5.BorderMode = Enum.BorderMode.Outline
+TextButton5.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton5.ZIndex = 1
+TextButton5.BorderSizePixel = 0
+TextButton5.Visible = true
+TextButton5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton5.BackgroundTransparency = 123
+TextButton5.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton5.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
+TextButton5.Size = UDim2.new(0, 188, 0, 50)
+TextButton5.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton5.Text = "Activar"
+TextButton5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton5.TextSize = 14
+TextButton5.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton6 = Instance.new("TextButton")
+TextButton6.Parent = Visual2
+TextButton6.LayoutOrder = 0
+TextButton6.Active = true
+TextButton6.Interactable = true
+TextButton6.AnchorPoint = Vector2.new(0, 0)
+TextButton6.Rotation = 0
+TextButton6.AutomaticSize = Enum.AutomaticSize.None
+TextButton6.Name = "TextButton"
+TextButton6.BorderMode = Enum.BorderMode.Outline
+TextButton6.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton6.ZIndex = 1
+TextButton6.BorderSizePixel = 0
+TextButton6.Visible = true
+TextButton6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton6.BackgroundTransparency = 123
+TextButton6.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton6.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
+TextButton6.Size = UDim2.new(0, 188, 0, 50)
+TextButton6.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton6.Text = "Activar"
+TextButton6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton6.TextSize = 14
+TextButton6.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton7 = Instance.new("TextButton")
+TextButton7.Parent = Visual2
+TextButton7.LayoutOrder = 0
+TextButton7.Active = true
+TextButton7.Interactable = true
+TextButton7.AnchorPoint = Vector2.new(0, 0)
+TextButton7.Rotation = 0
+TextButton7.AutomaticSize = Enum.AutomaticSize.None
+TextButton7.Name = "TextButton"
+TextButton7.BorderMode = Enum.BorderMode.Outline
+TextButton7.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton7.ZIndex = 1
+TextButton7.BorderSizePixel = 0
+TextButton7.Visible = true
+TextButton7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton7.BackgroundTransparency = 123
+TextButton7.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton7.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton7.Size = UDim2.new(0, 188, 0, 50)
+TextButton7.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton7.Text = "Activar"
+TextButton7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton7.TextSize = 14
+TextButton7.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton8 = Instance.new("TextButton")
+TextButton8.Parent = Visual2
+TextButton8.LayoutOrder = 0
+TextButton8.Active = true
+TextButton8.Interactable = true
+TextButton8.AnchorPoint = Vector2.new(0, 0)
+TextButton8.Rotation = 0
+TextButton8.AutomaticSize = Enum.AutomaticSize.None
+TextButton8.Name = "TextButton"
+TextButton8.BorderMode = Enum.BorderMode.Outline
+TextButton8.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton8.ZIndex = 1
+TextButton8.BorderSizePixel = 0
+TextButton8.Visible = true
+TextButton8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton8.BackgroundTransparency = 123
+TextButton8.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton8.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton8.Size = UDim2.new(0, 188, 0, 50)
+TextButton8.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton8.Text = "Activar"
+TextButton8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton8.TextSize = 14
+TextButton8.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Movement2 = Instance.new("Frame")
+Movement2.Parent = IKGHUB
+Movement2.LayoutOrder = 0
+Movement2.Active = false
+Movement2.Interactable = true
+Movement2.AnchorPoint = Vector2.new(0, 0)
+Movement2.Rotation = 0
+Movement2.AutomaticSize = Enum.AutomaticSize.None
+Movement2.Name = "Movement"
+Movement2.BorderMode = Enum.BorderMode.Outline
+Movement2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Movement2.ZIndex = 1
+Movement2.BorderSizePixel = 0
+Movement2.Visible = false
+Movement2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Movement2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Movement2.Position = UDim2.new(0.20763501524925232, 0, 0.10327022522687912, 0)
+Movement2.Size = UDim2.new(0, 814, 0, 500)
+
+local UICorner5 = Instance.new("UICorner")
+UICorner5.Parent = Movement2
+UICorner5.Name = "UICorner"
+
+local TextLabel24 = Instance.new("TextLabel")
+TextLabel24.Parent = Movement2
+TextLabel24.LayoutOrder = 0
+TextLabel24.Active = false
+TextLabel24.Interactable = true
+TextLabel24.AnchorPoint = Vector2.new(0, 0)
+TextLabel24.Rotation = 0
+TextLabel24.AutomaticSize = Enum.AutomaticSize.None
+TextLabel24.Name = "TextLabel"
+TextLabel24.BorderMode = Enum.BorderMode.Outline
+TextLabel24.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel24.ZIndex = 1
+TextLabel24.BorderSizePixel = 0
+TextLabel24.Visible = true
+TextLabel24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel24.BackgroundTransparency = 123
+TextLabel24.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel24.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
+TextLabel24.Size = UDim2.new(0, 71, 0, 50)
+TextLabel24.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel24.Text = "Fly"
+TextLabel24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel24.TextSize = 14
+
+local TextLabel25 = Instance.new("TextLabel")
+TextLabel25.Parent = Movement2
+TextLabel25.LayoutOrder = 0
+TextLabel25.Active = false
+TextLabel25.Interactable = true
+TextLabel25.AnchorPoint = Vector2.new(0, 0)
+TextLabel25.Rotation = 0
+TextLabel25.AutomaticSize = Enum.AutomaticSize.None
+TextLabel25.Name = "TextLabel"
+TextLabel25.BorderMode = Enum.BorderMode.Outline
+TextLabel25.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel25.ZIndex = 1
+TextLabel25.BorderSizePixel = 0
+TextLabel25.Visible = true
+TextLabel25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel25.BackgroundTransparency = 123
+TextLabel25.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel25.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
+TextLabel25.Size = UDim2.new(0, 71, 0, 50)
+TextLabel25.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel25.Text = "High Jump"
+TextLabel25.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel25.TextSize = 14
+
+local TextLabel26 = Instance.new("TextLabel")
+TextLabel26.Parent = Movement2
+TextLabel26.LayoutOrder = 0
+TextLabel26.Active = false
+TextLabel26.Interactable = true
+TextLabel26.AnchorPoint = Vector2.new(0, 0)
+TextLabel26.Rotation = 0
+TextLabel26.AutomaticSize = Enum.AutomaticSize.None
+TextLabel26.Name = "TextLabel"
+TextLabel26.BorderMode = Enum.BorderMode.Outline
+TextLabel26.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel26.ZIndex = 1
+TextLabel26.BorderSizePixel = 0
+TextLabel26.Visible = true
+TextLabel26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel26.BackgroundTransparency = 123
+TextLabel26.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel26.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel26.Size = UDim2.new(0, 71, 0, 50)
+TextLabel26.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel26.Text = "Noclip"
+TextLabel26.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel26.TextSize = 14
+
+local TextLabel27 = Instance.new("TextLabel")
+TextLabel27.Parent = Movement2
+TextLabel27.LayoutOrder = 0
+TextLabel27.Active = false
+TextLabel27.Interactable = true
+TextLabel27.AnchorPoint = Vector2.new(0, 0)
+TextLabel27.Rotation = 0
+TextLabel27.AutomaticSize = Enum.AutomaticSize.None
+TextLabel27.Name = "TextLabel"
+TextLabel27.BorderMode = Enum.BorderMode.Outline
+TextLabel27.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel27.ZIndex = 1
+TextLabel27.BorderSizePixel = 0
+TextLabel27.Visible = true
+TextLabel27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel27.BackgroundTransparency = 123
+TextLabel27.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel27.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel27.Size = UDim2.new(0, 71, 0, 50)
+TextLabel27.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel27.Text = "Speed"
+TextLabel27.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel27.TextSize = 14
+
+local TextButton9 = Instance.new("TextButton")
+TextButton9.Parent = Movement2
+TextButton9.LayoutOrder = 0
+TextButton9.Active = true
+TextButton9.Interactable = true
+TextButton9.AnchorPoint = Vector2.new(0, 0)
+TextButton9.Rotation = 0
+TextButton9.AutomaticSize = Enum.AutomaticSize.None
+TextButton9.Name = "TextButton"
+TextButton9.BorderMode = Enum.BorderMode.Outline
+TextButton9.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton9.ZIndex = 1
+TextButton9.BorderSizePixel = 0
+TextButton9.Visible = true
+TextButton9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton9.BackgroundTransparency = 123
+TextButton9.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton9.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
+TextButton9.Size = UDim2.new(0, 188, 0, 50)
+TextButton9.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton9.Text = "Activar"
+TextButton9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton9.TextSize = 14
+TextButton9.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton10 = Instance.new("TextButton")
+TextButton10.Parent = Movement2
+TextButton10.LayoutOrder = 0
+TextButton10.Active = true
+TextButton10.Interactable = true
+TextButton10.AnchorPoint = Vector2.new(0, 0)
+TextButton10.Rotation = 0
+TextButton10.AutomaticSize = Enum.AutomaticSize.None
+TextButton10.Name = "TextButton"
+TextButton10.BorderMode = Enum.BorderMode.Outline
+TextButton10.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton10.ZIndex = 1
+TextButton10.BorderSizePixel = 0
+TextButton10.Visible = true
+TextButton10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton10.BackgroundTransparency = 123
+TextButton10.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton10.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
+TextButton10.Size = UDim2.new(0, 188, 0, 50)
+TextButton10.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton10.Text = "Activar"
+TextButton10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton10.TextSize = 14
+TextButton10.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton11 = Instance.new("TextButton")
+TextButton11.Parent = Movement2
+TextButton11.LayoutOrder = 0
+TextButton11.Active = true
+TextButton11.Interactable = true
+TextButton11.AnchorPoint = Vector2.new(0, 0)
+TextButton11.Rotation = 0
+TextButton11.AutomaticSize = Enum.AutomaticSize.None
+TextButton11.Name = "TextButton"
+TextButton11.BorderMode = Enum.BorderMode.Outline
+TextButton11.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton11.ZIndex = 1
+TextButton11.BorderSizePixel = 0
+TextButton11.Visible = true
+TextButton11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton11.BackgroundTransparency = 123
+TextButton11.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton11.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton11.Size = UDim2.new(0, 188, 0, 50)
+TextButton11.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton11.Text = "Activar"
+TextButton11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton11.TextSize = 14
+TextButton11.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton12 = Instance.new("TextButton")
+TextButton12.Parent = Movement2
+TextButton12.LayoutOrder = 0
+TextButton12.Active = true
+TextButton12.Interactable = true
+TextButton12.AnchorPoint = Vector2.new(0, 0)
+TextButton12.Rotation = 0
+TextButton12.AutomaticSize = Enum.AutomaticSize.None
+TextButton12.Name = "TextButton"
+TextButton12.BorderMode = Enum.BorderMode.Outline
+TextButton12.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton12.ZIndex = 1
+TextButton12.BorderSizePixel = 0
+TextButton12.Visible = true
+TextButton12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton12.BackgroundTransparency = 123
+TextButton12.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton12.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton12.Size = UDim2.new(0, 188, 0, 50)
+TextButton12.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton12.Text = "Activar"
+TextButton12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton12.TextSize = 14
+TextButton12.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Fun2 = Instance.new("Frame")
+Fun2.Parent = IKGHUB
+Fun2.LayoutOrder = 0
+Fun2.Active = false
+Fun2.Interactable = true
+Fun2.AnchorPoint = Vector2.new(0, 0)
+Fun2.Rotation = 0
+Fun2.AutomaticSize = Enum.AutomaticSize.None
+Fun2.Name = "Fun"
+Fun2.BorderMode = Enum.BorderMode.Outline
+Fun2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Fun2.ZIndex = 1
+Fun2.BorderSizePixel = 0
+Fun2.Visible = false
+Fun2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Fun2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fun2.Position = UDim2.new(0.20763501524925232, 0, 0.10327022522687912, 0)
+Fun2.Size = UDim2.new(0, 814, 0, 500)
+
+local UICorner6 = Instance.new("UICorner")
+UICorner6.Parent = Fun2
+UICorner6.Name = "UICorner"
+
+local TextLabel28 = Instance.new("TextLabel")
+TextLabel28.Parent = Fun2
+TextLabel28.LayoutOrder = 0
+TextLabel28.Active = false
+TextLabel28.Interactable = true
+TextLabel28.AnchorPoint = Vector2.new(0, 0)
+TextLabel28.Rotation = 0
+TextLabel28.AutomaticSize = Enum.AutomaticSize.None
+TextLabel28.Name = "TextLabel"
+TextLabel28.BorderMode = Enum.BorderMode.Outline
+TextLabel28.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel28.ZIndex = 1
+TextLabel28.BorderSizePixel = 0
+TextLabel28.Visible = true
+TextLabel28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel28.BackgroundTransparency = 123
+TextLabel28.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel28.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
+TextLabel28.Size = UDim2.new(0, 71, 0, 50)
+TextLabel28.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel28.Text = "Chat Spam"
+TextLabel28.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel28.TextSize = 14
+
+local TextLabel29 = Instance.new("TextLabel")
+TextLabel29.Parent = Fun2
+TextLabel29.LayoutOrder = 0
+TextLabel29.Active = false
+TextLabel29.Interactable = true
+TextLabel29.AnchorPoint = Vector2.new(0, 0)
+TextLabel29.Rotation = 0
+TextLabel29.AutomaticSize = Enum.AutomaticSize.None
+TextLabel29.Name = "TextLabel"
+TextLabel29.BorderMode = Enum.BorderMode.Outline
+TextLabel29.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel29.ZIndex = 1
+TextLabel29.BorderSizePixel = 0
+TextLabel29.Visible = true
+TextLabel29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel29.BackgroundTransparency = 123
+TextLabel29.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel29.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
+TextLabel29.Size = UDim2.new(0, 71, 0, 50)
+TextLabel29.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel29.Text = "Spinbot"
+TextLabel29.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel29.TextSize = 14
+
+local TextLabel30 = Instance.new("TextLabel")
+TextLabel30.Parent = Fun2
+TextLabel30.LayoutOrder = 0
+TextLabel30.Active = false
+TextLabel30.Interactable = true
+TextLabel30.AnchorPoint = Vector2.new(0, 0)
+TextLabel30.Rotation = 0
+TextLabel30.AutomaticSize = Enum.AutomaticSize.None
+TextLabel30.Name = "TextLabel"
+TextLabel30.BorderMode = Enum.BorderMode.Outline
+TextLabel30.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel30.ZIndex = 1
+TextLabel30.BorderSizePixel = 0
+TextLabel30.Visible = true
+TextLabel30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel30.BackgroundTransparency = 123
+TextLabel30.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel30.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel30.Size = UDim2.new(0, 71, 0, 50)
+TextLabel30.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel30.Text = "Sound Spam"
+TextLabel30.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel30.TextSize = 14
+
+local TextLabel31 = Instance.new("TextLabel")
+TextLabel31.Parent = Fun2
+TextLabel31.LayoutOrder = 0
+TextLabel31.Active = false
+TextLabel31.Interactable = true
+TextLabel31.AnchorPoint = Vector2.new(0, 0)
+TextLabel31.Rotation = 0
+TextLabel31.AutomaticSize = Enum.AutomaticSize.None
+TextLabel31.Name = "TextLabel"
+TextLabel31.BorderMode = Enum.BorderMode.Outline
+TextLabel31.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel31.ZIndex = 1
+TextLabel31.BorderSizePixel = 0
+TextLabel31.Visible = true
+TextLabel31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel31.BackgroundTransparency = 123
+TextLabel31.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel31.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel31.Size = UDim2.new(0, 71, 0, 50)
+TextLabel31.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel31.Text = "Troll All"
+TextLabel31.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel31.TextSize = 14
+
+local TextButton13 = Instance.new("TextButton")
+TextButton13.Parent = Fun2
+TextButton13.LayoutOrder = 0
+TextButton13.Active = true
+TextButton13.Interactable = true
+TextButton13.AnchorPoint = Vector2.new(0, 0)
+TextButton13.Rotation = 0
+TextButton13.AutomaticSize = Enum.AutomaticSize.None
+TextButton13.Name = "TextButton"
+TextButton13.BorderMode = Enum.BorderMode.Outline
+TextButton13.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton13.ZIndex = 1
+TextButton13.BorderSizePixel = 0
+TextButton13.Visible = true
+TextButton13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton13.BackgroundTransparency = 123
+TextButton13.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton13.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
+TextButton13.Size = UDim2.new(0, 188, 0, 50)
+TextButton13.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton13.Text = "Activar"
+TextButton13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton13.TextSize = 14
+TextButton13.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton14 = Instance.new("TextButton")
+TextButton14.Parent = Fun2
+TextButton14.LayoutOrder = 0
+TextButton14.Active = true
+TextButton14.Interactable = true
+TextButton14.AnchorPoint = Vector2.new(0, 0)
+TextButton14.Rotation = 0
+TextButton14.AutomaticSize = Enum.AutomaticSize.None
+TextButton14.Name = "TextButton"
+TextButton14.BorderMode = Enum.BorderMode.Outline
+TextButton14.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton14.ZIndex = 1
+TextButton14.BorderSizePixel = 0
+TextButton14.Visible = true
+TextButton14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton14.BackgroundTransparency = 123
+TextButton14.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton14.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
+TextButton14.Size = UDim2.new(0, 188, 0, 50)
+TextButton14.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton14.Text = "Activar"
+TextButton14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton14.TextSize = 14
+TextButton14.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton15 = Instance.new("TextButton")
+TextButton15.Parent = Fun2
+TextButton15.LayoutOrder = 0
+TextButton15.Active = true
+TextButton15.Interactable = true
+TextButton15.AnchorPoint = Vector2.new(0, 0)
+TextButton15.Rotation = 0
+TextButton15.AutomaticSize = Enum.AutomaticSize.None
+TextButton15.Name = "TextButton"
+TextButton15.BorderMode = Enum.BorderMode.Outline
+TextButton15.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton15.ZIndex = 1
+TextButton15.BorderSizePixel = 0
+TextButton15.Visible = true
+TextButton15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton15.BackgroundTransparency = 123
+TextButton15.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton15.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton15.Size = UDim2.new(0, 188, 0, 50)
+TextButton15.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton15.Text = "Activar"
+TextButton15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton15.TextSize = 14
+TextButton15.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton16 = Instance.new("TextButton")
+TextButton16.Parent = Fun2
+TextButton16.LayoutOrder = 0
+TextButton16.Active = true
+TextButton16.Interactable = true
+TextButton16.AnchorPoint = Vector2.new(0, 0)
+TextButton16.Rotation = 0
+TextButton16.AutomaticSize = Enum.AutomaticSize.None
+TextButton16.Name = "TextButton"
+TextButton16.BorderMode = Enum.BorderMode.Outline
+TextButton16.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton16.ZIndex = 1
+TextButton16.BorderSizePixel = 0
+TextButton16.Visible = true
+TextButton16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton16.BackgroundTransparency = 123
+TextButton16.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton16.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton16.Size = UDim2.new(0, 188, 0, 50)
+TextButton16.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton16.Text = "Activar"
+TextButton16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton16.TextSize = 14
+TextButton16.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Status2 = Instance.new("Frame")
+Status2.Parent = IKGHUB
+Status2.LayoutOrder = 0
+Status2.Active = false
+Status2.Interactable = true
+Status2.AnchorPoint = Vector2.new(0, 0)
+Status2.Rotation = 0
+Status2.AutomaticSize = Enum.AutomaticSize.None
+Status2.Name = "Status"
+Status2.BorderMode = Enum.BorderMode.Outline
+Status2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Status2.ZIndex = 1
+Status2.BorderSizePixel = 0
+Status2.Visible = false
+Status2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Status2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Status2.Position = UDim2.new(0.20763501524925232, 0, 0.10327022522687912, 0)
+Status2.Size = UDim2.new(0, 814, 0, 500)
+
+local UICorner7 = Instance.new("UICorner")
+UICorner7.Parent = Status2
+UICorner7.Name = "UICorner"
+
+local TextLabel32 = Instance.new("TextLabel")
+TextLabel32.Parent = Status2
+TextLabel32.LayoutOrder = 0
+TextLabel32.Active = false
+TextLabel32.Interactable = true
+TextLabel32.AnchorPoint = Vector2.new(0, 0)
+TextLabel32.Rotation = 0
+TextLabel32.AutomaticSize = Enum.AutomaticSize.None
+TextLabel32.Name = "TextLabel"
+TextLabel32.BorderMode = Enum.BorderMode.Outline
+TextLabel32.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel32.ZIndex = 1
+TextLabel32.BorderSizePixel = 0
+TextLabel32.Visible = true
+TextLabel32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel32.BackgroundTransparency = 123
+TextLabel32.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel32.Position = UDim2.new(0.05322820320725441, 0, 0.1852702647447586, 0)
+TextLabel32.Size = UDim2.new(0, 727, 0, 349)
+TextLabel32.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel32.Text = "SYSTEM STATUS\
+\
+• Combat modules loaded successfully\
+• Visual engine functioning correctly\
+• Movement functions operational\
+• Entertainment utilities synchronized\
+• Security bypass enabled\
+• No issues detected\
+• All scripts executed successfully\
+• Connected to IKGHUB services\
+• Stable performance detected\
+• Client reported no errors\
+• Functionality verified\
+• More than 5 games supported\
+\
+STATUS: ONLINE\
+VERSION: STABLE\
+VERSION: IKGHUB v1.3.08"
+TextLabel32.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel32.TextSize = 14
+
+local TextLabel33 = Instance.new("TextLabel")
+TextLabel33.Parent = Status2
+TextLabel33.LayoutOrder = 0
+TextLabel33.Active = false
+TextLabel33.Interactable = true
+TextLabel33.AnchorPoint = Vector2.new(0, 0)
+TextLabel33.Rotation = 0
+TextLabel33.AutomaticSize = Enum.AutomaticSize.None
+TextLabel33.Name = "TextLabel"
+TextLabel33.BorderMode = Enum.BorderMode.Outline
+TextLabel33.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel33.ZIndex = 1
+TextLabel33.BorderSizePixel = 0
+TextLabel33.Visible = true
+TextLabel33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel33.BackgroundTransparency = 123
+TextLabel33.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel33.Position = UDim2.new(0.05322820320725441, 0, 0.18727026879787445, 0)
+TextLabel33.Size = UDim2.new(0, 727, 0, -60)
+TextLabel33.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel33.Text = "Working in\
+GIA Fuzelier\
+For more games, join our Discord and get their scripts!"
+TextLabel33.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel33.TextSize = 14
+
+local Decoracion2 = Instance.new("TextLabel")
+Decoracion2.Parent = IKGHUB
+Decoracion2.LayoutOrder = 0
+Decoracion2.Active = false
+Decoracion2.Interactable = true
+Decoracion2.AnchorPoint = Vector2.new(0, 0)
+Decoracion2.Rotation = 0
+Decoracion2.AutomaticSize = Enum.AutomaticSize.None
+Decoracion2.Name = "Decoracion"
+Decoracion2.BorderMode = Enum.BorderMode.Outline
+Decoracion2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Decoracion2.ZIndex = 1
+Decoracion2.BorderSizePixel = 0
+Decoracion2.Visible = true
+Decoracion2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Decoracion2.BackgroundTransparency = 123
+Decoracion2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Decoracion2.Position = UDim2.new(0.005586592014878988, 0, 0.005163511261343956, 0)
+Decoracion2.Size = UDim2.new(0, 123, 0, 31)
+Decoracion2.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+Decoracion2.Text = "GIA FUZELIER"
+Decoracion2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Decoracion2.TextSize = 14
+
+local Decoracion3 = Instance.new("TextLabel")
+Decoracion3.Parent = IKGHUB
+Decoracion3.LayoutOrder = 0
+Decoracion3.Active = false
+Decoracion3.Interactable = true
+Decoracion3.AnchorPoint = Vector2.new(0, 0)
+Decoracion3.Rotation = 0
+Decoracion3.AutomaticSize = Enum.AutomaticSize.None
+Decoracion3.Name = "Decoracion"
+Decoracion3.BorderMode = Enum.BorderMode.Outline
+Decoracion3.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Decoracion3.ZIndex = 1
+Decoracion3.BorderSizePixel = 0
+Decoracion3.Visible = true
+Decoracion3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Decoracion3.BackgroundTransparency = 123
+Decoracion3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Decoracion3.Position = UDim2.new(0.18715083599090576, 0, 0.06368330121040344, 0)
+Decoracion3.Size = UDim2.new(0, 873, 0, 0)
+Decoracion3.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json")
+Decoracion3.Text = ""
+Decoracion3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Decoracion3.TextSize = 14
+
+local UIStroke2 = Instance.new("UIStroke")
+UIStroke2.Parent = Decoracion3
+UIStroke2.Name = "UIStroke"
+UIStroke2.ZIndex = 1
+UIStroke2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke2.Color = Color3.fromRGB(120, 120, 120)
+
+local Decoracion4 = Instance.new("TextLabel")
+Decoracion4.Parent = IKGHUB
+Decoracion4.LayoutOrder = 0
+Decoracion4.Active = false
+Decoracion4.Interactable = true
+Decoracion4.AnchorPoint = Vector2.new(0, 0)
+Decoracion4.Rotation = 0
+Decoracion4.AutomaticSize = Enum.AutomaticSize.None
+Decoracion4.Name = "Decoracion"
+Decoracion4.BorderMode = Enum.BorderMode.Outline
+Decoracion4.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Decoracion4.ZIndex = 1
+Decoracion4.BorderSizePixel = 0
+Decoracion4.Visible = true
+Decoracion4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Decoracion4.BackgroundTransparency = 123
+Decoracion4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Decoracion4.Position = UDim2.new(0.1862197369337082, 0, 1, 0)
+Decoracion4.Size = UDim2.new(0, 0, 0, -448)
+Decoracion4.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json")
+Decoracion4.Text = ""
+Decoracion4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Decoracion4.TextSize = 14
+
+local UIStroke3 = Instance.new("UIStroke")
+UIStroke3.Parent = Decoracion4
+UIStroke3.Name = "UIStroke"
+UIStroke3.ZIndex = 1
+UIStroke3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke3.Color = Color3.fromRGB(120, 120, 120)
+
+local Comands2 = Instance.new("Frame")
+Comands2.Parent = IKGHUB
+Comands2.LayoutOrder = 0
+Comands2.Active = false
+Comands2.Interactable = true
+Comands2.AnchorPoint = Vector2.new(0, 0)
+Comands2.Rotation = 0
+Comands2.AutomaticSize = Enum.AutomaticSize.None
+Comands2.Name = "Comands"
+Comands2.BorderMode = Enum.BorderMode.Outline
+Comands2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Comands2.ZIndex = 1
+Comands2.BorderSizePixel = 0
+Comands2.Visible = false
+Comands2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Comands2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Comands2.Position = UDim2.new(0.20763501524925232, 0, 0.10327022522687912, 0)
+Comands2.Size = UDim2.new(0, 814, 0, 500)
+
+local UICorner8 = Instance.new("UICorner")
+UICorner8.Parent = Comands2
+UICorner8.Name = "UICorner"
+
+local TextLabel34 = Instance.new("TextLabel")
+TextLabel34.Parent = Comands2
+TextLabel34.LayoutOrder = 0
+TextLabel34.Active = false
+TextLabel34.Interactable = true
+TextLabel34.AnchorPoint = Vector2.new(0, 0)
+TextLabel34.Rotation = 0
+TextLabel34.AutomaticSize = Enum.AutomaticSize.None
+TextLabel34.Name = "TextLabel"
+TextLabel34.BorderMode = Enum.BorderMode.Outline
+TextLabel34.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel34.ZIndex = 1
+TextLabel34.BorderSizePixel = 0
+TextLabel34.Visible = true
+TextLabel34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel34.BackgroundTransparency = 123
+TextLabel34.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel34.Position = UDim2.new(0.08148373663425446, 0, 0.16927023231983185, 0)
+TextLabel34.Size = UDim2.new(0, 71, 0, 50)
+TextLabel34.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel34.Text = "(SOON) (PBAN Riesg)"
+TextLabel34.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel34.TextSize = 14
+
+local TextLabel35 = Instance.new("TextLabel")
+TextLabel35.Parent = Comands2
+TextLabel35.LayoutOrder = 0
+TextLabel35.Active = false
+TextLabel35.Interactable = true
+TextLabel35.AnchorPoint = Vector2.new(0, 0)
+TextLabel35.Rotation = 0
+TextLabel35.AutomaticSize = Enum.AutomaticSize.None
+TextLabel35.Name = "TextLabel"
+TextLabel35.BorderMode = Enum.BorderMode.Outline
+TextLabel35.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel35.ZIndex = 1
+TextLabel35.BorderSizePixel = 0
+TextLabel35.Visible = true
+TextLabel35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel35.BackgroundTransparency = 123
+TextLabel35.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel35.Position = UDim2.new(0.08148373663425446, 0, 0.4732702672481537, 0)
+TextLabel35.Size = UDim2.new(0, 71, 0, 50)
+TextLabel35.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel35.Text = "Spawn Winchester"
+TextLabel35.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel35.TextSize = 14
+
+local TextLabel36 = Instance.new("TextLabel")
+TextLabel36.Parent = Comands2
+TextLabel36.LayoutOrder = 0
+TextLabel36.Active = false
+TextLabel36.Interactable = true
+TextLabel36.AnchorPoint = Vector2.new(0, 0)
+TextLabel36.Rotation = 0
+TextLabel36.AutomaticSize = Enum.AutomaticSize.None
+TextLabel36.Name = "TextLabel"
+TextLabel36.BorderMode = Enum.BorderMode.Outline
+TextLabel36.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel36.ZIndex = 1
+TextLabel36.BorderSizePixel = 0
+TextLabel36.Visible = true
+TextLabel36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel36.BackgroundTransparency = 123
+TextLabel36.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel36.Position = UDim2.new(0.08148373663425446, 0, 0.37327027320861816, 0)
+TextLabel36.Size = UDim2.new(0, 71, 0, 50)
+TextLabel36.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel36.Text = "Teleport luft"
+TextLabel36.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel36.TextSize = 14
+
+local TextLabel37 = Instance.new("TextLabel")
+TextLabel37.Parent = Comands2
+TextLabel37.LayoutOrder = 0
+TextLabel37.Active = false
+TextLabel37.Interactable = true
+TextLabel37.AnchorPoint = Vector2.new(0, 0)
+TextLabel37.Rotation = 0
+TextLabel37.AutomaticSize = Enum.AutomaticSize.None
+TextLabel37.Name = "TextLabel"
+TextLabel37.BorderMode = Enum.BorderMode.Outline
+TextLabel37.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel37.ZIndex = 1
+TextLabel37.BorderSizePixel = 0
+TextLabel37.Visible = true
+TextLabel37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel37.BackgroundTransparency = 123
+TextLabel37.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel37.Position = UDim2.new(0.08148373663425446, 0, 0.27327024936676025, 0)
+TextLabel37.Size = UDim2.new(0, 71, 0, 50)
+TextLabel37.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel37.Text = "Teleport HEER"
+TextLabel37.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel37.TextSize = 14
+
+local TextButton17 = Instance.new("TextButton")
+TextButton17.Parent = Comands2
+TextButton17.LayoutOrder = 0
+TextButton17.Active = true
+TextButton17.Interactable = true
+TextButton17.AnchorPoint = Vector2.new(0, 0)
+TextButton17.Rotation = 0
+TextButton17.AutomaticSize = Enum.AutomaticSize.None
+TextButton17.Name = "TextButton"
+TextButton17.BorderMode = Enum.BorderMode.Outline
+TextButton17.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton17.ZIndex = 1
+TextButton17.BorderSizePixel = 0
+TextButton17.Visible = true
+TextButton17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton17.BackgroundTransparency = 123
+TextButton17.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton17.Position = UDim2.new(0.7231248617172241, 0, 0.1568605899810791, 0)
+TextButton17.Size = UDim2.new(0, 188, 0, 50)
+TextButton17.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton17.Text = "Activar"
+TextButton17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton17.TextSize = 14
+TextButton17.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton18 = Instance.new("TextButton")
+TextButton18.Parent = Comands2
+TextButton18.LayoutOrder = 0
+TextButton18.Active = true
+TextButton18.Interactable = true
+TextButton18.AnchorPoint = Vector2.new(0, 0)
+TextButton18.Rotation = 0
+TextButton18.AutomaticSize = Enum.AutomaticSize.None
+TextButton18.Name = "TextButton"
+TextButton18.BorderMode = Enum.BorderMode.Outline
+TextButton18.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton18.ZIndex = 1
+TextButton18.BorderSizePixel = 0
+TextButton18.Visible = true
+TextButton18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton18.BackgroundTransparency = 123
+TextButton18.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton18.Position = UDim2.new(0.7231248617172241, 0, 0.2568605840206146, 0)
+TextButton18.Size = UDim2.new(0, 188, 0, 50)
+TextButton18.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton18.Text = "Activar"
+TextButton18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton18.TextSize = 14
+TextButton18.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton19 = Instance.new("TextButton")
+TextButton19.Parent = Comands2
+TextButton19.LayoutOrder = 0
+TextButton19.Active = true
+TextButton19.Interactable = true
+TextButton19.AnchorPoint = Vector2.new(0, 0)
+TextButton19.Rotation = 0
+TextButton19.AutomaticSize = Enum.AutomaticSize.None
+TextButton19.Name = "TextButton"
+TextButton19.BorderMode = Enum.BorderMode.Outline
+TextButton19.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton19.ZIndex = 1
+TextButton19.BorderSizePixel = 0
+TextButton19.Visible = true
+TextButton19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton19.BackgroundTransparency = 123
+TextButton19.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton19.Position = UDim2.new(0.7231248617172241, 0, 0.3728606104850769, 0)
+TextButton19.Size = UDim2.new(0, 188, 0, 50)
+TextButton19.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton19.Text = "Activar"
+TextButton19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton19.TextSize = 14
+TextButton19.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local TextButton20 = Instance.new("TextButton")
+TextButton20.Parent = Comands2
+TextButton20.LayoutOrder = 0
+TextButton20.Active = true
+TextButton20.Interactable = true
+TextButton20.AnchorPoint = Vector2.new(0, 0)
+TextButton20.Rotation = 0
+TextButton20.AutomaticSize = Enum.AutomaticSize.None
+TextButton20.Name = "TextButton"
+TextButton20.BorderMode = Enum.BorderMode.Outline
+TextButton20.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextButton20.ZIndex = 1
+TextButton20.BorderSizePixel = 0
+TextButton20.Visible = true
+TextButton20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton20.BackgroundTransparency = 123
+TextButton20.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextButton20.Position = UDim2.new(0.7231248617172241, 0, 0.4848605990409851, 0)
+TextButton20.Size = UDim2.new(0, 188, 0, 50)
+TextButton20.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextButton20.Text = "Activar"
+TextButton20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton20.TextSize = 14
+TextButton20.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local CloseButton = Instance.new("TextButton")
+CloseButton.Parent = IKGHUB
+CloseButton.LayoutOrder = 0
+CloseButton.Active = true
+CloseButton.Interactable = true
+CloseButton.AnchorPoint = Vector2.new(0, 0)
+CloseButton.Rotation = 0
+CloseButton.AutomaticSize = Enum.AutomaticSize.None
+CloseButton.Name = "CloseButton"
+CloseButton.BorderMode = Enum.BorderMode.Outline
+CloseButton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+CloseButton.ZIndex = 1
+CloseButton.BorderSizePixel = 0
+CloseButton.Visible = true
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 123
+CloseButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.Position = UDim2.new(0.9655493497848511, 0, 0, 0)
+CloseButton.Size = UDim2.new(0, 37, 0, 37)
+CloseButton.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+CloseButton.Text = "x"
+CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.TextSize = 14
+CloseButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+local Frame = Instance.new("Frame")
+Frame.Parent = ScreenGui
+Frame.LayoutOrder = 0
+Frame.Active = false
+Frame.Interactable = true
+Frame.AnchorPoint = Vector2.new(0, 0)
+Frame.Rotation = 0
+Frame.AutomaticSize = Enum.AutomaticSize.None
+Frame.Name = "Frame"
+Frame.BorderMode = Enum.BorderMode.Outline
+Frame.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Frame.ZIndex = 1
+Frame.BorderSizePixel = 0
+Frame.Visible = false
+Frame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.6994134783744812, 0, 0.9112081527709961, 0)
+Frame.Size = UDim2.new(0, 410, 0, 61)
+
+local UICorner9 = Instance.new("UICorner")
+UICorner9.Parent = Frame
+UICorner9.Name = "UICorner"
+UICorner9.CornerRadius = UDim.new(0, 545)
+
+local TextLabel38 = Instance.new("TextLabel")
+TextLabel38.Parent = Frame
+TextLabel38.LayoutOrder = 0
+TextLabel38.Active = false
+TextLabel38.Interactable = true
+TextLabel38.AnchorPoint = Vector2.new(0, 0)
+TextLabel38.Rotation = 0
+TextLabel38.AutomaticSize = Enum.AutomaticSize.None
+TextLabel38.Name = "TextLabel"
+TextLabel38.BorderMode = Enum.BorderMode.Outline
+TextLabel38.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel38.ZIndex = 1
+TextLabel38.BorderSizePixel = 0
+TextLabel38.Visible = true
+TextLabel38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel38.BackgroundTransparency = 123
+TextLabel38.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel38.Position = UDim2.new(0.13698968291282654, 0, 0.08606557548046112, 0)
+TextLabel38.Size = UDim2.new(0, 200, 0, 50)
+TextLabel38.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel38.Text = "Welcome to"
+TextLabel38.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel38.TextSize = 14
+
+local TextLabel39 = Instance.new("TextLabel")
+TextLabel39.Parent = TextLabel38
+TextLabel39.LayoutOrder = 0
+TextLabel39.Active = false
+TextLabel39.Interactable = true
+TextLabel39.AnchorPoint = Vector2.new(0, 0)
+TextLabel39.Rotation = 0
+TextLabel39.AutomaticSize = Enum.AutomaticSize.None
+TextLabel39.Name = "TextLabel"
+TextLabel39.BorderMode = Enum.BorderMode.Outline
+TextLabel39.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel39.ZIndex = 1
+TextLabel39.BorderSizePixel = 0
+TextLabel39.Visible = true
+TextLabel39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel39.BackgroundTransparency = 123
+TextLabel39.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel39.Position = UDim2.new(0.7282019257545471, 0, -0.009999999776482582, 0)
+TextLabel39.Size = UDim2.new(0, 200, 0, 50)
+TextLabel39.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel39.Text = ", New Version"
+TextLabel39.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel39.TextSize = 14
+
+local TextLabel40 = Instance.new("TextLabel")
+TextLabel40.Parent = TextLabel38
+TextLabel40.LayoutOrder = 0
+TextLabel40.Active = false
+TextLabel40.Interactable = true
+TextLabel40.AnchorPoint = Vector2.new(0, 0)
+TextLabel40.Rotation = 0
+TextLabel40.AutomaticSize = Enum.AutomaticSize.None
+TextLabel40.Name = "TextLabel"
+TextLabel40.BorderMode = Enum.BorderMode.Outline
+TextLabel40.SizeConstraint = Enum.SizeConstraint.RelativeXY
+TextLabel40.ZIndex = 1
+TextLabel40.BorderSizePixel = 0
+TextLabel40.Visible = true
+TextLabel40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel40.BackgroundTransparency = 7
+TextLabel40.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel40.Position = UDim2.new(0.35427001118659973, 0, -0.009999999776482582, 0)
+TextLabel40.Size = UDim2.new(0, 200, 0, 50)
+TextLabel40.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json")
+TextLabel40.Text = "IKGHUB"
+TextLabel40.TextColor3 = Color3.fromRGB(64, 73, 234)
+TextLabel40.TextSize = 14
+
+local ImageLabel4 = Instance.new("ImageLabel")
+ImageLabel4.Parent = Frame
+ImageLabel4.LayoutOrder = 0
+ImageLabel4.Active = false
+ImageLabel4.Interactable = true
+ImageLabel4.AnchorPoint = Vector2.new(0, 0)
+ImageLabel4.Rotation = 0
+ImageLabel4.AutomaticSize = Enum.AutomaticSize.None
+ImageLabel4.Name = "ImageLabel"
+ImageLabel4.BorderMode = Enum.BorderMode.Outline
+ImageLabel4.SizeConstraint = Enum.SizeConstraint.RelativeXY
+ImageLabel4.ZIndex = 1
+ImageLabel4.BorderSizePixel = 0
+ImageLabel4.Visible = true
+ImageLabel4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel4.Position = UDim2.new(0.10000000149011612, 0, 0.14754098653793335, 0)
+ImageLabel4.Size = UDim2.new(0, 63, 0, 41)
+ImageLabel4.Image = "rbxassetid://6242473319"
+
+local _fakemodules = {}
+
+local req = require
+local require = function(obj)
+	local fake = _fakemodules[obj]
+	if fake then
+		return fake()
 	end
-end;
-task.spawn(C_8);
--- StarterGui.Ikghubv2.IKGHUBv2.Dragging
-local function C_d()
-local script = G2L["d"];
+	return req(obj)
+end
+
+local function Dragging2_fakescript() -- IKGHUB.Dragging
+	local script = Instance.new("LocalScript", IKGHUB)
+	script.Name = "Dragging"
 	local frame = script.Parent
-	
 	local UserInputService = game:GetService("UserInputService")
 	local TweenService = game:GetService("TweenService")
-	
 	local dragging = false
 	local dragStart
 	local startPos
-	
 	frame.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 then
 			dragging = true
 			dragStart = input.Position
 			startPos = frame.Position
-	
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging = false
@@ -1714,12 +2246,9 @@ local script = G2L["d"];
 			end)
 		end
 	end)
-	
 	UserInputService.InputChanged:Connect(function(input)
 		if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-	
 			local delta = input.Position - dragStart
-	
 			local goal = {
 				Position = UDim2.new(
 					startPos.X.Scale,
@@ -1728,51 +2257,41 @@ local script = G2L["d"];
 					startPos.Y.Offset + delta.Y
 				)
 			}
-	
 			local tween = TweenService:Create(
 				frame,
 				TweenInfo.new(0.08, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
 				goal
 			)
-	
 			tween:Play()
 		end
 	end)
-end;
-task.spawn(C_d);
--- StarterGui.Ikghubv2.IKGHUBv2.Rankg tag
-local function C_e()
-local script = G2L["e"];
+end
+task.spawn(Dragging2_fakescript)
+local function Rankg_tag2_fakescript() -- IKGHUB.Rankg tag
+	local script = Instance.new("LocalScript", IKGHUB)
+	script.Name = "Rankg tag"
 	local Players = game:GetService("Players")
-	
 	local player = Players.LocalPlayer
 	local frame = script.Parent
-	
 	local GROUP_ID = 34688767
-	
 	local creado = false
-	
 	local function crearTag()
 		if creado then return end
 		creado = true
-	
 		local character = player.Character or player.CharacterAdded:Wait()
 		local head = character:WaitForChild("Head")
-	
 		-- Borra otros BillboardGui
 		for _, v in ipairs(head:GetChildren()) do
 			if v:IsA("BillboardGui") then
 				v:Destroy()
 			end
 		end
-	
 		local gui = Instance.new("BillboardGui")
 		gui.Name = "IKGHUBTag"
 		gui.Size = UDim2.new(0, 200, 0, 50)
 		gui.StudsOffset = Vector3.new(0, 3, 0)
 		gui.AlwaysOnTop = true
 		gui.Parent = head
-	
 		local titulo = Instance.new("TextLabel")
 		titulo.Size = UDim2.new(1,0,0.5,0)
 		titulo.BackgroundTransparency = 1
@@ -1782,7 +2301,6 @@ local script = G2L["e"];
 		titulo.Font = Enum.Font.GothamBold
 		titulo.TextColor3 = Color3.fromRGB(255,255,255)
 		titulo.Parent = gui
-	
 		local rango = Instance.new("TextLabel")
 		rango.Size = UDim2.new(1,0,0.5,0)
 		rango.Position = UDim2.new(0,0,0.5,0)
@@ -1794,33 +2312,192 @@ local script = G2L["e"];
 		rango.TextColor3 = Color3.fromRGB(255,215,0)
 		rango.Parent = gui
 	end
-	
 	if frame.Visible then
 		crearTag()
 	end
-	
 	frame:GetPropertyChangedSignal("Visible"):Connect(function()
 		if frame.Visible then
 			crearTag()
 		end
 	end)
-end;
-task.spawn(C_e);
--- StarterGui.Ikghubv2.IKGHUBv2.Funbutton.LocalScript
-local function C_11()
-local script = G2L["11"];
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Fun") -- CAMBIA ESTO
-	
+end
+task.spawn(Rankg_tag2_fakescript)
+local function LocalScript2_fakescript() -- Minimize.LocalScript
+	local script = Instance.new("LocalScript", Minimize)
+	script.Name = "LocalScript"
+	local botonCerrar = script.Parent
+	-- Busca el Frame llamado IKGHUB subiendo en las carpetas
+	local frame = botonCerrar:FindFirstAncestor("IKGHUB") 
+	local screenGui = frame.Parent -- El ScreenGui donde está metido todo
+	-- Variable para guardar el botón negro cuando se cree
+	local botonNegro = nil
+	botonCerrar.MouseButton1Click:Connect(function()
+		if frame then
+			-- 1. Ocultar el panel principal
+			frame.Visible = false
+			-- 2. Si el botón negro no existe todavía, lo creamos
+			if not botonNegro then
+				botonNegro = Instance.new("TextButton")
+				botonNegro.Name = "BotonAbrirNegro"
+				botonNegro.Text = "ikghub"
+				botonNegro.Size = UDim2.new(0, 120, 0, 40)
+				botonNegro.Position = UDim2.new(0, 20, 0.85, 0) -- Abajo a la izquierda
+				-- Estilo Negro
+				botonNegro.BackgroundColor3 = Color3.fromRGB(0, 0, 0) -- Negro
+				botonNegro.TextColor3 = Color3.fromRGB(255, 255, 255) -- Texto blanco
+				botonNegro.Font = Enum.Font.SourceSansBold
+				botonNegro.TextSize = 18
+				-- Bordes redondeados para que se vea bien
+				local uiCorner = Instance.new("UICorner")
+				uiCorner.CornerRadius = UDim.new(0, 8)
+				uiCorner.Parent = botonNegro
+				botonNegro.Parent = screenGui
+				-- 3. Lógica para cuando pulses el botón negro
+				botonNegro.MouseButton1Click:Connect(function()
+					frame.Visible = true -- Reabre el menú
+					botonNegro.Visible = false -- Esconde el botón negro
+				end)
+			else
+				-- Si ya se había creado antes, solo lo volvemos a mostrar
+				botonNegro.Visible = true
+			end
+		else
+			warn("No se encontró el Frame llamado IKGHUB")
+		end
+	end)
+end
+task.spawn(LocalScript2_fakescript)
+local function LocalScript4_fakescript() -- Menu.LocalScript
+	local script = Instance.new("LocalScript", Menu)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local mainFrame = button.Parent.Parent
 	local TweenService = game:GetService("TweenService")
-	
+	local frameToOpen = mainFrame:WaitForChild("Menu")
+	button.MouseButton1Click:Connect(function()
+		for _, v in pairs(mainFrame:GetChildren()) do
+			if v:IsA("Frame") and v.Name ~= "Principal" then
+				v.Visible = false
+			end
+		end
+		frameToOpen.Visible = true
+		-- Posición inicial
+		frameToOpen.Position = UDim2.new(
+			frameToOpen.Position.X.Scale,
+			frameToOpen.Position.X.Offset,
+			frameToOpen.Position.Y.Scale,
+			frameToOpen.Position.Y.Offset + 20
+		)
+		frameToOpen.BackgroundTransparency = 1
+		-- Animación suave
+		local tween = TweenService:Create(
+			frameToOpen,
+			TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
+			{
+				BackgroundTransparency = 0,
+				Position = UDim2.new(
+					frameToOpen.Position.X.Scale,
+					frameToOpen.Position.X.Offset,
+					frameToOpen.Position.Y.Scale,
+					frameToOpen.Position.Y.Offset - 20
+				)
+			}
+		)
+		tween:Play()
+	end)
+end
+task.spawn(LocalScript4_fakescript)
+local function LocalScript6_fakescript() -- Combat.LocalScript
+	local script = Instance.new("LocalScript", Combat)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local mainFrame = button.Parent.Parent
+	local TweenService = game:GetService("TweenService")
+	local frameToOpen = mainFrame:WaitForChild("Combat")
+	button.MouseButton1Click:Connect(function()
+		for _, v in pairs(mainFrame:GetChildren()) do
+			if v:IsA("Frame") and v.Name ~= "Principal" then
+				v.Visible = false
+			end
+		end
+		frameToOpen.Visible = true
+		-- Posición inicial
+		frameToOpen.Position = UDim2.new(
+			frameToOpen.Position.X.Scale,
+			frameToOpen.Position.X.Offset,
+			frameToOpen.Position.Y.Scale,
+			frameToOpen.Position.Y.Offset + 20
+		)
+		frameToOpen.BackgroundTransparency = 1
+		-- Animación suave
+		local tween = TweenService:Create(
+			frameToOpen,
+			TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
+			{
+				BackgroundTransparency = 0,
+				Position = UDim2.new(
+					frameToOpen.Position.X.Scale,
+					frameToOpen.Position.X.Offset,
+					frameToOpen.Position.Y.Scale,
+					frameToOpen.Position.Y.Offset - 20
+				)
+			}
+		)
+		tween:Play()
+	end)
+end
+task.spawn(LocalScript6_fakescript)
+local function LocalScript8_fakescript() -- Movement.LocalScript
+	local script = Instance.new("LocalScript", Movement)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local mainFrame = button.Parent.Parent
+	local TweenService = game:GetService("TweenService")
+	local frameToOpen = mainFrame:WaitForChild("Movement")
+	button.MouseButton1Click:Connect(function()
+		for _, v in pairs(mainFrame:GetChildren()) do
+			if v:IsA("Frame") and v.Name ~= "Principal" then
+				v.Visible = false
+			end
+		end
+		frameToOpen.Visible = true
+		-- Posición inicial
+		frameToOpen.Position = UDim2.new(
+			frameToOpen.Position.X.Scale,
+			frameToOpen.Position.X.Offset,
+			frameToOpen.Position.Y.Scale,
+			frameToOpen.Position.Y.Offset + 20
+		)
+		frameToOpen.BackgroundTransparency = 1
+		-- Animación suave
+		local tween = TweenService:Create(
+			frameToOpen,
+			TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
+			{
+				BackgroundTransparency = 0,
+				Position = UDim2.new(
+					frameToOpen.Position.X.Scale,
+					frameToOpen.Position.X.Offset,
+					frameToOpen.Position.Y.Scale,
+					frameToOpen.Position.Y.Offset - 20
+				)
+			}
+		)
+		tween:Play()
+	end)
+end
+task.spawn(LocalScript8_fakescript)
+local function LocalScript10_fakescript() -- Visual.LocalScript
+	local script = Instance.new("LocalScript", Visual)
+	script.Name = "LocalScript"
+	local Button = script.Parent
+	local Frame = Button.Parent:WaitForChild("Visual") -- CAMBIA ESTO
+	local TweenService = game:GetService("TweenService")
 	-- Guarda la posición original
 	local OpenPos = Frame.Position
 	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
 	Frame.Visible = false
 	Frame.Position = ClosedPos
-	
 	-- Crear raya blanca automática
 	local SideLine = Instance.new("Frame")
 	SideLine.Name = "SideLine"
@@ -1830,12 +2507,9 @@ local script = G2L["11"];
 	SideLine.BorderSizePixel = 0
 	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
 	SideLine.BackgroundTransparency = 0.45
-	
 	local OriginalColor = Button.BackgroundColor3
-	
 	-- Hover
 	Button.MouseEnter:Connect(function()
-	
 		TweenService:Create(
 			Button,
 			TweenInfo.new(0.15),
@@ -1843,7 +2517,6 @@ local script = G2L["11"];
 				BackgroundColor3 = Color3.fromRGB(40,40,40)
 			}
 		):Play()
-	
 		TweenService:Create(
 			SideLine,
 			TweenInfo.new(0.15),
@@ -1851,11 +2524,8 @@ local script = G2L["11"];
 				Size = UDim2.new(0,4,1,0)
 			}
 		):Play()
-	
 	end)
-	
 	Button.MouseLeave:Connect(function()
-	
 		TweenService:Create(
 			Button,
 			TweenInfo.new(0.15),
@@ -1863,7 +2533,6 @@ local script = G2L["11"];
 				BackgroundColor3 = OriginalColor
 			}
 		):Play()
-	
 		TweenService:Create(
 			SideLine,
 			TweenInfo.new(0.15),
@@ -1871,23 +2540,17 @@ local script = G2L["11"];
 				Size = UDim2.new(0,0,1,0)
 			}
 		):Play()
-	
 	end)
-	
 	-- Abrir/Cerrar Frame
 	Button.MouseButton1Click:Connect(function()
-	
 		local ParentGui = Frame.Parent
-	
 		-- Cierra otros frames
 		for _,v in pairs(ParentGui:GetChildren()) do
 			if v:IsA("Frame") and v ~= Frame then
 				v.Visible = false
 			end
 		end
-	
 		if Frame.Visible then
-	
 			local CloseTween = TweenService:Create(
 				Frame,
 				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
@@ -1895,18 +2558,13 @@ local script = G2L["11"];
 					Position = ClosedPos
 				}
 			)
-	
 			CloseTween:Play()
-	
 			CloseTween.Completed:Connect(function()
 				Frame.Visible = false
 			end)
-	
 		else
-	
 			Frame.Visible = true
 			Frame.Position = ClosedPos
-	
 			TweenService:Create(
 				Frame,
 				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
@@ -1914,29 +2572,145 @@ local script = G2L["11"];
 					Position = OpenPos
 				}
 			):Play()
-	
 		end
 	end)
-end;
-task.spawn(C_11);
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextButton.LocalScript
-local function C_1a()
-local script = G2L["1a"];
+end
+task.spawn(LocalScript10_fakescript)
+local function LocalScript12_fakescript() -- Fun.LocalScript
+	local script = Instance.new("LocalScript", Fun)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local mainFrame = button.Parent.Parent
+	local TweenService = game:GetService("TweenService")
+	local frameToOpen = mainFrame:WaitForChild("Fun")
+	button.MouseButton1Click:Connect(function()
+		for _, v in pairs(mainFrame:GetChildren()) do
+			if v:IsA("Frame") and v.Name ~= "Principal" then
+				v.Visible = false
+			end
+		end
+		frameToOpen.Visible = true
+		-- Posición inicial
+		frameToOpen.Position = UDim2.new(
+			frameToOpen.Position.X.Scale,
+			frameToOpen.Position.X.Offset,
+			frameToOpen.Position.Y.Scale,
+			frameToOpen.Position.Y.Offset + 20
+		)
+		frameToOpen.BackgroundTransparency = 1
+		-- Animación suave
+		local tween = TweenService:Create(
+			frameToOpen,
+			TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
+			{
+				BackgroundTransparency = 0,
+				Position = UDim2.new(
+					frameToOpen.Position.X.Scale,
+					frameToOpen.Position.X.Offset,
+					frameToOpen.Position.Y.Scale,
+					frameToOpen.Position.Y.Offset - 20
+				)
+			}
+		)
+		tween:Play()
+	end)
+end
+task.spawn(LocalScript12_fakescript)
+local function LocalScript14_fakescript() -- Status.LocalScript
+	local script = Instance.new("LocalScript", Status)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local mainFrame = button.Parent.Parent
+	local TweenService = game:GetService("TweenService")
+	local frameToOpen = mainFrame:WaitForChild("Status")
+	button.MouseButton1Click:Connect(function()
+		for _, v in pairs(mainFrame:GetChildren()) do
+			if v:IsA("Frame") and v.Name ~= "Principal" then
+				v.Visible = false
+			end
+		end
+		frameToOpen.Visible = true
+		-- Posición inicial
+		frameToOpen.Position = UDim2.new(
+			frameToOpen.Position.X.Scale,
+			frameToOpen.Position.X.Offset,
+			frameToOpen.Position.Y.Scale,
+			frameToOpen.Position.Y.Offset + 20
+		)
+		frameToOpen.BackgroundTransparency = 1
+		-- Animación suave
+		local tween = TweenService:Create(
+			frameToOpen,
+			TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
+			{
+				BackgroundTransparency = 0,
+				Position = UDim2.new(
+					frameToOpen.Position.X.Scale,
+					frameToOpen.Position.X.Offset,
+					frameToOpen.Position.Y.Scale,
+					frameToOpen.Position.Y.Offset - 20
+				)
+			}
+		)
+		tween:Play()
+	end)
+end
+task.spawn(LocalScript14_fakescript)
+local function LocalScript16_fakescript() -- Comands.LocalScript
+	local script = Instance.new("LocalScript", Comands)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local mainFrame = button.Parent.Parent
+	local TweenService = game:GetService("TweenService")
+	local frameToOpen = mainFrame:WaitForChild("Comands")
+	button.MouseButton1Click:Connect(function()
+		for _, v in pairs(mainFrame:GetChildren()) do
+			if v:IsA("Frame") and v.Name ~= "Principal" then
+				v.Visible = false
+			end
+		end
+		frameToOpen.Visible = true
+		-- Posición inicial
+		frameToOpen.Position = UDim2.new(
+			frameToOpen.Position.X.Scale,
+			frameToOpen.Position.X.Offset,
+			frameToOpen.Position.Y.Scale,
+			frameToOpen.Position.Y.Offset + 20
+		)
+		frameToOpen.BackgroundTransparency = 1
+		-- Animación suave
+		local tween = TweenService:Create(
+			frameToOpen,
+			TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
+			{
+				BackgroundTransparency = 0,
+				Position = UDim2.new(
+					frameToOpen.Position.X.Scale,
+					frameToOpen.Position.X.Offset,
+					frameToOpen.Position.Y.Scale,
+					frameToOpen.Position.Y.Offset - 20
+				)
+			}
+		)
+		tween:Play()
+	end)
+end
+task.spawn(LocalScript16_fakescript)
+local function LocalScript18_fakescript() -- TextButton.LocalScript
+	local script = Instance.new("LocalScript", TextButton)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local toggled = false
 	local player = game.Players.LocalPlayer
 	local camera = workspace.CurrentCamera
-	
 	button.MouseButton1Click:Connect(function()
 		toggled = not toggled
 		button.Text = toggled and "Aimbot: ON" or "Aimbot: OFF"
-	
 		if toggled then
 			game:GetService("RunService").RenderStepped:Connect(function()
 				if not toggled then return end
 				local closest = nil
 				local shortest = math.huge
-	
 				for _, p in pairs(game.Players:GetPlayers()) do
 					if p ~= player and p.Character and p.Character:FindFirstChild("Head") then
 						local dist = (p.Character.Head.Position - camera.CFrame.Position).Magnitude
@@ -1946,44 +2720,38 @@ local script = G2L["1a"];
 						end
 					end
 				end
-	
 				if closest and closest.Character and closest.Character:FindFirstChild("Head") then
 					camera.CFrame = CFrame.lookAt(camera.CFrame.Position, closest.Character.Head.Position)
 				end
 			end)
 		end
 	end)
-end;
-task.spawn(C_1a);
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextButton.LocalScript
-local function C_1c()
-local script = G2L["1c"];
+end
+task.spawn(LocalScript18_fakescript)
+local function LocalScript20_fakescript() -- TextButton2.LocalScript
+	local script = Instance.new("LocalScript", TextButton2)
+	script.Name = "LocalScript"
 	getgenv().TeamCheck = true  -- Cambia a false si quieres desactivar por default
-	
 	game.Players.PlayerAdded:Connect(function(plr)
 		plr.CharacterAdded:Connect(function(char)
 			char:WaitForChild("Humanoid")
 		end)
 	end)
-end;
-task.spawn(C_1c);
--- StarterGui.Ikghubv2.IKGHUBv2.Combat.TextButton.LocalScript
-local function C_1e()
-local script = G2L["1e"];
+end
+task.spawn(LocalScript20_fakescript)
+local function LocalScript22_fakescript() -- TextButton3.LocalScript
+	local script = Instance.new("LocalScript", TextButton3)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local fovEnabled = false
 	local fovValue = 80  -- Cambia este valor (normal es 70)
 	local circle
-	
 	button.MouseButton1Click:Connect(function()
 		fovEnabled = not fovEnabled
 		button.Text = fovEnabled and "FOV: ON" or "FOV: OFF"
-	
 		local camera = workspace.CurrentCamera
-	
 		if fovEnabled then
 			camera.FieldOfView = fovValue
-	
 			-- Círculo de FOV
 			circle = Drawing.new("Circle")
 			circle.Thickness = 2
@@ -1992,7 +2760,6 @@ local script = G2L["1e"];
 			circle.Transparency = 0.8
 			circle.NumSides = 100
 			circle.Radius = 150  -- Tamaño del círculo en pantalla
-	
 			spawn(function()
 				while fovEnabled do
 					circle.Position = Vector2.new(camera.ViewportSize.X/2, camera.ViewportSize.Y/2)
@@ -2008,54 +2775,43 @@ local script = G2L["1e"];
 			end
 		end
 	end)
-end;
-task.spawn(C_1e);
--- StarterGui.Ikghubv2.IKGHUBv2.close.TextButton.LocalScript
-local function C_24()
-local script = G2L["24"];
-	local botonCerrar = script.Parent
-	-- Busca el Frame llamado IKGHUB subiendo en las carpetas
-	local frame = botonCerrar:FindFirstAncestor("IKGHUBv2") 
-	
-	botonCerrar.MouseButton1Click:Connect(function()
-		if frame then
-			frame.Visible = false
-		else
-			warn("No se encontró el Frame llamado IKGHUB")
+end
+task.spawn(LocalScript22_fakescript)
+local function LocalScript24_fakescript() -- TextButton4.LocalScript
+	local script = Instance.new("LocalScript", TextButton4)
+	script.Name = "LocalScript"
+	local button = script.Parent
+	local toggled = false
+	button.MouseButton1Click:Connect(function()
+		toggled = not toggled
+		button.Text = toggled and "Hitbox: ON" or "Hitbox: OFF"
+		while toggled do
+			for _, p in pairs(game.Players:GetPlayers()) do
+				if p ~= game.Players.LocalPlayer and p.Character then
+					for _, part in pairs(p.Character:GetChildren()) do
+						if part:IsA("BasePart") and part.Name ~= "HumanoidRootPart" then
+							part.Size = Vector3.new(5, 5, 5)  -- Cambia el tamaño
+							part.Transparency = 0.7
+						end
+					end
+				end
+			end
+			wait(0.1)
 		end
 	end)
-end;
-task.spawn(C_24);
--- StarterGui.Ikghubv2.IKGHUBv2.close.TextButton.LocalScript
-local function C_26()
-local script = G2L["26"];
-	local botonCerrar = script.Parent
-	-- Busca el Frame llamado IKGHUB subiendo en las carpetas
-	local frame = botonCerrar:FindFirstAncestor("close") 
-	
-	botonCerrar.MouseButton1Click:Connect(function()
-		if frame then
-			frame.Visible = false
-		else
-			warn("No se encontró el Frame llamado IKGHUB")
-		end
-	end)
-end;
-task.spawn(C_26);
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton.LocalScript
-local function C_2e()
-local script = G2L["2e"];
+end
+task.spawn(LocalScript24_fakescript)
+local function LocalScript26_fakescript() -- TextButton5.LocalScript
+	local script = Instance.new("LocalScript", TextButton5)
+	script.Name = "LocalScript"
 	local Button = script.Parent
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
-	
 	local ESPEnabled = false
-	
 	local function CreateESP(character)
 		if character:FindFirstChild("ESPHighlight") then
 			return
 		end
-	
 		local Highlight = Instance.new("Highlight")
 		Highlight.Name = "ESPHighlight"
 		Highlight.FillColor = Color3.fromRGB(255, 0, 0)
@@ -2065,17 +2821,14 @@ local script = G2L["2e"];
 		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 		Highlight.Parent = character
 	end
-	
 	local function RemoveESP(character)
 		local Highlight = character:FindFirstChild("ESPHighlight")
 		if Highlight then
 			Highlight:Destroy()
 		end
 	end
-	
 	local function ToggleESP()
 		ESPEnabled = not ESPEnabled
-	
 		for _, Player in ipairs(Players:GetPlayers()) do
 			if Player ~= LocalPlayer and Player.Character then
 				if ESPEnabled then
@@ -2085,12 +2838,9 @@ local script = G2L["2e"];
 				end
 			end
 		end
-	
 		Button.Text = ESPEnabled and "ESP ON" or "ESP OFF"
 	end
-	
 	Button.MouseButton1Click:Connect(ToggleESP)
-	
 	Players.PlayerAdded:Connect(function(Player)
 		Player.CharacterAdded:Connect(function(Character)
 			task.wait(1)
@@ -2099,49 +2849,40 @@ local script = G2L["2e"];
 			end
 		end)
 	end)
-end;
-task.spawn(C_2e);
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton.LocalScript
-local function C_30()
-local script = G2L["30"];
+end
+task.spawn(LocalScript26_fakescript)
+local function LocalScript28_fakescript() -- TextButton6.LocalScript
+	local script = Instance.new("LocalScript", TextButton6)
+	script.Name = "LocalScript"
 	local Button = script.Parent
 	local Players = game:GetService("Players")
 	local LocalPlayer = Players.LocalPlayer
-	
 	local Enabled = false
-	
 	local function AddChams(player)
 		local character = player.Character
 		if not character then return end
-	
 		local old = character:FindFirstChild("TeamChams")
 		if old then old:Destroy() end
-	
 		local Highlight = Instance.new("Highlight")
 		Highlight.Name = "TeamChams"
 		Highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 		Highlight.FillTransparency = 0.3
 		Highlight.OutlineTransparency = 0
-	
 		if player.Team == LocalPlayer.Team then
 			Highlight.FillColor = Color3.fromRGB(0, 255, 0) -- Verde aliado
 		else
 			Highlight.FillColor = Color3.fromRGB(255, 0, 0) -- Rojo enemigo
 		end
-	
 		Highlight.Parent = character
 	end
-	
 	local function RemoveChams(character)
 		local h = character:FindFirstChild("TeamChams")
 		if h then
 			h:Destroy()
 		end
 	end
-	
 	Button.MouseButton1Click:Connect(function()
 		Enabled = not Enabled
-	
 		for _, player in ipairs(Players:GetPlayers()) do
 			if player ~= LocalPlayer and player.Character then
 				if Enabled then
@@ -2151,10 +2892,8 @@ local script = G2L["30"];
 				end
 			end
 		end
-	
 		Button.Text = Enabled and "CHAMS ON" or "CHAMS OFF"
 	end)
-	
 	Players.PlayerAdded:Connect(function(player)
 		player.CharacterAdded:Connect(function()
 			task.wait(1)
@@ -2163,39 +2902,32 @@ local script = G2L["30"];
 			end
 		end)
 	end)
-end;
-task.spawn(C_30);
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton.LocalScript
-local function C_32()
-local script = G2L["32"];
+end
+task.spawn(LocalScript28_fakescript)
+local function LocalScript30_fakescript() -- TextButton7.LocalScript
+	local script = Instance.new("LocalScript", TextButton7)
+	script.Name = "LocalScript"
 	local Button = script.Parent
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
-	
 	local LocalPlayer = Players.LocalPlayer
 	local Camera = workspace.CurrentCamera
-	
 	local Enabled = false
 	local Tracers = {}
-	
 	local function ClearTracers()
 		for _, line in pairs(Tracers) do
 			line:Remove()
 		end
 		Tracers = {}
 	end
-	
 	local function CreateTracer(player)
 		local line = Drawing.new("Line")
 		line.Thickness = 2
 		line.Transparency = 1
-	
 		Tracers[player] = line
 	end
-	
 	Button.MouseButton1Click:Connect(function()
 		Enabled = not Enabled
-	
 		if Enabled then
 			for _, player in ipairs(Players:GetPlayers()) do
 				if player ~= LocalPlayer then
@@ -2208,28 +2940,22 @@ local script = G2L["32"];
 			Button.Text = "TRACERS OFF"
 		end
 	end)
-	
 	Players.PlayerAdded:Connect(function(player)
 		if Enabled and player ~= LocalPlayer then
 			CreateTracer(player)
 		end
 	end)
-	
 	RunService.RenderStepped:Connect(function()
 		if not Enabled then return end
-	
 		for player, line in pairs(Tracers) do
 			local character = player.Character
 			local root = character and character:FindFirstChild("HumanoidRootPart")
-	
 			if root then
 				local pos, visible = Camera:WorldToViewportPoint(root.Position)
-	
 				if visible then
 					line.Visible = true
 					line.From = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y)
 					line.To = Vector2.new(pos.X, pos.Y)
-	
 					if player.Team == LocalPlayer.Team then
 						line.Color = Color3.fromRGB(0, 255, 0)
 					else
@@ -2243,20 +2969,17 @@ local script = G2L["32"];
 			end
 		end
 	end)
-end;
-task.spawn(C_32);
--- StarterGui.Ikghubv2.IKGHUBv2.Visual.TextButton.LocalScript
-local function C_34()
-local script = G2L["34"];
+end
+task.spawn(LocalScript30_fakescript)
+local function LocalScript32_fakescript() -- TextButton8.LocalScript
+	local script = Instance.new("LocalScript", TextButton8)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local fullbrightOn = false
-	
 	button.MouseButton1Click:Connect(function()
 		fullbrightOn = not fullbrightOn
 		button.Text = fullbrightOn and "Fullbright: ON" or "Fullbright: OFF"
-	
 		local lighting = game:GetService("Lighting")
-	
 		if fullbrightOn then
 			-- Guardamos valores originales
 			getgenv().OriginalLighting = {
@@ -2266,13 +2989,11 @@ local script = G2L["34"];
 				GlobalShadows = lighting.GlobalShadows,
 				Ambient = lighting.Ambient
 			}
-	
 			lighting.Brightness = 2
 			lighting.ClockTime = 14
 			lighting.FogEnd = 100000
 			lighting.GlobalShadows = false
 			lighting.Ambient = Color3.fromRGB(255, 255, 255)
-	
 			-- Para que se mantenga siempre
 			spawn(function()
 				while fullbrightOn do
@@ -2284,7 +3005,6 @@ local script = G2L["34"];
 					wait(1)
 				end
 			end)
-	
 		else
 			-- Restaurar valores originales
 			if getgenv().OriginalLighting then
@@ -2296,70 +3016,56 @@ local script = G2L["34"];
 			end
 		end
 	end)
-end;
-task.spawn(C_34);
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton.LocalScript
-local function C_3c()
-local script = G2L["3c"];
+end
+task.spawn(LocalScript32_fakescript)
+local function LocalScript34_fakescript() -- TextButton9.LocalScript
+	local script = Instance.new("LocalScript", TextButton9)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local player = game.Players.LocalPlayer
 	local UIS = game:GetService("UserInputService")
 	local RunService = game:GetService("RunService")
-	
 	local flying = false
 	local speed = 50
-	
 	local bv
 	local bg
 	local connection
-	
 	button.Text = "Fly: OFF"
-	
 	local function stopFly()
 		flying = false
 		button.Text = "Fly: OFF"
-	
 		if connection then
 			connection:Disconnect()
 			connection = nil
 		end
-	
 		if bv then
 			bv:Destroy()
 			bv = nil
 		end
-	
 		if bg then
 			bg:Destroy()
 			bg = nil
 		end
 	end
-	
 	local function startFly()
 		local character = player.Character or player.CharacterAdded:Wait()
 		local root = character:WaitForChild("HumanoidRootPart")
-	
 		flying = true
 		button.Text = "Fly: ON"
-	
 		bv = Instance.new("BodyVelocity")
 		bv.MaxForce = Vector3.new(1e9, 1e9, 1e9)
 		bv.Velocity = Vector3.zero
 		bv.Parent = root
-	
 		bg = Instance.new("BodyGyro")
 		bg.MaxTorque = Vector3.new(1e9, 1e9, 1e9)
 		bg.P = 10000
 		bg.Parent = root
-	
 		connection = RunService.RenderStepped:Connect(function()
 			if not flying or not root then
 				return
 			end
-	
 			local camera = workspace.CurrentCamera
 			local moveDir = Vector3.zero
-	
 			if UIS:IsKeyDown(Enum.KeyCode.W) then
 				moveDir += camera.CFrame.LookVector
 			end
@@ -2378,17 +3084,14 @@ local script = G2L["3c"];
 			if UIS:IsKeyDown(Enum.KeyCode.LeftControl) then
 				moveDir -= Vector3.new(0,1,0)
 			end
-	
 			if moveDir.Magnitude > 0 then
 				bv.Velocity = moveDir.Unit * speed
 			else
 				bv.Velocity = Vector3.zero
 			end
-	
 			bg.CFrame = camera.CFrame
 		end)
 	end
-	
 	button.MouseButton1Click:Connect(function()
 		if flying then
 			stopFly()
@@ -2396,19 +3099,17 @@ local script = G2L["3c"];
 			startFly()
 		end
 	end)
-end;
-task.spawn(C_3c);
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton.LocalScript
-local function C_3e()
-local script = G2L["3e"];
+end
+task.spawn(LocalScript34_fakescript)
+local function LocalScript36_fakescript() -- TextButton10.LocalScript
+	local script = Instance.new("LocalScript", TextButton10)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local speedOn = false
 	local defaultSpeed = 16
-	
 	button.MouseButton1Click:Connect(function()
 		speedOn = not speedOn
 		button.Text = speedOn and "Speed: ON" or "Speed: OFF"
-	
 		local char = game.Players.LocalPlayer.Character
 		if char then
 			local hum = char:FindFirstChild("Humanoid")
@@ -2417,18 +3118,16 @@ local script = G2L["3e"];
 			end
 		end
 	end)
-end;
-task.spawn(C_3e);
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton.LocalScript
-local function C_40()
-local script = G2L["40"];
+end
+task.spawn(LocalScript36_fakescript)
+local function LocalScript38_fakescript() -- TextButton11.LocalScript
+	local script = Instance.new("LocalScript", TextButton11)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local noclip = false
-	
 	button.MouseButton1Click:Connect(function()
 		noclip = not noclip
 		button.Text = noclip and "Noclip: ON" or "Noclip: OFF"
-	
 		game:GetService("RunService").Stepped:Connect(function()
 			if noclip then
 				local char = game.Players.LocalPlayer.Character
@@ -2442,25 +3141,20 @@ local script = G2L["40"];
 			end
 		end)
 	end)
-end;
-task.spawn(C_40);
--- StarterGui.Ikghubv2.IKGHUBv2.Movement.TextButton.LocalScript
-local function C_42()
-local script = G2L["42"];
+end
+task.spawn(LocalScript38_fakescript)
+local function LocalScript40_fakescript() -- TextButton12.LocalScript
+	local script = Instance.new("LocalScript", TextButton12)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local player = game.Players.LocalPlayer
-	
 	local highJump = false
-	
 	button.MouseButton1Click:Connect(function()
 		local character = player.Character
 		if not character then return end
-	
 		local humanoid = character:FindFirstChild("Humanoid")
 		if not humanoid then return end
-	
 		highJump = not highJump
-	
 		if highJump then
 			humanoid.UseJumpPower = true
 			humanoid.JumpPower = 120
@@ -2470,19 +3164,17 @@ local script = G2L["42"];
 			button.Text = "High Jump OFF"
 		end
 	end)
-end;
-task.spawn(C_42);
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton.LocalScript
-local function C_4a()
-local script = G2L["4a"];
+end
+task.spawn(LocalScript40_fakescript)
+local function LocalScript42_fakescript() -- TextButton13.LocalScript
+	local script = Instance.new("LocalScript", TextButton13)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local spamming = false
 	local messages = {"Get good", "Ez", "LOL", "You suck", "Ratio"}
-	
 	button.MouseButton1Click:Connect(function()
 		spamming = not spamming
 		button.Text = spamming and "Chat Spam: ON" or "Chat Spam: OFF"
-	
 		spawn(function()
 			while spamming do
 				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
@@ -2492,34 +3184,29 @@ local script = G2L["4a"];
 			end
 		end)
 	end)
-end;
-task.spawn(C_4a);
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton.LocalScript
-local function C_4c()
-local script = G2L["4c"];
+end
+task.spawn(LocalScript42_fakescript)
+local function LocalScript44_fakescript() -- TextButton14.LocalScript
+	local script = Instance.new("LocalScript", TextButton14)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local trolling = false
 	local trollEffects = {}
-	
 	button.MouseButton1Click:Connect(function()
 		trolling = not trolling
 		button.Text = trolling and "Troll All: ON" or "Troll All: OFF"
-	
 		if trolling then
 			spawn(function()
 				while trolling do
 					for _, plr in pairs(game.Players:GetPlayers()) do
 						if plr ~= game.Players.LocalPlayer and plr.Character then
-	
 							-- Team Check (opcional)
 							if getgenv().TeamCheck and plr.Team == game.Players.LocalPlayer.Team then
 								continue
 							end
-	
 							local char = plr.Character
 							local torso = char:FindFirstChild("Torso")
 							if not torso then continue end
-	
 							-- Efecto Troll: Partícula + Spin + Fire
 							if not trollEffects[plr] then
 								-- Crear fuego/molesto
@@ -2527,19 +3214,15 @@ local script = G2L["4c"];
 								fire.Size = 8
 								fire.Heat = 20
 								fire.Parent = torso
-	
 								-- Crear humo
 								local smoke = Instance.new("Smoke")
 								smoke.Color = Color3.fromRGB(255, 0, 0)
 								smoke.Size = 10
 								smoke.Parent = torso
-	
 								trollEffects[plr] = {fire, smoke}
 							end
-	
 							-- Hacer que giren (Spin)
 							torso.CFrame = torso.CFrame * CFrame.Angles(0, math.rad(25), 0)
-	
 							-- Hacer que salten random
 							local hum = char:FindFirstChild("Humanoid")
 							if hum and math.random(1, 8) == 1 then
@@ -2550,7 +3233,6 @@ local script = G2L["4c"];
 					wait(0.1)
 				end
 			end)
-	
 		else
 			-- Limpiar efectos
 			for _, effects in pairs(trollEffects) do
@@ -2563,18 +3245,16 @@ local script = G2L["4c"];
 			trollEffects = {}
 		end
 	end)
-end;
-task.spawn(C_4c);
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton.LocalScript
-local function C_4e()
-local script = G2L["4e"];
+end
+task.spawn(LocalScript44_fakescript)
+local function LocalScript46_fakescript() -- TextButton15.LocalScript
+	local script = Instance.new("LocalScript", TextButton15)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local soundSpam = false
-	
 	button.MouseButton1Click:Connect(function()
 		soundSpam = not soundSpam
 		button.Text = soundSpam and "Sound Spam: ON" or "Sound Spam: OFF"
-	
 		spawn(function()
 			while soundSpam do
 				local sound = Instance.new("Sound")
@@ -2587,85 +3267,33 @@ local script = G2L["4e"];
 			end
 		end)
 	end)
-end;
-task.spawn(C_4e);
--- StarterGui.Ikghubv2.IKGHUBv2.Fun.TextButton.LocalScript
-local function C_50()
-local script = G2L["50"];
+end
+task.spawn(LocalScript46_fakescript)
+local function LocalScript48_fakescript() -- TextButton16.LocalScript
+	local script = Instance.new("LocalScript", TextButton16)
+	script.Name = "LocalScript"
 	local button = script.Parent
 	local spinning = false
-	
 	button.MouseButton1Click:Connect(function()
 		spinning = not spinning
 		button.Text = spinning and "Spinbot: ON" or "Spinbot: OFF"
-	
 		local char = game.Players.LocalPlayer.Character
 		local root = char:WaitForChild("Torso")
-	
 		while spinning do
 			root.CFrame = root.CFrame * CFrame.Angles(0, math.rad(30), 0)
 			wait()
 		end
 	end)
-end;
-task.spawn(C_50);
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton.LocalScript
-local function C_58()
-local script = G2L["58"];
-	local boton = script.Parent
-	local player = game.Players.LocalPlayer
-	
-	local Activado = false
-	boton.Text = "Auto Tool: OFF"
-	
-	-- Función del botón
-	boton.MouseButton1Click:Connect(function()
-		Activado = not Activado
-	
-		if Activado then
-			boton.Text = "Auto Tool: ON"
-			boton.BackgroundColor3 = Color3.fromRGB(0, 170, 0)   -- Verde
-		else
-			boton.Text = "Auto Tool: OFF"
-			boton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)  -- Gris oscuro
-		end
-	end)
-	
-	-- Loop del Auto Tool
-	task.spawn(function()
-		while true do
-			task.wait(0.05)
-	
-			if Activado then
-				local character = player.Character
-				if character then
-					local humanoid = character:FindFirstChild("Humanoid")
-					if humanoid then
-						local tool = player.Backpack:FindFirstChildOfClass("Tool")
-						if tool then
-							humanoid:EquipTool(tool)
-							task.wait(0.05)
-							humanoid:UnequipTools()
-						end
-					end
-				end
-			end
-		end
-	end)
-end;
-task.spawn(C_58);
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton.LocalScript
-local function C_5a()
-local script = G2L["5a"];
+end
+task.spawn(LocalScript48_fakescript)
+local function LocalScript50_fakescript() -- TextButton18.LocalScript
+	local script = Instance.new("LocalScript", TextButton18)
+	script.Name = "LocalScript"
 	-- LocalScript → Poner DENTRO del TextButton que tú creaste
-	
 	local button = script.Parent
 	local player = game.Players.LocalPlayer
-	
 	local spawnName = "SpawnEjercito"   -- ← CAMBIA ESTO por el nombre exacto de tu Part
-	
 	button.Text = "Teleport a Spawn"   -- Puedes cambiar el texto
-	
 	local function teleport()
 		local character = player.Character
 		if not character then
@@ -2674,7 +3302,6 @@ local script = G2L["5a"];
 			button.Text = "Teleport a Spawn"
 			return
 		end
-	
 		local hrp = character:FindFirstChild("HumanoidRootPart")
 		if not hrp then
 			button.Text = "Error"
@@ -2682,10 +3309,8 @@ local script = G2L["5a"];
 			button.Text = "Teleport a Spawn"
 			return
 		end
-	
 		-- Buscar la Part
 		local target = workspace:FindFirstChild(spawnName, true)
-	
 		if target then
 			hrp.CFrame = target.CFrame * CFrame.new(0, 6, 0)  -- 6 studs arriba
 			button.Text = "¡Teletransportado! ✓"
@@ -2697,23 +3322,18 @@ local script = G2L["5a"];
 			button.Text = "Teleport a Spawn"
 		end
 	end
-	
 	-- Conectar el click
 	button.MouseButton1Click:Connect(teleport)
-end;
-task.spawn(C_5a);
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton.LocalScript
-local function C_5c()
-local script = G2L["5c"];
+end
+task.spawn(LocalScript50_fakescript)
+local function LocalScript52_fakescript() -- TextButton19.LocalScript
+	local script = Instance.new("LocalScript", TextButton19)
+	script.Name = "LocalScript"
 	-- LocalScript → Poner DENTRO del TextButton que tú creaste
-	
 	local button = script.Parent
 	local player = game.Players.LocalPlayer
-	
 	local spawnName = "SpawnAereo"   -- ← CAMBIA ESTO por el nombre exacto de tu Part
-	
 	button.Text = "Teleport a Spawn"   -- Puedes cambiar el texto
-	
 	local function teleport()
 		local character = player.Character
 		if not character then
@@ -2722,7 +3342,6 @@ local script = G2L["5c"];
 			button.Text = "Teleport a Spawn"
 			return
 		end
-	
 		local hrp = character:FindFirstChild("HumanoidRootPart")
 		if not hrp then
 			button.Text = "Error"
@@ -2730,10 +3349,8 @@ local script = G2L["5c"];
 			button.Text = "Teleport a Spawn"
 			return
 		end
-	
 		-- Buscar la Part
 		local target = workspace:FindFirstChild(spawnName, true)
-	
 		if target then
 			hrp.CFrame = target.CFrame * CFrame.new(0, 6, 0)  -- 6 studs arriba
 			button.Text = "¡Teletransportado! ✓"
@@ -2745,22 +3362,18 @@ local script = G2L["5c"];
 			button.Text = "Teleport a Spawn"
 		end
 	end
-	
 	-- Conectar el click
 	button.MouseButton1Click:Connect(teleport)
-end;
-task.spawn(C_5c);
--- StarterGui.Ikghubv2.IKGHUBv2.Comands.TextButton.LocalScript
-local function C_5e()
-local script = G2L["5e"];
+end
+task.spawn(LocalScript52_fakescript)
+local function LocalScript54_fakescript() -- TextButton20.LocalScript
+	local script = Instance.new("LocalScript", TextButton20)
+	script.Name = "LocalScript"
 	-- LocalScript → Para el botón de Spawnear MG15
-	
 	local button = script.Parent
 	local player = game.Players.LocalPlayer
 	local replicatedStorage = game:GetService("ReplicatedStorage")
-	
 	local weaponName = "Winchester"
-	
 	local function giveWeapon()
 		local character = player.Character
 		if not character then 
@@ -2769,17 +3382,14 @@ local script = G2L["5e"];
 			button.Text = "Dar MG15"
 			return 
 		end
-	
 		-- Buscar el arma en ReplicatedStorage
 		local weapon = replicatedStorage:FindFirstChild(weaponName)
-	
 		if not weapon then
 			button.Text = "MG15 no encontrado"
 			wait(2)
 			button.Text = "Dar MG15"
 			return
 		end
-	
 		-- Evitar duplicados (no dar si ya la tiene)
 		if player.Backpack:FindFirstChild(weaponName) or character:FindFirstChild(weaponName) then
 			button.Text = "Ya tienes el MG15"
@@ -2787,849 +3397,78 @@ local script = G2L["5e"];
 			button.Text = "Dar MG15"
 			return
 		end
-	
 		-- Clonar y dar el arma
 		local weaponClone = weapon:Clone()
 		weaponClone.Parent = player.Backpack
-	
 		button.Text = "MG15 Entregada ✓"
 		wait(1.5)
 		button.Text = "Dar MG15"
 	end
-	
 	-- Configuración inicial del botón
 	button.Text = "Dar MG15"
 	button.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
-	
 	button.MouseButton1Click:Connect(giveWeapon)
-end;
-task.spawn(C_5e);
--- StarterGui.Ikghubv2.IKGHUBv2.Combatbutton.LocalScript
-local function C_79()
-local script = G2L["79"];
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Combat") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
+end
+task.spawn(LocalScript54_fakescript)
+local function LocalScript56_fakescript() -- CloseButton.LocalScript
+	local script = Instance.new("LocalScript", CloseButton)
+	script.Name = "LocalScript"
+	local botonCerrar = script.Parent
+	-- Busca el Frame llamado IKGHUB subiendo en las carpetas
+	local frame = botonCerrar:FindFirstAncestor("IKGHUB") 
+	botonCerrar.MouseButton1Click:Connect(function()
+		if frame then
+			frame.Visible = false
 		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
+			warn("No se encontró el Frame llamado IKGHUB")
 		end
 	end)
-end;
-task.spawn(C_79);
--- StarterGui.Ikghubv2.IKGHUBv2.Minimize.LocalScript
-local function C_7c()
-local script = G2L["7c"];
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-end;
-task.spawn(C_7c);
--- StarterGui.Ikghubv2.IKGHUBv2.Minimize.LocalScript
-local function C_7d()
-local script = G2L["7d"];
-	local minimize = script.Parent
-	local gui = minimize.Parent -- IKGHUBv2
-	
+end
+task.spawn(LocalScript56_fakescript)
+local function LocalScript58_fakescript() -- Frame.LocalScript
+	local script = Instance.new("LocalScript", Frame)
+	script.Name = "LocalScript"
+	-- LocalScript con Animación → Poner DENTRO del Frame inicial
+	local frame = script.Parent
+	local TweenService = game:GetService("TweenService")
 	local player = game.Players.LocalPlayer
-	local playerGui = player:WaitForChild("PlayerGui")
-	
-	-- Busca el Frame "coso2"
-	local coso2 = playerGui:WaitForChild("IKGHUBv2"):WaitForChild("coso2")
-	
-	-- Busca el ImageButton "button3"
-	local button3 = coso2:WaitForChild("button3")
-	
-	minimize.MouseButton1Click:Connect(function()
-		-- Oculta el Frame principal
-		gui.Visible = false
-	
-		-- Muestra el botón para volver a abrir
-		button3.Visible = true
-	end)
-end;
-task.spawn(C_7d);
--- StarterGui.Ikghubv2.IKGHUBv2.Comandsbutton.LocalScript
-local function C_7f()
-local script = G2L["7f"];
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Comands") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
+	-- ================== CONFIGURACIÓN ==================
+	local tiempoEspera = 4          -- Segundos antes de cambiar
+	local frameSiguienteNombre = "IKGHUB"  -- ← Cambia por el nombre exacto del siguiente frame
+	local duracionFade = 0.6        -- Duración de la animación en segundos
+	-- ===================================================
+	player:WaitForChild("PlayerGui")
+	task.wait(tiempoEspera)
+	local playerGui = player.PlayerGui
+	local siguienteFrame = playerGui:FindFirstChild(frameSiguienteNombre, true)
+	if siguienteFrame then
+		-- Preparar siguiente frame (invisible pero listo)
+		siguienteFrame.Visible = true
+		siguienteFrame.BackgroundTransparency = 1
+		-- Fade Out del frame actual
+		local tweenOut = TweenService:Create(frame, TweenInfo.new(duracionFade, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
+			BackgroundTransparency = 1
+		})
+		-- Fade In del siguiente frame
+		local tweenIn = TweenService:Create(siguienteFrame, TweenInfo.new(duracionFade, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
+			BackgroundTransparency = 0
+		})
+		-- Animar todos los hijos del frame actual (para que se desvanezcan)
+		for _, descendant in pairs(frame:GetDescendants()) do
+			if descendant:IsA("TextLabel") or descendant:IsA("TextButton") or descendant:IsA("ImageLabel") then
+				TweenService:Create(descendant, TweenInfo.new(duracionFade), {TextTransparency = 1}):Play()
+			elseif descendant:IsA("Frame") or descendant:IsA("ImageLabel") then
+				TweenService:Create(descendant, TweenInfo.new(duracionFade), {BackgroundTransparency = 1}):Play()
 			end
 		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
-end;
-task.spawn(C_7f);
--- StarterGui.Ikghubv2.IKGHUBv2.menubutton.LocalScript
-local function C_82()
-local script = G2L["82"];
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Menu") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
-end;
-task.spawn(C_82);
--- StarterGui.Ikghubv2.IKGHUBv2.Visualbutton.LocalScript
-local function C_85()
-local script = G2L["85"];
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Visual") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
-end;
-task.spawn(C_85);
--- StarterGui.Ikghubv2.IKGHUBv2.Statusbutton.LocalScript
-local function C_88()
-local script = G2L["88"];
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Status") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
-end;
-task.spawn(C_88);
--- StarterGui.Ikghubv2.IKGHUBv2.Movemetbutton.LocalScript
-local function C_8b()
-local script = G2L["8b"];
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("Movement") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
-end;
-task.spawn(C_8b);
--- StarterGui.Ikghubv2.IKGHUBv2.CloseButton.LocalScript
-local function C_8e()
-local script = G2L["8e"];
-	local Button = script.Parent
-	local Frame = Button.Parent:WaitForChild("close") -- CAMBIA ESTO
-	
-	local TweenService = game:GetService("TweenService")
-	
-	-- Guarda la posición original
-	local OpenPos = Frame.Position
-	local ClosedPos = OpenPos + UDim2.new(0, -25, 0, 0)
-	
-	Frame.Visible = false
-	Frame.Position = ClosedPos
-	
-	-- Crear raya blanca automática
-	local SideLine = Instance.new("Frame")
-	SideLine.Name = "SideLine"
-	SideLine.Parent = Button
-	SideLine.Size = UDim2.new(0,0,1,0)
-	SideLine.Position = UDim2.new(0,0,0,0)
-	SideLine.BorderSizePixel = 0
-	SideLine.BackgroundColor3 = Color3.fromRGB(255,255,255)
-	SideLine.BackgroundTransparency = 0.45
-	
-	local OriginalColor = Button.BackgroundColor3
-	
-	-- Hover
-	Button.MouseEnter:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = Color3.fromRGB(40,40,40)
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,4,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	Button.MouseLeave:Connect(function()
-	
-		TweenService:Create(
-			Button,
-			TweenInfo.new(0.15),
-			{
-				BackgroundColor3 = OriginalColor
-			}
-		):Play()
-	
-		TweenService:Create(
-			SideLine,
-			TweenInfo.new(0.15),
-			{
-				Size = UDim2.new(0,0,1,0)
-			}
-		):Play()
-	
-	end)
-	
-	-- Abrir/Cerrar Frame
-	Button.MouseButton1Click:Connect(function()
-	
-		local ParentGui = Frame.Parent
-	
-		-- Cierra otros frames
-		for _,v in pairs(ParentGui:GetChildren()) do
-			if v:IsA("Frame") and v ~= Frame then
-				v.Visible = false
-			end
-		end
-	
-		if Frame.Visible then
-	
-			local CloseTween = TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = ClosedPos
-				}
-			)
-	
-			CloseTween:Play()
-	
-			CloseTween.Completed:Connect(function()
-				Frame.Visible = false
-			end)
-	
-		else
-	
-			Frame.Visible = true
-			Frame.Position = ClosedPos
-	
-			TweenService:Create(
-				Frame,
-				TweenInfo.new(0.2, Enum.EasingStyle.Quint),
-				{
-					Position = OpenPos
-				}
-			):Play()
-	
-		end
-	end)
-end;
-task.spawn(C_8e);
-
-return G2L["1"], require;
+		tweenOut:Play()
+		tweenOut.Completed:Connect(function()
+			frame.Visible = false
+			tweenIn:Play()
+		end)
+		print("✅ Transición con animación completada: " .. frame.Name .. " → " .. siguienteFrame.Name)
+	else
+		warn("No se encontró el frame: " .. frameSiguienteNombre)
+	end
+end
+task.spawn(LocalScript58_fakescript)
